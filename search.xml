@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>about me</title>
+    <url>/2021/02/13/hello-world/</url>
+    <content><![CDATA[<h1 id="欢迎使用-Cmd-Markdown-编辑阅读器"><a href="#欢迎使用-Cmd-Markdown-编辑阅读器" class="headerlink" title="欢迎使用 Cmd Markdown 编辑阅读器"></a>欢迎使用 Cmd Markdown 编辑阅读器</h1><p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：</p>
+<a id="more"></a>
+<hr>
+<p><img src="http://www.kapukapu.top/wp-content/uploads/2021/02/1612923808.jpg" alt="image"><br><img src="http://www.kapukapu.top/wp-content/uploads/2021/02/1613306561.jpg" alt="image"><br><img src="https://www.zybuluo.com/static/img/logo.png" alt="cmd-markdown-logo"></p>
+<blockquote>
+<ul>
+<li>整理知识，学习笔记</li>
+<li>发布日记，杂文，所见所想</li>
+<li>撰写发布技术文稿（代码支持）</li>
+<li>撰写发布学术论文（LaTeX 公式支持）</li>
+</ul>
+</blockquote>
+<p><img src="https://www.zybuluo.com/static/img/logo.png" alt="cmd-markdown-logo"></p>
+<p>除了您现在看到的这个 Cmd Markdown 在线版本，您还可以前往以下网址下载：</p>
+<h3 id="Windows-Mac-Linux-全平台客户端"><a href="#Windows-Mac-Linux-全平台客户端" class="headerlink" title="Windows/Mac/Linux 全平台客户端"></a><a href="https://www.zybuluo.com/cmd/">Windows/Mac/Linux 全平台客户端</a></h3><blockquote>
+<p>请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 <i class="icon-file"></i> <strong>新文稿</strong> 或者使用快捷键 <code>Ctrl+Alt+N</code>。</p>
+</blockquote>
+<hr>
+<h2 id="什么是-Markdown"><a href="#什么是-Markdown" class="headerlink" title="什么是 Markdown"></a>什么是 Markdown</h2><p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字，更棒的是，它还可以</p>
+<h3 id="1-制作一份待办事宜-Todo-列表"><a href="#1-制作一份待办事宜-Todo-列表" class="headerlink" title="1. 制作一份待办事宜 Todo 列表"></a>1. 制作一份待办事宜 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#13-%E5%BE%85%E5%8A%9E%E4%BA%8B%E5%AE%9C-todo-%E5%88%97%E8%A1%A8">Todo 列表</a></h3><ul>
+<li><input disabled="" type="checkbox"> 支持以 PDF 格式导出文稿</li>
+<li><input disabled="" type="checkbox"> 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率</li>
+<li><input checked="" disabled="" type="checkbox"> 新增 Todo 列表功能</li>
+<li><input checked="" disabled="" type="checkbox"> 修复 LaTex 公式渲染问题</li>
+<li><input checked="" disabled="" type="checkbox"> 新增 LaTex 公式编号功能</li>
+</ul>
+<h3 id="2-书写一个质能守恒公式-LaTeX"><a href="#2-书写一个质能守恒公式-LaTeX" class="headerlink" title="2. 书写一个质能守恒公式[^LaTeX]"></a>2. 书写一个质能守恒公式[^LaTeX]</h3><p>$$E=mc^2$$</p>
+<h3 id="3-高亮一段代码-code"><a href="#3-高亮一段代码-code" class="headerlink" title="3. 高亮一段代码[^code]"></a>3. 高亮一段代码[^code]</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@requires_authorization</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="comment"># A comment</span></span><br><span class="line">    <span class="built_in">print</span> <span class="string">&#x27;hello world&#x27;</span></span><br></pre></td></tr></table></figure>
+<h3 id="4-高效绘制-流程图"><a href="#4-高效绘制-流程图" class="headerlink" title="4. 高效绘制 流程图"></a>4. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-%E6%B5%81%E7%A8%8B%E5%9B%BE">流程图</a></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">st&#x3D;&gt;start: Start</span><br><span class="line">op&#x3D;&gt;operation: Your Operation</span><br><span class="line">cond&#x3D;&gt;condition: Yes or No?</span><br><span class="line">e&#x3D;&gt;end</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
+<h3 id="5-高效绘制-序列图"><a href="#5-高效绘制-序列图" class="headerlink" title="5. 高效绘制 序列图"></a>5. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#8-%E5%BA%8F%E5%88%97%E5%9B%BE">序列图</a></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Alice-&gt;Bob: Hello Bob, how are you?</span><br><span class="line">Note right of Bob: Bob thinks</span><br><span class="line">Bob--&gt;Alice: I am good thanks!</span><br></pre></td></tr></table></figure>
+<h3 id="6-高效绘制-甘特图"><a href="#6-高效绘制-甘特图" class="headerlink" title="6. 高效绘制 甘特图"></a>6. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#9-%E7%94%98%E7%89%B9%E5%9B%BE">甘特图</a></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title 项目开发流程</span><br><span class="line">section 项目确定</span><br><span class="line">    需求分析       :a1, 2016-06-22, 3d</span><br><span class="line">    可行性报告     :after a1, 5d</span><br><span class="line">    概念验证       : 5d</span><br><span class="line">section 项目实施</span><br><span class="line">    概要设计      :2016-07-05  , 5d</span><br><span class="line">    详细设计      :2016-07-08, 10d</span><br><span class="line">    编码          :2016-07-15, 10d</span><br><span class="line">    测试          :2016-07-22, 5d</span><br><span class="line">section 发布验收</span><br><span class="line">    发布: 2d</span><br><span class="line">    验收: 3d</span><br></pre></td></tr></table></figure>
+<h3 id="7-绘制表格"><a href="#7-绘制表格" class="headerlink" title="7. 绘制表格"></a>7. 绘制表格</h3><table>
+<thead>
+<tr>
+<th>项目</th>
+<th align="right">价格</th>
+<th align="center">数量</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>计算机</td>
+<td align="right">$1600</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td>手机</td>
+<td align="right">$12</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td>管线</td>
+<td align="right">$1</td>
+<td align="center">234</td>
+</tr>
+</tbody></table>
+<h3 id="8-更详细语法说明"><a href="#8-更详细语法说明" class="headerlink" title="8. 更详细语法说明"></a>8. 更详细语法说明</h3><p>想要查看更详细的语法说明，可以参考我们准备的 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown">Cmd Markdown 简明语法手册</a>，进阶用户可以参考 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#cmd-markdown-%E9%AB%98%E9%98%B6%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C">Cmd Markdown 高阶语法手册</a> 了解更多高级功能。</p>
+<p>总而言之，不同于其它 <em>所见即所得</em> 的编辑器：你只需使用键盘专注于书写文本内容，就可以生成印刷级的排版格式，省却在键盘和工具栏之间来回切换，调整内容和格式的麻烦。<strong>Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。</strong> 目前它已经成为世界上最大的技术分享网站 GitHub 和 技术问答网站 StackOverFlow 的御用书写格式。</p>
+<hr>
+<h2 id="什么是-Cmd-Markdown"><a href="#什么是-Cmd-Markdown" class="headerlink" title="什么是 Cmd Markdown"></a>什么是 Cmd Markdown</h2><p>您可以使用很多工具书写 Markdown，但是 Cmd Markdown 是这个星球上我们已知的、最好的 Markdown 工具——没有之一 ：）因为深信文字的力量，所以我们和你一样，对流畅书写，分享思想和知识，以及阅读体验有极致的追求，我们把对于这些诉求的回应整合在 Cmd Markdown，并且一次，两次，三次，乃至无数次地提升这个工具的体验，最终将它演化成一个 <strong>编辑/发布/阅读</strong> Markdown 的在线平台——您可以在任何地方，任何系统/设备上管理这里的文字。</p>
+<h3 id="1-实时同步预览"><a href="#1-实时同步预览" class="headerlink" title="1. 实时同步预览"></a>1. 实时同步预览</h3><p>我们将 Cmd Markdown 的主界面一分为二，左边为<strong>编辑区</strong>，右边为<strong>预览区</strong>，在编辑区的操作会实时地渲染到预览区方便查看最终的版面效果，并且如果你在其中一个区拖动滚动条，我们有一个巧妙的算法把另一个区的滚动条同步到等价的位置，超酷！</p>
+<h3 id="2-编辑工具栏"><a href="#2-编辑工具栏" class="headerlink" title="2. 编辑工具栏"></a>2. 编辑工具栏</h3><p>也许您还是一个 Markdown 语法的新手，在您完全熟悉它之前，我们在 <strong>编辑区</strong> 的顶部放置了一个如下图所示的工具栏，您可以使用鼠标在工具栏上调整格式，不过我们仍旧鼓励你使用键盘标记格式，提高书写的流畅度。</p>
+<p><img src="https://www.zybuluo.com/static/img/toolbar-editor.png" alt="tool-editor"></p>
+<h3 id="3-编辑模式"><a href="#3-编辑模式" class="headerlink" title="3. 编辑模式"></a>3. 编辑模式</h3><p>完全心无旁骛的方式编辑文字：点击 <strong>编辑工具栏</strong> 最右侧的拉伸按钮或者按下 <code>Ctrl + M</code>，将 Cmd Markdown 切换到独立的编辑模式，这是一个极度简洁的写作环境，所有可能会引起分心的元素都已经被挪除，超清爽！</p>
+<h3 id="4-实时的云端文稿"><a href="#4-实时的云端文稿" class="headerlink" title="4. 实时的云端文稿"></a>4. 实时的云端文稿</h3><p>为了保障数据安全，Cmd Markdown 会将您每一次击键的内容保存至云端，同时在 <strong>编辑工具栏</strong> 的最右侧提示 <code>已保存</code> 的字样。无需担心浏览器崩溃，机器掉电或者地震，海啸——在编辑的过程中随时关闭浏览器或者机器，下一次回到 Cmd Markdown 的时候继续写作。</p>
+<h3 id="5-离线模式"><a href="#5-离线模式" class="headerlink" title="5. 离线模式"></a>5. 离线模式</h3><p>在网络环境不稳定的情况下记录文字一样很安全！在您写作的时候，如果电脑突然失去网络连接，Cmd Markdown 会智能切换至离线模式，将您后续键入的文字保存在本地，直到网络恢复再将他们传送至云端，即使在网络恢复前关闭浏览器或者电脑，一样没有问题，等到下次开启 Cmd Markdown 的时候，她会提醒您将离线保存的文字传送至云端。简而言之，我们尽最大的努力保障您文字的安全。</p>
+<h3 id="6-管理工具栏"><a href="#6-管理工具栏" class="headerlink" title="6. 管理工具栏"></a>6. 管理工具栏</h3><p>为了便于管理您的文稿，在 <strong>预览区</strong> 的顶部放置了如下所示的 <strong>管理工具栏</strong>：</p>
+<p><img src="https://www.zybuluo.com/static/img/toolbar-manager.jpg" alt="tool-manager"></p>
+<p>通过管理工具栏可以：</p>
+<p><i class="icon-share"></i> 发布：将当前的文稿生成固定链接，在网络上发布，分享<br><i class="icon-file"></i> 新建：开始撰写一篇新的文稿<br><i class="icon-trash"></i> 删除：删除当前的文稿<br><i class="icon-cloud"></i> 导出：将当前的文稿转化为 Markdown 文本或者 Html 格式，并导出到本地<br><i class="icon-reorder"></i> 列表：所有新增和过往的文稿都可以在这里查看、操作<br><i class="icon-pencil"></i> 模式：切换 普通/Vim/Emacs 编辑模式</p>
+<h3 id="7-阅读工具栏"><a href="#7-阅读工具栏" class="headerlink" title="7. 阅读工具栏"></a>7. 阅读工具栏</h3><p><img src="https://www.zybuluo.com/static/img/toolbar-reader.jpg" alt="tool-manager"></p>
+<p>通过 <strong>预览区</strong> 右上角的 <strong>阅读工具栏</strong>，可以查看当前文稿的目录并增强阅读体验。</p>
+<p>工具栏上的五个图标依次为：</p>
+<p><i class="icon-list"></i> 目录：快速导航当前文稿的目录结构以跳转到感兴趣的段落<br><i class="icon-chevron-sign-left"></i> 视图：互换左边编辑区和右边预览区的位置<br><i class="icon-adjust"></i> 主题：内置了黑白两种模式的主题，试试 <strong>黑色主题</strong>，超炫！<br><i class="icon-desktop"></i> 阅读：心无旁骛的阅读模式提供超一流的阅读体验<br><i class="icon-fullscreen"></i> 全屏：简洁，简洁，再简洁，一个完全沉浸式的写作和阅读环境</p>
+<h3 id="8-阅读模式"><a href="#8-阅读模式" class="headerlink" title="8. 阅读模式"></a>8. 阅读模式</h3><p>在 <strong>阅读工具栏</strong> 点击 <i class="icon-desktop"></i> 或者按下 <code>Ctrl+Alt+M</code> 随即进入独立的阅读模式界面，我们在版面渲染上的每一个细节：字体，字号，行间距，前背景色都倾注了大量的时间，努力提升阅读的体验和品质。</p>
+<h3 id="9-标签、分类和搜索"><a href="#9-标签、分类和搜索" class="headerlink" title="9. 标签、分类和搜索"></a>9. 标签、分类和搜索</h3><p>在编辑区任意行首位置输入以下格式的文字可以标签当前文档：</p>
+<p>标签： 未分类</p>
+<p>标签以后的文稿在【文件列表】（Ctrl+Alt+F）里会按照标签分类，用户可以同时使用键盘或者鼠标浏览查看，或者在【文件列表】的搜索文本框内搜索标题关键字过滤文稿，如下图所示：</p>
+<p><img src="https://www.zybuluo.com/static/img/file-list.png" alt="file-list"></p>
+<h3 id="10-文稿发布和分享"><a href="#10-文稿发布和分享" class="headerlink" title="10. 文稿发布和分享"></a>10. 文稿发布和分享</h3><p>在您使用 Cmd Markdown 记录，创作，整理，阅读文稿的同时，我们不仅希望它是一个有力的工具，更希望您的思想和知识通过这个平台，连同优质的阅读体验，将他们分享给有相同志趣的人，进而鼓励更多的人来到这里记录分享他们的思想和知识，尝试点击 <i class="icon-share"></i> (Ctrl+Alt+P) 发布这份文档给好友吧！</p>
+<hr>
+<p>再一次感谢您花费时间阅读这份欢迎稿，点击 <i class="icon-file"></i> (Ctrl+Alt+N) 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！</p>
+<p>作者 <a href="http://weibo.com/ghosert">@ghosert</a><br>2016 年 07月 07日    </p>
+<p>[^LaTeX]: 支持 <strong>LaTeX</strong> 编辑显示支持，例如：$\sum_{i=1}^n a_i=0$， 访问 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">MathJax</a> 参考更多使用方法。</p>
+<p>[^code]: 代码高亮功能支持包括 Java, Python, JavaScript 在内的，<strong>四十一</strong>种主流编程语言。</p>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>npm配置国内源&amp;cnpm</title>
+    <url>/2021/02/16/npm%E9%85%8D%E7%BD%AE%E5%9B%BD%E5%86%85%E6%BA%90-cnpm/</url>
+    <content><![CDATA[<p>因为npm的服务器位于国外可能会影响安装，所以淘宝团队了国内镜像。淘宝镜像与官方同步频率目前为10分钟一次，以保证尽量与官方服务同步。<br>使用的话一种是通过配置淘宝源使用，另一种就是使用cnpm安装，下面依次介绍。</p>
+<a id="more"></a>
+
+<h3 id="1、永久使用"><a href="#1、永久使用" class="headerlink" title="1、永久使用"></a>1、永久使用</h3><p>永久使用需要配置源。  </p>
+<ul>
+<li>配置淘宝源</li>
+</ul>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<ul>
+<li>查看当前仓库地址是否更改成功</li>
+</ul>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
+<p>之后再使用npm安装时就是走的淘宝的源了。</p>
+<ul>
+<li>切换为官方源</li>
+</ul>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npmjs.org</span><br></pre></td></tr></table></figure>
+
+<h3 id="2、临时使用"><a href="#2、临时使用" class="headerlink" title="2、临时使用"></a>2、临时使用</h3><p>临时使用的话参照下面格式即可。</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">npm install -g XXX --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<h3 id="3、使用cnpm"><a href="#3、使用cnpm" class="headerlink" title="3、使用cnpm"></a>3、使用cnpm</h3><p>使用淘宝源安装cnpm，然后直接使用cnpm安装扩展。  </p>
+<ul>
+<li>安装cnpm</li>
+</ul>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">npm install cnpm -g --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<ul>
+<li>测试是否成功安装</li>
+</ul>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">cnpm -v</span><br></pre></td></tr></table></figure>
+<ul>
+<li>使用cnpm安装</li>
+</ul>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">cnpm install xxx</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>npm</tag>
+        <tag>node.js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安装hexo并部署到GitHub上</title>
+    <url>/2021/02/14/%E5%AE%89%E8%A3%85hexo%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E4%B8%8A/</url>
+    <content><![CDATA[<p>本文主要讲述如何安装hexo并将hexo部署到GitHub上。从配置环境，安装hexo，git配置，部署上传等等步骤，以及一些容易出现问题的配置项。</p>
+<a id="more"></a>
+
+<p>说一下选择hexo的初衷吧，穷…..</p>
+<p>所以直接选择GitHub部署网站。  </p>
+<h2 id="安装Node-js，Git，Hexo以及建站"><a href="#安装Node-js，Git，Hexo以及建站" class="headerlink" title="安装Node.js，Git，Hexo以及建站"></a>安装Node.js，Git，Hexo以及建站</h2><p>按照<a href="https://hexo.io/zh-cn/docs/">官网文档</a> 可以直接安装上这些软件的安装及网站的创建。  </p>
+<h2 id="Git配置"><a href="#Git配置" class="headerlink" title="Git配置"></a>Git配置</h2><h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><p>新建一个仓库名称必须为<code>github的用户名.github.io</code> ,比如，如果你的 github 用户名称是<code>hexo</code>，那么就新建一个名为<code>hexo.github.io</code> 的仓库，博客搭建完成以后你的访问地址就是 <code>https://hexo.github.io</code> 。<br>PS：注册的邮箱一定要验证，否则不会成功。  </p>
+<h3 id="配置-SSH-key"><a href="#配置-SSH-key" class="headerlink" title="配置 SSH key"></a>配置 SSH key</h3><p>使用Git bash执行如下命令SSH key。然后连续3次回车，最终会生成一个文件在用户目录下，通过返回信息的方格内就可以找到详细的文件地址，找到.ssh\id_rsa.pub文件。</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;邮件地址&quot;</span><br></pre></td></tr></table></figure>
+<p>打开自己的github主页，进入个人设置 -&gt; SSH and GPG keys，通过点击<code>New SSH key</code>新增一个<code>SSH key</code>，用记事本或者notepad++打开id_rsa.pub文件，复制里面的全部内容粘贴到key那里，title随便填，然后保存。  </p>
+<p><img src="http://www.kapukapu.top/wp-content/uploads/2021/02/1613306561.jpg" alt="image"></p>
+<p>然后使用Git bash执行下面命令测试是否成功。如果提示<code>Are you sure you want to continue connecting (yes/no)?</code>，输入yes，看到<code>Hi liuxianan! You’ve successfully authenticated, but GitHub does not provide shell access.</code>的话就说明成功了。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ ssh -T git@github.com <span class="comment"># 注意邮箱地址不用改</span></span><br></pre></td></tr></table></figure>
+<p>使用Git bash执行下面命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">&quot;liuxianan&quot;</span>// 你的github用户名，非昵称</span><br><span class="line">$ git config --global user.email  <span class="string">&quot;xxx@qq.com&quot;</span>// 填写你的github注册邮箱</span><br></pre></td></tr></table></figure>
+<h3 id="配置-config-yml"><a href="#配置-config-yml" class="headerlink" title="配置 _config.yml"></a>配置 _config.yml</h3><p>1、关于<code>_config.yml</code>文件url部分的配置  </p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://你的github用户名.github.io</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br></pre></td></tr></table></figure>
+<p>2、deploy属性</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 注意 key: value 冒号后面需要有一个空格</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/你的github用户名/你的github用户名.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="上传到-GitHub"><a href="#上传到-GitHub" class="headerlink" title="上传到 GitHub"></a>上传到 GitHub</h3><p>首先需要安装一个插件。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<p>然后生成静态文件并上传</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate <span class="comment">#生成静态页面至public目录</span></span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>或者使用简单命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+<p>如果出现一些乱七八糟的问题，可以在generate之前执行下clear命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clear  <span class="comment"># 或者$ hexo c</span></span><br></pre></td></tr></table></figure>
+<p>部署的话需要填写GitHub的用户名和密码，正常填写即可。<br><img src="http://www.kapukapu.top/wp-content/uploads/2021/02/1613307372.jpg" alt="image"></p>
+<p>部署完成后就可以通过<a href="https://github.com/%E4%BD%A0%E7%9A%84github%E7%94%A8%E6%88%B7%E5%90%8D.github.io">https://github.com/你的github用户名.github.io</a> 链接访问自己的站点了。</p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>GitHub</tag>
+      </tags>
+  </entry>
+</search>
