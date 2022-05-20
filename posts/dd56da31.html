@@ -472,7 +472,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    327
+                    319
                 </div>
                 
 
@@ -501,45 +501,45 @@
             <div id="articleContent">
                 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>当你的hexo站点部署到github上以后，如果访问的链接不存在的话，github是有默认的404页面的。<br><img src="/images/1653048709.png" alt="github默认的404页面"><br>但是这是不能满足我们的爱美之心的，其次我想要5秒后自动跳转回我的博客首页怎么办？</p>
 <h2 id="处理方案"><a href="#处理方案" class="headerlink" title="处理方案"></a>处理方案</h2><h3 id="1、创建404page"><a href="#1、创建404page" class="headerlink" title="1、创建404page"></a>1、创建404page</h3><p>在博客主目录运行起cmd窗口，使用下面命令生成404page</p>
-<pre><code>hexo new page 404
+<pre class=" language-bash"><code class="language-bash">hexo new page 404
 </code></pre>
 <h3 id="2、编辑404页面"><a href="#2、编辑404页面" class="headerlink" title="2、编辑404页面"></a>2、编辑404页面</h3><p>然后将下面的内容复制到<code>source/404/index.md</code>文件内。</p>
-<pre><code>---
-title: &#39;404 - 好巧，竟然在这里遇到你！&#39;
+<pre class=" language-bash"><code class="language-bash">---
+title: <span class="token string">'404 - 好巧，竟然在这里遇到你！'</span>
 date: 2022-01-22 20:02:00
-comments: false
+comments: <span class="token boolean">false</span>
 permalink: /404.html
 ---
 
-&lt;!-- markdownlint-disable MD039 MD033 --&gt;
+<span class="token operator">&lt;</span><span class="token operator">!</span>-- markdownlint-disable MD039 MD033 --<span class="token operator">></span>
 
-## 这是一个不存在的页面
+<span class="token comment" spellcheck="true">## 这是一个不存在的页面</span>
 
 对不起，您所访问的页面不存在或者已删除。
 
-预计将在约 &lt;span id=&quot;timeout&quot;&gt;5&lt;/span&gt; 秒后返回首页。
+预计将在约 <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"timeout"</span><span class="token operator">></span>5<span class="token operator">&lt;</span>/span<span class="token operator">></span> 秒后返回首页。
 
-当然，你可以 **[点这里](你的首页连接)** 直接返回首页。
+当然，你可以 **<span class="token punctuation">[</span>点这里<span class="token punctuation">]</span><span class="token punctuation">(</span>你的首页连接<span class="token punctuation">)</span>** 直接返回首页。
 
-&lt;script&gt;
-let countTime = 5;
+<span class="token operator">&lt;</span>script<span class="token operator">></span>
+<span class="token keyword">let</span> countTime <span class="token operator">=</span> 5<span class="token punctuation">;</span>
 
-function count() &#123;
+<span class="token keyword">function</span> count<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
 
-  document.getElementById(&#39;timeout&#39;).textContent = countTime;
-  countTime -= 1;
-  if(countTime === 0)&#123;
-    location.href = &#39;你的首页连接&#39;;
-  &#125;
-  setTimeout(() =&gt; &#123;
-    count();
-  &#125;, 1000);
-&#125;
+  document.getElementById<span class="token punctuation">(</span><span class="token string">'timeout'</span><span class="token punctuation">)</span>.textContent <span class="token operator">=</span> countTime<span class="token punctuation">;</span>
+  countTime -<span class="token operator">=</span> 1<span class="token punctuation">;</span>
+  if<span class="token punctuation">(</span>countTime <span class="token operator">==</span><span class="token operator">=</span> 0<span class="token punctuation">)</span><span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
+    location.href <span class="token operator">=</span> <span class="token string">'你的首页连接'</span><span class="token punctuation">;</span>
+  <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
+  setTimeout<span class="token punctuation">((</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
+    count<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;, 1000);</span>
+<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
 
-count();
-&lt;/script&gt;
+count<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;</span>/script<span class="token operator">></span>
 </code></pre>
-<h3 id="3、生成站点并运行"><a href="#3、生成站点并运行" class="headerlink" title="3、生成站点并运行"></a>3、生成站点并运行</h3><pre><code>hexo clean
+<h3 id="3、生成站点并运行"><a href="#3、生成站点并运行" class="headerlink" title="3、生成站点并运行"></a>3、生成站点并运行</h3><pre class=" language-bash"><code class="language-bash">hexo clean
 hexo generate
 hexo serve
 </code></pre>
@@ -841,32 +841,51 @@ hexo serve
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/4a17b156.html">
+                <a href="/posts/5b53afb5.html">
                     <div class="card-image">
                         
+                        <img src="/images/fo742.jpg" class="responsive-img" alt="主流折叠屏手机">
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">主流折叠屏手机</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            网罗主流热门折叠屏手机测评视频
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-19
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Kapu
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%A7%86%E9%A2%91/" class="post-category">
+                                    视频
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%A7%86%E9%A2%91/">
+                        <span class="chip bg-color">视频</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%89%8B%E6%9C%BA/">
+                        <span class="chip bg-color">手机</span>
+                    </a>
+                    
+                    <a href="/tags/%E6%B5%8B%E8%AF%84/">
+                        <span class="chip bg-color">测评</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1050,7 +1069,7 @@ hexo serve
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">26.6k</span>&nbsp;字
+                class="white-color">26.5k</span>&nbsp;字
             
             
             
