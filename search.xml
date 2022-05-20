@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>主流折叠屏手机</title>
+      <link href="/posts/5b53afb5.html"/>
+      <url>/posts/5b53afb5.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="华为Mate-Xs-2"><a href="#华为Mate-Xs-2" class="headerlink" title="华为Mate Xs 2"></a>华为Mate Xs 2</h2><ul><li>发布日期：2022年4月28日</li><li>UP主：钟文泽</li></ul><iframe src="//player.bilibili.com/player.html?aid=811074638&bvid=BV1G34y1a7fJ&cid=586907114&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe><h2 id="vivo-X-Fold-折叠屏"><a href="#vivo-X-Fold-折叠屏" class="headerlink" title="vivo X Fold 折叠屏"></a>vivo X Fold 折叠屏</h2><ul><li>发布日期：2022年4月11日</li><li>UP主：钟文泽</li></ul><iframe src="//player.bilibili.com/player.html?aid=768204074&bvid=BV1wr4y1H7JX&cid=575250829&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe><h2 id="荣耀Magic-V"><a href="#荣耀Magic-V" class="headerlink" title="荣耀Magic V"></a>荣耀Magic V</h2><ul><li>发布日期：2022年1月10日</li><li>UP主：钟文泽</li></ul><iframe src="//player.bilibili.com/player.html?aid=423065639&bvid=BV1U3411e7Lv&cid=481201514&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe><h2 id="华为P50-Pocket"><a href="#华为P50-Pocket" class="headerlink" title="华为P50 Pocket"></a>华为P50 Pocket</h2><ul><li>发布日期：2021年12月23日</li><li>UP主：钟文泽</li></ul><iframe src="//player.bilibili.com/player.html?aid=592599346&bvid=BV17q4y1m7CD&cid=467231305&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe><h2 id="OPPO-Find-N"><a href="#OPPO-Find-N" class="headerlink" title="OPPO Find N"></a>OPPO Find N</h2><ul><li>发布日期：2021年12月15日</li><li>UP主：钟文泽</li></ul><iframe src="//player.bilibili.com/player.html?aid=677286234&bvid=BV14U4y1K7TA&cid=461454077&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe><h2 id="三星Z-Fold-3"><a href="#三星Z-Fold-3" class="headerlink" title="三星Z Fold 3"></a>三星Z Fold 3</h2><ul><li>发布日期：2021年08月11日</li><li>UP主：钟文泽</li></ul><iframe src="//player.bilibili.com/player.html?aid=974872136&bvid=BV1h44y1y7o2&cid=387520927&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe><h2 id="小米MIX-Fold"><a href="#小米MIX-Fold" class="headerlink" title="小米MIX Fold"></a>小米MIX Fold</h2><ul><li>发布日期：2021年3月30日</li><li>UP主：钟文泽</li></ul><iframe src="//player.bilibili.com/player.html?aid=758095482&bvid=BV1G64y1m7Pu&cid=337187688&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>]]></content>
+      
+      
+      <categories>
+          
+          <category> 视频 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 视频 </tag>
+            
+            <tag> 手机 </tag>
+            
+            <tag> 测评 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>清明上河图</title>
       <link href="/posts/99aefb45.html"/>
       <url>/posts/99aefb45.html</url>
@@ -23,6 +52,31 @@
             <tag> 认知 </tag>
             
             <tag> 清明上河图 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Django与Vue语法的冲突问题的解决方法</title>
+      <link href="/posts/9600b488.html"/>
+      <url>/posts/9600b488.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>django web框架中,使用vue的时候,会遇到语法冲突，因为vue使用<code>&#123;&#123;&#125;&#125;`    ,而django也使用 `&#123;&#123;&#125;&#125;</code> 。</p><span id="more"></span><h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>在django1.5以后,加入了下面的标签，在这个标签里的内容不会被django模板引擎渲染。</p><pre><code>&#123;% verbatim myblock %&#125; &#123;% endverbatim myblock %&#125;</code></pre><p>我们可以把带有<code>&#123;&#123; &#125;&#125; </code>的Vue代码放在 <code>&#123;% verbatim myblock %&#125;</code>标签中间，例如下面：</p><pre><code>&lt;div&gt;  &#123;% verbatim myblock %&#125;    &#123;&#123; name &#125;&#125;  &#123;% endverbatim myblock %&#125;&lt;/div&gt;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Django </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Django </tag>
             
         </tags>
       
@@ -259,7 +313,7 @@
       
       <categories>
           
-          <category> 网站分享 </category>
+          <category> 其他 </category>
           
       </categories>
       
@@ -587,6 +641,18 @@
         <content type="html"><![CDATA[<h2 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h2><p>当响应数据或响应页面没有设置编码时，jmeter会按照jmeter.properties文件中，sampleresult.default.encoding设置默认ISO-8859-1格式解析，解析中文肯定出错。</p><span id="more"></span><pre><code># The encoding to be used if none is provided (default ISO-8859-1)  sampleresult.default.encoding=ISO-8859-1  </code></pre><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><h3 id="方案一：永久修改"><a href="#方案一：永久修改" class="headerlink" title="方案一：永久修改"></a>方案一：永久修改</h3><p>直接修改sampleresult.default.encoding=UTF-8。  </p><h3 id="方案二：动态修改"><a href="#方案二：动态修改" class="headerlink" title="方案二：动态修改"></a>方案二：动态修改</h3><p>1：指定请求节点下，新建后置控制器<code>BeanShell PostProcessor</code>。<br>2：其脚本框中输入：<code>prev.setDataEncoding(&quot;UTF-8&quot;)</code>。<br>3：保存。</p><p><img src="/images/pasted-13.png"></p>]]></content>
       
       
+      <categories>
+          
+          <category> JMeter </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JMeter </tag>
+            
+        </tags>
       
     </entry>
     
@@ -629,6 +695,18 @@
         <content type="html"><![CDATA[<p>1、修改<code>mongodb</code>配置文件</p><pre><code>bind_ip = 0.0.0.0port = 27017</code></pre><p>2、防火墙放开27017端口  </p><p>这里就可以访问了，为了安全可以设置<code>mongodb</code>的用户密码。我这里没有设置，因为访问不多，要访问的时候放开端口，不要的时候关闭即可。</p>]]></content>
       
       
+      <categories>
+          
+          <category> 其他 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> mongodb </tag>
+            
+        </tags>
       
     </entry>
     
@@ -660,7 +738,7 @@
     
     
     <entry>
-      <title>hexo : 无法加载文件hexo.ps1</title>
+      <title>HEXO : 无法加载文件hexo.ps1</title>
       <link href="/posts/44be556e.html"/>
       <url>/posts/44be556e.html</url>
       
@@ -669,14 +747,14 @@
       
       <categories>
           
-          <category> hexo </category>
+          <category> HEXO </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> hexo </tag>
+            <tag> HEXO </tag>
             
         </tags>
       
@@ -729,31 +807,6 @@
             <tag> JMeter </tag>
             
             <tag> 随机数 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Django与Vue语法的冲突问题的解决方法</title>
-      <link href="/posts/9600b488.html"/>
-      <url>/posts/9600b488.html</url>
-      
-        <content type="html"><![CDATA[<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>django web框架中,使用vue的时候,会遇到语法冲突，因为vue使用<code>&#123;&#123;&#125;&#125;`    ,而django也使用 `&#123;&#123;&#125;&#125;</code> 。</p><span id="more"></span><h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>在django1.5以后,加入了下面的标签，在这个标签里的内容不会被django模板引擎渲染。</p><pre><code>&#123;% verbatim myblock %&#125; &#123;% endverbatim myblock %&#125;</code></pre><p>我们可以把带有<code>&#123;&#123; &#125;&#125; </code>的Vue代码放在 <code>&#123;% verbatim myblock %&#125;</code>标签中间，例如下面：</p><pre><code>&lt;div&gt;  &#123;% verbatim myblock %&#125;    &#123;&#123; name &#125;&#125;  &#123;% endverbatim myblock %&#125;&lt;/div&gt;</code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> Django </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Django </tag>
             
         </tags>
       
@@ -1073,7 +1126,7 @@
             
             <tag> JMeter </tag>
             
-            <tag> bzm - Concurrency Thread Group </tag>
+            <tag> Thread </tag>
             
         </tags>
       
@@ -1663,12 +1716,12 @@
       <link href="/posts/2109575971.html"/>
       <url>/posts/2109575971.html</url>
       
-        <content type="html"><![CDATA[<p>因为npm的服务器位于国外可能会影响安装，所以淘宝团队了国内镜像。淘宝镜像与官方同步频率目前为10分钟一次，以保证尽量与官方服务同步。<br>使用的话一种是通过配置淘宝源使用，另一种就是使用cnpm安装，下面依次介绍。</p><span id="more"></span><h3 id="1、永久使用"><a href="#1、永久使用" class="headerlink" title="1、永久使用"></a>1、永久使用</h3><p>永久使用需要配置源。  </p><ul><li>配置淘宝源</li></ul><pre class=" language-cmd"><code class="language-cmd">npm config set registry https://registry.npm.taobao.org</code></pre><ul><li>查看当前仓库地址是否更改成功</li></ul><pre class=" language-cmd"><code class="language-cmd">npm config get registry</code></pre><p>之后再使用npm安装时就是走的淘宝的源了。</p><ul><li>切换为官方源</li></ul><pre class=" language-cmd"><code class="language-cmd">npm config set registry https://registry.npmjs.org</code></pre><h3 id="2、临时使用"><a href="#2、临时使用" class="headerlink" title="2、临时使用"></a>2、临时使用</h3><p>临时使用的话参照下面格式即可。</p><pre class=" language-cmd"><code class="language-cmd">npm install -g XXX --registry=https://registry.npm.taobao.org</code></pre><h3 id="3、使用cnpm"><a href="#3、使用cnpm" class="headerlink" title="3、使用cnpm"></a>3、使用cnpm</h3><p>使用淘宝源安装cnpm，然后直接使用cnpm安装扩展。  </p><ul><li>安装cnpm</li></ul><pre class=" language-cmd"><code class="language-cmd">npm install cnpm -g --registry=https://registry.npm.taobao.org</code></pre><ul><li>测试是否成功安装</li></ul><pre class=" language-cmd"><code class="language-cmd">cnpm -v</code></pre><ul><li>使用cnpm安装</li></ul><pre class=" language-cmd"><code class="language-cmd">cnpm install xxx</code></pre>]]></content>
+        <content type="html"><![CDATA[<p>因为npm的服务器位于国外可能会影响安装，所以淘宝团队创建了国内镜像。淘宝镜像与官方同步频率目前为10分钟一次，以保证尽量与官方服务同步。<br>使用的话一种是通过配置淘宝源使用，另一种就是使用cnpm安装，下面依次介绍。</p><span id="more"></span><h3 id="1、永久使用"><a href="#1、永久使用" class="headerlink" title="1、永久使用"></a>1、永久使用</h3><p>永久使用需要配置源。  </p><ul><li>配置淘宝源</li></ul><pre class=" language-cmd"><code class="language-cmd">npm config set registry https://registry.npm.taobao.org</code></pre><ul><li>查看当前仓库地址是否更改成功</li></ul><pre class=" language-cmd"><code class="language-cmd">npm config get registry</code></pre><p>之后再使用npm安装时就是走的淘宝的源了。</p><ul><li>切换为官方源</li></ul><pre class=" language-cmd"><code class="language-cmd">npm config set registry https://registry.npmjs.org</code></pre><h3 id="2、临时使用"><a href="#2、临时使用" class="headerlink" title="2、临时使用"></a>2、临时使用</h3><p>临时使用的话参照下面格式即可。</p><pre class=" language-cmd"><code class="language-cmd">npm install -g XXX --registry=https://registry.npm.taobao.org</code></pre><h3 id="3、使用cnpm"><a href="#3、使用cnpm" class="headerlink" title="3、使用cnpm"></a>3、使用cnpm</h3><p>使用淘宝源安装cnpm，然后直接使用cnpm安装扩展。  </p><ul><li>安装cnpm</li></ul><pre class=" language-cmd"><code class="language-cmd">npm install cnpm -g --registry=https://registry.npm.taobao.org</code></pre><ul><li>测试是否成功安装</li></ul><pre class=" language-cmd"><code class="language-cmd">cnpm -v</code></pre><ul><li>使用cnpm安装</li></ul><pre class=" language-cmd"><code class="language-cmd">cnpm install xxx</code></pre>]]></content>
       
       
       <categories>
           
-          <category> 未分类 </category>
+          <category> 其他 </category>
           
       </categories>
       
@@ -1676,8 +1729,6 @@
         <tags>
             
             <tag> npm </tag>
-            
-            <tag> node.js </tag>
             
         </tags>
       
