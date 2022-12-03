@@ -472,7 +472,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    319
+                    304
                 </div>
                 
 
@@ -501,48 +501,47 @@
             <div id="articleContent">
                 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>当你的hexo站点部署到github上以后，如果访问的链接不存在的话，github是有默认的404页面的。<br><img src="/images/1653048709.png" alt="github默认的404页面"><br>但是这是不能满足我们的爱美之心的，其次我想要5秒后自动跳转回我的博客首页怎么办？</p>
 <h2 id="处理方案"><a href="#处理方案" class="headerlink" title="处理方案"></a>处理方案</h2><h3 id="1、创建404page"><a href="#1、创建404page" class="headerlink" title="1、创建404page"></a>1、创建404page</h3><p>在博客主目录运行起cmd窗口，使用下面命令生成404page</p>
-<pre class=" language-bash"><code class="language-bash">hexo new page 404
-</code></pre>
+<pre class=" language-highlight bash"><code class="language-highlight bash">hexo new page 404</code></pre>
+
 <h3 id="2、编辑404页面"><a href="#2、编辑404页面" class="headerlink" title="2、编辑404页面"></a>2、编辑404页面</h3><p>然后将下面的内容复制到<code>source/404/index.md</code>文件内。</p>
-<pre class=" language-bash"><code class="language-bash">---
-title: <span class="token string">'404 - 好巧，竟然在这里遇到你！'</span>
-date: 2022-01-22 20:02:00
-comments: <span class="token boolean">false</span>
+<pre class=" language-highlight bash"><code class="language-highlight bash">---
+title: <span class="string">&#x27;404 - 好巧，竟然在这里遇到你！&#x27;</span>
+<span class="built_in">date</span>: 2022-01-22 20:02:00
+comments: <span class="literal">false</span>
 permalink: /404.html
 ---
 
-<span class="token operator">&lt;</span><span class="token operator">!</span>-- markdownlint-disable MD039 MD033 --<span class="token operator">></span>
+<!-- markdownlint-disable MD039 MD033 -->
 
-<span class="token comment" spellcheck="true">## 这是一个不存在的页面</span>
+<span class="comment">## 这是一个不存在的页面</span>
 
 对不起，您所访问的页面不存在或者已删除。
 
-预计将在约 <span class="token operator">&lt;</span>span id<span class="token operator">=</span><span class="token string">"timeout"</span><span class="token operator">></span>5<span class="token operator">&lt;</span>/span<span class="token operator">></span> 秒后返回首页。
+预计将在约 <span <span class="built_in">id</span>=<span class="string">"timeout"</span>>5</span> 秒后返回首页。
 
-当然，你可以 **<span class="token punctuation">[</span>点这里<span class="token punctuation">]</span><span class="token punctuation">(</span>你的首页连接<span class="token punctuation">)</span>** 直接返回首页。
+当然，你可以 **[点这里](你的首页连接)** 直接返回首页。
 
-<span class="token operator">&lt;</span>script<span class="token operator">></span>
-<span class="token keyword">let</span> countTime <span class="token operator">=</span> 5<span class="token punctuation">;</span>
+<script>
+<span class="built_in">let</span> countTime = 5;
 
-<span class="token keyword">function</span> count<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
+<span class="keyword">function</span> <span class="function"><span class="title">count</span></span>() &#123;
 
-  document.getElementById<span class="token punctuation">(</span><span class="token string">'timeout'</span><span class="token punctuation">)</span>.textContent <span class="token operator">=</span> countTime<span class="token punctuation">;</span>
-  countTime -<span class="token operator">=</span> 1<span class="token punctuation">;</span>
-  if<span class="token punctuation">(</span>countTime <span class="token operator">==</span><span class="token operator">=</span> 0<span class="token punctuation">)</span><span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
-    location.href <span class="token operator">=</span> <span class="token string">'你的首页连接'</span><span class="token punctuation">;</span>
-  <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
-  setTimeout<span class="token punctuation">((</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
-    count<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;, 1000);</span>
-<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;</span>
+  document.getElementById(<span class="string">&#x27;timeout&#x27;</span>).textContent = countTime;
+  countTime -= 1;
+  <span class="keyword">if</span>(countTime === 0)&#123;
+    location.href = <span class="string">&#x27;你的首页连接&#x27;</span>;
+  &#125;
+  setTimeout(() => &#123;
+    count();
+  &#125;, 1000);
+&#125;
 
-count<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token operator">&lt;</span>/script<span class="token operator">></span>
-</code></pre>
-<h3 id="3、生成站点并运行"><a href="#3、生成站点并运行" class="headerlink" title="3、生成站点并运行"></a>3、生成站点并运行</h3><pre class=" language-bash"><code class="language-bash">hexo clean
+count();
+</script></code></pre>
+
+<h3 id="3、生成站点并运行"><a href="#3、生成站点并运行" class="headerlink" title="3、生成站点并运行"></a>3、生成站点并运行</h3><pre class=" language-highlight bash"><code class="language-highlight bash">hexo clean
 hexo generate
-hexo serve
-</code></pre>
+hexo serve</code></pre>
 <h3 id="4、验证404页面"><a href="#4、验证404页面" class="headerlink" title="4、验证404页面"></a>4、验证404页面</h3><p>本地的话需要使用<code>http://localhost:4000/404.html</code> 进行测试，部署到github上的话可以随意修改链接验证。</p>
 
                 
@@ -743,10 +742,10 @@ hexo serve
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/medias/reward/18882.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="/medias/reward/weixin.png" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/medias/reward/18882.jpg" class="reward-img" alt="微信打赏二维码">
+                        <img src="/medias/reward/weixin.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -1063,7 +1062,7 @@ hexo serve
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">27.4k</span>&nbsp;字
+                class="white-color">28.2k</span>&nbsp;字
             
             
             

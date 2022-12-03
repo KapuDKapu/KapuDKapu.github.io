@@ -507,15 +507,14 @@
 <p>那么就让<a target="_blank" rel="noopener" href="https://github.com/rozbo/hexo-abbrlink" title="hexo-abbrlink">hexo-abbrlink</a>来帮你解决这两个问题吧。  </p>
 <span id="more"></span>
 <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>通过以下命令安装。</p>
-<pre class=" language-cmd"><code class="language-cmd">npm install hexo-abbrlink --save
-</code></pre>
+<pre class=" language-highlight cmd"><code class="language-highlight cmd">npm install hexo-abbrlink --save</code></pre>
+
 <h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>进入HEXO主配置文件<code>_config.yml</code>，找到<code>permalink</code>配置项，修改成如下样式：</p>
-<pre class=" language-ymal"><code class="language-ymal"># permalink: :year/:month/:day/:title/
+<pre class=" language-highlight ymal"><code class="language-highlight ymal"># permalink: :year/:month/:day/:title/
 permalink: p/:abbrlink.html
 abbrlink:
     alg: crc32
-    rep: hex
-</code></pre>
+    rep: hex</code></pre>
 <p>下面来解释下这几个配置项：</p>
 <ul>
 <li>自定义变量，如果不需要的话可以去掉，那样就是<code>permalink: :abbrlink.html</code>这样了；</li>
@@ -523,18 +522,18 @@ abbrlink:
 <li><code>rep</code>是进制，取值 <code>dec</code>或者<code>hex</code>；</li>
 </ul>
 <p><code>alg</code>和<code>rep</code>不同组合的话，生成的链接样式也是不一样的，如下所示，根据自己需要配置。</p>
-<pre class=" language-cmd"><code class="language-cmd">crc16 & hex
-https://post.zz173.com/posts/66c8.html
+<pre class=" language-highlight cmd"><code class="language-highlight cmd">crc16 & hex
+<span class="function">https://<span class="title">post.zz173.com</span>/<span class="title">posts</span>/66<span class="title">c8.html</span></span>
+<span class="function"></span>
+<span class="function"><span class="title">crc16</span> & <span class="title">dec</span></span>
+<span class="function"><span class="title">https</span>://<span class="title">post.zz173.com</span>/<span class="title">posts</span>/65535.<span class="title">html</span></span>
+<span class="function"></span>
+<span class="function"><span class="title">crc32</span> & <span class="title">hex</span></span>
+<span class="function"><span class="title">https</span>://<span class="title">post.zz173.com</span>/<span class="title">posts</span>/8<span class="title">ddf18fb.html</span></span>
+<span class="function"></span>
+<span class="function"><span class="title">crc32</span> & <span class="title">dec</span></span>
+<span class="function"><span class="title">https</span>://<span class="title">post.zz173.com</span>/<span class="title">posts</span>/1690090958.<span class="title">html</span></span></code></pre>
 
-crc16 & dec
-https://post.zz173.com/posts/65535.html
-
-crc32 & hex
-https://post.zz173.com/posts/8ddf18fb.html
-
-crc32 & dec
-https://post.zz173.com/posts/1690090958.html
-</code></pre>
 <p>到了这里已经配置完成了，剩下的就是hexo三连击了：<code>hexo clean</code>、<code>hexo g</code>、<code>hexo s</code>查看效果了。<br>还有一个变化就是你会发现<code>sourse/_posts</code>里面的每篇文章都多了一行<code>abbrlink: 3208472285</code>，这就是每篇文章的固定连接。这样不管以后我们怎么变更标题，使用多少中文，文章的url永远都是md文件里面的这个值了。  </p>
 
                 
@@ -735,10 +734,10 @@ https://post.zz173.com/posts/1690090958.html
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/medias/reward/18882.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="/medias/reward/weixin.png" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/medias/reward/18882.jpg" class="reward-img" alt="微信打赏二维码">
+                        <img src="/medias/reward/weixin.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -1066,7 +1065,7 @@ https://h1ghf1ve.me/
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">27.4k</span>&nbsp;字
+                class="white-color">28.2k</span>&nbsp;字
             
             
             

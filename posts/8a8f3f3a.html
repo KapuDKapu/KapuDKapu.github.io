@@ -472,7 +472,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    198
+                    278
                 </div>
                 
 
@@ -502,40 +502,38 @@
                 <p>python中解析身份证信息，或者校验身份证是否正确的话，parseIdCard是个非常不错的选择。</p>
 <span id="more"></span>
 
-<pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> parseIdCard <span class="token keyword">import</span> parseIdCard
-<span class="token keyword">from</span> pprint <span class="token keyword">import</span> pprint
-<span class="token comment" spellcheck="true">#错误身份证编码数字校验</span>
-result <span class="token operator">=</span> parseIdCard<span class="token punctuation">.</span>parseIdCard<span class="token punctuation">(</span><span class="token string">'610822199905125833'</span><span class="token punctuation">)</span>
-pprint<span class="token punctuation">(</span>result<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true">#&amp;#123;'code': 'Error', 'id': '61082219990512583', 'info': '未知地区编码'&amp;#125;</span>
+<pre class=" language-highlight python"><span class="keyword">from</span> parseIdCard <span class="keyword"><code class="language-highlight python"><span class="keyword">from</span> parseIdCard <span class="keyword">import</span> parseIdCard
+<span class="keyword">from</span> pprint <span class="keyword">import</span> pprint
+<span class="comment">#错误身份证编码数字校验</span>
+result = parseIdCard.parseIdCard(<span class="string">&#x27;610822199905125833&#x27;</span>)
+pprint(result)
+<span class="comment">#&#123;&#x27;code&#x27;: &#x27;Error&#x27;, &#x27;id&#x27;: &#x27;61082219990512583&#x27;, &#x27;info&#x27;: &#x27;未知地区编码&#x27;&#125;</span>
 
-<span class="token comment" spellcheck="true">#身份证编码数字校验</span>
-result <span class="token operator">=</span> parseIdCard<span class="token punctuation">.</span>parseIdCard<span class="token punctuation">(</span><span class="token string">'32058219850707749X'</span><span class="token punctuation">)</span>
-pprint<span class="token punctuation">(</span>result<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true"># &amp;#123;'age': 37,</span>
-<span class="token comment" spellcheck="true">#  'area': '江苏苏州市张家港市',</span>
-<span class="token comment" spellcheck="true">#  'code': 'OK',</span>
-<span class="token comment" spellcheck="true">#  'gender': '男',</span>
-<span class="token comment" spellcheck="true">#  'id': '32058219850707749',</span>
-<span class="token comment" spellcheck="true">#  'info': '身份证校验通过'&amp;#125;</span>
+<span class="comment">#身份证编码数字校验</span>
+result = parseIdCard.parseIdCard(<span class="string">&#x27;32058219850707749X&#x27;</span>)
+pprint(result)
+<span class="comment"># &#123;&#x27;age&#x27;: 37,</span>
+<span class="comment">#  &#x27;area&#x27;: &#x27;江苏苏州市张家港市&#x27;,</span>
+<span class="comment">#  &#x27;code&#x27;: &#x27;OK&#x27;,</span>
+<span class="comment">#  &#x27;gender&#x27;: &#x27;男&#x27;,</span>
+<span class="comment">#  &#x27;id&#x27;: &#x27;32058219850707749&#x27;,</span>
+<span class="comment">#  &#x27;info&#x27;: &#x27;身份证校验通过&#x27;&#125;</span>
 
-<span class="token comment" spellcheck="true"># 身份证编码列表校验</span>
-result <span class="token operator">=</span> parseIdCard<span class="token punctuation">.</span>parseIdCard<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'53252519840922826X'</span><span class="token punctuation">,</span><span class="token string">'411403193906146455'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-pprint<span class="token punctuation">(</span>result<span class="token punctuation">)</span>
-<span class="token comment" spellcheck="true"># [&amp;#123;'age': 38,</span>
-<span class="token comment" spellcheck="true">#   'area': '云南红河哈尼族彝族自治州石屏县',</span>
-<span class="token comment" spellcheck="true">#   'code': 'OK',</span>
-<span class="token comment" spellcheck="true">#   'gender': '女',</span>
-<span class="token comment" spellcheck="true">#   'id': '53252519840922826',</span>
-<span class="token comment" spellcheck="true">#   'info': '身份证校验通过'&amp;#125;,</span>
-<span class="token comment" spellcheck="true">#  &amp;#123;'age': 83,</span>
-<span class="token comment" spellcheck="true">#   'area': '河南商丘市睢阳区',</span>
-<span class="token comment" spellcheck="true">#   'code': 'OK',</span>
-<span class="token comment" spellcheck="true">#   'gender': '男',</span>
-<span class="token comment" spellcheck="true">#   'id': '41140319390614645',</span>
-<span class="token comment" spellcheck="true">#   'info': '身份证校验通过'&amp;#125;]</span>
-</code></pre>
-
+<span class="comment"># 身份证编码列表校验</span>
+result = parseIdCard.parseIdCard([<span class="string">&#x27;53252519840922826X&#x27;</span>,<span class="string">&#x27;411403193906146455&#x27;</span>])
+pprint(result)
+<span class="comment"># [&#123;&#x27;age&#x27;: 38,</span>
+<span class="comment">#   &#x27;area&#x27;: &#x27;云南红河哈尼族彝族自治州石屏县&#x27;,</span>
+<span class="comment">#   &#x27;code&#x27;: &#x27;OK&#x27;,</span>
+<span class="comment">#   &#x27;gender&#x27;: &#x27;女&#x27;,</span>
+<span class="comment">#   &#x27;id&#x27;: &#x27;53252519840922826&#x27;,</span>
+<span class="comment">#   &#x27;info&#x27;: &#x27;身份证校验通过&#x27;&#125;,</span>
+<span class="comment">#  &#123;&#x27;age&#x27;: 83,</span>
+<span class="comment">#   &#x27;area&#x27;: &#x27;河南商丘市睢阳区&#x27;,</span>
+<span class="comment">#   &#x27;code&#x27;: &#x27;OK&#x27;,</span>
+<span class="comment">#   &#x27;gender&#x27;: &#x27;男&#x27;,</span>
+<span class="comment">#   &#x27;id&#x27;: &#x27;41140319390614645&#x27;,</span>
+<span class="comment">#   &#x27;info&#x27;: &#x27;身份证校验通过&#x27;&#125;]</span></code></pre>
                 
             </div>
             <hr/>
@@ -734,10 +732,10 @@ pprint<span class="token punctuation">(</span>result<span class="token punctuati
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/medias/reward/18882.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="/medias/reward/weixin.png" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/medias/reward/18882.jpg" class="reward-img" alt="微信打赏二维码">
+                        <img src="/medias/reward/weixin.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -1064,7 +1062,7 @@ pprint<span class="token punctuation">(</span>result<span class="token punctuati
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">27.4k</span>&nbsp;字
+                class="white-color">28.2k</span>&nbsp;字
             
             
             

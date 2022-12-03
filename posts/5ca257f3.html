@@ -497,9 +497,9 @@
             <div id="articleContent">
                 <h2 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h2><p>当响应数据或响应页面没有设置编码时，jmeter会按照jmeter.properties文件中，sampleresult.default.encoding设置默认ISO-8859-1格式解析，解析中文肯定出错。</p>
 <span id="more"></span>
-<pre><code># The encoding to be used if none is provided (default ISO-8859-1)  
-sampleresult.default.encoding=ISO-8859-1  
-</code></pre>
+<pre class=" language-highlight plaintext"><code class="language-highlight plaintext"># The encoding to be used if none is provided (default ISO-8859-1)  
+sampleresult.default.encoding=ISO-8859-1</code></pre>
+
 <h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><h3 id="方案一：永久修改"><a href="#方案一：永久修改" class="headerlink" title="方案一：永久修改"></a>方案一：永久修改</h3><p>直接修改sampleresult.default.encoding=UTF-8。  </p>
 <h3 id="方案二：动态修改"><a href="#方案二：动态修改" class="headerlink" title="方案二：动态修改"></a>方案二：动态修改</h3><p>1：指定请求节点下，新建后置控制器<code>BeanShell PostProcessor</code>。<br>2：其脚本框中输入：<code>prev.setDataEncoding(&quot;UTF-8&quot;)</code>。<br>3：保存。</p>
 <p><img src="/images/pasted-13.png"></p>
@@ -698,10 +698,10 @@ sampleresult.default.encoding=ISO-8859-1
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/medias/reward/18882.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="/medias/reward/weixin.png" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/medias/reward/18882.jpg" class="reward-img" alt="微信打赏二维码">
+                        <img src="/medias/reward/weixin.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -1020,7 +1020,7 @@ sampleresult.default.encoding=ISO-8859-1
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">27.4k</span>&nbsp;字
+                class="white-color">28.2k</span>&nbsp;字
             
             
             

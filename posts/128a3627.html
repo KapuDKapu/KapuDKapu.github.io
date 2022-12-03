@@ -476,7 +476,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    520
+                    532
                 </div>
                 
 
@@ -509,13 +509,13 @@
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="安装python"><a href="#安装python" class="headerlink" title="安装python"></a>安装python</h3><p>首先要先安装python，这个自己下载安装。</p>
 <h3 id="安装-bat"><a href="#安装-bat" class="headerlink" title="安装.bat"></a>安装.bat</h3><p>运行目录下<em>安装.bat</em>文件，安装必要的python扩展。  </p>
 <h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="数据库连接"><a href="#数据库连接" class="headerlink" title="数据库连接"></a>数据库连接</h3><p>修改app文件夹下的*<strong>init</strong>.py*文件内容数据库连裤串。这里使用的是mysql数据库，本地的话随便安装个php集成开发环境就带着数据库，服务器的话安装lampp或者其他的都行。  </p>
-<pre class=" language-python"><code class="language-python">app<span class="token punctuation">.</span>config<span class="token punctuation">[</span><span class="token string">"SQLALCHEMY_DATABASE_URI"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"mysql+mysqlconnector://数据库用户名:数据库密码@数据库IP:3306/数据库名称"</span>
-</code></pre>
+<pre class=" language-highlight python">app.config[<span class="string">&quot;SQLALCHEMY_DATABASE_URI&quot;</span>] = <span class="string"><code class="language-highlight python">app.config[<span class="string">&quot;SQLALCHEMY_DATABASE_URI&quot;</span>] = <span class="string">"mysql+mysqlconnector://数据库用户名:数据库密码@数据库IP:3306/数据库名称"</span></code></pre>
+
 <h3 id="初始化数据库"><a href="#初始化数据库" class="headerlink" title="初始化数据库"></a>初始化数据库</h3><p>执行主目录下的<em>minimovie.sql</em>，初始化数据库表。</p>
 <h3 id="创建admin用户"><a href="#创建admin用户" class="headerlink" title="创建admin用户"></a>创建admin用户</h3><p>使用*/test/test.py*生产加密密码，用户名自己写，生成后将密码和用户自行加到数据库的admin表内，即可登录后台管理系统。前台用户可以自行注册即可。</p>
-<pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> werkzeug<span class="token punctuation">.</span>security <span class="token keyword">import</span> generate_password_hash
-<span class="token keyword">print</span><span class="token punctuation">(</span>generate_password_hash<span class="token punctuation">(</span><span class="token string">'要使用的密码'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-</code></pre>
+<pre class=" language-highlight python"><span class="keyword">from</span> werkzeug.security <span class="keyword"><code class="language-highlight python"><span class="keyword">from</span> werkzeug.security <span class="keyword">import</span> generate_password_hash
+<span class="built_in">print</span>(generate_password_hash(<span class="string">&#x27;要使用的密码&#x27;</span>))</code></pre>
+
 <h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><p>前面的步骤做完了这套程序基本能正常运行了，可以通过双击<em>run.bat</em>文件运行网站。</p>
 <h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><p>下面欣赏一些页面截图：  </p>
 <p><img src="https://pic.imgdb.cn/item/60c0aa3a844ef46bb2323ace.jpg" alt="首页"><br><img src="https://pic.imgdb.cn/item/60c0aa69844ef46bb234c9fa.jpg" alt="搜索"><br><img src="https://pic.imgdb.cn/item/60c0aa94844ef46bb2371b89.jpg" alt="会员中心"><br><img src="https://pic.imgdb.cn/item/60c0aac4844ef46bb239d50b.jpg" alt="修改密码"><br><img src="https://pic.imgdb.cn/item/60c0ab17844ef46bb23e917b.jpg" alt="会员注册"><br><img src="https://pic.imgdb.cn/item/60c0ab4f844ef46bb241d3fc.jpg" alt="评论记录"><br><img src="https://pic.imgdb.cn/item/60c0ab72844ef46bb243e79d.jpg" alt="收藏记录"><br><img src="https://pic.imgdb.cn/item/60c0ab95844ef46bb245fb44.jpg" alt="登录日志"><br><img src="https://pic.imgdb.cn/item/60c0abb9844ef46bb24807a8.jpg" alt="后台系统"></p>
@@ -724,10 +724,10 @@
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/medias/reward/18882.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="/medias/reward/weixin.png" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/medias/reward/18882.jpg" class="reward-img" alt="微信打赏二维码">
+                        <img src="/medias/reward/weixin.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -1043,7 +1043,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">27.4k</span>&nbsp;字
+                class="white-color">28.2k</span>&nbsp;字
             
             
             

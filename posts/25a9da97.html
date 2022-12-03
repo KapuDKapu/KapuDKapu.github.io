@@ -480,7 +480,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    267
+                    254
                 </div>
                 
 
@@ -510,20 +510,18 @@
                 <p>默认的windows快捷键都会有一个小箭头，有些人可能不care，不过有些强迫症朋友可能就受不了，那么怎么才能简单快速的把他们去掉呢？</p>
 <span id="more"></span>
 <p><img src="/images/pasted-52.png" alt="bat"><br>将下面代码保存为【名字.bat】，鼠标右键，以管理员身份运行即可。原理很简单，只是添加注册表项然后重启资源管理器而已。</p>
-<pre><code>reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; /v 29 /d &quot;%systemroot%\system32\imageres.dll,197″ /t reg_sz /f
+<pre class=" language-highlight plaintext"><code class="language-highlight plaintext">reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons" /v 29 /d "%systemroot%\system32\imageres.dll,197″ /t reg_sz /f
 taskkill /f /im explorer.exe
-attrib -s -r -h &quot;%userprofile%\AppData\Local\iconcache.db&quot;
-del &quot;%userprofile%\AppData\Local\iconcache.db&quot; /f /q
+attrib -s -r -h "%userprofile%\AppData\Local\iconcache.db"
+del "%userprofile%\AppData\Local\iconcache.db" /f /q
 start explorer
-pause
-</code></pre>
+pause</code></pre>
 <p>想要恢复箭头也是同样原理，将下面命令保存为bat文件，管理员身份运行删除我们之前添加的注册表项即可。</p>
-<pre><code>reg delete &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; /v 29 /f
+<pre class=" language-highlight plaintext"><code class="language-highlight plaintext">reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons" /v 29 /f
 taskkill /f /im explorer.exe
-attrib -s -r -h &quot;%userprofile%\AppData\Local\iconcache.db&quot;
-del &quot;%userprofile%\AppData\Local\iconcache.db&quot; /f /q
-start explorer
-</code></pre>
+attrib -s -r -h "%userprofile%\AppData\Local\iconcache.db"
+del "%userprofile%\AppData\Local\iconcache.db" /f /q
+start explorer</code></pre>
 <p>代码简单，不用使用软件，也不用担心中毒，系统层面完成。</p>
 
                 
@@ -732,10 +730,10 @@ start explorer
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/medias/reward/18882.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="/medias/reward/weixin.png" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/medias/reward/18882.jpg" class="reward-img" alt="微信打赏二维码">
+                        <img src="/medias/reward/weixin.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -1054,7 +1052,7 @@ start explorer
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">27.4k</span>&nbsp;字
+                class="white-color">28.2k</span>&nbsp;字
             
             
             
