@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 
@@ -468,7 +468,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    130
+                    131
                 </div>
                 
 
@@ -485,6 +485,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -497,8 +500,8 @@
             <div id="articleContent">
                 <h2 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h2><p>当响应数据或响应页面没有设置编码时，jmeter会按照jmeter.properties文件中，sampleresult.default.encoding设置默认ISO-8859-1格式解析，解析中文肯定出错。</p>
 <span id="more"></span>
-<pre class=" language-highlight plaintext"><code class="language-highlight plaintext"># The encoding to be used if none is provided (default ISO-8859-1)  
-sampleresult.default.encoding=ISO-8859-1</code></pre>
+<pre class="line-numbers language-none"><code class="language-none"># The encoding to be used if none is provided (default ISO-8859-1)  
+sampleresult.default.encoding&#x3D;ISO-8859-1  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><h3 id="方案一：永久修改"><a href="#方案一：永久修改" class="headerlink" title="方案一：永久修改"></a>方案一：永久修改</h3><p>直接修改sampleresult.default.encoding=UTF-8。  </p>
 <h3 id="方案二：动态修改"><a href="#方案二：动态修改" class="headerlink" title="方案二：动态修改"></a>方案二：动态修改</h3><p>1：指定请求节点下，新建后置控制器<code>BeanShell PostProcessor</code>。<br>2：其脚本框中输入：<code>prev.setDataEncoding(&quot;UTF-8&quot;)</code>。<br>3：保存。</p>

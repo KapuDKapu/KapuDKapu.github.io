@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 
@@ -476,7 +476,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    532
+                    520
                 </div>
                 
 
@@ -492,6 +492,9 @@
         </div>
         <hr class="clearfix">
 
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
         
 
         
@@ -509,12 +512,12 @@
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="安装python"><a href="#安装python" class="headerlink" title="安装python"></a>安装python</h3><p>首先要先安装python，这个自己下载安装。</p>
 <h3 id="安装-bat"><a href="#安装-bat" class="headerlink" title="安装.bat"></a>安装.bat</h3><p>运行目录下<em>安装.bat</em>文件，安装必要的python扩展。  </p>
 <h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="数据库连接"><a href="#数据库连接" class="headerlink" title="数据库连接"></a>数据库连接</h3><p>修改app文件夹下的*<strong>init</strong>.py*文件内容数据库连裤串。这里使用的是mysql数据库，本地的话随便安装个php集成开发环境就带着数据库，服务器的话安装lampp或者其他的都行。  </p>
-<pre class=" language-highlight python">app.config[<span class="string">&quot;SQLALCHEMY_DATABASE_URI&quot;</span>] = <span class="string"><code class="language-highlight python">app.config[<span class="string">&quot;SQLALCHEMY_DATABASE_URI&quot;</span>] = <span class="string">"mysql+mysqlconnector://数据库用户名:数据库密码@数据库IP:3306/数据库名称"</span></code></pre>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">app<span class="token punctuation">.</span>config<span class="token punctuation">[</span><span class="token string">"SQLALCHEMY_DATABASE_URI"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"mysql+mysqlconnector://数据库用户名:数据库密码@数据库IP:3306/数据库名称"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h3 id="初始化数据库"><a href="#初始化数据库" class="headerlink" title="初始化数据库"></a>初始化数据库</h3><p>执行主目录下的<em>minimovie.sql</em>，初始化数据库表。</p>
 <h3 id="创建admin用户"><a href="#创建admin用户" class="headerlink" title="创建admin用户"></a>创建admin用户</h3><p>使用*/test/test.py*生产加密密码，用户名自己写，生成后将密码和用户自行加到数据库的admin表内，即可登录后台管理系统。前台用户可以自行注册即可。</p>
-<pre class=" language-highlight python"><span class="keyword">from</span> werkzeug.security <span class="keyword"><code class="language-highlight python"><span class="keyword">from</span> werkzeug.security <span class="keyword">import</span> generate_password_hash
-<span class="built_in">print</span>(generate_password_hash(<span class="string">&#x27;要使用的密码&#x27;</span>))</code></pre>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> werkzeug<span class="token punctuation">.</span>security <span class="token keyword">import</span> generate_password_hash
+<span class="token keyword">print</span><span class="token punctuation">(</span>generate_password_hash<span class="token punctuation">(</span><span class="token string">'要使用的密码'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><p>前面的步骤做完了这套程序基本能正常运行了，可以通过双击<em>run.bat</em>文件运行网站。</p>
 <h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><p>下面欣赏一些页面截图：  </p>

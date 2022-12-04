@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 
@@ -468,7 +468,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    124
+                    131
                 </div>
                 
 
@@ -485,6 +485,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -498,13 +501,13 @@
                 <h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>django web框架中,使用vue的时候,会遇到语法冲突，因为vue使用<code>&#123;&#123;&#125;&#125;`    ,而django也使用 `&#123;&#123;&#125;&#125;</code> 。</p>
 <span id="more"></span>
 <h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>在django1.5以后,加入了下面的标签，在这个标签里的内容不会被django模板引擎渲染。</p>
-<pre class=" language-highlight plaintext"><code class="language-highlight plaintext">&#123;% verbatim myblock %&#125; &#123;% endverbatim myblock %&#125;</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">&#123;% verbatim myblock %&#125; &#123;% endverbatim myblock %&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>我们可以把带有<code>&#123;&#123; &#125;&#125; </code>的Vue代码放在 <code>&#123;% verbatim myblock %&#125;</code>标签中间，例如下面：</p>
-<pre class=" language-highlight plaintext"><code class="language-highlight plaintext"><div>
+<pre class="line-numbers language-none"><code class="language-none">&lt;div&gt;
   &#123;% verbatim myblock %&#125;
     &#123;&#123; name &#125;&#125;
   &#123;% endverbatim myblock %&#125;
-</div></code></pre>
+&lt;&#x2F;div&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>

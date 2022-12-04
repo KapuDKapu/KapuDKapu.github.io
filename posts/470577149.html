@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 
@@ -472,7 +472,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    676
+                    663
                 </div>
                 
 
@@ -488,6 +488,9 @@
         </div>
         <hr class="clearfix">
 
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
         
 
         
@@ -507,41 +510,41 @@
 <h2 id="安装Node-js，Git，Hexo以及建站"><a href="#安装Node-js，Git，Hexo以及建站" class="headerlink" title="安装Node.js，Git，Hexo以及建站"></a>安装Node.js，Git，Hexo以及建站</h2><p>按照<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">官网文档</a> 可以直接安装上这些软件的安装及网站的创建。  </p>
 <h2 id="Git配置"><a href="#Git配置" class="headerlink" title="Git配置"></a>Git配置</h2><h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><p>新建一个仓库名称必须为<code>github的用户名.github.io</code> ,比如，如果你的 github 用户名称是<code>hexo</code>，那么就新建一个名为<code>hexo.github.io</code> 的仓库，博客搭建完成以后你的访问地址就是 <code>https://hexo.github.io</code> 。<br>PS：注册的邮箱一定要验证，否则不会成功。  </p>
 <h3 id="配置-SSH-key"><a href="#配置-SSH-key" class="headerlink" title="配置 SSH key"></a>配置 SSH key</h3><p>使用Git bash执行如下命令SSH key。然后连续3次回车，最终会生成一个文件在用户目录下，通过返回信息的方格内就可以找到详细的文件地址，找到.ssh\id_rsa.pub文件。</p>
-<pre class=" language-highlight cmd"><code class="language-highlight cmd">ssh-keygen -t rsa -C "邮件地址"</code></pre>
+<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">ssh-keygen -t rsa -C &quot;邮件地址&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>打开自己的github主页，进入个人设置 -&gt; SSH and GPG keys，通过点击<code>New SSH key</code>新增一个<code>SSH key</code>，用记事本或者notepad++打开id_rsa.pub文件，复制里面的全部内容粘贴到key那里，title随便填，然后保存。  </p>
 <p><img src="http://www.kapukapu.top/wp-content/uploads/2021/02/1613306561.jpg" alt="image"></p>
 <p>然后使用Git bash执行下面命令测试是否成功。如果提示<code>Are you sure you want to continue connecting (yes/no)?</code>，输入yes，看到<code>Hi liuxianan! You’ve successfully authenticated, but GitHub does not provide shell access.</code>的话就说明成功了。</p>
-<pre class=" language-highlight bash">$ ssh -T git@github.com <span class="comment"><code class="language-highlight bash">$ ssh -T git@github.com <span class="comment"># 注意邮箱地址不用改</span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">ssh</span> -T git@github.com <span class="token comment"># 注意邮箱地址不用改</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>使用Git bash执行下面命令</p>
-<pre class=" language-highlight bash">$ git config --global user.name <span class="string"><code class="language-highlight bash">$ git config --global user.name <span class="string">"liuxianan"</span>// 你的github用户名，非昵称
-$ git config --global user.email  <span class="string">"xxx@qq.com"</span>// 填写你的github注册邮箱</code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> config --global user.name <span class="token string">"liuxianan"</span>// 你的github用户名，非昵称
+$ <span class="token function">git</span> config --global user.email  <span class="token string">"xxx@qq.com"</span>// 填写你的github注册邮箱<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <h3 id="配置-config-yml"><a href="#配置-config-yml" class="headerlink" title="配置 _config.yml"></a>配置 _config.yml</h3><p>1、关于<code>_config.yml</code>文件url部分的配置  </p>
-<pre class=" language-highlight yaml"><span class="attr">url:</span> <span class="string"><code class="language-highlight yaml"><span class="attr">url:</span> <span class="string">https://你的github用户名.github.io</span>
-<span class="attr">root:</span> <span class="string">/</span></code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">url</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//你的github用户名.github.io
+<span class="token key atrule">root</span><span class="token punctuation">:</span> /<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>2、deploy属性</p>
-<pre class=" language-highlight yaml"><span class="comment"><code class="language-highlight yaml"><span class="comment"># 注意 key: value 冒号后面需要有一个空格</span>
-<span class="attr">deploy:</span>
-  <span class="attr">type:</span> <span class="string">git</span>
-  <span class="attr">repo:</span> <span class="string">https://github.com/你的github用户名/你的github用户名.github.io.git</span>
-  <span class="attr">branch:</span> <span class="string">master</span></code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment"># 注意 key: value 冒号后面需要有一个空格</span>
+<span class="token key atrule">deploy</span><span class="token punctuation">:</span>
+  <span class="token key atrule">type</span><span class="token punctuation">:</span> git
+  <span class="token key atrule">repo</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//github.com/你的github用户名/你的github用户名.github.io.git
+  <span class="token key atrule">branch</span><span class="token punctuation">:</span> master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 <h3 id="上传到-GitHub"><a href="#上传到-GitHub" class="headerlink" title="上传到 GitHub"></a>上传到 GitHub</h3><p>首先需要安装一个插件。</p>
-<pre class=" language-highlight bash"><code class="language-highlight bash">$ npm install hexo-deployer-git</code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>然后生成静态文件并上传</p>
-<pre class=" language-highlight bash">$ hexo generate <span class="comment"><code class="language-highlight bash">$ hexo generate <span class="comment">#生成静态页面至public目录</span>
-$ hexo deploy</code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate <span class="token comment">#生成静态页面至public目录</span>
+$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>或者使用简单命令</p>
-<pre class=" language-highlight bash"><code class="language-highlight bash">$ hexo g
-$ hexo d</code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo g
+$ hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p>如果出现一些乱七八糟的问题，可以在generate之前执行下clear命令</p>
-<pre class=" language-highlight bash">$ hexo clear  <span class="comment"><code class="language-highlight bash">$ hexo clear  <span class="comment"># 或者$ hexo c</span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo <span class="token function">clear</span>  <span class="token comment"># 或者$ hexo c</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>部署的话需要填写GitHub的用户名和密码，正常填写即可。<br><img src="http://www.kapukapu.top/wp-content/uploads/2021/02/1613307372.jpg" alt="image"></p>
 <p>部署完成后就可以通过<a target="_blank" rel="noopener" href="https://github.com/%E4%BD%A0%E7%9A%84github%E7%94%A8%E6%88%B7%E5%90%8D.github.io">https://github.com/你的github用户名.github.io</a> 链接访问自己的站点了。</p>
 

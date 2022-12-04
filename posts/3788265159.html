@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 
@@ -489,6 +489,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -504,18 +507,18 @@
 <h2 id="2、安装"><a href="#2、安装" class="headerlink" title="2、安装"></a>2、安装</h2><p>安装Jupyter Notebook前需要先安装python，因为它依赖用python。<br>官网给出两种安装方式：</p>
 <ul>
 <li>1、Anaconda<br>安装最新的Anaconda即可，因为Anaconda集成了Python，Jupyter Notebook以及其他常用的科学计算和数据科学包。</li>
-<li>2、pip<br>需要先安装python和pip，然后使用pip命令进行安装，安装命令如下    <pre class=" language-highlight python"><code class="language-highlight python">pip install --upgrade pip
-pip install jupyter</code></pre></li>
+<li>2、pip<br>需要先安装python和pip，然后使用pip命令进行安装，安装命令如下    <pre class="line-numbers language-python" data-language="python"><code class="language-python">pip install <span class="token operator">-</span><span class="token operator">-</span>upgrade pip
+pip install jupyter<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
 </ul>
 <p>这里可以使用<a href="">国内源</a>来加速安装  </p>
 <h2 id="3、运行和关闭"><a href="#3、运行和关闭" class="headerlink" title="3、运行和关闭"></a>3、运行和关闭</h2><h3 id="3-1、运行"><a href="#3-1、运行" class="headerlink" title="3.1、运行"></a>3.1、运行</h3><p>运行的话只需要在cmd窗口执行如下命令即可  </p>
-<pre class=" language-highlight shell"><code class="language-highlight shell">jupyter notebook</code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">jupyter notebook<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>出现下面信息后说明启动成功了  </p>
 <p><img src="https://img.imgdb.cn/item/6030dc195f4313ce25871e32.jpg"><br>默认的端口是8888，如这个端口被占用了或者想使用别的端口启动的话，可以指定端口  </p>
-<pre class=" language-highlight shell"><code class="language-highlight shell">jupyter notebook --port 9999</code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">jupyter notebook --port <span class="token number">9999</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>默认运行成功后会自动打开默认浏览器运行url，如果不想立即启动默认浏览器，可以运行如下命令</p>
-<pre class=" language-highlight shell"><code class="language-highlight shell">jupyter notebook --no-browser</code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">jupyter notebook --no-browser<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>以后想要运行的话，直接在浏览器URL地址栏输入cmd窗口下面的URLs地址即可<br><img src="https://img.imgdb.cn/item/6030dc625f4313ce25874747.jpg"></p>
 <h3 id="3-2、关闭"><a href="#3-2、关闭" class="headerlink" title="3.2、关闭"></a>3.2、关闭</h3><p>windows的话，关闭cmd窗口或者在cmd窗口使用快捷键’ctrl+c’停止运行<br>linux的话，关闭运行的端口即可  </p>

@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 
@@ -472,14 +472,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    453
+                    478
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -488,6 +488,9 @@
         </div>
         <hr class="clearfix">
 
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
         
 
         
@@ -507,14 +510,14 @@
 <p>那么就让<a target="_blank" rel="noopener" href="https://github.com/rozbo/hexo-abbrlink" title="hexo-abbrlink">hexo-abbrlink</a>来帮你解决这两个问题吧。  </p>
 <span id="more"></span>
 <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>通过以下命令安装。</p>
-<pre class=" language-highlight cmd"><code class="language-highlight cmd">npm install hexo-abbrlink --save</code></pre>
+<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">npm install hexo-abbrlink --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>进入HEXO主配置文件<code>_config.yml</code>，找到<code>permalink</code>配置项，修改成如下样式：</p>
-<pre class=" language-highlight ymal"><code class="language-highlight ymal"># permalink: :year/:month/:day/:title/
-permalink: p/:abbrlink.html
+<pre class="line-numbers language-ymal" data-language="ymal"><code class="language-ymal"># permalink: :year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;
+permalink: p&#x2F;:abbrlink.html
 abbrlink:
     alg: crc32
-    rep: hex</code></pre>
+    rep: hex<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>下面来解释下这几个配置项：</p>
 <ul>
 <li>自定义变量，如果不需要的话可以去掉，那样就是<code>permalink: :abbrlink.html</code>这样了；</li>
@@ -522,17 +525,17 @@ abbrlink:
 <li><code>rep</code>是进制，取值 <code>dec</code>或者<code>hex</code>；</li>
 </ul>
 <p><code>alg</code>和<code>rep</code>不同组合的话，生成的链接样式也是不一样的，如下所示，根据自己需要配置。</p>
-<pre class=" language-highlight cmd"><code class="language-highlight cmd">crc16 & hex
-<span class="function">https://<span class="title">post.zz173.com</span>/<span class="title">posts</span>/66<span class="title">c8.html</span></span>
-<span class="function"></span>
-<span class="function"><span class="title">crc16</span> & <span class="title">dec</span></span>
-<span class="function"><span class="title">https</span>://<span class="title">post.zz173.com</span>/<span class="title">posts</span>/65535.<span class="title">html</span></span>
-<span class="function"></span>
-<span class="function"><span class="title">crc32</span> & <span class="title">hex</span></span>
-<span class="function"><span class="title">https</span>://<span class="title">post.zz173.com</span>/<span class="title">posts</span>/8<span class="title">ddf18fb.html</span></span>
-<span class="function"></span>
-<span class="function"><span class="title">crc32</span> & <span class="title">dec</span></span>
-<span class="function"><span class="title">https</span>://<span class="title">post.zz173.com</span>/<span class="title">posts</span>/1690090958.<span class="title">html</span></span></code></pre>
+<pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">crc16 &amp; hex
+https:&#x2F;&#x2F;post.zz173.com&#x2F;posts&#x2F;66c8.html
+
+crc16 &amp; dec
+https:&#x2F;&#x2F;post.zz173.com&#x2F;posts&#x2F;65535.html
+
+crc32 &amp; hex
+https:&#x2F;&#x2F;post.zz173.com&#x2F;posts&#x2F;8ddf18fb.html
+
+crc32 &amp; dec
+https:&#x2F;&#x2F;post.zz173.com&#x2F;posts&#x2F;1690090958.html<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>到了这里已经配置完成了，剩下的就是hexo三连击了：<code>hexo clean</code>、<code>hexo g</code>、<code>hexo s</code>查看效果了。<br>还有一个变化就是你会发现<code>sourse/_posts</code>里面的每篇文章都多了一行<code>abbrlink: 3208472285</code>，这就是每篇文章的固定连接。这样不管以后我们怎么变更标题，使用多少中文，文章的url永远都是md文件里面的这个值了。  </p>
 

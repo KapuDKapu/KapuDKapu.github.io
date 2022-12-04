@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 
@@ -480,7 +480,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    254
+                    281
                 </div>
                 
 
@@ -497,6 +497,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -510,18 +513,18 @@
                 <p>默认的windows快捷键都会有一个小箭头，有些人可能不care，不过有些强迫症朋友可能就受不了，那么怎么才能简单快速的把他们去掉呢？</p>
 <span id="more"></span>
 <p><img src="/images/pasted-52.png" alt="bat"><br>将下面代码保存为【名字.bat】，鼠标右键，以管理员身份运行即可。原理很简单，只是添加注册表项然后重启资源管理器而已。</p>
-<pre class=" language-highlight plaintext"><code class="language-highlight plaintext">reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons" /v 29 /d "%systemroot%\system32\imageres.dll,197″ /t reg_sz /f
-taskkill /f /im explorer.exe
-attrib -s -r -h "%userprofile%\AppData\Local\iconcache.db"
-del "%userprofile%\AppData\Local\iconcache.db" /f /q
+<pre class="line-numbers language-none"><code class="language-none">reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; &#x2F;v 29 &#x2F;d &quot;%systemroot%\system32\imageres.dll,197″ &#x2F;t reg_sz &#x2F;f
+taskkill &#x2F;f &#x2F;im explorer.exe
+attrib -s -r -h &quot;%userprofile%\AppData\Local\iconcache.db&quot;
+del &quot;%userprofile%\AppData\Local\iconcache.db&quot; &#x2F;f &#x2F;q
 start explorer
-pause</code></pre>
+pause<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>想要恢复箭头也是同样原理，将下面命令保存为bat文件，管理员身份运行删除我们之前添加的注册表项即可。</p>
-<pre class=" language-highlight plaintext"><code class="language-highlight plaintext">reg delete "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons" /v 29 /f
-taskkill /f /im explorer.exe
-attrib -s -r -h "%userprofile%\AppData\Local\iconcache.db"
-del "%userprofile%\AppData\Local\iconcache.db" /f /q
-start explorer</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">reg delete &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; &#x2F;v 29 &#x2F;f
+taskkill &#x2F;f &#x2F;im explorer.exe
+attrib -s -r -h &quot;%userprofile%\AppData\Local\iconcache.db&quot;
+del &quot;%userprofile%\AppData\Local\iconcache.db&quot; &#x2F;f &#x2F;q
+start explorer<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>代码简单，不用使用软件，也不用担心中毒，系统层面完成。</p>
 
                 

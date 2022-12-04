@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 
@@ -489,6 +489,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -502,7 +505,7 @@
                 <p>说到局域网共享文件首先想到的是什么？飞秋？共享文件夹？<br>如果你本地有python环境的话，只需要一行代码，轻松实现局域网文件共享服务器。</p>
 <span id="more"></span>
 <p>具体怎么操作呢？<br>1、首先有安装python。<br>2、创建一个用于分享的文件夹。<br>3、在此文件夹打开命令行窗口，运行下面命令。9090是端口，可以随意设置。  </p>
-<pre class=" language-highlight plaintext"><code class="language-highlight plaintext">python -m http.server 9090</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">python -m http.server 9090<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>4、ipconfig到自己的ip</p>
 <p><img src="/images/pasted-53.png" alt="一行代码创建文件共享服务器"><br>5、将http://你的ip地址:9090/ ，例如<a target="_blank" rel="noopener" href="http://192.168.1.1:9090/">http://192.168.1.1:9090/</a> 分享给你的小伙伴即可。<br>通过浏览器访问即可看到文件夹内所有的文件，效果如下，点击即可下载，同时命令行还会输出访问者ip、访问的路径和下载的文件。</p>
 <p><img src="/images/pasted-54.png" alt="一行代码创建文件共享服务器"></p>

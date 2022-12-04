@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 
@@ -472,7 +472,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    157
+                    153
                 </div>
                 
 
@@ -489,6 +489,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -502,15 +505,15 @@
                 <p>最近遇到问题需要计算两点之间的直线距离，于是写了下面一个方法，有需要的可以直接拿来用。</p>
 <span id="more"></span>
 
-<pre class=" language-highlight python"><span class="keyword">def</span> <span class="title function_">getdistance</span>(<span class="params"><code class="language-highlight python"><span class="keyword">def</span> <span class="title function_">getdistance</span>(<span class="params">lng1,lat1,lng2,lat2</span>):
-    lng1, lat1, lng2, lat2 = <span class="built_in">map</span>(radians, [lng1, lat1, lng2, lat2])
-    dlon=lng2-lng1
-    dlat=lat2-lat1
-    a=sin(dlat/<span class="number">2</span>)**<span class="number">2</span> + cos(lat1) * cos(lat2) * sin(dlon/<span class="number">2</span>)**<span class="number">2</span> 
-    dis=<span class="number">2</span>*asin(sqrt(a))*<span class="number">6371</span>*<span class="number">1000</span>
-    remain_amount = <span class="string">&#x27;%.2f&#x27;</span> % (dis)
-    remain_amount_format =re.sub(<span class="string">r"(\d)(?=(\d\d\d)+(?!\d))"</span>, <span class="string">r"\1,"</span>, remain_amount)
-    <span class="keyword">return</span> remain_amount_format</code></pre>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">getdistance</span><span class="token punctuation">(</span>lng1<span class="token punctuation">,</span>lat1<span class="token punctuation">,</span>lng2<span class="token punctuation">,</span>lat2<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    lng1<span class="token punctuation">,</span> lat1<span class="token punctuation">,</span> lng2<span class="token punctuation">,</span> lat2 <span class="token operator">=</span> <span class="token builtin">map</span><span class="token punctuation">(</span>radians<span class="token punctuation">,</span> <span class="token punctuation">[</span>lng1<span class="token punctuation">,</span> lat1<span class="token punctuation">,</span> lng2<span class="token punctuation">,</span> lat2<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    dlon<span class="token operator">=</span>lng2<span class="token operator">-</span>lng1
+    dlat<span class="token operator">=</span>lat2<span class="token operator">-</span>lat1
+    a<span class="token operator">=</span>sin<span class="token punctuation">(</span>dlat<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token operator">**</span><span class="token number">2</span> <span class="token operator">+</span> cos<span class="token punctuation">(</span>lat1<span class="token punctuation">)</span> <span class="token operator">*</span> cos<span class="token punctuation">(</span>lat2<span class="token punctuation">)</span> <span class="token operator">*</span> sin<span class="token punctuation">(</span>dlon<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token operator">**</span><span class="token number">2</span> 
+    dis<span class="token operator">=</span><span class="token number">2</span><span class="token operator">*</span>asin<span class="token punctuation">(</span>sqrt<span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">6371</span><span class="token operator">*</span><span class="token number">1000</span>
+    remain_amount <span class="token operator">=</span> <span class="token string">'%.2f'</span> <span class="token operator">%</span> <span class="token punctuation">(</span>dis<span class="token punctuation">)</span>
+    remain_amount_format <span class="token operator">=</span>re<span class="token punctuation">.</span>sub<span class="token punctuation">(</span><span class="token string">r"(\d)(?=(\d\d\d)+(?!\d))"</span><span class="token punctuation">,</span> <span class="token string">r"\1,"</span><span class="token punctuation">,</span> remain_amount<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> remain_amount_format<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>参数介绍：<br>入参：<br>lng1：坐标1的经度<br>lat1：坐标1的纬度<br>lng2：坐标2的经度<br>lat2：坐标2的纬度  </p>
 <p>出参：<br>remain_amount_format：函数返回的两个坐标之间的直线距离，单位为米</p>

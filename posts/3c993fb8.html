@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 
@@ -468,7 +468,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    340
+                    362
                 </div>
                 
 
@@ -485,6 +485,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -499,27 +502,27 @@
 <span id="more"></span>
 <h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>出现的问题根本原因是：当我们在开发django应用时如果设置了 DEBUG = True，那么django便会自动帮我们对静态文件进行路由；但是当我们设置DEBUG = False后，这一功能便没有了，此时静态文件就会出现加载失败的情况，想要让静态文件正常显示，我们就需要配置静态文件服务了。<a target="_blank" rel="noopener" href="https://docs.djangoproject.com/en/2.0/howto/static-files/">官方文档</a> 。</p>
 <h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><h4 id="setting-py"><a href="#setting-py" class="headerlink" title="setting.py"></a>setting.py</h4><p><code>setting.py</code>配置文件修改如下</p>
-<pre class=" language-highlight plaintext"><code class="language-highlight plaintext">STATIC_URL = &#x27;/static/&#x27;
-STATIC_ROOT = &#x27;static&#x27; ## 新增行
-STATICFILES_DIRS = [
-  os.path.join(BASE_DIR, &#x27;static&#x27;), # DEBUG=False时，注释掉就行
-]</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">STATIC_URL &#x3D; &#39;&#x2F;static&#x2F;&#39;
+STATIC_ROOT &#x3D; &#39;static&#39; ## 新增行
+STATICFILES_DIRS &#x3D; [
+  os.path.join(BASE_DIR, &#39;static&#39;), # DEBUG&#x3D;False时，注释掉就行
+]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="urls-py"><a href="#urls-py" class="headerlink" title="urls.py"></a>urls.py</h4><p>主项目的<code>urls.py</code>文件添加如下代码</p>
-<pre class=" language-highlight plaintext"><code class="language-highlight plaintext">from django.views import static ##新增
+<pre class="line-numbers language-none"><code class="language-none">from django.views import static ##新增
 from django.conf import settings ##新增
 from django.conf.urls import url ##新增
-urlpatterns = [
-  path(&#x27;&#x27;, include(&#x27;user.urls&#x27;)),  
+urlpatterns &#x3D; [
+  path(&#39;&#39;, include(&#39;user.urls&#39;)),  
 　##　以下是新增
-  url(r&#x27;^static/(?P<path>.*)$&#x27;, static.serve,
-      &#123;&#x27;document_root&#x27;: settings.STATIC_ROOT&#125;, name=&#x27;static&#x27;),
-]</code></pre>
+  url(r&#39;^static&#x2F;(?P&lt;path&gt;.*)$&#39;, static.serve,
+      &#123;&#39;document_root&#39;: settings.STATIC_ROOT&#125;, name&#x3D;&#39;static&#39;),
+]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id=""><a href="#" class="headerlink" title=""></a></h4><p>我的到这里就解决了，但是如果你的还没解决的话可以尝试下面的修改。<br>在<code>settings.py</code>同级<code>__init__.py</code>文件内添加以下代码:  </p>
-<pre class=" language-highlight plaintext"><code class="language-highlight plaintext">import mimetypes
-mimetypes.add_type("text/css", ".css", True)
-mimetypes.add_type("text/javascript", ".js", True)</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">import mimetypes
+mimetypes.add_type(&quot;text&#x2F;css&quot;, &quot;.css&quot;, True)
+mimetypes.add_type(&quot;text&#x2F;javascript&quot;, &quot;.js&quot;, True)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 
 <p>文章转自知乎【风吹白杨树】，<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/300762987">原文链接</a> 。</p>

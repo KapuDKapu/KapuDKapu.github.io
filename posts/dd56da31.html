@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 
@@ -472,7 +472,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    304
+                    313
                 </div>
                 
 
@@ -489,6 +489,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -501,47 +504,47 @@
             <div id="articleContent">
                 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>当你的hexo站点部署到github上以后，如果访问的链接不存在的话，github是有默认的404页面的。<br><img src="/images/1653048709.png" alt="github默认的404页面"><br>但是这是不能满足我们的爱美之心的，其次我想要5秒后自动跳转回我的博客首页怎么办？</p>
 <h2 id="处理方案"><a href="#处理方案" class="headerlink" title="处理方案"></a>处理方案</h2><h3 id="1、创建404page"><a href="#1、创建404page" class="headerlink" title="1、创建404page"></a>1、创建404page</h3><p>在博客主目录运行起cmd窗口，使用下面命令生成404page</p>
-<pre class=" language-highlight bash"><code class="language-highlight bash">hexo new page 404</code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo new page <span class="token number">404</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h3 id="2、编辑404页面"><a href="#2、编辑404页面" class="headerlink" title="2、编辑404页面"></a>2、编辑404页面</h3><p>然后将下面的内容复制到<code>source/404/index.md</code>文件内。</p>
-<pre class=" language-highlight bash"><code class="language-highlight bash">---
-title: <span class="string">&#x27;404 - 好巧，竟然在这里遇到你！&#x27;</span>
-<span class="built_in">date</span>: 2022-01-22 20:02:00
-comments: <span class="literal">false</span>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">---
+title: <span class="token string">'404 - 好巧，竟然在这里遇到你！'</span>
+date: <span class="token number">2022</span>-01-22 <span class="token number">20</span>:02:00
+comments: <span class="token boolean">false</span>
 permalink: /404.html
 ---
 
-<!-- markdownlint-disable MD039 MD033 -->
+<span class="token operator">&lt;</span><span class="token operator">!</span>-- markdownlint-disable MD039 MD033 --<span class="token operator">></span>
 
-<span class="comment">## 这是一个不存在的页面</span>
+<span class="token comment">## 这是一个不存在的页面</span>
 
 对不起，您所访问的页面不存在或者已删除。
 
-预计将在约 <span <span class="built_in">id</span>=<span class="string">"timeout"</span>>5</span> 秒后返回首页。
+预计将在约 <span class="token operator">&lt;</span>span <span class="token assign-left variable">id</span><span class="token operator">=</span><span class="token string">"timeout"</span><span class="token operator">></span><span class="token operator"><span class="token file-descriptor important">5</span>&lt;</span>/span<span class="token operator">></span> 秒后返回首页。
 
-当然，你可以 **[点这里](你的首页连接)** 直接返回首页。
+当然，你可以 **<span class="token punctuation">[</span>点这里<span class="token punctuation">]</span><span class="token punctuation">(</span>你的首页连接<span class="token punctuation">)</span>** 直接返回首页。
 
-<script>
-<span class="built_in">let</span> countTime = 5;
+<span class="token operator">&lt;</span>script<span class="token operator">></span>
+<span class="token builtin class-name">let</span> countTime <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
 
-<span class="keyword">function</span> <span class="function"><span class="title">count</span></span>() &#123;
+<span class="token keyword">function</span> <span class="token function-name function">count</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
 
-  document.getElementById(<span class="string">&#x27;timeout&#x27;</span>).textContent = countTime;
-  countTime -= 1;
-  <span class="keyword">if</span>(countTime === 0)&#123;
-    location.href = <span class="string">&#x27;你的首页连接&#x27;</span>;
-  &#125;
-  setTimeout(() => &#123;
-    count();
-  &#125;, 1000);
-&#125;
+  document.getElementById<span class="token punctuation">(</span><span class="token string">'timeout'</span><span class="token punctuation">)</span>.textContent <span class="token operator">=</span> countTime<span class="token punctuation">;</span>
+  countTime -<span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+  if<span class="token punctuation">(</span>countTime <span class="token operator">==</span><span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    location.href <span class="token operator">=</span> <span class="token string">'你的首页连接'</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+  setTimeout<span class="token punctuation">((</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">&#123;</span>
+    count<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>, <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
 
-count();
-</script></code></pre>
+count<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;</span>/script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="3、生成站点并运行"><a href="#3、生成站点并运行" class="headerlink" title="3、生成站点并运行"></a>3、生成站点并运行</h3><pre class=" language-highlight bash"><code class="language-highlight bash">hexo clean
+<h3 id="3、生成站点并运行"><a href="#3、生成站点并运行" class="headerlink" title="3、生成站点并运行"></a>3、生成站点并运行</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean
 hexo generate
-hexo serve</code></pre>
+hexo serve<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h3 id="4、验证404页面"><a href="#4、验证404页面" class="headerlink" title="4、验证404页面"></a>4、验证404页面</h3><p>本地的话需要使用<code>http://localhost:4000/404.html</code> 进行测试，部署到github上的话可以随意修改链接验证。</p>
 
                 

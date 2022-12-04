@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 
@@ -472,7 +472,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    347
+                    376
                 </div>
                 
 
@@ -489,6 +489,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -502,25 +505,25 @@
                 <p>you-get是python的一个扩展，使用这个扩展可以下载大多数网站的视频，从github描述内可以看到具体支持哪些网站。<br>github地址：<a target="_blank" rel="noopener" href="https://github.com/soimort/you-get">https://github.com/soimort/you-get</a>    </p>
 <span id="more"></span>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>pip安装即可，慢的话可以使用国内镜像源  </p>
-<pre class=" language-highlight plaintext"><code class="language-highlight plaintext">pip install you-get
-pip install -i http://pypi.douban.com/simple/ you-get</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">pip install you-get
+pip install -i http:&#x2F;&#x2F;pypi.douban.com&#x2F;simple&#x2F; you-get<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><h3 id="直接使用，默认下载最高画质（不能下载会员内容和画质）"><a href="#直接使用，默认下载最高画质（不能下载会员内容和画质）" class="headerlink" title="直接使用，默认下载最高画质（不能下载会员内容和画质）"></a>直接使用，默认下载最高画质（不能下载会员内容和画质）</h3><pre class=" language-highlight plaintext"><code class="language-highlight plaintext">https://www.bilibili.com/video/BV13K4y1k7qt</code></pre>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><h3 id="直接使用，默认下载最高画质（不能下载会员内容和画质）"><a href="#直接使用，默认下载最高画质（不能下载会员内容和画质）" class="headerlink" title="直接使用，默认下载最高画质（不能下载会员内容和画质）"></a>直接使用，默认下载最高画质（不能下载会员内容和画质）</h3><pre class="line-numbers language-none"><code class="language-none">https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV13K4y1k7qt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h3 id="带参数使用"><a href="#带参数使用" class="headerlink" title="带参数使用"></a>带参数使用</h3><p>（1）指定下载文件本地存储路径：【you-get】+【-o】+【视频路径】。<br>这个其实也可以通过直接在指定路径打开cmd窗口并直接使用【you-get】+【视频路径】下载。  </p>
-<pre class=" language-highlight plaintext"><code class="language-highlight plaintext">you-get -o G:\bili https://www.bilibili.com/video/BV13K4y1k7qt</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">you-get -o G:\bili https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV13K4y1k7qt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>（2）指定保存到本地的文件名：【you-get】+【-O】+【视频路径】</p>
-<pre class=" language-highlight plaintext"><code class="language-highlight plaintext">you-get -O bili.flv https://www.bilibili.com/video/BV13K4y1k7qt</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">you-get -O bili.flv https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV13K4y1k7qt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>（3）查看视频信息：【you-get】+【-i】+【视频路径】</p>
-<pre class=" language-highlight plaintext"><code class="language-highlight plaintext">you-get -i https://www.bilibili.com/video/BV13K4y1k7qt</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">you-get -i https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV13K4y1k7qt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
 <p>这里会列出视频所有的清晰度及大小信息，下载对应清晰度的话按照输出信息添加对应配置信息即可。</p>
-<pre class=" language-highlight plaintext"><code class="language-highlight plaintext">you-get --format=flv480 https://www.bilibili.com/video/BV13K4y1k7qt</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">you-get --format&#x3D;flv480 https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV13K4y1k7qt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>（4）下载合集：【you-get】+【-l】+【第一集视频路径】</p>
-<pre class=" language-highlight plaintext"><code class="language-highlight plaintext">you-get -l https://www.bilibili.com/video/BV1pu41117i1</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">you-get -l https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1pu41117i1<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>这里只说了常用的一些参数，其他还有一些参数，参照github上描述就可以找到。</p>
 

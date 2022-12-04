@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 
@@ -476,7 +476,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    450
+                    487
                 </div>
                 
 
@@ -492,6 +492,9 @@
         </div>
         <hr class="clearfix">
 
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
         
 
         
@@ -513,16 +516,16 @@
 </ul>
 <h2 id="图片转base64编码"><a href="#图片转base64编码" class="headerlink" title="图片转base64编码"></a>图片转base64编码</h2><p>这种工具的话百度一下很多的，这里放上一个菜鸟工具的在线转base64工具，<a target="_blank" rel="noopener" href="https://c.runoob.com/front-end/59/">图片转BASE64编码</a> 。图片转BASE64编码工具提供了 PNG转换Base64，GIF转换Base64，JPEG转换Data64等各种图片的格式转换,你只需拖动图片到指定区域，即可完成操作！</p>
 <h2 id="base64编码的使用"><a href="#base64编码的使用" class="headerlink" title="base64编码的使用"></a>base64编码的使用</h2><p>Base64编码格式如下：</p>
-<pre class=" language-highlight plaintext"><code class="language-highlight plaintext">data:[][;charset=][;base64],</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">data:[][;charset&#x3D;][;base64],<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>Base64 在CSS中的使用：</p>
-<pre class=" language-highlight plaintext"><code class="language-highlight plaintext">.demoImg&#123; background-image: url("data:image/jpg;base64,/9j/4QMZRXhpZgAASUkqAAgAAAAL...."); &#125;</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">.demoImg&#123; background-image: url(&quot;data:image&#x2F;jpg;base64,&#x2F;9j&#x2F;4QMZRXhpZgAASUkqAAgAAAAL....&quot;); &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>Base64 在HTML中的使用：</p>
-<pre class=" language-highlight plaintext"><code class="language-highlight plaintext"><img width="40" height="30" src="data:image/jpg;base64,/9j/4QMZRXhpZgAASUkqAAgAAAAL...." /></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">&lt;img width&#x3D;&quot;40&quot; height&#x3D;&quot;30&quot; src&#x3D;&quot;data:image&#x2F;jpg;base64,&#x2F;9j&#x2F;4QMZRXhpZgAASUkqAAgAAAAL....&quot; &#x2F;&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>Base64 在markdown语法中的使用：</p>
-<pre class=" language-highlight plaintext"><code class="language-highlight plaintext">![image][自定义编号]	//在合适的地方引用
+<pre class="line-numbers language-none"><code class="language-none">![image][自定义编号]	&#x2F;&#x2F;在合适的地方引用
 
-[自定义编号]:data:.....,		//定义编码对应的图片的base64编码</code></pre>
+[自定义编号]:data:.....,		&#x2F;&#x2F;定义编码对应的图片的base64编码<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 
                 

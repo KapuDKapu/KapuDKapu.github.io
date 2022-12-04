@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.2"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 
@@ -489,6 +489,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
         <!-- 代码块折行 -->
@@ -501,14 +504,14 @@
             <div id="articleContent">
                 <p>Linux安装jdk最简单的方式就是yum安装了。  </p>
 <h2 id="查询jdk的版本"><a href="#查询jdk的版本" class="headerlink" title="查询jdk的版本"></a>查询jdk的版本</h2><p>运行下面命令查询支持安装的jdk版本。</p>
-<pre class=" language-highlight plaintext"><code class="language-highlight plaintext">yum -y list java*</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">yum -y list java*<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <span id="more"></span>
 <p><img src="https://pic.imgdb.cn/item/618bc57d2ab3f51d91090724.jpg"><br><img src="https://i.loli.net/2021/11/10/wlCsRoWcZnKVpU3.jpg" alt="2021-11-10 21 12 00.jpg"></p>
 <h2 id="安装jdk"><a href="#安装jdk" class="headerlink" title="安装jdk"></a>安装jdk</h2><p>选择要安装的jdk版本使用下面命令安装。</p>
-<pre class=" language-highlight plaintext"><code class="language-highlight plaintext">yum install -y java-11-openjdk.x86_64</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">yum install -y java-11-openjdk.x86_64<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h2 id="验证是否安装成功"><a href="#验证是否安装成功" class="headerlink" title="验证是否安装成功"></a>验证是否安装成功</h2><p>使用命令验证是否安装成功。</p>
-<pre class=" language-highlight plaintext"><code class="language-highlight plaintext">java -version</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">java -version<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><img src="https://pic.imgdb.cn/item/618bc6bf2ab3f51d91096808.jpg"><br><img src="https://i.loli.net/2021/11/10/AkjeWcnfsr7NuwJ.jpg" alt="2021-11-10 21 18 29.jpg"></p>
 
                 
