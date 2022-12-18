@@ -8,7 +8,7 @@
     <link href="/p/9600b488.html"/>
     <url>/p/9600b488.html</url>
     
-    <content type="html"><![CDATA[<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>django web框架中,使用vue的时候,会遇到语法冲突，因为vue使用<code>&#123;&#123;&#125;&#125;`    ,而django也使用 `&#123;&#123;&#125;&#125;</code> 。</p><span id="more"></span><h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>在django1.5以后,加入了下面的标签，在这个标签里的内容不会被django模板引擎渲染。</p><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs django"><span class="hljs-template-tag">&#123;% <span class="hljs-name"><span class="hljs-name">verbatim</span></span> myblock %&#125;</span><span class="language-xml"> </span><span class="hljs-template-tag">&#123;% <span class="hljs-name">endverbatim</span> myblock %&#125;</span><br></code></pre></td></tr></table></figure><p>我们可以把带有<code>&#123;&#123; &#125;&#125; </code>的Vue代码放在 <code>&#123;% verbatim myblock %&#125;</code>标签中间，例如下面：</p><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs django"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span></span><br><span class="language-xml">  </span><span class="hljs-template-tag">&#123;% <span class="hljs-name"><span class="hljs-name">verbatim</span></span> myblock %&#125;</span><span class="language-xml"></span><br><span class="language-xml">    </span><span class="hljs-template-variable">&#123;&#123; name &#125;&#125;</span><span class="language-xml"></span><br><span class="language-xml">  </span><span class="hljs-template-tag">&#123;% <span class="hljs-name">endverbatim</span> myblock %&#125;</span><span class="language-xml"></span><br><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span><br></code></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>django web框架中,使用vue的时候,会遇到语法冲突，因为vue使用<code>&#123;&#123;&#125;&#125;`    ,而django也使用 `&#123;&#123;&#125;&#125;</code> 。</p><!--more--><h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>在django1.5以后,加入了下面的标签，在这个标签里的内容不会被django模板引擎渲染。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">&#123;% verbatim myblock %&#125; &#123;% endverbatim myblock %&#125;<br></code></pre></td></tr></table></figure><p>我们可以把带有<code>&#123;&#123; &#125;&#125; </code>的Vue代码放在 <code>&#123;% verbatim myblock %&#125;</code>标签中间，例如下面：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><br>  &#123;% verbatim myblock %&#125;<br>    &#123;&#123; name &#125;&#125;<br>  &#123;% endverbatim myblock %&#125;<br><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br></code></pre></td></tr></table></figure>]]></content>
     
     
     <categories>
@@ -22,6 +22,8 @@
       
       <tag>Django</tag>
       
+      <tag>技术</tag>
+      
     </tags>
     
   </entry>
@@ -33,7 +35,7 @@
     <link href="/p/2e59fa5b.html"/>
     <url>/p/2e59fa5b.html</url>
     
-    <content type="html"><![CDATA[<p><img src="/images/pasted-61.png" alt="iconfont"></p><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>这是阿里巴巴旗下阿里妈妈MUX团队打造的一个专门为设计师和前端开发者打造的在线工具。设计师将图标上传到Iconfont，可以自定义下载多种格式的icon，也可将图标转换为字体，方便前端工程师自由调整与使用。</p><h2 id="版权说明"><a href="#版权说明" class="headerlink" title="版权说明"></a>版权说明</h2><p>作为一个图标管理工具，Iconfont 是免费的。<br>但遗憾的是，平台上所有的图标都是阿里巴巴官方项目和平台上的设计师自行上传的。仅供广大用户交流学习使用，未经iconfont或其关联公司书面授权许可，不得用于任何商业用途。具体可查看 Iconfont 网站左下角的法律声明。如需出于商业目的使用iconfont平台任意个人公共库中的任意图标，均应事先获得相关知识产权权利人的授权，以避免产生不必要的纠纷。</p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><ul><li><p>注册登录<br>首先注册登录你自己的账号</p></li><li><p>选择图标加购<br>挑选或者搜索自己需要的图标，选择加入购物车<br><img src="/images/pasted-62.png" alt="upload successful"> </p></li><li><p>添加项目<br>点击右上角的购物车，点击【添加至项目】。创建项目然后选择创建的项目，点击【确定】</p></li></ul><p><img src="/images/pasted-63.png" alt="upload successful"></p><p><img src="/images/pasted-64.png" alt="upload successful"></p><p><img src="/images/pasted-65.png" alt="upload successful"></p><ul><li>生成在线连接或者下载本地</li></ul><p>操作完上面的步骤后，图标已经进入到自己的项目里来了，然后是使用图标。可以生成在线链接，直接引入自己的项目，也可以下载到本地。<br><img src="/images/pasted-67.png" alt="upload successful"><br>下载到本地的是压缩包，解压后将除去demo文件的其他文件放到项目内引用css文件就行。</p><p><img src="/images/pasted-68.png" alt="upload successful"></p><ul><li>引入图标  <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">&lt;link <span class="hljs-attribute">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-string">&quot;css/iconfont.css&quot;</span>&gt;<br></code></pre></td></tr></table></figure></li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>这是阿里巴巴旗下阿里妈妈MUX团队打造的一个专门为设计师和前端开发者打造的在线工具。设计师将图标上传到Iconfont，可以自定义下载多种格式的icon，也可将图标转换为字体，方便前端工程师自由调整与使用。</p><h2 id="版权说明"><a href="#版权说明" class="headerlink" title="版权说明"></a>版权说明</h2><p>作为一个图标管理工具，Iconfont 是免费的。<br>但遗憾的是，平台上所有的图标都是阿里巴巴官方项目和平台上的设计师自行上传的。仅供广大用户交流学习使用，未经iconfont或其关联公司书面授权许可，不得用于任何商业用途。具体可查看 Iconfont 网站左下角的法律声明。如需出于商业目的使用iconfont平台任意个人公共库中的任意图标，均应事先获得相关知识产权权利人的授权，以避免产生不必要的纠纷。</p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><ul><li><p>注册登录<br>首先注册登录你自己的账号</p></li><li><p>选择图标加购<br>挑选或者搜索自己需要的图标，选择加入购物车<br><img src="/images/pasted-62.png" alt="upload successful"> </p></li><li><p>添加项目<br>点击右上角的购物车，点击【添加至项目】。创建项目然后选择创建的项目，点击【确定】</p></li></ul><p><img src="/images/pasted-63.png" alt="upload successful"></p><p><img src="/images/pasted-64.png" alt="upload successful"></p><p><img src="/images/pasted-65.png" alt="upload successful"></p><ul><li>生成在线连接或者下载本地</li></ul><p>操作完上面的步骤后，图标已经进入到自己的项目里来了，然后是使用图标。可以生成在线链接，直接引入自己的项目，也可以下载到本地。<br><img src="/images/pasted-67.png" alt="upload successful"><br>下载到本地的是压缩包，解压后将除去demo文件的其他文件放到项目内引用css文件就行。</p><p><img src="/images/pasted-68.png" alt="upload successful"></p><ul><li>引入图标  <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">&lt;link <span class="hljs-attribute">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-string">&quot;css/iconfont.css&quot;</span>&gt;<br></code></pre></td></tr></table></figure></li></ul>]]></content>
     
     
     <categories>
@@ -44,6 +46,8 @@
     
     
     <tags>
+      
+      <tag>技术</tag>
       
       <tag>iconfont</tag>
       
@@ -70,6 +74,8 @@
     
     <tags>
       
+      <tag>视频</tag>
+      
       <tag>资本</tag>
       
     </tags>
@@ -94,6 +100,8 @@
     
     
     <tags>
+      
+      <tag>技术</tag>
       
       <tag>HEXO</tag>
       
@@ -122,11 +130,11 @@
     
     <tags>
       
-      <tag>视频</tag>
-      
       <tag>手机</tag>
       
       <tag>测评</tag>
+      
+      <tag>视频</tag>
       
     </tags>
     
@@ -151,40 +159,13 @@
     
     <tags>
       
+      <tag>其他</tag>
+      
+      <tag>冷知识</tag>
+      
       <tag>认知</tag>
       
       <tag>清明上河图</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>markdown示例</title>
-    <link href="/p/980497e8.html"/>
-    <url>/p/980497e8.html</url>
-    
-    <content type="html"><![CDATA[<p>我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，<strong>Cmd Markdown</strong> 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：</p><blockquote><ul><li>整理知识，学习笔记</li><li>发布日记，杂文，所见所想</li><li>撰写发布技术文稿（代码支持）</li><li>撰写发布学术论文（LaTeX 公式支持）</li></ul></blockquote><p><img src="https://www.zybuluo.com/static/img/logo.png" alt="cmd-markdown-logo"></p><p>除了您现在看到的这个 Cmd Markdown 在线版本，您还可以前往以下网址下载：</p><h3 id="Windows-Mac-Linux-全平台客户端"><a href="#Windows-Mac-Linux-全平台客户端" class="headerlink" title="Windows/Mac/Linux 全平台客户端"></a><a href="https://www.zybuluo.com/cmd/">Windows/Mac/Linux 全平台客户端</a></h3><blockquote><p>请保留此份 Cmd Markdown 的欢迎稿兼使用说明，如需撰写新稿件，点击顶部工具栏右侧的 <i class="icon-file"></i> <strong>新文稿</strong> 或者使用快捷键 <code>Ctrl+Alt+N</code>。</p></blockquote><hr><h2 id="什么是-Markdown"><a href="#什么是-Markdown" class="headerlink" title="什么是 Markdown"></a>什么是 Markdown</h2><p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字，更棒的是，它还可以</p><h3 id="1-制作一份待办事宜-Todo-列表"><a href="#1-制作一份待办事宜-Todo-列表" class="headerlink" title="1. 制作一份待办事宜 Todo 列表"></a>1. 制作一份待办事宜 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#13-%E5%BE%85%E5%8A%9E%E4%BA%8B%E5%AE%9C-todo-%E5%88%97%E8%A1%A8">Todo 列表</a></h3><ul><li><input disabled="" type="checkbox"> 支持以 PDF 格式导出文稿</li><li><input disabled="" type="checkbox"> 改进 Cmd 渲染算法，使用局部渲染技术提高渲染效率</li><li><input checked="" disabled="" type="checkbox"> 新增 Todo 列表功能</li><li><input checked="" disabled="" type="checkbox"> 修复 LaTex 公式渲染问题</li><li><input checked="" disabled="" type="checkbox"> 新增 LaTex 公式编号功能</li></ul><h3 id="2-书写一个质能守恒公式-LaTeX"><a href="#2-书写一个质能守恒公式-LaTeX" class="headerlink" title="2. 书写一个质能守恒公式[^LaTeX]"></a>2. 书写一个质能守恒公式[^LaTeX]</h3><p>$$E=mc^2$$</p><h3 id="3-高亮一段代码-code"><a href="#3-高亮一段代码-code" class="headerlink" title="3. 高亮一段代码[^code]"></a>3. 高亮一段代码[^code]</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-meta">@requires_authorization</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">SomeClass</span>:<br>    <span class="hljs-keyword">pass</span><br><br><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&#x27;__main__&#x27;</span>:<br>    <span class="hljs-comment"># A comment</span><br>    <span class="hljs-built_in">print</span> <span class="hljs-string">&#x27;hello world&#x27;</span><br></code></pre></td></tr></table></figure><h3 id="4-高效绘制-流程图"><a href="#4-高效绘制-流程图" class="headerlink" title="4. 高效绘制 流程图"></a>4. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-%E6%B5%81%E7%A8%8B%E5%9B%BE">流程图</a></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs flow">st=&gt;start: Start<br>op=&gt;operation: Your Operation<br>cond=&gt;condition: Yes or No?<br>e=&gt;end<br><br>st-&gt;op-&gt;cond<br>cond(yes)-&gt;e<br>cond(no)-&gt;op<br></code></pre></td></tr></table></figure><h3 id="5-高效绘制-序列图"><a href="#5-高效绘制-序列图" class="headerlink" title="5. 高效绘制 序列图"></a>5. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#8-%E5%BA%8F%E5%88%97%E5%9B%BE">序列图</a></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs seq">Alice-&gt;Bob: Hello Bob, how are you?<br>Note right of Bob: Bob thinks<br>Bob--&gt;Alice: I am good thanks!<br></code></pre></td></tr></table></figure><h3 id="6-高效绘制-甘特图"><a href="#6-高效绘制-甘特图" class="headerlink" title="6. 高效绘制 甘特图"></a>6. 高效绘制 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#9-%E7%94%98%E7%89%B9%E5%9B%BE">甘特图</a></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs gantt">title 项目开发流程<br>section 项目确定<br>    需求分析       :a1, 2016-06-22, 3d<br>    可行性报告     :after a1, 5d<br>    概念验证       : 5d<br>section 项目实施<br>    概要设计      :2016-07-05  , 5d<br>    详细设计      :2016-07-08, 10d<br>    编码          :2016-07-15, 10d<br>    测试          :2016-07-22, 5d<br>section 发布验收<br>    发布: 2d<br>    验收: 3d<br></code></pre></td></tr></table></figure><h3 id="7-绘制表格"><a href="#7-绘制表格" class="headerlink" title="7. 绘制表格"></a>7. 绘制表格</h3><table><thead><tr><th>项目</th><th align="right">价格</th><th align="center">数量</th></tr></thead><tbody><tr><td>计算机</td><td align="right">$1600</td><td align="center">5</td></tr><tr><td>手机</td><td align="right">$12</td><td align="center">12</td></tr><tr><td>管线</td><td align="right">$1</td><td align="center">234</td></tr></tbody></table><h3 id="8-更详细语法说明"><a href="#8-更详细语法说明" class="headerlink" title="8. 更详细语法说明"></a>8. 更详细语法说明</h3><p>想要查看更详细的语法说明，可以参考我们准备的 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown">Cmd Markdown 简明语法手册</a>，进阶用户可以参考 <a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#cmd-markdown-%E9%AB%98%E9%98%B6%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C">Cmd Markdown 高阶语法手册</a> 了解更多高级功能。</p><p>总而言之，不同于其它 <em>所见即所得</em> 的编辑器：你只需使用键盘专注于书写文本内容，就可以生成印刷级的排版格式，省却在键盘和工具栏之间来回切换，调整内容和格式的麻烦。<strong>Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。</strong> 目前它已经成为世界上最大的技术分享网站 GitHub 和 技术问答网站 StackOverFlow 的御用书写格式。</p><hr><h2 id="什么是-Cmd-Markdown"><a href="#什么是-Cmd-Markdown" class="headerlink" title="什么是 Cmd Markdown"></a>什么是 Cmd Markdown</h2><p>您可以使用很多工具书写 Markdown，但是 Cmd Markdown 是这个星球上我们已知的、最好的 Markdown 工具——没有之一 ：）因为深信文字的力量，所以我们和你一样，对流畅书写，分享思想和知识，以及阅读体验有极致的追求，我们把对于这些诉求的回应整合在 Cmd Markdown，并且一次，两次，三次，乃至无数次地提升这个工具的体验，最终将它演化成一个 <strong>编辑/发布/阅读</strong> Markdown 的在线平台——您可以在任何地方，任何系统/设备上管理这里的文字。</p><h3 id="1-实时同步预览"><a href="#1-实时同步预览" class="headerlink" title="1. 实时同步预览"></a>1. 实时同步预览</h3><p>我们将 Cmd Markdown 的主界面一分为二，左边为<strong>编辑区</strong>，右边为<strong>预览区</strong>，在编辑区的操作会实时地渲染到预览区方便查看最终的版面效果，并且如果你在其中一个区拖动滚动条，我们有一个巧妙的算法把另一个区的滚动条同步到等价的位置，超酷！</p><h3 id="2-编辑工具栏"><a href="#2-编辑工具栏" class="headerlink" title="2. 编辑工具栏"></a>2. 编辑工具栏</h3><p>也许您还是一个 Markdown 语法的新手，在您完全熟悉它之前，我们在 <strong>编辑区</strong> 的顶部放置了一个如下图所示的工具栏，您可以使用鼠标在工具栏上调整格式，不过我们仍旧鼓励你使用键盘标记格式，提高书写的流畅度。</p><p><img src="https://www.zybuluo.com/static/img/toolbar-editor.png" alt="tool-editor"></p><h3 id="3-编辑模式"><a href="#3-编辑模式" class="headerlink" title="3. 编辑模式"></a>3. 编辑模式</h3><p>完全心无旁骛的方式编辑文字：点击 <strong>编辑工具栏</strong> 最右侧的拉伸按钮或者按下 <code>Ctrl + M</code>，将 Cmd Markdown 切换到独立的编辑模式，这是一个极度简洁的写作环境，所有可能会引起分心的元素都已经被挪除，超清爽！</p><h3 id="4-实时的云端文稿"><a href="#4-实时的云端文稿" class="headerlink" title="4. 实时的云端文稿"></a>4. 实时的云端文稿</h3><p>为了保障数据安全，Cmd Markdown 会将您每一次击键的内容保存至云端，同时在 <strong>编辑工具栏</strong> 的最右侧提示 <code>已保存</code> 的字样。无需担心浏览器崩溃，机器掉电或者地震，海啸——在编辑的过程中随时关闭浏览器或者机器，下一次回到 Cmd Markdown 的时候继续写作。</p><h3 id="5-离线模式"><a href="#5-离线模式" class="headerlink" title="5. 离线模式"></a>5. 离线模式</h3><p>在网络环境不稳定的情况下记录文字一样很安全！在您写作的时候，如果电脑突然失去网络连接，Cmd Markdown 会智能切换至离线模式，将您后续键入的文字保存在本地，直到网络恢复再将他们传送至云端，即使在网络恢复前关闭浏览器或者电脑，一样没有问题，等到下次开启 Cmd Markdown 的时候，她会提醒您将离线保存的文字传送至云端。简而言之，我们尽最大的努力保障您文字的安全。</p><h3 id="6-管理工具栏"><a href="#6-管理工具栏" class="headerlink" title="6. 管理工具栏"></a>6. 管理工具栏</h3><p>为了便于管理您的文稿，在 <strong>预览区</strong> 的顶部放置了如下所示的 <strong>管理工具栏</strong>：</p><p><img src="https://www.zybuluo.com/static/img/toolbar-manager.jpg" alt="tool-manager"></p><p>通过管理工具栏可以：</p><p><i class="icon-share"></i> 发布：将当前的文稿生成固定链接，在网络上发布，分享<br><i class="icon-file"></i> 新建：开始撰写一篇新的文稿<br><i class="icon-trash"></i> 删除：删除当前的文稿<br><i class="icon-cloud"></i> 导出：将当前的文稿转化为 Markdown 文本或者 Html 格式，并导出到本地<br><i class="icon-reorder"></i> 列表：所有新增和过往的文稿都可以在这里查看、操作<br><i class="icon-pencil"></i> 模式：切换 普通/Vim/Emacs 编辑模式</p><h3 id="7-阅读工具栏"><a href="#7-阅读工具栏" class="headerlink" title="7. 阅读工具栏"></a>7. 阅读工具栏</h3><p><img src="https://www.zybuluo.com/static/img/toolbar-reader.jpg" alt="tool-manager"></p><p>通过 <strong>预览区</strong> 右上角的 <strong>阅读工具栏</strong>，可以查看当前文稿的目录并增强阅读体验。</p><p>工具栏上的五个图标依次为：</p><p><i class="icon-list"></i> 目录：快速导航当前文稿的目录结构以跳转到感兴趣的段落<br><i class="icon-chevron-sign-left"></i> 视图：互换左边编辑区和右边预览区的位置<br><i class="icon-adjust"></i> 主题：内置了黑白两种模式的主题，试试 <strong>黑色主题</strong>，超炫！<br><i class="icon-desktop"></i> 阅读：心无旁骛的阅读模式提供超一流的阅读体验<br><i class="icon-fullscreen"></i> 全屏：简洁，简洁，再简洁，一个完全沉浸式的写作和阅读环境</p><h3 id="8-阅读模式"><a href="#8-阅读模式" class="headerlink" title="8. 阅读模式"></a>8. 阅读模式</h3><p>在 <strong>阅读工具栏</strong> 点击 <i class="icon-desktop"></i> 或者按下 <code>Ctrl+Alt+M</code> 随即进入独立的阅读模式界面，我们在版面渲染上的每一个细节：字体，字号，行间距，前背景色都倾注了大量的时间，努力提升阅读的体验和品质。</p><h3 id="9-标签、分类和搜索"><a href="#9-标签、分类和搜索" class="headerlink" title="9. 标签、分类和搜索"></a>9. 标签、分类和搜索</h3><p>在编辑区任意行首位置输入以下格式的文字可以标签当前文档：</p><p>标签： 未分类</p><p>标签以后的文稿在【文件列表】（Ctrl+Alt+F）里会按照标签分类，用户可以同时使用键盘或者鼠标浏览查看，或者在【文件列表】的搜索文本框内搜索标题关键字过滤文稿，如下图所示：</p><p><img src="https://www.zybuluo.com/static/img/file-list.png" alt="file-list"></p><h3 id="10-文稿发布和分享"><a href="#10-文稿发布和分享" class="headerlink" title="10. 文稿发布和分享"></a>10. 文稿发布和分享</h3><p>在您使用 Cmd Markdown 记录，创作，整理，阅读文稿的同时，我们不仅希望它是一个有力的工具，更希望您的思想和知识通过这个平台，连同优质的阅读体验，将他们分享给有相同志趣的人，进而鼓励更多的人来到这里记录分享他们的思想和知识，尝试点击 <i class="icon-share"></i> (Ctrl+Alt+P) 发布这份文档给好友吧！</p><hr><p>再一次感谢您花费时间阅读这份欢迎稿，点击 <i class="icon-file"></i> (Ctrl+Alt+N) 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！</p><p>作者 <a href="http://weibo.com/ghosert">@ghosert</a><br>2016 年 07月 07日    </p><p>[^LaTeX]: 支持 <strong>LaTeX</strong> 编辑显示支持，例如：$\sum_{i=1}^n a_i=0$， 访问 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">MathJax</a> 参考更多使用方法。</p><p>[^code]: 代码高亮功能支持包括 Java, Python, JavaScript 在内的，<strong>四十一</strong>种主流编程语言。</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>网站分享</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>掌机</tag>
-      
-      <tag>FC</tag>
-      
-      <tag>小霸王</tag>
-      
-      <tag>超级马里奥</tag>
       
     </tags>
     
@@ -197,7 +178,7 @@
     <link href="/p/b8baef8.html"/>
     <url>/p/b8baef8.html</url>
     
-    <content type="html"><![CDATA[<p>生老病死不可避免，每个人都会生病，每个不同的人生阶段都会生病，但是你真的了解你得的病吗？</p><span id="more"></span><p>生物钟是怎么回事？为什么说“熬夜使人发胖”？开灯睡觉对睡眠会有什么影响？什么是血液病？骨髓移植是怎么回事？想要生宝宝了，应提前多久开始备孕？如何定义“矮小症”？矮小症和侏儒症是一回事吗？矮小症能治疗吗？儿童都必须要补钙吗？儿童缺钙怎么治疗？阿尔茨海默病和老年性痴呆是一回事吗？眼皮跳是怎么回事？打鼾（打呼噜）是睡得香、睡得好吗？打鼾（打呼噜）需要治疗吗？引起便秘的原因有哪些？引起便秘的原因有哪些？</p><p>不了解？不要紧，医学微视来给你一一解答。Medical Video医学微视”是由中国医药卫生事业发展基金会、吴阶平医学基金会、北京博彧维康信息技术有限公司联合主办，以“让人们多了解一点医学知识，健康就多一份保障”的宗旨，满足公众对权威而专业医学知识需求，提高公众医学素养水平，结合互联网、移动互联网、移动电视等现代科技手段，而实施一项大型医学科普项目。<br>医学微视的基本覆盖了绝大多数我们能遇到的疾病，分了妇产科疾病、儿科疾病、神经系统疾病、呼吸系统疾病、消化系统疾病、心脑血管系统疾病、内分泌系统疾病、泌尿系统疾病、血液系统疾病、骨科疾病、肿瘤疾病、口腔疾病、皮肤疾病、眼科疾病、耳鼻喉疾病、生殖系统疾病、精神心理疾病、急诊科疾病、感染科疾病、肛肠科疾病、血管外科、性病、风湿免疫科疾病、康复科、护理常识、药事药理、医美整形、中医中药、辅助检查及治疗、罕见病、其它三个个大类，每一类里面又细化了几十个小类，覆盖面超广。</p><p><img src="/images/pasted-59.png" alt="生病了？看看专家怎么说！"><br>每种疾病又详细讲解了病因、病理、易感人群、治疗方法以及如何预防做了详细的视频介绍。讲解人都是中心主任、教授、博士生导师等，内容专业靠谱但浅显易懂，让人看完了有一种原来是这样的感叹。</p><p><img src="/images/pasted-60.png" alt="生病了？看看专家怎么说！"><br>医学微视的团队也是很拼的，录制到深夜12点，飞跃大半个中国做科普，带着儿子来拍摄，打着吊瓶做科普，把尊重做到极致。也正是因为他们的敬业与专业，医学微视获得了很多荣誉。</p><ul><li>本项目内容获授《中国大百科全书》电子版收录</li><li>“健康中国”新媒体工作委员会首批成员单位</li><li>中国科学技术协会“科普中国”合作项目</li><li>获得中国医药互联网应用技术高峰论坛：最佳医学教育奖</li><li>获得国家卫健委宣传司指导、《健康报》社主办的2017健康科普大赛“十佳科普视频”奖</li><li>获得“2017年度中华精准健康传播十大新闻事件”</li><li>用心做科普，为公众普及健康知识。</li></ul>]]></content>
+    <content type="html"><![CDATA[<p>生老病死不可避免，每个人都会生病，每个不同的人生阶段都会生病，但是你真的了解你得的病吗？</p><!--more--><p>生物钟是怎么回事？为什么说“熬夜使人发胖”？开灯睡觉对睡眠会有什么影响？什么是血液病？骨髓移植是怎么回事？想要生宝宝了，应提前多久开始备孕？如何定义“矮小症”？矮小症和侏儒症是一回事吗？矮小症能治疗吗？儿童都必须要补钙吗？儿童缺钙怎么治疗？阿尔茨海默病和老年性痴呆是一回事吗？眼皮跳是怎么回事？打鼾（打呼噜）是睡得香、睡得好吗？打鼾（打呼噜）需要治疗吗？引起便秘的原因有哪些？引起便秘的原因有哪些？</p><p>不了解？不要紧，医学微视来给你一一解答。Medical Video医学微视”是由中国医药卫生事业发展基金会、吴阶平医学基金会、北京博彧维康信息技术有限公司联合主办，以“让人们多了解一点医学知识，健康就多一份保障”的宗旨，满足公众对权威而专业医学知识需求，提高公众医学素养水平，结合互联网、移动互联网、移动电视等现代科技手段，而实施一项大型医学科普项目。<br>医学微视的基本覆盖了绝大多数我们能遇到的疾病，分了妇产科疾病、儿科疾病、神经系统疾病、呼吸系统疾病、消化系统疾病、心脑血管系统疾病、内分泌系统疾病、泌尿系统疾病、血液系统疾病、骨科疾病、肿瘤疾病、口腔疾病、皮肤疾病、眼科疾病、耳鼻喉疾病、生殖系统疾病、精神心理疾病、急诊科疾病、感染科疾病、肛肠科疾病、血管外科、性病、风湿免疫科疾病、康复科、护理常识、药事药理、医美整形、中医中药、辅助检查及治疗、罕见病、其它三个个大类，每一类里面又细化了几十个小类，覆盖面超广。</p><p><img src="/images/pasted-59.png" alt="生病了？看看专家怎么说！"><br>每种疾病又详细讲解了病因、病理、易感人群、治疗方法以及如何预防做了详细的视频介绍。讲解人都是中心主任、教授、博士生导师等，内容专业靠谱但浅显易懂，让人看完了有一种原来是这样的感叹。</p><p><img src="/images/pasted-60.png" alt="生病了？看看专家怎么说！"><br>医学微视的团队也是很拼的，录制到深夜12点，飞跃大半个中国做科普，带着儿子来拍摄，打着吊瓶做科普，把尊重做到极致。也正是因为他们的敬业与专业，医学微视获得了很多荣誉。</p><ul><li>本项目内容获授《中国大百科全书》电子版收录</li><li>“健康中国”新媒体工作委员会首批成员单位</li><li>中国科学技术协会“科普中国”合作项目</li><li>获得中国医药互联网应用技术高峰论坛：最佳医学教育奖</li><li>获得国家卫健委宣传司指导、《健康报》社主办的2017健康科普大赛“十佳科普视频”奖</li><li>获得“2017年度中华精准健康传播十大新闻事件”</li><li>用心做科普，为公众普及健康知识。</li></ul>]]></content>
     
     
     <categories>
@@ -208,6 +189,8 @@
     
     
     <tags>
+      
+      <tag>网站</tag>
       
       <tag>生病</tag>
       
@@ -222,13 +205,15 @@
     <link href="/p/3166312.html"/>
     <url>/p/3166312.html</url>
     
-    <content type="html"><![CDATA[<h2 id="1、黑匣子是什么"><a href="#1、黑匣子是什么" class="headerlink" title="1、黑匣子是什么"></a>1、黑匣子是什么</h2><span id="more"></span><p><img src="/images/pasted-58.png" alt="关于黑匣子的最强整理"><br>正式名称是“飞行信息记录系统”。目前民用航空业普遍使用的“黑匣子”有两种，包括飞行数据记录器（Flight Data Recorder,FDR）和驾驶舱话音记录器（Cockpit Voice Recorder，CVR）。</p><h2 id="2、由来"><a href="#2、由来" class="headerlink" title="2、由来"></a>2、由来</h2><p>世界上第一个黑匣子是由一位澳大利亚墨尔本市工程师在1958年发明的。早期的黑匣子只记录了几个简单的飞行数据，且稳定性差，易损坏，读取数据困难，一直没有收到重视。  </p><p>直到1977年，两架波音747型客机在西班牙特内里费岛机场的跑道上相撞，造成了583人丧生，数百人受伤，多亏了有黑匣子的记录才发现主要原因是飞行员之间的误会以及对塔台给出指令的错误理解。从这之后黑匣子才真正引起了全世界的关注。</p><p>黑匣子经过几代改良已经越来越先进，越来越坚固，现在飞机使用的是第四代黑匣子。</p><h2 id="3、外形"><a href="#3、外形" class="headerlink" title="3、外形"></a>3、外形</h2><p>黑匣子通常为橙红色，是两个长约40厘米，宽与高分别约20厘米的长方体，每个重约20-30千克。其实最开始黑匣子确实是黑色的，只是因为黑无色物体在事故现场很难被发现，增加了寻找难度，厚度才改成橙红色，更加醒目。 </p><h2 id="4、记录了什么"><a href="#4、记录了什么" class="headerlink" title="4、记录了什么"></a>4、记录了什么</h2><p>飞行数据记录器FDR记录了飞机高度、速度、航向、姿态，以及能反映飞机操纵、发动机等约1000个参数。<br>驾驶舱话音记录器CVR主要记录四个通道的声音，分别为机长通道、副驾驶通道、备用通道、环境声音通道，记录了驾驶舱内的各种声音，包括机组彼此间的对话，飞行员与地面指挥人员的通话，驾驶舱内的各种背景声音，如语音警告、发动机噪音、座舱噪音、操纵声音、襟翼和起落架手柄操作声音、航空器遭遇气象环境（雷电、大雨、冰雹）声音等。</p><h2 id="5、记录时长"><a href="#5、记录时长" class="headerlink" title="5、记录时长"></a>5、记录时长</h2><p>采用固态芯片为记录介质的 FDR 至少能记录事故前 25 小时的飞行数据 ；<br>而 CVR 分为磁带介质和固态介质，磁带能记录事故前约 30 分钟的数据，固态介质能记录事故前2个小时左右。</p><h2 id="6、如何读取数据"><a href="#6、如何读取数据" class="headerlink" title="6、如何读取数据"></a>6、如何读取数据</h2><p>中国民航局包括航空企业都有能力读取。数据完好的话两三天可以读取出来，但是由于每次事故原因及破坏程度都不尽相同，需要用特殊的技术将其物理恢复。读取后数据分析才是最重要的，一般一周左右会有一个初步的分析结果，如果数据缺失或者损坏可能就需要更长时间了。</p><h2 id="7、组成和坚固程度"><a href="#7、组成和坚固程度" class="headerlink" title="7、组成和坚固程度"></a>7、组成和坚固程度</h2><p>通常黑匣子由记忆体、水下定位器、绝缘层、外壳、电源组成，外壳具有很厚的钢板和很多层的防护冲击的隔热材料。黑匣子可承受1100°C的高温半小时至一小时，可承受飞机坠毁时的约100G重力撞击。可承受约4000多米深水水压，而且不怕海水长时间浸泡。<br>会发信号的黑匣子<br>如遇飞机失事，坠机后掉落的黑匣子会自动发射无线电信号，引导救援人员找到它。如果飞机发生意外坠入水中，记录器上的水下定位信标（ULB）遇水就会被自动激活，发射频率为 37.5KHz 的无线电信号。信标每秒钟发射一次信号，发射时长可达 30 天。</p><h2 id="8、还有什么会用黑匣子"><a href="#8、还有什么会用黑匣子" class="headerlink" title="8、还有什么会用黑匣子"></a>8、还有什么会用黑匣子</h2><ul><li>汽车黑匣子<br>又称“汽车行驶记录仪”或“汽车综合信息记录仪”，</li><li>火车黑匣子<br>火车黑匣子一般装配在车头部，又名“火车运行监控记录器”。除</li><li>船舶黑匣子<br>船舶黑匣子的学名叫“船载航行数据记录仪（简称VDR）”，主要功能是记录、处理、压缩、储存和回放事故船舶在发生灾难事故前16小时内，船舶上的各种重要信息参数，其功能与飞机上的黑匣子差不多。</li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="1、黑匣子是什么"><a href="#1、黑匣子是什么" class="headerlink" title="1、黑匣子是什么"></a>1、黑匣子是什么</h2><p><img src="/images/pasted-58.png" alt="关于黑匣子的最强整理"><br>正式名称是“飞行信息记录系统”。目前民用航空业普遍使用的“黑匣子”有两种，包括飞行数据记录器（Flight Data Recorder,FDR）和驾驶舱话音记录器（Cockpit Voice Recorder，CVR）。</p><h2 id="2、由来"><a href="#2、由来" class="headerlink" title="2、由来"></a>2、由来</h2><p>世界上第一个黑匣子是由一位澳大利亚墨尔本市工程师在1958年发明的。早期的黑匣子只记录了几个简单的飞行数据，且稳定性差，易损坏，读取数据困难，一直没有收到重视。  </p><p>直到1977年，两架波音747型客机在西班牙特内里费岛机场的跑道上相撞，造成了583人丧生，数百人受伤，多亏了有黑匣子的记录才发现主要原因是飞行员之间的误会以及对塔台给出指令的错误理解。从这之后黑匣子才真正引起了全世界的关注。</p><p>黑匣子经过几代改良已经越来越先进，越来越坚固，现在飞机使用的是第四代黑匣子。</p><h2 id="3、外形"><a href="#3、外形" class="headerlink" title="3、外形"></a>3、外形</h2><p>黑匣子通常为橙红色，是两个长约40厘米，宽与高分别约20厘米的长方体，每个重约20-30千克。其实最开始黑匣子确实是黑色的，只是因为黑无色物体在事故现场很难被发现，增加了寻找难度，厚度才改成橙红色，更加醒目。 </p><h2 id="4、记录了什么"><a href="#4、记录了什么" class="headerlink" title="4、记录了什么"></a>4、记录了什么</h2><p>飞行数据记录器FDR记录了飞机高度、速度、航向、姿态，以及能反映飞机操纵、发动机等约1000个参数。<br>驾驶舱话音记录器CVR主要记录四个通道的声音，分别为机长通道、副驾驶通道、备用通道、环境声音通道，记录了驾驶舱内的各种声音，包括机组彼此间的对话，飞行员与地面指挥人员的通话，驾驶舱内的各种背景声音，如语音警告、发动机噪音、座舱噪音、操纵声音、襟翼和起落架手柄操作声音、航空器遭遇气象环境（雷电、大雨、冰雹）声音等。</p><h2 id="5、记录时长"><a href="#5、记录时长" class="headerlink" title="5、记录时长"></a>5、记录时长</h2><p>采用固态芯片为记录介质的 FDR 至少能记录事故前 25 小时的飞行数据 ；<br>而 CVR 分为磁带介质和固态介质，磁带能记录事故前约 30 分钟的数据，固态介质能记录事故前2个小时左右。</p><h2 id="6、如何读取数据"><a href="#6、如何读取数据" class="headerlink" title="6、如何读取数据"></a>6、如何读取数据</h2><p>中国民航局包括航空企业都有能力读取。数据完好的话两三天可以读取出来，但是由于每次事故原因及破坏程度都不尽相同，需要用特殊的技术将其物理恢复。读取后数据分析才是最重要的，一般一周左右会有一个初步的分析结果，如果数据缺失或者损坏可能就需要更长时间了。</p><h2 id="7、组成和坚固程度"><a href="#7、组成和坚固程度" class="headerlink" title="7、组成和坚固程度"></a>7、组成和坚固程度</h2><p>通常黑匣子由记忆体、水下定位器、绝缘层、外壳、电源组成，外壳具有很厚的钢板和很多层的防护冲击的隔热材料。黑匣子可承受1100°C的高温半小时至一小时，可承受飞机坠毁时的约100G重力撞击。可承受约4000多米深水水压，而且不怕海水长时间浸泡。<br>会发信号的黑匣子<br>如遇飞机失事，坠机后掉落的黑匣子会自动发射无线电信号，引导救援人员找到它。如果飞机发生意外坠入水中，记录器上的水下定位信标（ULB）遇水就会被自动激活，发射频率为 37.5KHz 的无线电信号。信标每秒钟发射一次信号，发射时长可达 30 天。</p><h2 id="8、还有什么会用黑匣子"><a href="#8、还有什么会用黑匣子" class="headerlink" title="8、还有什么会用黑匣子"></a>8、还有什么会用黑匣子</h2><ul><li>汽车黑匣子<br>又称“汽车行驶记录仪”或“汽车综合信息记录仪”，</li><li>火车黑匣子<br>火车黑匣子一般装配在车头部，又名“火车运行监控记录器”。除</li><li>船舶黑匣子<br>船舶黑匣子的学名叫“船载航行数据记录仪（简称VDR）”，主要功能是记录、处理、压缩、储存和回放事故船舶在发生灾难事故前16小时内，船舶上的各种重要信息参数，其功能与飞机上的黑匣子差不多。</li></ul>]]></content>
     
     
     
     <tags>
       
       <tag>黑匣子</tag>
+      
+      <tag>冷知识</tag>
       
     </tags>
     
@@ -241,15 +226,15 @@
     <link href="/p/5026518a.html"/>
     <url>/p/5026518a.html</url>
     
-    <content type="html"><![CDATA[<p>最近找书翻到一个挺新奇的网站【小鱼速读】。主页面初看的话是一个拥有多种分类的图书网站，收集了每本图书的封面平铺到页面上。然而当你点开准备阅读的时候，它跳转的其实是各种视频网站对应图书的解读视频。  </p><span id="more"></span><p><img src="/images/pasted-55.png" alt="一个披着图书网站外壳的视频网站"><br>没错，小鱼速读就是一个披着图书网站外壳的图书解说视频收集分类汇总网站。收集视频网站上经典的图书解说视频，分类汇总。  </p><p>小鱼速读分了三大类，一类是图书，一类是影视，另一个是实验室板块。  </p><p>图书类收集了豆瓣总榜、科幻小说、推理悬疑、科学普及、历史经典、政治经济、经营管理、奇幻网文、金融营销、职场社会等11各分类。<br>影视分类收集了内地剧、美剧、港剧、日剧、韩剧5类。<br>实验室板块是建设中的功能，目前提供内容检索及金庸武侠内容整理。<br>每个分类下展示了图书的本数，每本图书上都展示视频总长和视频集数。简单清晰一目了然。  </p><p><img src="/images/pasted-56.png" alt="一个披着图书网站外壳的视频网站"><br>网站完美适配手机端，手机端体验也很完美，手机上浏览的时候去掉实验室功能，取而代之的是最新板块，展示最新更新的图书速度内容。</p><p><img src="/images/pasted-57.png" alt="一个披着图书网站外壳的视频网站"><br>挺不错的一个网站，在快节奏的当下，如果你想读书却又没有时间，视频解读是个不错的选择。虽然内容全部来自于视频大站，但是大站内容大多繁杂，每个up主主打内容不一，小鱼速读收集整理分类汇总，则帮你省去了找资源的烦恼。  找资源的烦恼。</p>]]></content>
+    <content type="html"><![CDATA[<p>最近找书翻到一个挺新奇的网站【小鱼速读】。主页面初看的话是一个拥有多种分类的图书网站，收集了每本图书的封面平铺到页面上。然而当你点开准备阅读的时候，它跳转的其实是各种视频网站对应图书的解读视频。  </p><!--more--><p><img src="/images/pasted-55.png" alt="一个披着图书网站外壳的视频网站"><br>没错，小鱼速读就是一个披着图书网站外壳的图书解说视频收集分类汇总网站。收集视频网站上经典的图书解说视频，分类汇总。  </p><p>小鱼速读分了三大类，一类是图书，一类是影视，另一个是实验室板块。  </p><p>图书类收集了豆瓣总榜、科幻小说、推理悬疑、科学普及、历史经典、政治经济、经营管理、奇幻网文、金融营销、职场社会等11各分类。<br>影视分类收集了内地剧、美剧、港剧、日剧、韩剧5类。<br>实验室板块是建设中的功能，目前提供内容检索及金庸武侠内容整理。<br>每个分类下展示了图书的本数，每本图书上都展示视频总长和视频集数。简单清晰一目了然。  </p><p><img src="/images/pasted-56.png" alt="一个披着图书网站外壳的视频网站"><br>网站完美适配手机端，手机端体验也很完美，手机上浏览的时候去掉实验室功能，取而代之的是最新板块，展示最新更新的图书速度内容。</p><p><img src="/images/pasted-57.png" alt="一个披着图书网站外壳的视频网站"><br>挺不错的一个网站，在快节奏的当下，如果你想读书却又没有时间，视频解读是个不错的选择。虽然内容全部来自于视频大站，但是大站内容大多繁杂，每个up主主打内容不一，小鱼速读收集整理分类汇总，则帮你省去了找资源的烦恼。  找资源的烦恼。</p><p>传送门：<a href="http://www.xysudu.com/">http://www.xysudu.com/</a></p>]]></content>
     
     
     
     <tags>
       
-      <tag>图书</tag>
+      <tag>网站</tag>
       
-      <tag>视频</tag>
+      <tag>图书</tag>
       
       <tag>解说</tag>
       
@@ -275,6 +260,8 @@
     
     
     <tags>
+      
+      <tag>技术</tag>
       
       <tag>python</tag>
       
@@ -303,13 +290,13 @@
     
     <tags>
       
+      <tag>技术</tag>
+      
       <tag>windows</tag>
       
       <tag>快捷方式</tag>
       
       <tag>箭头</tag>
-      
-      <tag>bat</tag>
       
     </tags>
     
@@ -322,17 +309,17 @@
     <link href="/p/19af8161.html"/>
     <url>/p/19af8161.html</url>
     
-    <content type="html"><![CDATA[<p>当年风靡一时的小霸王陪我们度过了快乐的同年时间，如今已经慢慢远离了我们的视野。然而魂斗罗，马里奥们带给童年的我们的快乐是现在任何游戏都不能比拟的。虽然现在已经没有小霸王游戏机了，但是各种安卓模拟器、PC模拟器也不少，想玩了装个模拟器也可以玩的。  </p><p>这里介绍的这个网站可以让我们不用安装模拟器，点开直玩。最重要的是适配移动端，手机玩耍体验很好。苹果手机用户可以在Safari中打开，然后添加到主屏幕，这样不会有浏览器的地址栏，防止误按。或者在微信中打开网址。</p><span id="more"></span><p><img src="/images/pasted-48.png" alt="小霸王"><br><img src="/images/pasted-49.png" alt="小霸王"><br>游戏分了FC、街机、GBA、MD、Flash、H5和联机大厅，游戏很多，可以根据自己的喜好选择类型，总有一款你之前很喜欢的。网页会记录最大8个最近在玩的游戏，方便下次快速打开。这个记录是存储在浏览器本地的，清理缓存或者换浏览器就会消失。<br><img src="/images/pasted-51.png" alt="小霸王"><br>游戏支持存档，不过也是本地的。部分游戏支持金手指功能，无限生命、金身、隐身均可设置，如果需要加金手指的欢迎联系作者，关于里面可以找到作者。<br><img src="/images/pasted-47.png" alt="小霸王"><br>联机大厅还支持创建房间邀请好友一起玩，需要先用qq登录。不过作者在关于里面有讲过部分网络原因会没法连通。由于服务器限制，有时候会卡顿。<br>网站有广告，但是不会影响游戏体验，进入游戏后就没有广告了。<br>传送门：<a href="https://www.yikm.net/">https://www.yikm.net/</a></p>]]></content>
+    <content type="html"><![CDATA[<p>当年风靡一时的小霸王陪我们度过了快乐的同年时间，如今已经慢慢远离了我们的视野。然而魂斗罗，马里奥们带给童年的我们的快乐是现在任何游戏都不能比拟的。虽然现在已经没有小霸王游戏机了，但是各种安卓模拟器、PC模拟器也不少，想玩了装个模拟器也可以玩的。  </p><span id="more"></span><p>这里介绍的这个网站可以让我们不用安装模拟器，点开直玩。最重要的是适配移动端，手机玩耍体验很好。苹果手机用户可以在Safari中打开，然后添加到主屏幕，这样不会有浏览器的地址栏，防止误按。或者在微信中打开网址。</p><!--more--><p><img src="/images/pasted-48.png" alt="小霸王"><br><img src="/images/pasted-49.png" alt="小霸王"><br>游戏分了FC、街机、GBA、MD、Flash、H5和联机大厅，游戏很多，可以根据自己的喜好选择类型，总有一款你之前很喜欢的。网页会记录最大8个最近在玩的游戏，方便下次快速打开。这个记录是存储在浏览器本地的，清理缓存或者换浏览器就会消失。<br><img src="/images/pasted-51.png" alt="小霸王"><br>游戏支持存档，不过也是本地的。部分游戏支持金手指功能，无限生命、金身、隐身均可设置，如果需要加金手指的欢迎联系作者，关于里面可以找到作者。<br><img src="/images/pasted-47.png" alt="小霸王"><br>联机大厅还支持创建房间邀请好友一起玩，需要先用qq登录。不过作者在关于里面有讲过部分网络原因会没法连通。由于服务器限制，有时候会卡顿。<br>网站有广告，但是不会影响游戏体验，进入游戏后就没有广告了。<br>传送门：<a href="https://www.yikm.net/">https://www.yikm.net/</a></p>]]></content>
     
     
     
     <tags>
       
-      <tag>掌机</tag>
-      
-      <tag>FC</tag>
+      <tag>网站</tag>
       
       <tag>小霸王</tag>
+      
+      <tag>FC</tag>
       
     </tags>
     
@@ -356,6 +343,8 @@
     
     
     <tags>
+      
+      <tag>网站</tag>
       
       <tag>windows</tag>
       
@@ -390,6 +379,8 @@
       
       <tag>ICU</tag>
       
+      <tag>网站</tag>
+      
     </tags>
     
   </entry>
@@ -413,11 +404,13 @@
     
     <tags>
       
-      <tag>掌机</tag>
+      <tag>网站</tag>
+      
+      <tag>小霸王</tag>
       
       <tag>FC</tag>
       
-      <tag>小霸王</tag>
+      <tag>掌机</tag>
       
       <tag>超级马里奥</tag>
       
@@ -444,11 +437,11 @@
     
     <tags>
       
+      <tag>网站</tag>
+      
       <tag>pika</tag>
       
       <tag>图片</tag>
-      
-      <tag>包边</tag>
       
     </tags>
     
@@ -467,6 +460,8 @@
     
     <tags>
       
+      <tag>网站</tag>
+      
       <tag>games</tag>
       
       <tag>游戏</tag>
@@ -474,8 +469,6 @@
       <tag>Nazo</tag>
       
       <tag>俄罗斯方块</tag>
-      
-      <tag>piko</tag>
       
     </tags>
     
@@ -499,6 +492,8 @@
     
     
     <tags>
+      
+      <tag>网站</tag>
       
       <tag>图床</tag>
       
@@ -529,6 +524,8 @@
       
       <tag>浏览器</tag>
       
+      <tag>软件</tag>
+      
     </tags>
     
   </entry>
@@ -551,6 +548,8 @@
     
     
     <tags>
+      
+      <tag>网站</tag>
       
       <tag>抠图</tag>
       
@@ -583,6 +582,8 @@
     
     <tags>
       
+      <tag>技术</tag>
+      
       <tag>身份证识别</tag>
       
       <tag>parseIdCard</tag>
@@ -610,9 +611,11 @@
     
     <tags>
       
+      <tag>技术</tag>
+      
       <tag>坐标</tag>
       
-      <tag>经纬度</tag>
+      <tag>经纬</tag>
       
     </tags>
     
@@ -636,6 +639,8 @@
     
     
     <tags>
+      
+      <tag>技术</tag>
       
       <tag>platform</tag>
       
@@ -664,6 +669,8 @@
     
     <tags>
       
+      <tag>其他</tag>
+      
       <tag>nice</tag>
       
     </tags>
@@ -689,6 +696,8 @@
     
     <tags>
       
+      <tag>其他</tag>
+      
       <tag>五服</tag>
       
     </tags>
@@ -713,6 +722,8 @@
     
     
     <tags>
+      
+      <tag>技术</tag>
       
       <tag>JMeter</tag>
       
@@ -741,6 +752,8 @@
     
     <tags>
       
+      <tag>技术</tag>
+      
       <tag>Leanote</tag>
       
       <tag>云笔记</tag>
@@ -767,6 +780,8 @@
     
     
     <tags>
+      
+      <tag>技术</tag>
       
       <tag>mongodb</tag>
       
@@ -795,6 +810,8 @@
       
       <tag>人口</tag>
       
+      <tag>其他</tag>
+      
     </tags>
     
   </entry>
@@ -806,7 +823,7 @@
     <link href="/p/44be556e.html"/>
     <url>/p/44be556e.html</url>
     
-    <content type="html"><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>将hexo项目一直到另一台电脑上，配置好环境后运行hexo命令，发生如下报错。  </p><p>hexo : 无法加载文件 C:\Users\mxz\AppData\Roaming\npm\hexo.ps1，因为在此系统上禁止运行脚本。  </p><span id="more"></span><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><h3 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h3><p>更改powershell执行策略。  </p><p>1、打开设置，搜素power，点击【允许powershell脚本在不签名的情况下运行】</p><p><img src="/images/pasted-5.png" alt="设置"></p><p>2、勾选下面选项，点击应用即可。然后重新打开cmd窗口运行命令即可。</p><p><img src="/images/pasted-6.png" alt="允许powershell脚本在不签名的情况下运行"></p><h3 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h3><p>执行：get-ExecutionPolicy，返回状态：Restricted，表示状态是禁止的，<br>然后要设置下。<br>执行：set-ExecutionPolicy RemoteSigned 开启。<br>选择Y  </p><p><img src="/images/pasted-15.png" alt="玖涯博客"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>将hexo项目一直到另一台电脑上，配置好环境后运行hexo命令，发生如下报错。  </p><p>hexo : 无法加载文件 C:\Users\mxz\AppData\Roaming\npm\hexo.ps1，因为在此系统上禁止运行脚本。  </p><!--more--><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><h3 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h3><p>更改powershell执行策略。  </p><p>1、打开设置，搜素power，点击【允许powershell脚本在不签名的情况下运行】</p><p><img src="/images/pasted-5.png" alt="设置"></p><p>2、勾选下面选项，点击应用即可。然后重新打开cmd窗口运行命令即可。</p><p><img src="/images/pasted-6.png" alt="允许powershell脚本在不签名的情况下运行"></p><h3 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h3><p>执行：get-ExecutionPolicy，返回状态：Restricted，表示状态是禁止的，<br>然后要设置下。<br>执行：set-ExecutionPolicy RemoteSigned 开启。<br>选择Y  </p><p><img src="/images/pasted-15.png" alt="玖涯博客"></p>]]></content>
     
     
     <categories>
@@ -817,6 +834,8 @@
     
     
     <tags>
+      
+      <tag>技术</tag>
       
       <tag>HEXO</tag>
       
@@ -831,7 +850,7 @@
     <link href="/p/9ba88fcd.html"/>
     <url>/p/9ba88fcd.html</url>
     
-    <content type="html"><![CDATA[<p>内容来自微博用户：超正经东叔<br><a href="https://weibo.com/2710213833/LabhoD5U4">https://weibo.com/2710213833/LabhoD5U4</a></p><span id="more"></span><p><img src="https://pic.imgdb.cn/item/61dfd67c2ab3f51d91526f7e.jpg"><br><img src="https://pic.imgdb.cn/item/61dfd6602ab3f51d91525c87.jpg"></p>]]></content>
+    <content type="html"><![CDATA[<p>内容来自微博用户：超正经东叔<br><a href="https://weibo.com/2710213833/LabhoD5U4">https://weibo.com/2710213833/LabhoD5U4</a></p><!--more--><p><img src="https://pic.imgdb.cn/item/61dfd67c2ab3f51d91526f7e.jpg"><br><img src="https://pic.imgdb.cn/item/61dfd6602ab3f51d91525c87.jpg"></p>]]></content>
     
     
     <categories>
@@ -842,6 +861,8 @@
     
     
     <tags>
+      
+      <tag>其他</tag>
       
       <tag>包皮</tag>
       
@@ -856,7 +877,7 @@
     <link href="/p/381f58c9.html"/>
     <url>/p/381f58c9.html</url>
     
-    <content type="html"><![CDATA[<p>jmeter生成随机数有两个函数，分别是：Random函数和UUID函数。  </p><span id="more"></span><h2 id="Random"><a href="#Random" class="headerlink" title="Random"></a>Random</h2><p>使用方式：${__Random( param1,param2 ,param3 )}<br>param1为随机数的下限<br>param2为随机数的上限<br>param3为存储随机数的变量名，是选填项。<br>示例：${__Random(100,200 ,id)}  </p><h2 id="UUID"><a href="#UUID" class="headerlink" title="UUID"></a>UUID</h2><p>UUID使用方式：${__UUID}<br>示例：’businessNo’:’${__UUID}’  </p><h2 id="Random和UUID的差别"><a href="#Random和UUID的差别" class="headerlink" title="Random和UUID的差别"></a>Random和UUID的差别</h2><p>Random生成随机数是可能会重复的。UUID是一定不会出现重复的。</p>]]></content>
+    <content type="html"><![CDATA[<p>jmeter生成随机数有两个函数，分别是：Random函数和UUID函数。  </p><!--more--><h2 id="Random"><a href="#Random" class="headerlink" title="Random"></a>Random</h2><p>使用方式：${__Random( param1,param2 ,param3 )}<br>param1为随机数的下限<br>param2为随机数的上限<br>param3为存储随机数的变量名，是选填项。<br>示例：${__Random(100,200 ,id)}  </p><h2 id="UUID"><a href="#UUID" class="headerlink" title="UUID"></a>UUID</h2><p>UUID使用方式：${__UUID}<br>示例：’businessNo’:’${__UUID}’  </p><h2 id="Random和UUID的差别"><a href="#Random和UUID的差别" class="headerlink" title="Random和UUID的差别"></a>Random和UUID的差别</h2><p>Random生成随机数是可能会重复的。UUID是一定不会出现重复的。</p>]]></content>
     
     
     <categories>
@@ -867,6 +888,8 @@
     
     
     <tags>
+      
+      <tag>技术</tag>
       
       <tag>JMeter</tag>
       
@@ -897,32 +920,7 @@
       
       <tag>Django</tag>
       
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>MouseInc-小巧好用的全局鼠标手势</title>
-    <link href="/p/fa0cb281.html"/>
-    <url>/p/fa0cb281.html</url>
-    
-    <content type="html"><![CDATA[<p>发现一个小巧但是功能强大的全局鼠标手势软件，最近也一直再用。</p><span id="more"></span><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><h4 id="1、小巧便携"><a href="#1、小巧便携" class="headerlink" title="1、小巧便携"></a>1、小巧便携</h4><p>下载完只有一个单独的exe文件，首次启动会生成一个json格式配置文件，再无其他文件。</p><h4 id="2、功能强大"><a href="#2、功能强大" class="headerlink" title="2、功能强大"></a>2、功能强大</h4><p>鼠标手势、高质量截图、按键回显、贴图、ocr识别、边缘滚动。</p><h2 id="功能简介"><a href="#功能简介" class="headerlink" title="功能简介"></a>功能简介</h2><h4 id="1、鼠标手势"><a href="#1、鼠标手势" class="headerlink" title="1、鼠标手势"></a>1、鼠标手势</h4><p>支持超多的鼠标手势，使用之后你会发现原来一只鼠标可以完成这么多的功能。常用的上划复制、下滑粘贴、L行关闭页面等，每一种都超方便。同时还支持设置排除程序，在排除程序上不会启用鼠标手势。<br><img src="https://pic.imgdb.cn/item/61b85b522ab3f51d91d92af3.png"></p><h4 id="2、贴图"><a href="#2、贴图" class="headerlink" title="2、贴图"></a>2、贴图</h4><p>使用左下右上顺序画一个方形即可将选中区域截图并悬浮显示，超实用的一个小功能，再也不用来回切换程序来查看信息了。<br><img src="https://pic.imgdb.cn/item/61b85b8d2ab3f51d91d99971.png"></p><h4 id="3、OCR"><a href="#3、OCR" class="headerlink" title="3、OCR"></a>3、OCR</h4><p>使用右下左上的顺序画一个方形，即可将识别选中区域的文字，并在屏幕右下角弹出识别结果供使用。识别结果也很是喜人。<br><img src="https://pic.imgdb.cn/item/61b85c022ab3f51d91d9e851.png"></p><h4 id="4、按键回显"><a href="#4、按键回显" class="headerlink" title="4、按键回显"></a>4、按键回显</h4><p>按键回显也是一个超炫酷的功能，可以设置背景颜色、文字颜色、阴影颜色以及位置、消失时间等，可玩性很高。<br><img src="https://pic.imgdb.cn/item/61b85cb02ab3f51d91daa0f6.png"></p><p>还有许多其他的功能和设置，麻雀虽小五脏俱全，作者也提供了<a href="https://docs.shuax.com/MouseInc/#/">手册</a> ，可以快速入门。<br>官网：<a href="https://shuax.com/project/mouseinc/">https://shuax.com/project/mouseinc/</a> 。</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>软件分享</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>MouseInc</tag>
-      
-      <tag>鼠标手势</tag>
+      <tag>技术</tag>
       
     </tags>
     
@@ -946,6 +944,8 @@
     
     
     <tags>
+      
+      <tag>网站</tag>
       
       <tag>网络书签</tag>
       
@@ -973,6 +973,8 @@
     
     
     <tags>
+      
+      <tag>技术</tag>
       
       <tag>图片</tag>
       
@@ -1003,6 +1005,8 @@
     
     <tags>
       
+      <tag>技术</tag>
+      
       <tag>弱网测试</tag>
       
     </tags>
@@ -1027,6 +1031,8 @@
     
     
     <tags>
+      
+      <tag>技术</tag>
       
       <tag>宝塔面板</tag>
       
