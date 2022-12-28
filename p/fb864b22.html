@@ -13,28 +13,28 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="kapu">
+  <meta name="author" content="卡普">
   <meta name="keywords" content="">
   
-    <meta name="description" content="django web框架中,使用vue的时候,会遇到语法冲突，这里提供了解决方案。">
+    <meta name="description" content="最近宝塔面板操作数据库总是提示管理密码错误，于是打算重置下密码试下。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Django与Vue语法的冲突问题的解决方法">
-<meta property="og:url" content="http://example.com/p/9600b488.html">
+<meta property="og:title" content="mysql数据库重置密码并开启外部访问">
+<meta property="og:url" content="http://example.com/p/fb864b22.html">
 <meta property="og:site_name" content="分享志">
-<meta property="og:description" content="django web框架中,使用vue的时候,会遇到语法冲突，这里提供了解决方案。">
+<meta property="og:description" content="最近宝塔面板操作数据库总是提示管理密码错误，于是打算重置下密码试下。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/images/DJANGOVUE.png">
-<meta property="article:published_time" content="2022-12-17T13:53:31.287Z">
-<meta property="article:modified_time" content="2022-12-18T01:31:25.671Z">
+<meta property="og:image" content="http://example.com/images/mysql.jpg">
+<meta property="article:published_time" content="2022-12-24T13:18:00.000Z">
+<meta property="article:modified_time" content="2022-12-24T12:16:47.089Z">
 <meta property="article:author" content="卡普">
-<meta property="article:tag" content="Django">
 <meta property="article:tag" content="技术">
+<meta property="article:tag" content="nice">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/images/DJANGOVUE.png">
+<meta name="twitter:image" content="http://example.com/images/mysql.jpg">
   
   
   
-  <title>Django与Vue语法的冲突问题的解决方法 - 分享志</title>
+  <title>mysql数据库重置密码并开启外部访问 - 分享志</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -230,13 +230,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/images/DJANGOVUE.png') no-repeat center center; background-size: cover;">
+     style="background: url('/images/mysql.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Django与Vue语法的冲突问题的解决方法"></span>
+            <span id="subtitle" data-typed-text="mysql数据库重置密码并开启外部访问"></span>
           
         </div>
 
@@ -247,8 +247,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-12-17 21:53" pubdate>
-          2022年12月17日 晚上
+        <time datetime="2022-12-24 21:18" pubdate>
+          2022年12月24日 晚上
         </time>
       </span>
     
@@ -259,7 +259,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          409 字
+          454 字
         
       </span>
     
@@ -308,17 +308,21 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Django与Vue语法的冲突问题的解决方法</h1>
+            <h1 style="display: none">mysql数据库重置密码并开启外部访问</h1>
             
             
               <div class="markdown-body">
                 
-                <h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>django web框架中,使用vue的时候,会遇到语法冲突，因为vue使用<code>&#123;&#123;&#125;&#125;`    ,而django也使用 `&#123;&#123;&#125;&#125;</code> 。</p>
-<!--more-->
-<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>在django1.5以后,加入了下面的标签，在这个标签里的内容不会被django模板引擎渲染。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">&#123;% verbatim myblock %&#125; &#123;% endverbatim myblock %&#125;<br></code></pre></td></tr></table></figure>
-<p>我们可以把带有<code>&#123;&#123; &#125;&#125; </code>的Vue代码放在 <code>&#123;% verbatim myblock %&#125;</code>标签中间，例如下面：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><br>  &#123;% verbatim myblock %&#125;<br>    &#123;&#123; name &#125;&#125;<br>  &#123;% endverbatim myblock %&#125;<br><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br></code></pre></td></tr></table></figure>
+                <p>最近宝塔面板操作数据库总是提示管理密码错误，于是打算重置下密码试下。</p>
+<span id="more"></span>
+<p>依次执行下面的命令。<br>免密码登录root用户。  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs ssh">mysqld_safe --user=mysql --skip-grant-tables --skip-networking&amp;<br>mysql -uroot mysql<br></code></pre></td></tr></table></figure>
+<p>更改密码并开启外部访问，<code>Host = &#39;%&#39;</code>就是开启外部访问，<code>Host = &#39;localhost&#39;</code>的话则是只能本机访问。  </p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">update</span> <span class="hljs-keyword">user</span> <span class="hljs-keyword">set</span> authentication_string <span class="hljs-operator">=</span> password(<span class="hljs-string">&#x27;123456&#x27;</span>) <span class="hljs-keyword">where</span> <span class="hljs-keyword">user</span> <span class="hljs-operator">=</span> <span class="hljs-string">&#x27;root&#x27;</span> <span class="hljs-keyword">and</span> Host <span class="hljs-operator">=</span> <span class="hljs-string">&#x27;%&#x27;</span><br>flush privileges;<br>exit;<br></code></pre></td></tr></table></figure>
+<p>重启mysql服务。  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ssh">service mysql restart<br></code></pre></td></tr></table></figure>
+<p>到了这里密码就重置完成并且可以外部使用数据库软件连接了，宝塔面板还是提示管理密码错误的话，修改下宝塔面板里面的密码改成重置后的密码，就不会在提示管理密码错误了。</p>
+
                 
               </div>
             
@@ -336,7 +340,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Django/" class="category-chain-item">Django</a>
+  <a href="/categories/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
   
   
 
@@ -351,9 +355,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Django/">#Django</a>
-      
         <a href="/tags/%E6%8A%80%E6%9C%AF/">#技术</a>
+      
+        <a href="/tags/nice/">#nice</a>
       
     </div>
   
@@ -365,20 +369,20 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Django与Vue语法的冲突问题的解决方法</div>
-      <div>http://example.com/p/9600b488.html</div>
+      <div>mysql数据库重置密码并开启外部访问</div>
+      <div>http://example.com/p/fb864b22.html</div>
     </div>
     <div class="license-meta">
       
         <div class="license-meta-item">
           <div>作者</div>
-          <div>kapu</div>
+          <div>卡普</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年12月17日</div>
+          <div>2022年12月24日</div>
         </div>
       
       
@@ -387,7 +391,14 @@
           <div>许可协议</div>
           <div>
             
-              TURE
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
             
           </div>
         </div>
@@ -403,9 +414,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/p/880b9c45.html" title="《爱在》三部曲之后，再无爱情片">
+                      <a href="/p/9ed5c15d.html" title="CentOS 8安装源设置基础软件仓库时出错">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">《爱在》三部曲之后，再无爱情片</span>
+                        <span class="hidden-mobile">CentOS 8安装源设置基础软件仓库时出错</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -413,8 +424,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/p/2e59fa5b.html" title="iconfont图标使用指南">
-                        <span class="hidden-mobile">iconfont图标使用指南</span>
+                      <a href="/p/880b9c45.html" title="《爱在》三部曲之后，再无爱情片">
+                        <span class="hidden-mobile">《爱在》三部曲之后，再无爱情片</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

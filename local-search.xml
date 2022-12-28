@@ -4,6 +4,87 @@
   
   
   <entry>
+    <title>CentOS 8安装源设置基础软件仓库时出错</title>
+    <link href="/p/9ed5c15d.html"/>
+    <url>/p/9ed5c15d.html</url>
+    
+    <content type="html"><![CDATA[<p>最近把我闲置的笔记本折腾安装centos时，设置安装源提示设置基础软件仓库时出错。<br><img src="/images/eed31b58389c445f8d1d04fce07e84a6.png"></p><!--more--><p>解决办法是先给笔记本联网，然后设置网络安装源。<br>网络的话是在安装界面就可以看到设置网络的地方。<br>设置网络安装源的话是参照下面的设置，输入<code>http://mirrors.aliyun.com/centos/8/BaseOS/x86_64/os/</code>  。然后就可以继续安装了。<br>协议选择为http://<br>路径填写：mirrors.aliyun.com/centos/8/BaseOS/x86_64/os/<br>URL类型是：软件库URL<br><img src="/images/79c692274a37454aa28963dcd067df83.png"></p><p><code>http://mirrors.aliyun.com/centos/8/BaseOS/x86_64/os/</code>  这个路径其实是阿里的开源镜像站，可以进去选择其他的版本。<br>1672210782.png</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>其他</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>技术</tag>
+      
+      <tag>CentOS</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>mysql数据库重置密码并开启外部访问</title>
+    <link href="/p/fb864b22.html"/>
+    <url>/p/fb864b22.html</url>
+    
+    <content type="html"><![CDATA[<p>最近宝塔面板操作数据库总是提示管理密码错误，于是打算重置下密码试下。</p><span id="more"></span><p>依次执行下面的命令。<br>免密码登录root用户。  </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs ssh">mysqld_safe --user=mysql --skip-grant-tables --skip-networking&amp;<br>mysql -uroot mysql<br></code></pre></td></tr></table></figure><p>更改密码并开启外部访问，<code>Host = &#39;%&#39;</code>就是开启外部访问，<code>Host = &#39;localhost&#39;</code>的话则是只能本机访问。  </p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">update</span> <span class="hljs-keyword">user</span> <span class="hljs-keyword">set</span> authentication_string <span class="hljs-operator">=</span> password(<span class="hljs-string">&#x27;123456&#x27;</span>) <span class="hljs-keyword">where</span> <span class="hljs-keyword">user</span> <span class="hljs-operator">=</span> <span class="hljs-string">&#x27;root&#x27;</span> <span class="hljs-keyword">and</span> Host <span class="hljs-operator">=</span> <span class="hljs-string">&#x27;%&#x27;</span><br>flush privileges;<br>exit;<br></code></pre></td></tr></table></figure><p>重启mysql服务。  </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ssh">service mysql restart<br></code></pre></td></tr></table></figure><p>到了这里密码就重置完成并且可以外部使用数据库软件连接了，宝塔面板还是提示管理密码错误的话，修改下宝塔面板里面的密码改成重置后的密码，就不会在提示管理密码错误了。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>技术</tag>
+      
+      <tag>nice</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>《爱在》三部曲之后，再无爱情片</title>
+    <link href="/p/880b9c45.html"/>
+    <url>/p/880b9c45.html</url>
+    
+    <content type="html"><![CDATA[<h2 id="《爱在》三部曲"><a href="#《爱在》三部曲" class="headerlink" title="《爱在》三部曲"></a>《爱在》三部曲</h2><p>“爱在”系列电影共三部，分别是《爱在黎明破晓前》《爱在日落黄昏时》《爱在午夜降临前》，是超级经典的爱情电影之一。</p><span id="more"></span><p>在每一部电影当中，没有惊心动魄，没有海誓山盟，没有荡气回肠，有的只是平平淡淡的交流谈话，恋人伴侣间的对白。这也让它更加贴近现实世界，更加能够引起观者的共鸣，也更加能走入剧情、走入他们之间的爱情。</p><p>在一部电影的时间里，你会跟随着主人公，或多或少地找到自己的影子，而他们对于爱情的处理方式、对于爱情的理解都能让你感触颇深。</p><p>这一系列电影，每部电影之间在剧情里分别相隔9年，在现实拍摄中也相隔9年。第一部《爱在黎明破晓前》拍摄于1995年，第二部《爱在日落黄昏时》拍摄于9年后，第三部《爱在午夜降临前》拍摄于再一个9年后。它们分别展现了男女主角在不同的年龄阶段对爱情、对人生和世界的不同感悟、看法与情感。</p><h2 id="《爱在黎明破晓前》"><a href="#《爱在黎明破晓前》" class="headerlink" title="《爱在黎明破晓前》"></a>《爱在黎明破晓前》</h2><iframe src="//player.bilibili.com/player.html?aid=30315966&bvid=BV12W411D7VT&cid=52882167&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe><h2 id="《爱在日落黄昏时》"><a href="#《爱在日落黄昏时》" class="headerlink" title="《爱在日落黄昏时》"></a>《爱在日落黄昏时》</h2><iframe src="//player.bilibili.com/player.html?aid=30913433&bvid=BV1Vs411F7Mh&cid=53967762&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe><h2 id="《爱在午夜降临前》"><a href="#《爱在午夜降临前》" class="headerlink" title="《爱在午夜降临前》"></a>《爱在午夜降临前》</h2><iframe src="//player.bilibili.com/player.html?aid=31294930&bvid=BV1mW411d73X&cid=54687402&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe><h2 id="经典台词"><a href="#经典台词" class="headerlink" title="经典台词"></a>经典台词</h2><p>你听过这样一种说法吗，夫妻到了一定年龄，就丧失了互相倾听的能力。据称，男人会失去听尖高音的能力，而女人会失去听低音的能力。我想他们是在有意忽略对方之类的。<br>我想这是自然界的法则，这样才能让夫妻一起变老而不会自相残杀。</p><p>Have you ever heard that as couples get older,they lose ability to hear each other?Supposedly,men lose the ability to hear higher-pitched sounds,and women eventually lose hearing in the low end.I guess they sort of nullify each other,or something.<br>I guess,Nature’s way of allowing couples to grow old together without killing each other.</p><p>往后想，十年，二十年后，你结婚了。只不过你的婚姻已经没有了往日的激情。你开始责怪丈夫,然后你开始回想你一生认识的所有这些男人。如果选择的是他们其中的一个，会有怎样的际遇，而我就是那其中的一个男人。把这想象成时空穿越，从那时到现在,找到你错过的东西。你看,这真的有可能给你和未来的丈夫帮了一个大忙。你发现你什么也没错过，我不过是和你丈夫一样的废物一个,非常没有激情，非常无聊。而你的选择是正确的，你就会很幸福。</p><p>Jump ahead,ten,twenty years,you’re married.Only your marriage doesn’t have that same energy that it used to have.You start to blame your husband.You start to think about all those guys you’ve met in your life and what might have happened,if you’d picked up with one of them,i’m one of these guys.So think of this time travel,from then to now,to find out what you’re missing out on,see,what this really could be，is a gigantic favour to both you and your future husband to find out that you’re not missing out on anything.I’m just as biger a loser as he is,totally unmotivated,totally boring.You made right choice,and you’re really happy.</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>视频</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>视频</tag>
+      
+      <tag>爱在三部曲</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Django与Vue语法的冲突问题的解决方法</title>
     <link href="/p/9600b488.html"/>
     <url>/p/9600b488.html</url>

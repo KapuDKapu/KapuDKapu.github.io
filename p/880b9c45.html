@@ -13,28 +13,28 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="kapu">
+  <meta name="author" content="卡普">
   <meta name="keywords" content="">
   
-    <meta name="description" content="django web框架中,使用vue的时候,会遇到语法冲突，这里提供了解决方案。">
+    <meta name="description" content="《爱在》三部曲“爱在”系列电影共三部，分别是《爱在黎明破晓前》《爱在日落黄昏时》《爱在午夜降临前》，是超级经典的爱情电影之一。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Django与Vue语法的冲突问题的解决方法">
-<meta property="og:url" content="http://example.com/p/9600b488.html">
+<meta property="og:title" content="《爱在》三部曲之后，再无爱情片">
+<meta property="og:url" content="http://example.com/p/880b9c45.html">
 <meta property="og:site_name" content="分享志">
-<meta property="og:description" content="django web框架中,使用vue的时候,会遇到语法冲突，这里提供了解决方案。">
+<meta property="og:description" content="《爱在》三部曲“爱在”系列电影共三部，分别是《爱在黎明破晓前》《爱在日落黄昏时》《爱在午夜降临前》，是超级经典的爱情电影之一。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/images/DJANGOVUE.png">
-<meta property="article:published_time" content="2022-12-17T13:53:31.287Z">
-<meta property="article:modified_time" content="2022-12-18T01:31:25.671Z">
+<meta property="og:image" content="http://example.com/images/aizaisanbuqu.png">
+<meta property="article:published_time" content="2022-12-18T10:18:00.000Z">
+<meta property="article:modified_time" content="2022-12-18T10:54:57.491Z">
 <meta property="article:author" content="卡普">
-<meta property="article:tag" content="Django">
-<meta property="article:tag" content="技术">
+<meta property="article:tag" content="视频">
+<meta property="article:tag" content="爱在三部曲">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/images/DJANGOVUE.png">
+<meta name="twitter:image" content="http://example.com/images/aizaisanbuqu.png">
   
   
   
-  <title>Django与Vue语法的冲突问题的解决方法 - 分享志</title>
+  <title>《爱在》三部曲之后，再无爱情片 - 分享志</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -230,13 +230,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/images/DJANGOVUE.png') no-repeat center center; background-size: cover;">
+     style="background: url('/images/aizaisanbuqu.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Django与Vue语法的冲突问题的解决方法"></span>
+            <span id="subtitle" data-typed-text="《爱在》三部曲之后，再无爱情片"></span>
           
         </div>
 
@@ -247,8 +247,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-12-17 21:53" pubdate>
-          2022年12月17日 晚上
+        <time datetime="2022-12-18 18:18" pubdate>
+          2022年12月18日 晚上
         </time>
       </span>
     
@@ -259,7 +259,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          409 字
+          1.5k 字
         
       </span>
     
@@ -270,7 +270,7 @@
         
         
         
-          4 分钟
+          13 分钟
         
       </span>
     
@@ -308,17 +308,27 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Django与Vue语法的冲突问题的解决方法</h1>
+            <h1 style="display: none">《爱在》三部曲之后，再无爱情片</h1>
             
             
               <div class="markdown-body">
                 
-                <h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>django web框架中,使用vue的时候,会遇到语法冲突，因为vue使用<code>&#123;&#123;&#125;&#125;`    ,而django也使用 `&#123;&#123;&#125;&#125;</code> 。</p>
-<!--more-->
-<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>在django1.5以后,加入了下面的标签，在这个标签里的内容不会被django模板引擎渲染。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">&#123;% verbatim myblock %&#125; &#123;% endverbatim myblock %&#125;<br></code></pre></td></tr></table></figure>
-<p>我们可以把带有<code>&#123;&#123; &#125;&#125; </code>的Vue代码放在 <code>&#123;% verbatim myblock %&#125;</code>标签中间，例如下面：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><br>  &#123;% verbatim myblock %&#125;<br>    &#123;&#123; name &#125;&#125;<br>  &#123;% endverbatim myblock %&#125;<br><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br></code></pre></td></tr></table></figure>
+                <h2 id="《爱在》三部曲"><a href="#《爱在》三部曲" class="headerlink" title="《爱在》三部曲"></a>《爱在》三部曲</h2><p>“爱在”系列电影共三部，分别是《爱在黎明破晓前》《爱在日落黄昏时》《爱在午夜降临前》，是超级经典的爱情电影之一。</p>
+<span id="more"></span>
+<p>在每一部电影当中，没有惊心动魄，没有海誓山盟，没有荡气回肠，有的只是平平淡淡的交流谈话，恋人伴侣间的对白。这也让它更加贴近现实世界，更加能够引起观者的共鸣，也更加能走入剧情、走入他们之间的爱情。</p>
+<p>在一部电影的时间里，你会跟随着主人公，或多或少地找到自己的影子，而他们对于爱情的处理方式、对于爱情的理解都能让你感触颇深。</p>
+<p>这一系列电影，每部电影之间在剧情里分别相隔9年，在现实拍摄中也相隔9年。第一部《爱在黎明破晓前》拍摄于1995年，第二部《爱在日落黄昏时》拍摄于9年后，第三部《爱在午夜降临前》拍摄于再一个9年后。它们分别展现了男女主角在不同的年龄阶段对爱情、对人生和世界的不同感悟、看法与情感。</p>
+<h2 id="《爱在黎明破晓前》"><a href="#《爱在黎明破晓前》" class="headerlink" title="《爱在黎明破晓前》"></a>《爱在黎明破晓前》</h2><iframe src="//player.bilibili.com/player.html?aid=30315966&bvid=BV12W411D7VT&cid=52882167&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
+
+<h2 id="《爱在日落黄昏时》"><a href="#《爱在日落黄昏时》" class="headerlink" title="《爱在日落黄昏时》"></a>《爱在日落黄昏时》</h2><iframe src="//player.bilibili.com/player.html?aid=30913433&bvid=BV1Vs411F7Mh&cid=53967762&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
+
+<h2 id="《爱在午夜降临前》"><a href="#《爱在午夜降临前》" class="headerlink" title="《爱在午夜降临前》"></a>《爱在午夜降临前》</h2><iframe src="//player.bilibili.com/player.html?aid=31294930&bvid=BV1mW411d73X&cid=54687402&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
+
+<h2 id="经典台词"><a href="#经典台词" class="headerlink" title="经典台词"></a>经典台词</h2><p>你听过这样一种说法吗，夫妻到了一定年龄，就丧失了互相倾听的能力。据称，男人会失去听尖高音的能力，而女人会失去听低音的能力。我想他们是在有意忽略对方之类的。<br>我想这是自然界的法则，这样才能让夫妻一起变老而不会自相残杀。</p>
+<p>Have you ever heard that as couples get older,they lose ability to hear each other?Supposedly,men lose the ability to hear higher-pitched sounds,and women eventually lose hearing in the low end.I guess they sort of nullify each other,or something.<br>I guess,Nature’s way of allowing couples to grow old together without killing each other.</p>
+<p>往后想，十年，二十年后，你结婚了。只不过你的婚姻已经没有了往日的激情。你开始责怪丈夫,然后你开始回想你一生认识的所有这些男人。如果选择的是他们其中的一个，会有怎样的际遇，而我就是那其中的一个男人。把这想象成时空穿越，从那时到现在,找到你错过的东西。你看,这真的有可能给你和未来的丈夫帮了一个大忙。你发现你什么也没错过，我不过是和你丈夫一样的废物一个,非常没有激情，非常无聊。而你的选择是正确的，你就会很幸福。</p>
+<p>Jump ahead,ten,twenty years,you’re married.Only your marriage doesn’t have that same energy that it used to have.You start to blame your husband.You start to think about all those guys you’ve met in your life and what might have happened,if you’d picked up with one of them,i’m one of these guys.So think of this time travel,from then to now,to find out what you’re missing out on,see,what this really could be，is a gigantic favour to both you and your future husband to find out that you’re not missing out on anything.I’m just as biger a loser as he is,totally unmotivated,totally boring.You made right choice,and you’re really happy.</p>
+
                 
               </div>
             
@@ -336,7 +346,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Django/" class="category-chain-item">Django</a>
+  <a href="/categories/%E8%A7%86%E9%A2%91/" class="category-chain-item">视频</a>
   
   
 
@@ -351,9 +361,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Django/">#Django</a>
+        <a href="/tags/%E8%A7%86%E9%A2%91/">#视频</a>
       
-        <a href="/tags/%E6%8A%80%E6%9C%AF/">#技术</a>
+        <a href="/tags/%E7%88%B1%E5%9C%A8%E4%B8%89%E9%83%A8%E6%9B%B2/">#爱在三部曲</a>
       
     </div>
   
@@ -365,20 +375,20 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Django与Vue语法的冲突问题的解决方法</div>
-      <div>http://example.com/p/9600b488.html</div>
+      <div>《爱在》三部曲之后，再无爱情片</div>
+      <div>http://example.com/p/880b9c45.html</div>
     </div>
     <div class="license-meta">
       
         <div class="license-meta-item">
           <div>作者</div>
-          <div>kapu</div>
+          <div>卡普</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年12月17日</div>
+          <div>2022年12月18日</div>
         </div>
       
       
@@ -387,7 +397,14 @@
           <div>许可协议</div>
           <div>
             
-              TURE
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
             
           </div>
         </div>
@@ -403,9 +420,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/p/880b9c45.html" title="《爱在》三部曲之后，再无爱情片">
+                      <a href="/p/fb864b22.html" title="mysql数据库重置密码并开启外部访问">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">《爱在》三部曲之后，再无爱情片</span>
+                        <span class="hidden-mobile">mysql数据库重置密码并开启外部访问</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -413,8 +430,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/p/2e59fa5b.html" title="iconfont图标使用指南">
-                        <span class="hidden-mobile">iconfont图标使用指南</span>
+                      <a href="/p/9600b488.html" title="Django与Vue语法的冲突问题的解决方法">
+                        <span class="hidden-mobile">Django与Vue语法的冲突问题的解决方法</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

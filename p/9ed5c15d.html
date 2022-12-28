@@ -13,28 +13,28 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="kapu">
+  <meta name="author" content="卡普">
   <meta name="keywords" content="">
   
-    <meta name="description" content="django web框架中,使用vue的时候,会遇到语法冲突，这里提供了解决方案。">
+    <meta name="description" content="安装centos设置软件源时报错设置基础软件仓库时出错">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Django与Vue语法的冲突问题的解决方法">
-<meta property="og:url" content="http://example.com/p/9600b488.html">
+<meta property="og:title" content="CentOS 8安装源设置基础软件仓库时出错">
+<meta property="og:url" content="http://example.com/p/9ed5c15d.html">
 <meta property="og:site_name" content="分享志">
-<meta property="og:description" content="django web框架中,使用vue的时候,会遇到语法冲突，这里提供了解决方案。">
+<meta property="og:description" content="安装centos设置软件源时报错设置基础软件仓库时出错">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/images/DJANGOVUE.png">
-<meta property="article:published_time" content="2022-12-17T13:53:31.287Z">
-<meta property="article:modified_time" content="2022-12-18T01:31:25.671Z">
+<meta property="og:image" content="http://example.com/images/eed31b58389c445f8d1d04fce07e84a6.png">
+<meta property="article:published_time" content="2022-12-28T03:53:00.000Z">
+<meta property="article:modified_time" content="2022-12-28T07:30:46.356Z">
 <meta property="article:author" content="卡普">
-<meta property="article:tag" content="Django">
 <meta property="article:tag" content="技术">
+<meta property="article:tag" content="CentOS">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/images/DJANGOVUE.png">
+<meta name="twitter:image" content="http://example.com/images/eed31b58389c445f8d1d04fce07e84a6.png">
   
   
   
-  <title>Django与Vue语法的冲突问题的解决方法 - 分享志</title>
+  <title>CentOS 8安装源设置基础软件仓库时出错 - 分享志</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -230,13 +230,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/images/DJANGOVUE.png') no-repeat center center; background-size: cover;">
+     style="background: url('/images/eed31b58389c445f8d1d04fce07e84a6.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Django与Vue语法的冲突问题的解决方法"></span>
+            <span id="subtitle" data-typed-text="CentOS 8安装源设置基础软件仓库时出错"></span>
           
         </div>
 
@@ -247,8 +247,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-12-17 21:53" pubdate>
-          2022年12月17日 晚上
+        <time datetime="2022-12-28 11:53" pubdate>
+          2022年12月28日 中午
         </time>
       </span>
     
@@ -259,7 +259,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          409 字
+          340 字
         
       </span>
     
@@ -270,7 +270,7 @@
         
         
         
-          4 分钟
+          3 分钟
         
       </span>
     
@@ -308,17 +308,16 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Django与Vue语法的冲突问题的解决方法</h1>
+            <h1 style="display: none">CentOS 8安装源设置基础软件仓库时出错</h1>
             
             
               <div class="markdown-body">
                 
-                <h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>django web框架中,使用vue的时候,会遇到语法冲突，因为vue使用<code>&#123;&#123;&#125;&#125;`    ,而django也使用 `&#123;&#123;&#125;&#125;</code> 。</p>
+                <p>最近把我闲置的笔记本折腾安装centos时，设置安装源提示设置基础软件仓库时出错。<br><img src="/images/eed31b58389c445f8d1d04fce07e84a6.png" srcset="/img/loading.gif" lazyload></p>
 <!--more-->
-<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>在django1.5以后,加入了下面的标签，在这个标签里的内容不会被django模板引擎渲染。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">&#123;% verbatim myblock %&#125; &#123;% endverbatim myblock %&#125;<br></code></pre></td></tr></table></figure>
-<p>我们可以把带有<code>&#123;&#123; &#125;&#125; </code>的Vue代码放在 <code>&#123;% verbatim myblock %&#125;</code>标签中间，例如下面：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><br>  &#123;% verbatim myblock %&#125;<br>    &#123;&#123; name &#125;&#125;<br>  &#123;% endverbatim myblock %&#125;<br><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br></code></pre></td></tr></table></figure>
+<p>解决办法是先给笔记本联网，然后设置网络安装源。<br>网络的话是在安装界面就可以看到设置网络的地方。<br>设置网络安装源的话是参照下面的设置，输入<code>http://mirrors.aliyun.com/centos/8/BaseOS/x86_64/os/</code>  。然后就可以继续安装了。<br>协议选择为http://<br>路径填写：mirrors.aliyun.com/centos/8/BaseOS/x86_64/os/<br>URL类型是：软件库URL<br><img src="/images/79c692274a37454aa28963dcd067df83.png" srcset="/img/loading.gif" lazyload></p>
+<p><code>http://mirrors.aliyun.com/centos/8/BaseOS/x86_64/os/</code>  这个路径其实是阿里的开源镜像站，可以进去选择其他的版本。<br>1672210782.png</p>
+
                 
               </div>
             
@@ -336,7 +335,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Django/" class="category-chain-item">Django</a>
+  <a href="/categories/%E5%85%B6%E4%BB%96/" class="category-chain-item">其他</a>
   
   
 
@@ -351,9 +350,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Django/">#Django</a>
-      
         <a href="/tags/%E6%8A%80%E6%9C%AF/">#技术</a>
+      
+        <a href="/tags/CentOS/">#CentOS</a>
       
     </div>
   
@@ -365,20 +364,20 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Django与Vue语法的冲突问题的解决方法</div>
-      <div>http://example.com/p/9600b488.html</div>
+      <div>CentOS 8安装源设置基础软件仓库时出错</div>
+      <div>http://example.com/p/9ed5c15d.html</div>
     </div>
     <div class="license-meta">
       
         <div class="license-meta-item">
           <div>作者</div>
-          <div>kapu</div>
+          <div>卡普</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年12月17日</div>
+          <div>2022年12月28日</div>
         </div>
       
       
@@ -387,7 +386,14 @@
           <div>许可协议</div>
           <div>
             
-              TURE
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
             
           </div>
         </div>
@@ -403,18 +409,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/p/880b9c45.html" title="《爱在》三部曲之后，再无爱情片">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">《爱在》三部曲之后，再无爱情片</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/p/2e59fa5b.html" title="iconfont图标使用指南">
-                        <span class="hidden-mobile">iconfont图标使用指南</span>
+                      <a href="/p/fb864b22.html" title="mysql数据库重置密码并开启外部访问">
+                        <span class="hidden-mobile">mysql数据库重置密码并开启外部访问</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
