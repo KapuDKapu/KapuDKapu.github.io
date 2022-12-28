@@ -8,7 +8,7 @@
     <link href="/p/9ed5c15d.html"/>
     <url>/p/9ed5c15d.html</url>
     
-    <content type="html"><![CDATA[<p>最近把我闲置的笔记本折腾安装centos时，设置安装源提示设置基础软件仓库时出错。<br><img src="/images/eed31b58389c445f8d1d04fce07e84a6.png"></p><!--more--><p>解决办法是先给笔记本联网，然后设置网络安装源。<br>网络的话是在安装界面就可以看到设置网络的地方。<br>设置网络安装源的话是参照下面的设置，输入<code>http://mirrors.aliyun.com/centos/8/BaseOS/x86_64/os/</code>  。然后就可以继续安装了。<br>协议选择为http://<br>路径填写：mirrors.aliyun.com/centos/8/BaseOS/x86_64/os/<br>URL类型是：软件库URL<br><img src="/images/79c692274a37454aa28963dcd067df83.png"></p><p><code>http://mirrors.aliyun.com/centos/8/BaseOS/x86_64/os/</code>  这个路径其实是阿里的开源镜像站，可以进去选择其他的版本。<br>1672210782.png</p>]]></content>
+    <content type="html"><![CDATA[<p>最近把我闲置的笔记本折腾安装centos时，设置安装源提示设置基础软件仓库时出错。<br><img src="/images/eed31b58389c445f8d1d04fce07e84a6.png"></p><!--more--><p>解决办法是先给笔记本联网，然后设置网络安装源。<br>网络的话是在安装界面就可以看到设置网络的地方。<br>设置网络安装源的话是参照下面的设置，输入<code>http://mirrors.aliyun.com/centos/8/BaseOS/x86_64/os/</code>  。然后就可以继续安装了。<br>协议选择为http://<br>路径填写：mirrors.aliyun.com/centos/8/BaseOS/x86_64/os/<br>URL类型是：软件库URL<br><img src="/images/79c692274a37454aa28963dcd067df83.png"></p><p><code>http://mirrors.aliyun.com/centos/8/BaseOS/x86_64/os/</code>  这个路径其实是阿里的开源镜像站，可以进去选择其他的版本。</p><p><img src="/images/1672210782.png"></p>]]></content>
     
     
     <categories>
