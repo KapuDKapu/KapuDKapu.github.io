@@ -16,16 +16,16 @@
   <meta name="author" content="卡普">
   <meta name="keywords" content="">
   
-    <meta name="description" content="闲置笔记本安装CentOS 8系统">
+    <meta name="description" content="闲置笔记本安装CentOS 8系统，记录下遇到的问题">
 <meta property="og:type" content="article">
 <meta property="og:title" content="记一次笔记本安装CentOS 8">
 <meta property="og:url" content="http://example.com/p/9ed5c15d.html">
 <meta property="og:site_name" content="分享志">
-<meta property="og:description" content="闲置笔记本安装CentOS 8系统">
+<meta property="og:description" content="闲置笔记本安装CentOS 8系统，记录下遇到的问题">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/images/eed31b58389c445f8d1d04fce07e84a6.png">
 <meta property="article:published_time" content="2022-12-28T03:53:00.000Z">
-<meta property="article:modified_time" content="2022-12-30T08:40:32.975Z">
+<meta property="article:modified_time" content="2022-12-30T08:48:21.591Z">
 <meta property="article:author" content="卡普">
 <meta property="article:tag" content="技术">
 <meta property="article:tag" content="CentOS">
@@ -270,7 +270,7 @@
         
         
         
-          11 分钟
+          10 分钟
         
       </span>
     
@@ -319,7 +319,7 @@
 <li> 开始界面   </li>
 </ul>
 </blockquote>
-<p>插入U盘启动盘，开机选择U盘启动，进入下面画面（如果电脑能识别到U盘启动盘的话），这个是CentOS7的安装界面，需要选择Install CentOS7安装，但是上面说过，需要修改U盘启动盘的识别盘符，在这里先选择Install CentOS7后按tab键。<br><img src="20200620150055999.png" srcset="/img/loading.gif" lazyload><br><img src="20200620150208344.png" srcset="/img/loading.gif" lazyload><br>按tab键下面会多出一行内容，LABEL=CentOS\x207\x20x86_64就是系统识别到的U盘启动盘的标签，但是使用这个标签是不能启动的，需要修改。  </p>
+<p>插入U盘启动盘，开机选择U盘启动，进入下面画面（如果电脑能识别到U盘启动盘的话），这个是CentOS7的安装界面，需要选择Install CentOS7安装，但是上面说过，需要修改U盘启动盘的识别盘符，在这里先选择Install CentOS7后按tab键。<br><img src="/images/20200620150055999.png" srcset="/img/loading.gif" lazyload><br><img src="/images/20200620150208344.png" srcset="/img/loading.gif" lazyload><br>按tab键下面会多出一行内容，LABEL=CentOS\x207\x20x86_64就是系统识别到的U盘启动盘的标签，但是使用这个标签是不能启动的，需要修改。  </p>
 <blockquote>
 <ul>
 <li> 识别盘符  </li>
@@ -327,7 +327,7 @@
 </blockquote>
 <p>要更改U盘盘符，首先需要知道你的电脑识别到的你的U盘盘符是什么，修改上面的命令为下面的内容来识别U盘盘符</p>
 <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">vmlinuz <span class="hljs-attribute">initrd</span>=initrd.img linux dd quiet<br></code></pre></td></tr></table></figure>
-<p>回车后会显示，由于我的截图是在虚拟机里截的和真机稍有不同，当然不同的主机肯定也会有差别，这个需要自己摸索下。<br><img src="20200620150252966.png" srcset="/img/loading.gif" lazyload><br>如果没有识别到U盘，可以输入r后回车来刷新表，这后会看到我真机上识别到的U盘是sdc4（虚拟机上识别到的是sdb4），这只是因为我的电脑是双硬盘，一般都是sdb4。（其实可以看到LABEL是CentOS\x207\x20x8，和默认显示出来的稍有不同。软碟通做的启动盘只需要修改一致即可，不过用dd命令做的启动盘还是起不来。可以使用下面我使用的方法，使用/dev/sdb4）</p>
+<p>回车后会显示，由于我的截图是在虚拟机里截的和真机稍有不同，当然不同的主机肯定也会有差别，这个需要自己摸索下。<br><img src="/images/20200620150252966.png" srcset="/img/loading.gif" lazyload><br>如果没有识别到U盘，可以输入r后回车来刷新表，这后会看到我真机上识别到的U盘是sdc4（虚拟机上识别到的是sdb4），这只是因为我的电脑是双硬盘，一般都是sdb4。（其实可以看到LABEL是CentOS\x207\x20x8，和默认显示出来的稍有不同。软碟通做的启动盘只需要修改一致即可，不过用dd命令做的启动盘还是起不来。可以使用下面我使用的方法，使用/dev/sdb4）</p>
 <blockquote>
 <ul>
 <li>修改U盘盘符，进入安装界面  </li>
@@ -342,7 +342,6 @@
 <p>解决办法是先给笔记本联网，然后设置网络安装源。<br>网络的话是在安装界面就可以看到设置网络的地方。<br>设置网络安装源的话是参照下面的设置，输入<code>http://mirrors.aliyun.com/centos/8/BaseOS/x86_64/os/</code>  。然后就可以继续安装了。<br>协议选择为http://<br>路径填写：mirrors.aliyun.com/centos/8/BaseOS/x86_64/os/<br>URL类型是：软件库URL<br><img src="/images/79c692274a37454aa28963dcd067df83.png" srcset="/img/loading.gif" lazyload></p>
 <p><code>http://mirrors.aliyun.com/centos/8/BaseOS/x86_64/os/</code>  这个路径其实是阿里的开源镜像站，可以进去选择其他的版本。</p>
 <p><img src="/images/1672210782.png" srcset="/img/loading.gif" lazyload></p>
-<p>我给你分享了文件，取件码：70235，<a target="_blank" rel="noopener" href="http://82.156.104.35:12345/?code=70235">http://82.156.104.35:12345/?code=70235</a></p>
 
                 
               </div>
@@ -434,12 +433,6 @@
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
-                    
-                      <a href="/p/9ed5c15d.html" title="CentOS 8安装源设置基础软件仓库时出错">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">CentOS 8安装源设置基础软件仓库时出错</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
                     
                   </article>
                   <article class="post-next col-6">
