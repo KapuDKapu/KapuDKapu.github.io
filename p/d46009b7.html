@@ -18,23 +18,24 @@
   
     <meta name="description" content="闲置笔记本安装CentOS 8系统，记录下遇到的问题">
 <meta property="og:type" content="article">
-<meta property="og:title" content="记一次笔记本安装CentOS 8">
-<meta property="og:url" content="http://example.com/p/9ed5c15d.html">
+<meta property="og:title" content="使用docker安装halo博客系统">
+<meta property="og:url" content="http://example.com/p/d46009b7.html">
 <meta property="og:site_name" content="分享志">
 <meta property="og:description" content="闲置笔记本安装CentOS 8系统，记录下遇到的问题">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/images/eed31b58389c445f8d1d04fce07e84a6.png">
-<meta property="article:published_time" content="2022-12-28T03:53:00.000Z">
-<meta property="article:modified_time" content="2022-12-30T08:48:21.591Z">
+<meta property="og:image" content="http://example.com/images/1672476355.jpg">
+<meta property="article:published_time" content="2022-12-31T08:53:00.000Z">
+<meta property="article:modified_time" content="2022-12-31T09:09:17.672Z">
 <meta property="article:author" content="卡普">
 <meta property="article:tag" content="技术">
-<meta property="article:tag" content="CentOS">
+<meta property="article:tag" content="docker">
+<meta property="article:tag" content="halo">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/images/eed31b58389c445f8d1d04fce07e84a6.png">
+<meta name="twitter:image" content="http://example.com/images/1672476355.jpg">
   
   
   
-  <title>记一次笔记本安装CentOS 8 - 分享志</title>
+  <title>使用docker安装halo博客系统 - 分享志</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -230,13 +231,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/images/eed31b58389c445f8d1d04fce07e84a6.png') no-repeat center center; background-size: cover;">
+     style="background: url('/images/1672476355.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="记一次笔记本安装CentOS 8"></span>
+            <span id="subtitle" data-typed-text="使用docker安装halo博客系统"></span>
           
         </div>
 
@@ -247,8 +248,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-12-28 11:53" pubdate>
-          2022年12月28日 中午
+        <time datetime="2022-12-31 16:53" pubdate>
+          2022年12月31日 下午
         </time>
       </span>
     
@@ -259,7 +260,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.2k 字
+          2.5k 字
         
       </span>
     
@@ -270,7 +271,7 @@
         
         
         
-          10 分钟
+          21 分钟
         
       </span>
     
@@ -308,40 +309,39 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">记一次笔记本安装CentOS 8</h1>
+            <h1 style="display: none">使用docker安装halo博客系统</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="修改盘符"><a href="#修改盘符" class="headerlink" title="修改盘符"></a>修改盘符</h2><p>CentOS7跟CentOS6安装不太一样，安装CentOS6时能直接识别到U盘启动盘并开始安装，CentOS7时必须手动修改，否则会卡住，找不到启动盘，不能进入安装界面。 </p>
-<blockquote>
+                <h2 id="halo相关"><a href="#halo相关" class="headerlink" title="halo相关"></a>halo相关</h2><p>官网：<a target="_blank" rel="noopener" href="https://halo.run/">https://halo.run/</a><br>主题仓库：<a target="_blank" rel="noopener" href="https://halo.run/themes.html">https://halo.run/themes.html</a></p>
+<h2 id="创建工作目录"><a href="#创建工作目录" class="headerlink" title="创建工作目录"></a>创建工作目录</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">mkdir ~/.halo &amp;&amp; cd ~/.halo<br></code></pre></td></tr></table></figure>
+<h2 id="下载配置文件"><a href="#下载配置文件" class="headerlink" title="下载配置文件"></a>下载配置文件</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">wget https://dl.halo.run/config/application-template.yaml -O ./application.yaml<br></code></pre></td></tr></table></figure>
+
+<h2 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h2><p>默认的配置文件是下面这样的</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">server:</span><br>  <span class="hljs-attr">port:</span> <span class="hljs-number">8090</span><br>  <span class="hljs-comment"># Response data gzip.</span><br>  <span class="hljs-attr">compression:</span><br>    <span class="hljs-attr">enabled:</span> <span class="hljs-literal">false</span><br><span class="hljs-attr">spring:</span><br>  <span class="hljs-attr">datasource:</span><br>    <span class="hljs-comment"># H2 database configuration.</span><br>    <span class="hljs-attr">driver-class-name:</span> <span class="hljs-string">org.h2.Driver</span><br>    <span class="hljs-attr">url:</span> <span class="hljs-string">jdbc:h2:file:~/.halo/db/halo</span><br>    <span class="hljs-attr">username:</span> <span class="hljs-string">admin</span><br>    <span class="hljs-attr">password:</span> <span class="hljs-number">123456</span><br>    <span class="hljs-comment"># MySQL database configuration.</span><br><span class="hljs-comment">#    driver-class-name: com.mysql.cj.jdbc.Driver</span><br><span class="hljs-comment">#    url: jdbc:mysql://127.0.0.1:3306/halodb?characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=Asia/Shanghai&amp;allowPublicKeyRetrieval=true</span><br><span class="hljs-comment">#    username: root</span><br><span class="hljs-comment">#    password: 123456</span><br>  <span class="hljs-comment"># H2 database console configuration.</span><br>  <span class="hljs-attr">h2:</span><br>    <span class="hljs-attr">console:</span><br>      <span class="hljs-attr">settings:</span><br>        <span class="hljs-attr">web-allow-others:</span> <span class="hljs-literal">false</span><br>      <span class="hljs-attr">path:</span> <span class="hljs-string">/h2-console</span><br>      <span class="hljs-attr">enabled:</span> <span class="hljs-literal">false</span><br><span class="hljs-attr">halo:</span><br>  <span class="hljs-comment"># Your admin client path is https://your-domain/&#123;admin-path&#125;</span><br>  <span class="hljs-attr">admin-path:</span> <span class="hljs-string">admin</span><br>  <span class="hljs-comment"># memory or level</span><br>  <span class="hljs-attr">cache:</span> <span class="hljs-string">memory</span><br></code></pre></td></tr></table></figure>
+<p>要想使用mysql数据库可以直接使用下面的配置</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">server:</span><br>  <span class="hljs-attr">port:</span> <span class="hljs-number">8090</span><br><br>  <span class="hljs-comment"># Response data gzip.</span><br>  <span class="hljs-attr">compression:</span><br>    <span class="hljs-attr">enabled:</span> <span class="hljs-literal">true</span><br><span class="hljs-attr">spring:</span><br>  <span class="hljs-attr">datasource:</span><br>    <span class="hljs-comment"># MySQL database configuration.</span><br>    <span class="hljs-attr">driver-class-name:</span> <span class="hljs-string">com.mysql.cj.jdbc.Driver</span><br>    <span class="hljs-attr">url:</span> <span class="hljs-string">jdbc:mysql://公网ip:3306/halodb?characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=Asia/Shanghai&amp;allowPublicKeyRetrieval=true</span><br>    <span class="hljs-attr">username:</span> <span class="hljs-string">xxx</span><br>    <span class="hljs-attr">password:</span> <span class="hljs-string">xxx</span><br><br><span class="hljs-attr">halo:</span><br>  <span class="hljs-comment"># Your admin client path is https://your-domain/&#123;admin-path&#125;</span><br>  <span class="hljs-attr">admin-path:</span> <span class="hljs-string">admin</span><br><br>  <span class="hljs-comment"># memory or level or redis</span><br>  <span class="hljs-attr">cache:</span> <span class="hljs-string">memory</span><br></code></pre></td></tr></table></figure>
+
 <ul>
-<li> 开始界面   </li>
+<li>如果需要自定义端口，修改 server 节点下的 port 即可。</li>
+<li>默认使用的是 H2 Database 数据库，这是一种嵌入式的数据库，使用起来非常方便。需要注意的是，默认的用户名和密码为 admin 和 123456，这个是自定义的，最好将其修改，并妥善保存。</li>
+<li>如果需要使用 MySQL 数据库，需要将 H2 Database 的所有相关配置都注释掉，并取消 MySQL 的相关配置。另外，MySQL 的默认数据库名为 halodb，请自行配置 MySQL 并创建数据库，以及修改配置文件中的用户名和密码。</li>
+<li>h2 节点为 H2 Database 的控制台配置，默认是关闭的，如需使用请将 h2.console.settings.web-allow-others 和 h2.console.enabled 设置为 true。控制台地址即为 域名/h2-console。注意：非紧急情况，不建议开启该配置。</li>
+<li>server.compression.enabled 为 Gzip 功能配置，如有需要请设置为 true，需要注意的是，如果你使用 Nginx 或者 Caddy 进行反向代理的话，默认是有开启 Gzip 的，所以这里可以保持默认。</li>
+<li>halo.admin-path 为后台管理的根路径，默认为 admin，如果你害怕别人猜出来默认的 admin（就算猜出来，对方什么都做不了），请自行设置。仅支持一级，且前后不带 /。</li>
+<li>halo.cache 为系统缓存形式的配置，可选 memory 和 level，默认为 memory，将数据缓存到内存，使用该方式的话，重启应用会导致缓存清空。如果选择 level，则会将数据缓存到磁盘，重启不会清空缓存。如不知道如何选择，建议默认。</li>
 </ul>
-</blockquote>
-<p>插入U盘启动盘，开机选择U盘启动，进入下面画面（如果电脑能识别到U盘启动盘的话），这个是CentOS7的安装界面，需要选择Install CentOS7安装，但是上面说过，需要修改U盘启动盘的识别盘符，在这里先选择Install CentOS7后按tab键。<br><img src="/images/20200620150055999.png" srcset="/img/loading.gif" lazyload><br><img src="/images/20200620150208344.png" srcset="/img/loading.gif" lazyload><br>按tab键下面会多出一行内容，LABEL=CentOS\x207\x20x86_64就是系统识别到的U盘启动盘的标签，但是使用这个标签是不能启动的，需要修改。  </p>
-<blockquote>
+<h2 id="拉取最新-Halo-镜像"><a href="#拉取最新-Halo-镜像" class="headerlink" title="拉取最新 Halo 镜像"></a>拉取最新 Halo 镜像</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ssh">docker pull halohub/halo<br></code></pre></td></tr></table></figure>
+
+<h2 id="启动容器"><a href="#启动容器" class="headerlink" title="启动容器"></a>启动容器</h2><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus">docker run -it -d <span class="hljs-attr">--name</span> halo -<span class="hljs-selector-tag">p</span> <span class="hljs-number">8090</span>:<span class="hljs-number">8090</span> -v ~/<span class="hljs-selector-class">.halo</span>:/root/<span class="hljs-selector-class">.halo</span> <span class="hljs-attr">--restart</span>=unless-stopped halohub/halo<br></code></pre></td></tr></table></figure>
 <ul>
-<li> 识别盘符  </li>
+<li>–name：容器名。</li>
+<li>-p：占用端口，前者为宿主机端口，后者为 Halo 的运行端口，可在 application.yaml 配置。</li>
+<li>-v：目录映射，一般不要修改。完成以上操作即可通过 ip:端口 访问了。不过在此之前，最好先完成后续操作，我们还需要让域名也可以访问到 Halo，请继续看 配置域名访问。</li>
 </ul>
-</blockquote>
-<p>要更改U盘盘符，首先需要知道你的电脑识别到的你的U盘盘符是什么，修改上面的命令为下面的内容来识别U盘盘符</p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">vmlinuz <span class="hljs-attribute">initrd</span>=initrd.img linux dd quiet<br></code></pre></td></tr></table></figure>
-<p>回车后会显示，由于我的截图是在虚拟机里截的和真机稍有不同，当然不同的主机肯定也会有差别，这个需要自己摸索下。<br><img src="/images/20200620150252966.png" srcset="/img/loading.gif" lazyload><br>如果没有识别到U盘，可以输入r后回车来刷新表，这后会看到我真机上识别到的U盘是sdc4（虚拟机上识别到的是sdb4），这只是因为我的电脑是双硬盘，一般都是sdb4。（其实可以看到LABEL是CentOS\x207\x20x8，和默认显示出来的稍有不同。软碟通做的启动盘只需要修改一致即可，不过用dd命令做的启动盘还是起不来。可以使用下面我使用的方法，使用/dev/sdb4）</p>
-<blockquote>
-<ul>
-<li>修改U盘盘符，进入安装界面  </li>
-</ul>
-</blockquote>
-<p>识别到U盘盘符后关机重启，进入开始界面选择Install CentOS7，按tab，将命令修改为</p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">vmlinuz <span class="hljs-attribute">initrd</span>=initrd.img inst.<span class="hljs-attribute">stage2</span>=hd:/dev/sdb4  quiet<br></code></pre></td></tr></table></figure>
-<p><code>/dev/sdb4</code> 写你上一步识别到的盘符，回车就可以进入图形化安装界面  </p>
-<p>原文链接：<a target="_blank" rel="noopener" href="https://www.ngui.cc/el/1366730.html?action=onClick">https://www.ngui.cc/el/1366730.html?action=onClick</a></p>
-<h2 id="设置基础软件仓库时出错"><a href="#设置基础软件仓库时出错" class="headerlink" title="设置基础软件仓库时出错"></a>设置基础软件仓库时出错</h2><p>进入安装界面后，设置安装源提示设置基础软件仓库时出错。<br><img src="/images/eed31b58389c445f8d1d04fce07e84a6.png" srcset="/img/loading.gif" lazyload></p>
-<!--more-->
-<p>解决办法是先给笔记本联网，然后设置网络安装源。<br>网络的话是在安装界面就可以看到设置网络的地方。<br>设置网络安装源的话是参照下面的设置，输入<code>http://mirrors.aliyun.com/centos/8/BaseOS/x86_64/os/</code>  。然后就可以继续安装了。<br>协议选择为http://<br>路径填写：mirrors.aliyun.com/centos/8/BaseOS/x86_64/os/<br>URL类型是：软件库URL<br><img src="/images/79c692274a37454aa28963dcd067df83.png" srcset="/img/loading.gif" lazyload></p>
-<p><code>http://mirrors.aliyun.com/centos/8/BaseOS/x86_64/os/</code>  这个路径其实是阿里的开源镜像站，可以进去选择其他的版本。</p>
-<p><img src="/images/1672210782.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="访问配置"><a href="#访问配置" class="headerlink" title="访问配置"></a>访问配置</h2><p>ip+8090（配置的端口）访问<br><img src="/images/4986732856c3452526f668f4b0285486.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>1、<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_33411202/article/details/124670673">https://blog.csdn.net/qq_33411202/article/details/124670673</a><br>2、<a target="_blank" rel="noopener" href="https://www.mianshigee.com/tutorial/Halo/8df81927402bb820.md/">https://www.mianshigee.com/tutorial/Halo/8df81927402bb820.md/</a></p>
 
                 
               </div>
@@ -377,7 +377,9 @@
       
         <a href="/tags/%E6%8A%80%E6%9C%AF/">#技术</a>
       
-        <a href="/tags/CentOS/">#CentOS</a>
+        <a href="/tags/docker/">#docker</a>
+      
+        <a href="/tags/halo/">#halo</a>
       
     </div>
   
@@ -389,8 +391,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>记一次笔记本安装CentOS 8</div>
-      <div>http://example.com/p/9ed5c15d.html</div>
+      <div>使用docker安装halo博客系统</div>
+      <div>http://example.com/p/d46009b7.html</div>
     </div>
     <div class="license-meta">
       
@@ -402,7 +404,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年12月28日</div>
+          <div>2022年12月31日</div>
         </div>
       
       
@@ -434,18 +436,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/p/d46009b7.html" title="使用docker安装halo博客系统">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">使用docker安装halo博客系统</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/p/fb864b22.html" title="mysql数据库重置密码并开启外部访问">
-                        <span class="hidden-mobile">mysql数据库重置密码并开启外部访问</span>
+                      <a href="/p/9ed5c15d.html" title="记一次笔记本安装CentOS 8">
+                        <span class="hidden-mobile">记一次笔记本安装CentOS 8</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
