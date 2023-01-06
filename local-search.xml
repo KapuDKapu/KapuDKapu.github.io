@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>freehost免费主机-体验免费搭建网站</title>
+    <link href="/p/f10c43e9.html"/>
+    <url>/p/f10c43e9.html</url>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近发现了一个免费主机网站<em>freehost免费主机</em> ，注册之后可以免费使用，用的是cpanel控制面板，支持安装typecho、z-blog、Emlog、wordpress等个人博客建站程序，以及大部分支持php的cms程序。</p><h2 id="freehost相关"><a href="#freehost相关" class="headerlink" title="freehost相关"></a>freehost相关</h2><p>官网：<a href="https://www.freehost.cc/">https://www.freehost.cc/</a><br>官网简介：<br>freehost.cc提供专业的免费主机服务，采用服务器集群技术，是互联网领先的免费云虚拟主机提供商。免费主机提供永久免费的高速PHP环境（默认版本：7.4）和MYSQL数据库，赠送一个免费的二级域名。我们提供一个强大的、且易于使用的cpanel控制面板来管理你的网站，这个控制面板很多强大的功能：一键建站工具、绑定停放自有域名、目录加密、在线FTP等，并且提供SSH/HTTPS来保护您的个人网站。使用我们的免费主机服务您的个人网站会更安全。</p><p>本站适合用于学习html、php、数据库等网页技术，实践制作能够远程访问的网页；同时适用于个人网站制作，支持安装typecho、z-blog、Emlog、wordpress（不推荐）等个人博客建站程序，以及大部分支持php的cms程序，欢迎来免费主机搭建属于您自己的网上空间。</p><h2 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a>使用教程</h2><p>网上查询发现了夜雨聆风的博客已经详细介绍了，而且很详细，适合直接食用。<br>博客传送门：<a href="https://www.yeyulingfeng.com/9446.html">https://www.yeyulingfeng.com/9446.html</a><br><img src="/images/yeyulinfengblog.png"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>其他</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>技术</tag>
+      
+      <tag>docker</tag>
+      
+      <tag>halo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>使用docker安装halo博客系统</title>
     <link href="/p/d46009b7.html"/>
     <url>/p/d46009b7.html</url>
