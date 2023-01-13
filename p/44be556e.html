@@ -23,14 +23,14 @@
 <meta property="og:site_name" content="分享志">
 <meta property="og:description" content="解决迁移HEXO站点后无法加载文件hexo.ps1。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/images/hexo.png">
+<meta property="og:image" content="http://example.com/images/cover/a059a31cb30e97f7b3983104161c9f76.jpg">
 <meta property="article:published_time" content="2022-01-13T12:09:00.000Z">
-<meta property="article:modified_time" content="2022-12-18T03:04:11.016Z">
+<meta property="article:modified_time" content="2023-01-13T03:59:07.168Z">
 <meta property="article:author" content="卡普">
 <meta property="article:tag" content="技术">
 <meta property="article:tag" content="HEXO">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/images/hexo.png">
+<meta name="twitter:image" content="http://example.com/images/cover/a059a31cb30e97f7b3983104161c9f76.jpg">
   
   
   
@@ -242,7 +242,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/images/hexo.png') no-repeat center center; background-size: cover;">
+     style="background: url('/images/cover/a059a31cb30e97f7b3983104161c9f76.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -325,14 +325,10 @@
             
               <div class="markdown-body">
                 
-                <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>将hexo项目一直到另一台电脑上，配置好环境后运行hexo命令，发生如下报错。  </p>
-<p>hexo : 无法加载文件 C:\Users\mxz\AppData\Roaming\npm\hexo.ps1，因为在此系统上禁止运行脚本。  </p>
+                <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>将hexo项目一直到另一台电脑上，配置好环境后运行hexo命令，发生如下报错。<br>hexo : 无法加载文件 C:\Users\mxz\AppData\Roaming\npm\hexo.ps1，因为在此系统上禁止运行脚本。  </p>
 <!--more-->
-<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><h3 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h3><p>更改powershell执行策略。  </p>
-<p>1、打开设置，搜素power，点击【允许powershell脚本在不签名的情况下运行】</p>
-<p><img src="/images/pasted-5.png" srcset="/img/loading.gif" lazyload alt="设置"></p>
-<p>2、勾选下面选项，点击应用即可。然后重新打开cmd窗口运行命令即可。</p>
-<p><img src="/images/pasted-6.png" srcset="/img/loading.gif" lazyload alt="允许powershell脚本在不签名的情况下运行"></p>
+<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><h3 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h3><p>更改powershell执行策略。<br>1、打开设置，搜素power，点击【允许powershell脚本在不签名的情况下运行】<br><img src="/images/pasted-5.png" srcset="/img/loading.gif" lazyload alt="设置"></p>
+<p>2、勾选下面选项，点击应用即可。然后重新打开cmd窗口运行命令即可。<br><img src="/images/pasted-6.png" srcset="/img/loading.gif" lazyload alt="允许powershell脚本在不签名的情况下运行"></p>
 <h3 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h3><p>执行：get-ExecutionPolicy，返回状态：Restricted，表示状态是禁止的，<br>然后要设置下。<br>执行：set-ExecutionPolicy RemoteSigned 开启。<br>选择Y  </p>
 <p><img src="/images/pasted-15.png" srcset="/img/loading.gif" lazyload alt="玖涯博客"></p>
 
