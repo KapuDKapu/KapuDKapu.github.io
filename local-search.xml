@@ -572,7 +572,7 @@
     <link href="/p/2e59fa5b.html"/>
     <url>/p/2e59fa5b.html</url>
     
-    <content type="html"><![CDATA[<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>这是阿里巴巴旗下阿里妈妈MUX团队打造的一个专门为设计师和前端开发者打造的在线工具。设计师将图标上传到Iconfont，可以自定义下载多种格式的icon，也可将图标转换为字体，方便前端工程师自由调整与使用。</p><h2 id="版权说明"><a href="#版权说明" class="headerlink" title="版权说明"></a>版权说明</h2><p>作为一个图标管理工具，Iconfont 是免费的。<br>但遗憾的是，平台上所有的图标都是阿里巴巴官方项目和平台上的设计师自行上传的。仅供广大用户交流学习使用，未经iconfont或其关联公司书面授权许可，不得用于任何商业用途。具体可查看 Iconfont 网站左下角的法律声明。如需出于商业目的使用iconfont平台任意个人公共库中的任意图标，均应事先获得相关知识产权权利人的授权，以避免产生不必要的纠纷。</p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><ul><li><p>注册登录<br>首先注册登录你自己的账号</p></li><li><p>选择图标加购<br>挑选或者搜索自己需要的图标，选择加入购物车<br><img src="/images/pasted-62.png" alt="upload successful"> </p></li><li><p>添加项目<br>点击右上角的购物车，点击【添加至项目】。创建项目然后选择创建的项目，点击【确定】</p></li></ul><p><img src="/images/pasted-63.png" alt="upload successful"></p><p><img src="/images/pasted-64.png" alt="upload successful"></p><p><img src="/images/pasted-65.png" alt="upload successful"></p><ul><li>生成在线连接或者下载本地</li></ul><p>操作完上面的步骤后，图标已经进入到自己的项目里来了，然后是使用图标。可以生成在线链接，直接引入自己的项目，也可以下载到本地。<br><img src="/images/pasted-67.png" alt="upload successful"><br>下载到本地的是压缩包，解压后将除去demo文件的其他文件放到项目内引用css文件就行。</p><p><img src="/images/pasted-68.png" alt="upload successful"></p><ul><li>引入图标  <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">&lt;link <span class="hljs-attribute">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-string">&quot;css/iconfont.css&quot;</span>&gt;<br></code></pre></td></tr></table></figure></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>iconfont是是阿里巴巴旗下阿里妈妈MUX团队打造的一个专门为设计师和前端开发者打造的在线工具。设计师将图标上传到Iconfont，可以自定义下载多种格式的icon，也可将图标转换为字体，方便前端工程师自由调整与使用。</p><!--more--><h2 id="版权说明"><a href="#版权说明" class="headerlink" title="版权说明"></a>版权说明</h2><p>作为一个图标管理工具，Iconfont 是免费的。<br>但遗憾的是，平台上所有的图标都是阿里巴巴官方项目和平台上的设计师自行上传的。仅供广大用户交流学习使用，未经iconfont或其关联公司书面授权许可，不得用于任何商业用途。具体可查看 Iconfont 网站左下角的法律声明。如需出于商业目的使用iconfont平台任意个人公共库中的任意图标，均应事先获得相关知识产权权利人的授权，以避免产生不必要的纠纷。</p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><ul><li><p>注册登录<br>首先注册登录你自己的账号</p></li><li><p>选择图标加购<br>挑选或者搜索自己需要的图标，选择加入购物车<br><img src="/images/pasted-62.png"> </p></li><li><p>添加项目<br>点击右上角的购物车，点击【添加至项目】。创建项目然后选择创建的项目，点击【确定】</p></li></ul><p><img src="/images/pasted-63.png"></p><p><img src="/images/pasted-64.png"></p><p><img src="/images/pasted-65.png"></p><ul><li>生成在线连接或者下载本地</li></ul><p>操作完上面的步骤后，图标已经进入到自己的项目里来了，然后是使用图标。可以生成在线链接，直接引入自己的项目，也可以下载到本地。<br><img src="/images/pasted-67.png"><br>下载到本地的是压缩包，解压后将除去demo文件的其他文件放到项目内引用css文件就行。</p><p><img src="/images/pasted-68.png"></p><ul><li>引入图标  <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">&lt;link <span class="hljs-attribute">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-string">&quot;css/iconfont.css&quot;</span>&gt;<br></code></pre></td></tr></table></figure></li></ul>]]></content>
     
     
     <categories>
@@ -626,7 +626,7 @@
     <link href="/p/dd56da31.html"/>
     <url>/p/dd56da31.html</url>
     
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>当你的hexo站点部署到github上以后，如果访问的链接不存在的话，github是有默认的404页面的。<br><img src="/images/1653048709.png" alt="github默认的404页面"><br>但是这是不能满足我们的爱美之心的，其次我想要5秒后自动跳转回我的博客首页怎么办？</p><h2 id="处理方案"><a href="#处理方案" class="headerlink" title="处理方案"></a>处理方案</h2><h3 id="1、创建404page"><a href="#1、创建404page" class="headerlink" title="1、创建404page"></a>1、创建404page</h3><p>在博客主目录运行起cmd窗口，使用下面命令生成404page</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new page 404<br></code></pre></td></tr></table></figure><h3 id="2、编辑404页面"><a href="#2、编辑404页面" class="headerlink" title="2、编辑404页面"></a>2、编辑404页面</h3><p>然后将下面的内容复制到<code>source/404/index.md</code>文件内。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><code class="hljs bash">---<br>title: <span class="hljs-string">&#x27;404 - 好巧，竟然在这里遇到你！&#x27;</span><br><span class="hljs-built_in">date</span>: 2022-01-22 20:02:00<br>comments: <span class="hljs-literal">false</span><br>permalink: /404.html<br>---<br><br>&lt;!-- markdownlint-disable MD039 MD033 --&gt;<br><br><span class="hljs-comment">## 这是一个不存在的页面</span><br><br>对不起，您所访问的页面不存在或者已删除。<br><br>预计将在约 &lt;span <span class="hljs-built_in">id</span>=<span class="hljs-string">&quot;timeout&quot;</span>&gt;5&lt;/span&gt; 秒后返回首页。<br><br>当然，你可以 **[点这里](你的首页连接)** 直接返回首页。<br><br>&lt;script&gt;<br><span class="hljs-built_in">let</span> countTime = 5;<br><br><span class="hljs-keyword">function</span> <span class="hljs-function"><span class="hljs-title">count</span></span>() &#123;<br><br>  document.getElementById(<span class="hljs-string">&#x27;timeout&#x27;</span>).textContent = countTime;<br>  countTime -= 1;<br>  <span class="hljs-keyword">if</span>(countTime === 0)&#123;<br>    location.href = <span class="hljs-string">&#x27;你的首页连接&#x27;</span>;<br>  &#125;<br>  setTimeout(() =&gt; &#123;<br>    count();<br>  &#125;, <span class="hljs-number">1000</span>);<br>&#125;<br><br>count();<br>&lt;/script&gt;<br></code></pre></td></tr></table></figure><h3 id="3、生成站点并运行"><a href="#3、生成站点并运行" class="headerlink" title="3、生成站点并运行"></a>3、生成站点并运行</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean<br>hexo generate<br>hexo serve<br></code></pre></td></tr></table></figure><h3 id="4、验证404页面"><a href="#4、验证404页面" class="headerlink" title="4、验证404页面"></a>4、验证404页面</h3><p>本地的话需要使用<code>http://localhost:4000/404.html</code> 进行测试，部署到github上的话可以随意修改链接验证。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>当你的hexo站点部署到github上以后，如果访问的链接不存在的话，github是有默认的404页面的。</p><!--more--><p><img src="/images/1653048709.png" alt="github默认的404页面"><br>但是这是不能满足我们的爱美之心的，其次我想要5秒后自动跳转回我的博客首页怎么办？</p><h2 id="处理方案"><a href="#处理方案" class="headerlink" title="处理方案"></a>处理方案</h2><h3 id="1、创建404page"><a href="#1、创建404page" class="headerlink" title="1、创建404page"></a>1、创建404page</h3><p>在博客主目录运行起cmd窗口，使用下面命令生成404page</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new page 404<br></code></pre></td></tr></table></figure><h3 id="2、编辑404页面"><a href="#2、编辑404页面" class="headerlink" title="2、编辑404页面"></a>2、编辑404页面</h3><p>然后将下面的内容复制到<code>source/404/index.md</code>文件内。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><code class="hljs bash">---<br>title: <span class="hljs-string">&#x27;404 - 好巧，竟然在这里遇到你！&#x27;</span><br><span class="hljs-built_in">date</span>: 2022-01-22 20:02:00<br>comments: <span class="hljs-literal">false</span><br>permalink: /404.html<br>---<br><br>&lt;!-- markdownlint-disable MD039 MD033 --&gt;<br><br><span class="hljs-comment">## 这是一个不存在的页面</span><br><br>对不起，您所访问的页面不存在或者已删除。<br><br>预计将在约 &lt;span <span class="hljs-built_in">id</span>=<span class="hljs-string">&quot;timeout&quot;</span>&gt;5&lt;/span&gt; 秒后返回首页。<br><br>当然，你可以 **[点这里](你的首页连接)** 直接返回首页。<br><br>&lt;script&gt;<br><span class="hljs-built_in">let</span> countTime = 5;<br><br><span class="hljs-keyword">function</span> <span class="hljs-function"><span class="hljs-title">count</span></span>() &#123;<br><br>  document.getElementById(<span class="hljs-string">&#x27;timeout&#x27;</span>).textContent = countTime;<br>  countTime -= 1;<br>  <span class="hljs-keyword">if</span>(countTime === 0)&#123;<br>    location.href = <span class="hljs-string">&#x27;你的首页连接&#x27;</span>;<br>  &#125;<br>  setTimeout(() =&gt; &#123;<br>    count();<br>  &#125;, <span class="hljs-number">1000</span>);<br>&#125;<br><br>count();<br>&lt;/script&gt;<br></code></pre></td></tr></table></figure><h3 id="3、生成站点并运行"><a href="#3、生成站点并运行" class="headerlink" title="3、生成站点并运行"></a>3、生成站点并运行</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean<br>hexo generate<br>hexo serve<br></code></pre></td></tr></table></figure><h3 id="4、验证404页面"><a href="#4、验证404页面" class="headerlink" title="4、验证404页面"></a>4、验证404页面</h3><p>本地的话需要使用<code>http://localhost:4000/404.html</code> 进行测试，部署到github上的话可以随意修改链接验证。</p>]]></content>
     
     
     <categories>
@@ -1863,7 +1863,7 @@
     
     <categories>
       
-      <category>软件分享</category>
+      <category>软件</category>
       
     </categories>
     
@@ -1937,7 +1937,7 @@
     <link href="/p/128a3627.html"/>
     <url>/p/128a3627.html</url>
     
-    <content type="html"><![CDATA[<p>【前言】：从网上找了个flask的微电影系统源码，搞了下可以正常运行了，分享出来给想直接使用的小伙伴们尝尝。</p><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>这个系统目前保留了如下部分：<br>前台：主页、搜索、播放页面、登录、退回、会员页面（信息修改、收藏清单、评论清单、修改密码）、收藏、评论。<br>后台：标签管理（标签增加、标签列表）、电影管理（电影增加、电影列表）、会员管理（会员列表）、评论管理（评论列表）、收藏管理（收藏列表）<br>这里去掉了预告管理，感觉没啥实用。</p><span id="more"></span><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="安装python"><a href="#安装python" class="headerlink" title="安装python"></a>安装python</h3><p>首先要先安装python，这个自己下载安装。</p><h3 id="安装-bat"><a href="#安装-bat" class="headerlink" title="安装.bat"></a>安装.bat</h3><p>运行目录下<em>安装.bat</em>文件，安装必要的python扩展。  </p><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="数据库连接"><a href="#数据库连接" class="headerlink" title="数据库连接"></a>数据库连接</h3><p>修改app文件夹下的*<strong>init</strong>.py*文件内容数据库连裤串。这里使用的是mysql数据库，本地的话随便安装个php集成开发环境就带着数据库，服务器的话安装lampp或者其他的都行。  </p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">app.config[<span class="hljs-string">&quot;SQLALCHEMY_DATABASE_URI&quot;</span>] = <span class="hljs-string">&quot;mysql+mysqlconnector://数据库用户名:数据库密码@数据库IP:3306/数据库名称&quot;</span><br></code></pre></td></tr></table></figure><h3 id="初始化数据库"><a href="#初始化数据库" class="headerlink" title="初始化数据库"></a>初始化数据库</h3><p>执行主目录下的<em>minimovie.sql</em>，初始化数据库表。</p><h3 id="创建admin用户"><a href="#创建admin用户" class="headerlink" title="创建admin用户"></a>创建admin用户</h3><p>使用*/test/test.py*生产加密密码，用户名自己写，生成后将密码和用户自行加到数据库的admin表内，即可登录后台管理系统。前台用户可以自行注册即可。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> werkzeug.security <span class="hljs-keyword">import</span> generate_password_hash<br><span class="hljs-built_in">print</span>(generate_password_hash(<span class="hljs-string">&#x27;要使用的密码&#x27;</span>))<br></code></pre></td></tr></table></figure><h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><p>前面的步骤做完了这套程序基本能正常运行了，可以通过双击<em>run.bat</em>文件运行网站。</p><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><p>下面欣赏一些页面截图：  </p><p><img src="https://pic.imgdb.cn/item/60c0aa3a844ef46bb2323ace.jpg" alt="首页"><br><img src="https://pic.imgdb.cn/item/60c0aa69844ef46bb234c9fa.jpg" alt="搜索"><br><img src="https://pic.imgdb.cn/item/60c0aa94844ef46bb2371b89.jpg" alt="会员中心"><br><img src="https://pic.imgdb.cn/item/60c0aac4844ef46bb239d50b.jpg" alt="修改密码"><br><img src="https://pic.imgdb.cn/item/60c0ab17844ef46bb23e917b.jpg" alt="会员注册"><br><img src="https://pic.imgdb.cn/item/60c0ab4f844ef46bb241d3fc.jpg" alt="评论记录"><br><img src="https://pic.imgdb.cn/item/60c0ab72844ef46bb243e79d.jpg" alt="收藏记录"><br><img src="https://pic.imgdb.cn/item/60c0ab95844ef46bb245fb44.jpg" alt="登录日志"><br><img src="https://pic.imgdb.cn/item/60c0abb9844ef46bb24807a8.jpg" alt="后台系统"></p><h2 id="分享连接"><a href="#分享连接" class="headerlink" title="分享连接"></a>分享连接</h2><p>链接：<a href="https://pan.baidu.com/s/1QLV4mvAyY8Eck4uV7Huneg">https://pan.baidu.com/s/1QLV4mvAyY8Eck4uV7Huneg</a><br>提取码：wuyu<br>复制这段内容后打开百度网盘手机App，操作更方便哦</p><p><em>PS</em>：运行不起来的可以关注公众号：<em>漫淡人生</em>，发送问题即可，收到会及时回复的。</p>]]></content>
+    <content type="html"><![CDATA[<p>【前言】：从网上找了个flask的微电影系统源码，搞了下可以正常运行了，分享出来给想直接使用的小伙伴们尝尝。</p><span id="more"></span><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>这个系统目前保留了如下部分：<br>前台：主页、搜索、播放页面、登录、退回、会员页面（信息修改、收藏清单、评论清单、修改密码）、收藏、评论。<br>后台：标签管理（标签增加、标签列表）、电影管理（电影增加、电影列表）、会员管理（会员列表）、评论管理（评论列表）、收藏管理（收藏列表）<br>这里去掉了预告管理，感觉没啥实用。</p><!--more--><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="安装python"><a href="#安装python" class="headerlink" title="安装python"></a>安装python</h3><p>首先要先安装python，这个自己下载安装。</p><h3 id="安装-bat"><a href="#安装-bat" class="headerlink" title="安装.bat"></a>安装.bat</h3><p>运行目录下<em>安装.bat</em>文件，安装必要的python扩展。  </p><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="数据库连接"><a href="#数据库连接" class="headerlink" title="数据库连接"></a>数据库连接</h3><p>修改app文件夹下的*<strong>init</strong>.py*文件内容数据库连裤串。这里使用的是mysql数据库，本地的话随便安装个php集成开发环境就带着数据库，服务器的话安装lampp或者其他的都行。  </p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">app.config[<span class="hljs-string">&quot;SQLALCHEMY_DATABASE_URI&quot;</span>] = <span class="hljs-string">&quot;mysql+mysqlconnector://数据库用户名:数据库密码@数据库IP:3306/数据库名称&quot;</span><br></code></pre></td></tr></table></figure><h3 id="初始化数据库"><a href="#初始化数据库" class="headerlink" title="初始化数据库"></a>初始化数据库</h3><p>执行主目录下的<em>minimovie.sql</em>，初始化数据库表。</p><h3 id="创建admin用户"><a href="#创建admin用户" class="headerlink" title="创建admin用户"></a>创建admin用户</h3><p>使用*/test/test.py*生产加密密码，用户名自己写，生成后将密码和用户自行加到数据库的admin表内，即可登录后台管理系统。前台用户可以自行注册即可。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> werkzeug.security <span class="hljs-keyword">import</span> generate_password_hash<br><span class="hljs-built_in">print</span>(generate_password_hash(<span class="hljs-string">&#x27;要使用的密码&#x27;</span>))<br></code></pre></td></tr></table></figure><h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><p>前面的步骤做完了这套程序基本能正常运行了，可以通过双击<em>run.bat</em>文件运行网站。</p><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><p>下面欣赏一些页面截图：  </p><p><img src="https://pic.imgdb.cn/item/60c0aa3a844ef46bb2323ace.jpg" alt="首页"><br><img src="https://pic.imgdb.cn/item/60c0aa69844ef46bb234c9fa.jpg" alt="搜索"><br><img src="https://pic.imgdb.cn/item/60c0aa94844ef46bb2371b89.jpg" alt="会员中心"><br><img src="https://pic.imgdb.cn/item/60c0aac4844ef46bb239d50b.jpg" alt="修改密码"><br><img src="https://pic.imgdb.cn/item/60c0ab17844ef46bb23e917b.jpg" alt="会员注册"><br><img src="https://pic.imgdb.cn/item/60c0ab4f844ef46bb241d3fc.jpg" alt="评论记录"><br><img src="https://pic.imgdb.cn/item/60c0ab72844ef46bb243e79d.jpg" alt="收藏记录"><br><img src="https://pic.imgdb.cn/item/60c0ab95844ef46bb245fb44.jpg" alt="登录日志"><br><img src="https://pic.imgdb.cn/item/60c0abb9844ef46bb24807a8.jpg" alt="后台系统"></p><h2 id="分享连接"><a href="#分享连接" class="headerlink" title="分享连接"></a>分享连接</h2><p>链接：<a href="https://pan.baidu.com/s/1QLV4mvAyY8Eck4uV7Huneg">https://pan.baidu.com/s/1QLV4mvAyY8Eck4uV7Huneg</a><br>提取码：wuyu<br>复制这段内容后打开百度网盘手机App，操作更方便哦</p><p><em>PS</em>：运行不起来的可以关注公众号：<em>漫淡人生</em>，发送问题即可，收到会及时回复的。</p>]]></content>
     
     
     <categories>
@@ -2041,16 +2041,16 @@
   
   
   <entry>
-    <title>【网站分享】两个小网站（拯救孤独的小熊/共同击掌）</title>
+    <title>两个有点意思的小网站（拯救孤独的小熊/共同击掌）</title>
     <link href="/p/1191253587.html"/>
     <url>/p/1191253587.html</url>
     
-    <content type="html"><![CDATA[<p>两个有意思的小网站。  </p><blockquote><ul><li><a href="https://h1ghf1ve.me/">https://h1ghf1ve.me/</a></li></ul></blockquote><p>整个网站只有一个一个手掌和一句话“Waiting for someone to high-five you back.”。与网站的交互就是点击一下手掌，然后等待另外一个网友登陆这个网站同样点击一下手掌，完成一次击掌。网站还是有音效的，完成击掌后会有一个击掌的音效。  </p><span id="more"></span><p><img src="https://img.imgdb.cn/item/603a46455f4313ce25394285.jpg"></p><blockquote><ul><li><a href="https://mybearlove.com/">https://mybearlove.com/</a></li></ul></blockquote><p>一个小熊孤独地站在雨中，静静地等待着你。你发现了这个网站，看到了忧伤的小熊，抚摸了一下小熊，小熊开心的跳了一下，背景也从阴雨变成了变换彩色霓虹。你发现你居然可以给小熊带来快乐，于是你按住鼠标慢慢的抚摸小熊，小熊开心的跳着，跳着，跳着，欢乐一刻不停止。The ending。</p><p><img src="https://img.imgdb.cn/item/603a46e35f4313ce2539a45b.gif"></p>]]></content>
+    <content type="html"><![CDATA[<p>两个有点意思的小网站（拯救孤独的小熊/共同击掌）。</p><span id="more"></span>  <blockquote><ul><li><a href="https://h1ghf1ve.me/">https://h1ghf1ve.me/</a></li></ul></blockquote><p>整个网站只有一个一个手掌和一句话“Waiting for someone to high-five you back.”。与网站的交互就是点击一下手掌，然后等待另外一个网友登陆这个网站同样点击一下手掌，完成一次击掌。网站还是有音效的，完成击掌后会有一个击掌的音效。  </p><!--more--><p><img src="https://img.imgdb.cn/item/603a46455f4313ce25394285.jpg"></p><blockquote><ul><li><a href="https://mybearlove.com/">https://mybearlove.com/</a></li></ul></blockquote><p>一个小熊孤独地站在雨中，静静地等待着你。你发现了这个网站，看到了忧伤的小熊，抚摸了一下小熊，小熊开心的跳了一下，背景也从阴雨变成了变换彩色霓虹。你发现你居然可以给小熊带来快乐，于是你按住鼠标慢慢的抚摸小熊，小熊开心的跳着，跳着，跳着，欢乐一刻不停止。The ending。</p><p><img src="https://img.imgdb.cn/item/603a46e35f4313ce2539a45b.gif"></p>]]></content>
     
     
     <categories>
       
-      <category>网站分享</category>
+      <category>网站</category>
       
     </categories>
     
@@ -2079,7 +2079,7 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>网站</category>
       
     </categories>
     
@@ -2097,16 +2097,16 @@
   
   
   <entry>
-    <title>【网站分享】我的WIFI卡片</title>
+    <title>分享我的WIFI卡片</title>
     <link href="/p/2551082292.html"/>
     <url>/p/2551082292.html</url>
     
-    <content type="html"><![CDATA[<p>分享一个小网站，它唯一的作用就是帮你建一张A4大小的卡片，包含你的WiFi信息和可供手机扫描连接WiFi的二维码。你只需要在表格输入WiFi信息，就可以 🖨打印或者下载PDF了。可以应用在一些个开放wifi的公共场合，方便大家连接WIFI，扫码即连。</p><p><img src="https://img.imgdb.cn/item/6038fdd65f4313ce2552771f.jpg" alt="我的wifi"></p><span id="more"></span><p><img src="https://img.imgdb.cn/item/6038fdae5f4313ce25525f79.jpg" alt="A4"></p><p>传送门：<a href="https://www.mywifisign.com/zh-hans">https://www.mywifisign.com/zh-hans</a></p><div class="aaa1"><span class="title1">相关地址</span><div><b>官网：</b><a href = "https://www.mywifisign.com/zh-hans">https://www.mywifisign.com/zh-hans</a></div></div>]]></content>
+    <content type="html"><![CDATA[<p>分享一个小网站，它唯一的作用就是帮你建一张A4大小的卡片，包含你的WiFi信息和可供手机扫描连接WiFi的二维码。你只需要在表格输入WiFi信息，就可以 🖨打印或者下载PDF了。可以应用在一些个开放wifi的公共场合，方便大家连接WIFI，扫码即连。</p><span id="more"></span><p><img src="https://img.imgdb.cn/item/6038fdd65f4313ce2552771f.jpg" alt="我的wifi"></p><p><img src="https://img.imgdb.cn/item/6038fdae5f4313ce25525f79.jpg" alt="A4"></p><p>传送门：<a href="https://www.mywifisign.com/zh-hans">https://www.mywifisign.com/zh-hans</a></p><div class="aaa1"><span class="title1">相关地址</span><div><b>官网：</b><a href = "https://www.mywifisign.com/zh-hans">https://www.mywifisign.com/zh-hans</a></div></div>]]></content>
     
     
     <categories>
       
-      <category>网站分享</category>
+      <category>网站</category>
       
     </categories>
     
@@ -2133,7 +2133,7 @@
     
     <categories>
       
-      <category>软件分享</category>
+      <category>软件</category>
       
     </categories>
     
@@ -2160,7 +2160,7 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>网站</category>
       
     </categories>
     
@@ -2180,11 +2180,11 @@
   
   
   <entry>
-    <title>【网站分享】三个无聊的网站</title>
+    <title>三个无聊的网站</title>
     <link href="/p/107891264.html"/>
     <url>/p/107891264.html</url>
     
-    <content type="html"><![CDATA[<p>今天分享三个无聊的网站，万事万物总有他存在的必要性，只是我还没想明白而已。</p><blockquote><ul><li><a href="http://endless.horse/">http://endless.horse/</a>  </li></ul></blockquote><p>没有名字，网站就是一只用符号拼成的马，暂时没有发现有什么交互动作。</p><p><img src="https://img.imgdb.cn/item/6033b26e5f4313ce25c7d5e0.jpg"></p><span id="more"></span><blockquote><ul><li><a href="http://www.leduchamp.com/">http://www.leduchamp.com/</a>  </li></ul></blockquote><p>和上一个不同，这个网站可以通过鼠标进行交互。鼠标滚轮赏花，轮子逆时针转动，滚轮下滑，轮子顺时针转动，甚至可以通过鼠标拖动轮子转动。电脑开着声音的话针织还能听到模拟辐条转动的声音。</p><p><img src="https://img.imgdb.cn/item/6033b27a5f4313ce25c7de7b.gif"></p><blockquote><ul><li><a href="https://thatsthefinger.com/">https://thatsthefinger.com/</a>  </li></ul></blockquote><p>最后这个的话就是一只手，鼠标上下移动，手的食指和中指交替变换长度，同时网站的背景色也在变化。</p><p><img src="https://img.imgdb.cn/item/6033b2895f4313ce25c7e9b6.gif"></p><p>分享到此。</p>]]></content>
+    <content type="html"><![CDATA[<p>今天分享三个无聊的网站，万事万物总有他存在的必要性，只是我还没想明白而已。</p><span id="more"></span><blockquote><ul><li><a href="http://endless.horse/">http://endless.horse/</a>  </li></ul></blockquote><p>没有名字，网站就是一只用符号拼成的马，暂时没有发现有什么交互动作。</p><p><img src="https://img.imgdb.cn/item/6033b26e5f4313ce25c7d5e0.jpg"></p><blockquote><ul><li><a href="http://www.leduchamp.com/">http://www.leduchamp.com/</a>  </li></ul></blockquote><p>和上一个不同，这个网站可以通过鼠标进行交互。鼠标滚轮赏花，轮子逆时针转动，滚轮下滑，轮子顺时针转动，甚至可以通过鼠标拖动轮子转动。电脑开着声音的话针织还能听到模拟辐条转动的声音。</p><p><img src="https://img.imgdb.cn/item/6033b27a5f4313ce25c7de7b.gif"></p><blockquote><ul><li><a href="https://thatsthefinger.com/">https://thatsthefinger.com/</a>  </li></ul></blockquote><p>最后这个的话就是一只手，鼠标上下移动，手的食指和中指交替变换长度，同时网站的背景色也在变化。</p><p><img src="https://img.imgdb.cn/item/6033b2895f4313ce25c7e9b6.gif"></p><p>分享到此。</p>]]></content>
     
     
     <categories>
@@ -2207,7 +2207,7 @@
   
   
   <entry>
-    <title>【软件分享】凤凰系统-桌面版的Anndriod</title>
+    <title>凤凰系统-桌面版的Anndriod</title>
     <link href="/p/3208472285.html"/>
     <url>/p/3208472285.html</url>
     
@@ -2216,7 +2216,7 @@
     
     <categories>
       
-      <category>软件分享</category>
+      <category>软件</category>
       
     </categories>
     
@@ -2240,12 +2240,12 @@
     <link href="/p/1315279632.html"/>
     <url>/p/1315279632.html</url>
     
-    <content type="html"><![CDATA[<p>今天发现个网站，完全是被网站UI所吸引，然后才关注的内容。<br>一个系统分享网站，原先是专注于win7的系统优化的，谐音梗<code>“win7”=“吻妻”</code>。<a href="https://www.newxitong.com/">win7</a>的站点还在运行，这里主要介绍的还是<a href="http://iwin10.net/">win10</a>的，毕竟现在基本都习惯用win10了。  </p><p><img src="https://p.pstatp.com/origin/ff8900026795c1778749" alt="主界面"></p><span id="more"></span><p>主要是提供两个版本：专业版<code>window10 pro</code>和企业版<code>windows10 ltsc</code>。专业版只有64位，企业版有32位和64位下载。镜像类型的话是WIN和GHO。下载方式支持迅雷、百度网盘、微云盘、360云盘、迅雷云盘、天翼云盘。</p><p><img src="https://p.pstatp.com/origin/138450001dba71da9b84a" alt="专业版"><br><img src="https://p.pstatp.com/origin/138e20000d58d7bba432f" alt="企业版"><br><img src="https://p.pstatp.com/origin/137840001e1f7273c6d9a" alt="下载方式"></p><h3 id="版本特色"><a href="#版本特色" class="headerlink" title="版本特色"></a>版本特色</h3><ul><li>基于原版Win10 企业版LTSC优化制作</li><li>原生Internet Explorer 11</li><li>原生无捆绑微软UWP全家桶</li><li>原生无应用商店、小娜、OneDrive、Edge浏览器</li><li>移除SmartScreen 筛选器、Windows 安全中心</li><li>移除Xbox及其相关组件</li><li>移除零售演示内容和绝大部分可选功能</li><li>增加仿宋GB2312、楷体GB2312、方正小标宋3种字体</li><li>支持在线更新（自行开启更新服务）</li><li>支持固态硬盘4K对齐、支持NVMe M.2固态</li><li>支持锐龙、八代、九代、十代等新平台完美安装</li><li>支持全自动无人值守安装与自建帐户安装（WIM镜像）</li><li>集成全智能万能驱动助理（仅GHO镜像集成）</li><li>提供WIM和GHO两种镜像下载</li></ul><h3 id="运行库支持"><a href="#运行库支持" class="headerlink" title="运行库支持"></a>运行库支持</h3><ul><li>DirectX 9.0C+DirectX 11</li><li>Microsoft .NET Framework 3.5</li><li>Microsoft .NET Framework 4.7（自带）</li><li>VB VC++ 2005/2008/2010/2012/2013/2019</li></ul><h3 id="安装方法"><a href="#安装方法" class="headerlink" title="安装方法"></a>安装方法</h3><h4 id="1、硬盘下安装方法：（适用于MBR分区）"><a href="#1、硬盘下安装方法：（适用于MBR分区）" class="headerlink" title="1、硬盘下安装方法：（适用于MBR分区）"></a>1、硬盘下安装方法：（适用于MBR分区）</h4><p>调用系统安装器选中GHO系统镜像即可安装系统。将本GHO镜像文件与”硬盘安装器.exe”工具 一起复制到D盘根目录（非安装盘均可），运行”硬盘安装器.exe “，点击”确定”进入系统自动重 启安装过程，直到完成。</p><h4 id="2、-PE下安装方法："><a href="#2、-PE下安装方法：" class="headerlink" title="2、 PE下安装方法："></a>2、 PE下安装方法：</h4><p>用光盘或U盘引导进PE系统，运行安装器调用GHO/WIM系统镜像即可安装系统。<br>甚至还贴心的提供了定制好的启动盘根据<a href="https://item.taobao.com/item.htm?ft=t&id=622030677997" title="购买链接">连接</a>购买即可。</p>]]></content>
+    <content type="html"><![CDATA[<p>今天发现个网站，完全是被网站UI所吸引，然后才关注的内容。<br>一个系统分享网站，原先是专注于win7的系统优化的，谐音梗<code>“win7”=“吻妻”</code>。<a href="https://www.newxitong.com/">win7</a>的站点还在运行，这里主要介绍的还是<a href="http://iwin10.net/">win10</a>的，毕竟现在基本都习惯用win10了。  </p><span id="more"></span><p><img src="https://p.pstatp.com/origin/ff8900026795c1778749" alt="主界面"></p><p>主要是提供两个版本：专业版<code>window10 pro</code>和企业版<code>windows10 ltsc</code>。专业版只有64位，企业版有32位和64位下载。镜像类型的话是WIN和GHO。下载方式支持迅雷、百度网盘、微云盘、360云盘、迅雷云盘、天翼云盘。</p><p><img src="https://p.pstatp.com/origin/138450001dba71da9b84a" alt="专业版"><br><img src="https://p.pstatp.com/origin/138e20000d58d7bba432f" alt="企业版"><br><img src="https://p.pstatp.com/origin/137840001e1f7273c6d9a" alt="下载方式"></p><h3 id="版本特色"><a href="#版本特色" class="headerlink" title="版本特色"></a>版本特色</h3><ul><li>基于原版Win10 企业版LTSC优化制作</li><li>原生Internet Explorer 11</li><li>原生无捆绑微软UWP全家桶</li><li>原生无应用商店、小娜、OneDrive、Edge浏览器</li><li>移除SmartScreen 筛选器、Windows 安全中心</li><li>移除Xbox及其相关组件</li><li>移除零售演示内容和绝大部分可选功能</li><li>增加仿宋GB2312、楷体GB2312、方正小标宋3种字体</li><li>支持在线更新（自行开启更新服务）</li><li>支持固态硬盘4K对齐、支持NVMe M.2固态</li><li>支持锐龙、八代、九代、十代等新平台完美安装</li><li>支持全自动无人值守安装与自建帐户安装（WIM镜像）</li><li>集成全智能万能驱动助理（仅GHO镜像集成）</li><li>提供WIM和GHO两种镜像下载</li></ul><h3 id="运行库支持"><a href="#运行库支持" class="headerlink" title="运行库支持"></a>运行库支持</h3><ul><li>DirectX 9.0C+DirectX 11</li><li>Microsoft .NET Framework 3.5</li><li>Microsoft .NET Framework 4.7（自带）</li><li>VB VC++ 2005/2008/2010/2012/2013/2019</li></ul><h3 id="安装方法"><a href="#安装方法" class="headerlink" title="安装方法"></a>安装方法</h3><h4 id="1、硬盘下安装方法：（适用于MBR分区）"><a href="#1、硬盘下安装方法：（适用于MBR分区）" class="headerlink" title="1、硬盘下安装方法：（适用于MBR分区）"></a>1、硬盘下安装方法：（适用于MBR分区）</h4><p>调用系统安装器选中GHO系统镜像即可安装系统。将本GHO镜像文件与”硬盘安装器.exe”工具 一起复制到D盘根目录（非安装盘均可），运行”硬盘安装器.exe “，点击”确定”进入系统自动重 启安装过程，直到完成。</p><h4 id="2、-PE下安装方法："><a href="#2、-PE下安装方法：" class="headerlink" title="2、 PE下安装方法："></a>2、 PE下安装方法：</h4><p>用光盘或U盘引导进PE系统，运行安装器调用GHO/WIM系统镜像即可安装系统。<br>甚至还贴心的提供了定制好的启动盘根据<a href="https://item.taobao.com/item.htm?ft=t&id=622030677997" title="购买链接">连接</a>购买即可。</p>]]></content>
     
     
     <categories>
       
-      <category>网站分享</category>
+      <category>网站</category>
       
     </categories>
     
@@ -2265,7 +2265,7 @@
   
   
   <entry>
-    <title>【网站分享】实时票房统计</title>
+    <title>实时展示最新票房统计数据</title>
     <link href="/p/4052024328.html"/>
     <url>/p/4052024328.html</url>
     
@@ -2274,7 +2274,7 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>网站</category>
       
     </categories>
     
