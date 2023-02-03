@@ -487,35 +487,38 @@ button:active {
 
 
 
-.card {
-  box-sizing: border-box;
-  background: rgba(217, 217, 217, 0.58);
-  border: 1px solid white;
-  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(6px);
-  border-radius: 5px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.5s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  user-select: none;
-  font-weight: bolder;
+
+
+
+/*彩色字体效果*/
+.box_3{
+	background: #fff;
+	text-align: center;
+	padding: 10px 0;
+}	
+.box_3 p {
+	font-size: 30px;
+	font-weight: bold;
+	background: rgb(155,93,229);
+	background: linear-gradient(150deg, rgba(155,93,229,1) 0%, rgba(241,91,181,1) 20%, rgba(254,228,64,1) 40%, rgba(0,187,249,1) 60%, rgba(0,245,212,1) 80%);
+	background-size: 20% 20%;
+	background-color: #840b2a;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: gradient 5s linear infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 0%;
+	}
+	50% {
+		background-position: 50% 50%;
+	}
+	100% {
+		background-position: 100% 100%;
+	}
 }
 
-.card:hover {
-  border: 1px solid black;
-  transform: scale(1.05);
-}
-
-.card:active {
-  transform: scale(0.95) rotateZ(1.7deg);
-}
 
 
-
-
-
-
-
+/* 卡片样式 */
