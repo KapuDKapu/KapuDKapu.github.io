@@ -4,6 +4,189 @@
   
   
   <entry>
+    <title>windows11家庭中文版开启Hyper-V</title>
+    <link href="/p/40f457af.html"/>
+    <url>/p/40f457af.html</url>
+    
+    <content type="html"><![CDATA[<p>你的系统跟我一样是window11家庭中文版，则会找不到Hyper-Vr。</p><span id="more"></span><p>这时则需要自己创建，讲下述代码复制在txt文本里，并重命名为Hyper.cmd，</p><p>右键以管理员方式运行，最后输入“Y”重启电脑后即可。</p><p>找到控制面板–程序–程序和功能–启用或关闭windows功能 ，勾选Hyper-V</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">pushd</span> <span class="hljs-string">&quot;%~dp0&quot;</span><br><span class="hljs-built_in">dir</span> /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &gt;hv.txt<br><span class="hljs-keyword">for</span> /f %%i <span class="hljs-keyword">in</span> (<span class="hljs-string">&#x27;findstr /i . hv.txt 2^&gt;nul&#x27;</span>) <span class="hljs-keyword">do</span> dism /online /norestart /add-package:<span class="hljs-string">&quot;%SystemRoot%\servicing\Packages\%%i&quot;</span><br>del hv.txt<br>Dism /online /enable-feature /featurename:Microsoft-Hyper-V -All /LimitAccess /ALL<br>Pause<br></code></pre></td></tr></table></figure><p>找到控制面板–程序–程序和功能–启用或关闭windows功能 ，勾选Hyper-V</p><p><img src="/images/fcb1e857a30a4b9ebd76246ae1750fda.png"></p><h1 id="📎-参考文章"><a href="#📎-参考文章" class="headerlink" title="📎 参考文章"></a>📎 参考文章</h1><ul><li><strong><a href="https://www.zhuxianfei.com/server/windows/59924.html">windows11家庭中文版开启Hyper-V</a></strong></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>windows</tag>
+      
+      <tag>Hyper-V</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>在 Windows 11 上安装 Windows Subsystem for Android 并安装运行 APK 文件</title>
+    <link href="/p/4cee54f.html"/>
+    <url>/p/4cee54f.html</url>
+    
+    <content type="html"><![CDATA[<p class="note note-primary">微软发布了在 Windows 11 上我最期待的功能 Windows Subsystem for Android，一个在 Windows 11 上运行的安卓系统，这意味着你可以不需要安装其他的虚拟机就可以在 Windows 11 系统上使用安卓应用。</p><span id="more"></span>目前微软只面向 Windows Insider 测试项目人员推送该功能，但当然我们也可以通过其他方式来进行安装体验。![](/images/setup-windows-subsystem-for-android-on-windows-11-and-run-apk-files-1.png)首先，如果你是符合微软的最低硬件要求的话，直接在系统设置的 Windows 更新中加入 Windows 预览体验计划，并且设置到 Beta 通道，接着将系统的地区设置为美国，再在最新版的 Microsoft Store 中搜索并下载 Amazon AppStore，安装后这个应用商店后会自动安装 **Windows Subsystem for Android**，但你需要一个美国亚马逊的账号才可以登录安装其他应用，而且也只能安装 Amazon AppStore 上的应用。如果你也像我一样是不满足最低硬件要求，通过强行升级的方法更新到 Windows 11 的话，那可以按照我下面的方法来安装 **Windows Subsystem for Android**。首先需要开启系统的 Hyper-V 功能，先在开始菜单中输入「控制面板」，打开控制面板后点击「程序——启用或关闭 Windows 功能」，再在弹出的选择框里选中 Hyper-V，确认后安装重启。Hyper-V 功能在 Windows 的专业版里是自带的，如果是家庭版的话需要用其他方式来开启。![](/images/setup-windows-subsystem-for-android-on-windows-11-and-run-apk-files-2.png)重启系统后，我们需要下载 **Windows Subsystem for Android** 的包文件。先打开 https://store.rg-adguard.net/ ，在地址栏中输入 https://www.microsoft.com/store/productid/9p3395vx91nr ，后面的下拉框选择 「slow」，点击「✓」按钮。<p><img src="/images/setup-windows-subsystem-for-android-on-windows-11-and-run-apk-files-3.png"></p><p>等待一会解析地址后，会出现很多的链接，拉到页面最下方，找到这个 1.2 GB 大小的 MicrosoftCorporationII.WindowsSubsystemForAndroid_1.7.32815.0_neutral_~_8wekyb3d8bbwe.msixbundle 文件，点击下载。（这个只是本文更新时的版本及大小，后续可能会进行更新，文件名与体积大小都会有所变化）</p><p><img src="/images/setup-windows-subsystem-for-android-on-windows-11-and-run-apk-files-4.png"></p><p>下载完毕后，将它保存在一个较为容易访问的地方，我就保存在 D 盘的根目录下。<br>接着我们在开始菜单中输入「powershell」，再点击右侧的「使用管理员权限运行」。</p><p><img src="/images/setup-windows-subsystem-for-android-on-windows-11-and-run-apk-files-5.png"></p><p>运行 powershell 后，定位到我们存放刚刚下载的 msixbundle 文件的位置，然后输入如下命令安装（包的名字要按照你下载时的名字）。</p><blockquote><p>Add-AppPackage .\MicrosoftCorporationII.WindowsSubsystemForAndroid_1.7.32815.0_neutral_~_8wekyb3d8bbwe.Msixbundle</p></blockquote><p><img src="/images/setup-windows-subsystem-for-android-on-windows-11-and-run-apk-files-6.png"></p><p>如无意外会出现安装进度条，接着就安装完成。安装成功后你可以在开始菜单中发现 <strong>Windows Subsystem for Android</strong> ，点击它进入设置界面。</p><p><img src="/images/setup-windows-subsystem-for-android-on-windows-11-and-run-apk-files-7.png"></p><p>将「开发人员模式」设置为开启，再点击下面的「管理开发人员配置」，接着就会弹出一个 Android 系统的开发者默认设置界面了。</p><p>找到里面的「无线调试」，将其设置为开启状态。</p><p><img src="/images/setup-windows-subsystem-for-android-on-windows-11-and-run-apk-files-8.png"></p><p>回到 <strong>Windows Subsystem for Android</strong> 的设置界面，点击「IP 地址」旁边的刷新按钮，刷新出 IP 地址就成功。</p><p>这时候我们就可以通过 adb 的方式来进行连接和安装了。</p><p>点击链接 <a href="https://dl.google.com/android/repository/platform-tools-latest-windows.zip">https://dl.google.com/android/repository/platform-tools-latest-windows.zip</a> 下载，也可以从我上传到蓝奏云上的 <a href="https://apprcn.lanzoui.com/iqaqrvltcpi">https://apprcn.lanzoui.com/iqaqrvltcpi</a> 进行下载，下载后解压缩。</p><p>像刚刚一样，使用 powershell 定位到 adb 解压缩文件夹的位置，然后输入下面命令来连接到 <strong>Windows Subsystem for Android</strong> 上，里面的端口要根据 <strong>Windows Subsystem for Android</strong> 上显示的端口修改。</p><blockquote><p>./adb connect 127.0.0.1:58526</p></blockquote><p><img src="/images/setup-windows-subsystem-for-android-on-windows-11-and-run-apk-files-10.png"></p><p>如果显示连接失败，可以先打开「管理开发人员配置」的窗口，再尝试连接。</p><p>接着去网上下载你需要安装的 APK 文件，首先当然是下载应用商店了，你可以下载自己喜欢的应用商店，我这里以酷安为例。我也将酷安的 APK 文件保存到 adb 的文件夹中，然后输入下面的命令安装（APK 文件名也需要根据不同文件来更改）。</p><blockquote><p>./adb install Coolapk-11.4.3-2110131-coolapk-app-sign.apk</p></blockquote><p>接着就跟普通的安装应用安装一样，屏幕会显示当前的安装进度以及是否成功。</p><p>安装后也会在 Windows 的开始菜单中显示。</p><p><img src="/images/setup-windows-subsystem-for-android-on-windows-11-and-run-apk-files-11.png"></p><p>点击运行也是一切正常。</p><p><img src="/images/setup-windows-subsystem-for-android-on-windows-11-and-run-apk-files-12.png"></p><p>这样就可以快速安装其他上架了的应用了，跟 Android 系统一样，也是需要允许安装来源的。</p><p><img src="/images/setup-windows-subsystem-for-android-on-windows-11-and-run-apk-files-13.png"></p><p>到现在我们的 <strong>Windows Subsystem for Android</strong> 就安装完毕并成功运行安卓应用了。</p><h1 id="📎-参考文章"><a href="#📎-参考文章" class="headerlink" title="📎 参考文章"></a>📎 参考文章</h1><ul><li>反斗软件：<a href="https://www.apprcn.com/setup-windows-subsystem-for-android-on-windows-11-and-run-apk-files.html">在 Windows 11 上安装 Windows Subsystem for Android 并安装运行 APK 文件</a></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>windewos</tag>
+      
+      <tag>android</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>利用NotionNext+Notion免费建站</title>
+    <link href="/p/b44d4c2e.html"/>
+    <url>/p/b44d4c2e.html</url>
+    
+    <content type="html"><![CDATA[<p>😀 无意中翻到了NotionNext，NotionNext的定位是帮助非技术人员的小白，低成本、快速地搭建、维护自己的网站和内容。</p><span id="more"></span><p>可以将站点部署Vercel、Netlify。<br>操作步骤也简单，本站就是这么创建的，部署在的Netlify上。</p><h2 id="github操作"><a href="#github操作" class="headerlink" title="github操作"></a>github操作</h2><ul><li>创建github账户</li><li>克隆作者的仓库</li><li>修改配置文件</li></ul><h2 id="notion操作"><a href="#notion操作" class="headerlink" title="notion操作"></a>notion操作</h2><ul><li>创建notion账户</li><li>复制作者的notion模板</li><li>分享公开notion页面获取id信息</li></ul><h2 id="Vercel或者Netlify操作"><a href="#Vercel或者Netlify操作" class="headerlink" title="Vercel或者Netlify操作"></a>Vercel或者Netlify操作</h2><ul><li>github登录Vercel或者Netlify</li><li>创建notion的id参数，部署仓库</li><li>配置自定义的二级域名</li></ul><h1 id="🤗-总结归纳"><a href="#🤗-总结归纳" class="headerlink" title="🤗 总结归纳"></a>🤗 总结归纳</h1><p>整体感觉不错，还内置好些主题可以自由切换，配置文档也相当丰富。但是我感觉最棒的还是直接notion编辑内容站点就会自动同步到部署的站点，虽然不是实时的到那时几分钟也就同步过去了，体验还是很棒的</p><h1 id="📎-参考文章"><a href="#📎-参考文章" class="headerlink" title="📎 参考文章"></a>📎 参考文章</h1><ul><li><strong><a href="https://docs.tangly1024.com/about">NotionNext文档</a></strong></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>建站</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>懒人离线收藏网页</title>
+    <link href="/p/3e00c1df.html"/>
+    <url>/p/3e00c1df.html</url>
+    
+    <content type="html"><![CDATA[<p>今天发现了一款宝藏浏览器插件SingleFile，可以将网页离线保存为一个完整的html文件，各种格式完整保留。</p><span id="more"></span><p>接着将所有html文件放到一个文件夹里，然后做了个找了个时间轴的模板用来导航具体的html文件。<br>当然都是静态的，优点是随时访问，甚至可以放到免费的静态文件托管服务上。缺点是编辑起来有点麻烦，得编辑静态文件，不过改的地方不多，还行。毕竟做成动态的就得服务器了，免费的静态托管服务不少，服务器就不好找了。<br>SingleFile保存网页的话还有一点不错，就是可以先在控制台里面把多去的元素删掉之后再保存。缺点是保存的网页不能自适应移动端和桌面端，保存的时候是桌面端就是桌面端，手机端打开也是桌面端。</p><p><img src="/images/0e99fb2c-49e0-401b-9304-86c1e61ea5fd.png"><br><img src="/images/58c6dda8-dff2-43f3-b272-df89d42d3a05.png"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>网页</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>hexo后台管理插件：hexo-admin</title>
+    <link href="/p/414644d0.html"/>
+    <url>/p/414644d0.html</url>
+    
+    <content type="html"><![CDATA[<p class="note note-primary">Hexo Admin是一个非常方便的Hexo博客管理插件，可以在编写文章的同时预览文章效果，可以直接复制图片，使用文件的相对路径，省去了图床。</p><span id="more"></span><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>官方的是英文版本，也有非官方的汉化版本，但是不要同时安装，会有冲突。<br>官方版本名字是<code>hexo-admin</code>，非官方的汉化版本是<code>hexo-admin-sch</code><br>相关命令如下：</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs awk"><span class="hljs-regexp">//</span>检查是否安装<br>npm list hexo-admin<br><span class="hljs-regexp">//</span>卸载<br>npm remove hexo-admin<br><span class="hljs-regexp">//</span>安装<br>npm install hexo-admin --save<br></code></pre></td></tr></table></figure><p>访问路径：IP:端口/admin</p><h2 id="相关问题"><a href="#相关问题" class="headerlink" title="相关问题"></a>相关问题</h2><h3 id="图片url地址错误"><a href="#图片url地址错误" class="headerlink" title="图片url地址错误"></a>图片url地址错误</h3><p>默认插入图片后的url地址是这样的<code>\\images\pasted-1.png\</code>，这是无法展示图片的。需要改成<code>/images/pasted-1.png</code>才可以。  </p><p><img src="/images/pasted-72.png"></p><p>打开博客的目录的<code>node_modules--&gt;hexo-admin</code>子目录，找到<code>api.js</code>打开，搜索<code>imagePath</code>找到如下位置按照修改点进行修改即可。这样以后图片复制后就可以直接展示了。</p><p><img src="/images/pasted-71.png"></p><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs arcade">filename = imagePath+<span class="hljs-string">&quot;/&quot;</span>+ filename<span class="hljs-comment">//修改点</span><br><span class="hljs-keyword">var</span> outpath = path.join(hexo.source_dir, filename)<br><br><span class="hljs-keyword">var</span> dataURI = req.body.data.<span class="hljs-built_in">slice</span>(<span class="hljs-string">&#x27;data:image/png;base64,&#x27;</span>.<span class="hljs-built_in">length</span>)<br><span class="hljs-keyword">var</span> buf = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Buffer</span>(dataURI, <span class="hljs-string">&#x27;base64&#x27;</span>)<br>hexo.<span class="hljs-built_in">log</span>.d(<span class="hljs-string">`saving image to <span class="hljs-subst">$&#123;outpath&#125;</span>`</span>)<br>fs.writeFile(outpath, buf, <span class="hljs-keyword">function</span> (<span class="hljs-params">err</span>) &#123;<br>  <span class="hljs-keyword">if</span> (err) &#123;<br>    <span class="hljs-built_in">console</span>.<span class="hljs-built_in">log</span>(err)<br>  &#125;<br>  hexo.source.process().then(<span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) &#123;<br>    res.done(&#123;<br>      <span class="hljs-attr">src</span>: filename,<span class="hljs-comment">//修改点</span><br>      msg: msg<br>    &#125;)<br>  &#125;);<br>&#125;)<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Edge浏览器的IE模式</title>
+    <link href="/p/f88fef03.html"/>
+    <url>/p/f88fef03.html</url>
+    
+    <content type="html"><![CDATA[<h2 id="启用ie模式"><a href="#启用ie模式" class="headerlink" title="启用ie模式"></a>启用ie模式</h2><p>首先打开Edge浏览器，选择浏览器界面右上角的三点图标，点击打开，选择设置选项，选择默认浏览器选项，点击打开。<br>打开如下图界面，选择允许在 Internet Explorer 模式下重新加载网站 (IE 模式)选项，点击打开后面的下拉框，选择允许选项</p><span id="more"></span><p><img src="/images/pasted-69.png"><br>打开如下图界面，需要重启Edge浏览器，点击重启按钮<br>重启后，可以看到Edge浏览器的IE模式已经开启了，如下图。<br>到此，开启Edge浏览器的IE模式已经完成了。</p><h2 id="应用ie模式"><a href="#应用ie模式" class="headerlink" title="应用ie模式"></a>应用ie模式</h2><p>开启Edge浏览器的IE模式后想要在网页上应用的话，点击浏览器界面右上角的三点图标，选择【在id模式下重新加载】即可切换到id模式。<br>点击右键可以将切换ie模式的按钮放到工具栏</p><p><img src="/images/pasted-70.png" alt="upload successful"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>浏览器</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>浏览器插件-MarkDownload</title>
+    <link href="/p/b155fd49.html"/>
+    <url>/p/b155fd49.html</url>
+    
+    <content type="html"><![CDATA[<p class="note note-primary">一款浏览器插件，支持将任何网页转换为markdown语言。</p><span id="more"></span>用markdown的人应该不少吧，这个插件的功能是将网页转化为markdown语言，可以保留绝大多数的样式，甚至是图片文件。<p><img src="/images/obsibian/Pastedimage20240122164402.png"></p><p>插件安装完成后直接在想要保存的网页上点击插件即可将网页翻译为markdown，图片默认用的原图片的链接，在设置里面可以设置图片的使用方式。<br>点击设置按钮进入设置页面，全是英文，但是不影响，浏览器自带的翻译功能翻译一下即可。<br>设置页面不需要设置什么，只有一点按需要注意，设置上【将图片与markdown文件一同下载】和图片样式板块的【纯markdown】选项选择上的话，下载的时候会下载图片，图片路径也会使用相对路径。这样整理比笔记的时候统一放置图片文件，统一修改下图片相对路径，图片就不会存在失效的情况。<br>不设置这两个的话转换的markdown语言里面的图片使用的是图片的原始完整url路径，如果图片链接不支持外站引用的话就显示不了。</p><p><img src="/images/obsibian/5e4ad69b-17ae-4add-8218-e2c44e3ca437.png"><br><img src="/images/obsibian/65e971bc-48df-4e38-ad97-2b3766a2b644.png"></p><p>也可以直接将图片转换为base64编码保存，又好处，图片也是实打实的存下来了不怕丢了，但是markdown文件也就太大了，可读性也就没有了。</p><p>插件名称： MarkDownload<br>微软插件商店地址：[MarkDownload](<a href="https://microsoftedge.microsoft.com/addons/detail/markdownload-markdown-w/hajanaajapkhaabfcofdjgjnlgkdkknm">MarkDownload - Markdown Web Clipper - Microsoft Edge Addons</a>)</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>网站分享</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>浏览器</tag>
+      
+      <tag>markdown</tag>
+      
+      <tag>插件</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>知名车企旗下品牌盘点</title>
     <link href="/p/98cb627d.html"/>
     <url>/p/98cb627d.html</url>
@@ -21,6 +204,33 @@
     <tags>
       
       <tag>车企</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>随机图片API整理.md</title>
+    <link href="/p/92e57454.html"/>
+    <url>/p/92e57454.html</url>
+    
+    <content type="html"><![CDATA[<p class="note note-primary">收集整理网络上的一些生成随机推片的API，有需要的自取。</p><span id="more"></span><h3 id="1、随机动漫图"><a href="#1、随机动漫图" class="headerlink" title="1、随机动漫图"></a>1、随机动漫图</h3><p><strong>地址</strong>：<a href="https://www.dmoe.cc/random.php">https://www.dmoe.cc/random.php</a><br><strong>效果</strong>：<br><img src="https://www.dmoe.cc/random.php"></p><h3 id="2、真人-动漫-风景"><a href="#2、真人-动漫-风景" class="headerlink" title="2、真人/动漫/风景"></a>2、真人/动漫/风景</h3><p><strong>地址</strong>：<a href="https://imgapi.cn/api.php">https://imgapi.cn/api.php</a><br><strong>参数</strong>： 参数均非必填<br>示例：<a href="https://imgapi.cn/api.php?zd=mobile&amp;fl=meizi&amp;gs=images">https://imgapi.cn/api.php?zd=mobile&amp;fl=meizi&amp;gs=images</a><br>zd：输出壁纸的终端[mobile|pc|zsy] 为空输出pc 竖图|横图|自适应<br>fl：选择输出分类[meizi|dongman|fengjing|suiji] 为空随机输出<br>gs：输出壁纸格式[json|images] 默认为images<br><strong>效果</strong>：<br><img src="https://imgapi.cn/api.php"></p><h3 id="3、COSPLAY"><a href="#3、COSPLAY" class="headerlink" title="3、COSPLAY"></a>3、COSPLAY</h3><p><strong>地址</strong>：<a href="https://imgapi.cn/cos.php">https://imgapi.cn/cos.php</a><br><strong>参数</strong>： 参数均非必填<br>示例：<a href="https://imgapi.cn/cos.php?return=img">https://imgapi.cn/cos.php?return=img</a><br>return：返回状态类型[json|jsonpro|url|urlpro|img|imgpro]默认url<br>json：返回一条标准json数据(图片地址)<br>jsonpro：返回十条标准json数据(图片地址)<br>url：直接返回一条图片链接<br>urlpro：直接返回十条图片链接<br>img：直接显示图片不返回图片链接<br><strong>效果</strong>：<br><img src="https://imgapi.cn/cos.php"></p><h3 id="4、BING每日一图"><a href="#4、BING每日一图" class="headerlink" title="4、BING每日一图"></a>4、BING每日一图</h3><p><strong>地址</strong>：<a href="https://imgapi.cn/bing.php">https://imgapi.cn/bing.php</a><br><strong>效果</strong>：<br><img src="https://imgapi.cn/bing.php"></p><h3 id="5、美女图片"><a href="#5、美女图片" class="headerlink" title="5、美女图片"></a>5、美女图片</h3><p><strong>地址</strong>：<a href="https://v.api.aa1.cn/api/pc-girl_bz/index.php">https://v.api.aa1.cn/api/pc-girl_bz/index.php</a><br><strong>效果</strong>：<br><img src="https://v.api.aa1.cn/api/pc-girl_bz/index.php"></p><h3 id="6、BING每日一图2"><a href="#6、BING每日一图2" class="headerlink" title="6、BING每日一图2"></a>6、BING每日一图2</h3><p><strong>地址</strong>：<a href="https://www.yangshangzhen.com/bing/wallpaper">https://www.yangshangzhen.com/bing/wallpaper</a><br><strong>效果</strong>：<br><img src="https://www.yangshangzhen.com/bing/wallpaper"></p><h3 id="6、BING每日一图3"><a href="#6、BING每日一图3" class="headerlink" title="6、BING每日一图3"></a>6、BING每日一图3</h3><p><strong>地址</strong>：<a href="https://api.vvhan.com/api/bing">https://api.vvhan.com/api/bing</a><br><strong>效果</strong>：<br><img src="https://api.vvhan.com/api/bing"></p><h3 id="7、cos图片"><a href="#7、cos图片" class="headerlink" title="7、cos图片"></a>7、cos图片</h3><p><strong>地址</strong>：<a href="https://api.xfyun.club/cos.php">https://api.xfyun.club/cos.php</a><br><strong>效果</strong>：<br><img src="https://api.xfyun.club/cos.php"></p><h3 id="8、风景"><a href="#8、风景" class="headerlink" title="8、风景"></a>8、风景</h3><p><strong>地址</strong>：<a href="https://api.vvhan.com/api/view">https://api.vvhan.com/api/view</a><br><strong>效果</strong>：<br><img src="https://api.vvhan.com/api/view"></p><h3 id="9、girl"><a href="#9、girl" class="headerlink" title="9、girl"></a>9、girl</h3><p><strong>地址</strong>：<a href="https://api.vvhan.com/api/girl">https://api.vvhan.com/api/girl</a><br><strong>效果</strong>：<br><img src="https://api.vvhan.com/api/girl"></p><h3 id="10、girl-手机"><a href="#10、girl-手机" class="headerlink" title="10、girl-手机"></a>10、girl-手机</h3><p><strong>地址</strong>：<a href="https://api.vvhan.com/api/mobil.girl">https://api.vvhan.com/api/mobil.girl</a><br><strong>效果</strong>：<br><img src="https://api.vvhan.com/api/mobil.girl"></p><h3 id="11、二次元"><a href="#11、二次元" class="headerlink" title="11、二次元"></a>11、二次元</h3><p><strong>地址</strong>：<a href="https://api.vvhan.com/api/acgimg">https://api.vvhan.com/api/acgimg</a><br><strong>效果</strong>：<br><img src="https://api.vvhan.com/api/acgimg"></p><h3 id="12、LOL图像"><a href="#12、LOL图像" class="headerlink" title="12、LOL图像"></a>12、LOL图像</h3><p><strong>地址</strong>：<a href="https://api.vvhan.com/api/lolskin">https://api.vvhan.com/api/lolskin</a><br><strong>效果</strong>：<br><img src="https://api.vvhan.com/api/lolskin"></p><h3 id="13、随机竖屏图片"><a href="#13、随机竖屏图片" class="headerlink" title="13、随机竖屏图片"></a>13、随机竖屏图片</h3><p><strong>地址</strong>：<a href="https://api.uomg.com/api/rand.img2">https://api.uomg.com/api/rand.img2</a><br><strong>参数</strong>：<br>sor：选择输出分类[美女|二次元|腿控]，为空随机输出<br>format：选择输出格式[json|images]<br><strong>效果</strong>：<br><img src="https://api.uomg.com/api/rand.img2?sort=%E7%BE%8E%E5%A5%B3&format=images"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>网站分享</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>网址</tag>
+      
+      <tag>有趣</tag>
       
     </tags>
     
@@ -199,7 +409,7 @@
     <link href="/p/2cbb710c.html"/>
     <url>/p/2cbb710c.html</url>
     
-    <content type="html"><![CDATA[<p class="note note-primary">整理的一些免费的目前可用的图床，供大家筛选使用。免费图床说不定啥时候就不好使了，所以数据做好备份，有能力的自建图床。每个图床介绍下面都有对应图床的图片，看不到的就是挂掉了，不稳定，可以过滤掉这个了。图床排序没有顺序，看自己喜好选择。  本帖长期更新，有新发现的会补充，挂掉的会删掉。</p><span id="more"></span><h3 id="1、聚合图床"><a href="#1、聚合图床" class="headerlink" title="1、聚合图床"></a>1、聚合图床</h3><p>我一直在用的图床，很稳定；不支持游客上传。免费会员限量1000张，最大5M，付费最少会员10W，无限制文件大小，付费会员有api。<br><img src="/images/f730d81c-f53d-4f96-a41a-2afe2eed42ca.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://pic.imgdb.cn/item/63ee27baf144a01007982815.jpg"><br><strong>地址</strong>：<a href="https://www.superbed.cn/">https://www.superbed.cn/</a></p><h3 id="2、ImgURL"><a href="#2、ImgURL" class="headerlink" title="2、ImgURL"></a>2、ImgURL</h3><p>比较老牌的免费图床服务，稳定性不错，现在需要注册才能上传。文件不能超过10M，单次最多支持9张。免费用户450张/月，vip每月可上传3000-10000张；<br><img src="/images/0d864b6a-0c21-43f1-bd0e-95614377384f.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://s3.bmp.ovh/imgs/2023/02/16/ceb888c9a32cd441.jpg"><br><strong>地址</strong>：<a href="https://www.imgurl.org/">https://www.imgurl.org/</a></p><h3 id="3、imagehub"><a href="#3、imagehub" class="headerlink" title="3、imagehub"></a>3、imagehub</h3><p>可设置是否自动删除，多长时间自动删除，直接源图片链接, BBCode代码和HTML缩略图显示，支持单张最大10MB图片上传，没发现单次上传数量限制，全球CDN加速，多地数据实时备份；<br><img src="/images/72770bd2-86c4-4416-91c4-5bccb0aae88b.jpg"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://s1.imagehub.cc/images/2023/02/16/039eddbb3349c47e4d71c4c8744ebd77.jpeg" alt="039eddbb3349c47e4d71c4c8744ebd77.jpeg"><br><strong>地址</strong>：<a href="https://www.imagehub.cc/">https://www.imagehub.cc/</a></p><h3 id="4、路过图床"><a href="#4、路过图床" class="headerlink" title="4、路过图床"></a>4、路过图床</h3><p>非注册用户最大5M，注册用户支持单张最大10MB图片上传，没发现单次上传数量限制。整体页面和ImgURL相差无几。<br><img src="/images/f50679bd-7278-4387-bf48-f93a0fc25320.jpg"><br>下面是图床图片，看下效果，没图就是挂了。<br><a href="https://imgse.com/i/pSH25h6"><img src="https://s1.ax1x.com/2023/02/16/pSH25h6.jpg" alt="pSH25h6.jpg"></a><br><strong>地址</strong>：<a href="https://imgse.com/">https://imgse.com/</a></p><h3 id="5、z4a图床"><a href="#5、z4a图床" class="headerlink" title="5、z4a图床"></a>5、z4a图床</h3><p>需要注册，最大64MB图片大小，储存图片超过2000张（暂定）的用户，商业用户需进行赞助。<br><img src="/images/c18ffcdc-0a4c-453a-80ae-ac81fcc6c8af.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://z4a.net/images/2023/02/16/f7b1d5d27eec6526daf40273c709538f.jpg"><br><strong>地址</strong>：<a href="https://z4a.net/">https://z4a.net/</a></p><h3 id="6、helloimg"><a href="#6、helloimg" class="headerlink" title="6、helloimg"></a>6、helloimg</h3><p>需要注册，最大20MB图片大小，直接的源图片链接。<br><img src="/images/c18ffcdc-0a4c-453a-80ae-ac81fcc6c8af.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://www.helloimg.com/images/2023/02/16/oFH3Sb.jpg"><br><strong>地址</strong>：<a href="https://www.helloimg.com/">hhttps://www.helloimg.com/</a></p><h3 id="7、CDN加速图床"><a href="#7、CDN加速图床" class="headerlink" title="7、CDN加速图床"></a>7、CDN加速图床</h3><p>无需注册可上传，支持注册登录，最大 5 MB 图片大小. 直接的源图片链接。<br><img src="/images/dc54f2f3-0b48-46dc-9725-e2fb744dcff4.jpg"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://cdnjson.com/images/2023/02/16/f7b1d5d27eec6526daf40273c709538f.jpg"><br><strong>地址</strong>：<a href="https://cdnjson.com/">https://cdnjson.com/</a></p><h3 id="8、CFC图床"><a href="#8、CFC图床" class="headerlink" title="8、CFC图床"></a>8、CFC图床</h3><p>免登录上传，直至注册登录，单文件≤10M,单次上传≤30张，直链。<br><img src="/images/f12b78c4-74e5-4357-8156-40cdc335c611.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://image.fcweb.ml/i/2023/02/16/x6zsg8.jpg"><br><strong>地址</strong>：<a href="https://image.fcweb.ml/">https://image.fcweb.ml/</a></p><h3 id="9、简单图床"><a href="#9、简单图床" class="headerlink" title="9、简单图床"></a>9、简单图床</h3><p>免登录上传，直至注册登录，单文件≤10M,单次上传≤30张，直链。<br><img src="/images/fe746d96-2c51-4d39-a2fd-577d1d5e4c9a.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://i2.100024.xyz/2023/02/16/xb362i.webp"><br><strong>地址</strong>：<a href="https://png.cm/">https://png.cm/</a></p><h3 id="10、picgo"><a href="#10、picgo" class="headerlink" title="10、picgo"></a>10、picgo</h3><p>游客限制单张图片限制大小为5M，注册用户单张图片限制大小为25M，图片提供长期保存和取回服务。直接的源图片链接。<br><img src="/images/c2befe50-05fb-436c-ad79-12b4eabc11c5.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://img.picgo.net/2023/02/16/f7b1d5d27eec6526daf40273c709538f4bd34b585b5a08c7.jpeg"><br><strong>地址</strong>：<a href="https://www.picgo.net/">https://www.picgo.net/</a></p><h3 id="11、一图"><a href="#11、一图" class="headerlink" title="11、一图"></a>11、一图</h3><p>支持游客上传，支持注册登录管理，最大可上传 10.00 MB 的图片，上传队列最多 3 张。直接的源图片链接。<br><img src="/images/a3faf455-d7e4-4025-962a-be638f9607c1.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://star.sea.img.one/2023/02/16/63ee251d724f4.jpg"><br><strong>地址</strong>：<a href="https://www.img.one/">https://www.img.one/</a></p><h3 id="12、LOC专用免费图床"><a href="#12、LOC专用免费图床" class="headerlink" title="12、LOC专用免费图床"></a>12、LOC专用免费图床</h3><p>支持游客上传，支持注册登录管理，最大可上传 100.00 MB 的图片，单次同时可选择 100 张。直接的源图片链接。<br><img src="/images/a75b0c68-f980-497d-bc66-249022b9ea61.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://s1.locimg.com/2023/02/16/7978ca1554985.jpg"><br><strong>地址</strong>：<a href="https://www.img.one/">https://www.img.one/</a></p><h3 id="13、im-ge"><a href="#13、im-ge" class="headerlink" title="13、im.ge"></a>13、im.ge</h3><p>支持游客上传，支持注册登录。最大 50 MB 图片大小，直接的源图片链接。<br><img src="/images/ac3280859-4879-4da9-bc89-2d51218d8ea2.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://i.im.ge/2023/02/16/aHpp5c.f7b1d5d27eec6526daf40273c709538f.jpg"><br><strong>地址</strong>：<a href="https://im.ge/">https://im.ge/</a></p><h3 id="14、公共图床"><a href="#14、公共图床" class="headerlink" title="14、公共图床"></a>14、公共图床</h3><p>页面很原始，纯游客上传，无登录注册功能，只能单个上传，标注最大5M，实测超过也能上传。可提取直接的源图片链接。<br><img src="/images/ac3280859-4879-4da9-bc89-2d51218d8ea2.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://s1.locimg.com/2023/02/16/7978ca1554985.jpg"><br><strong>地址</strong>：<a href="https://www.img.one/">https://www.img.one/</a></p>]]></content>
+    <content type="html"><![CDATA[<p class="note note-primary">整理的一些免费的目前可用的图床，供大家筛选使用。免费图床说不定啥时候就不好使了，所以数据做好备份，有能力的自建图床。每个图床介绍下面都有对应图床的图片，看不到的就是挂掉了，不稳定，可以过滤掉这个了。图床排序没有顺序，看自己喜好选择。  本帖长期更新，有新发现的会补充，挂掉的会删掉。</p><span id="more"></span><h3 id="1、聚合图床"><a href="#1、聚合图床" class="headerlink" title="1、聚合图床"></a>1、聚合图床</h3><p>我一直在用的图床，很稳定；不支持游客上传。免费会员限量1000张，最大5M，付费最少会员10W，无限制文件大小，付费会员有api。<br><img src="/images/f730d81c-f53d-4f96-a41a-2afe2eed42ca.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://pic.imgdb.cn/item/63ee27baf144a01007982815.jpg"><br><strong>地址</strong>：<a href="https://www.superbed.cn/">https://www.superbed.cn/</a></p><h3 id="2、ImgURL"><a href="#2、ImgURL" class="headerlink" title="2、ImgURL"></a>2、ImgURL</h3><p>比较老牌的免费图床服务，稳定性不错，现在需要注册才能上传。文件不能超过10M，单次最多支持9张。免费用户450张/月，vip每月可上传3000-10000张；<br><img src="/images/0d864b6a-0c21-43f1-bd0e-95614377384f.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://s3.bmp.ovh/imgs/2023/02/16/ceb888c9a32cd441.jpg"><br><strong>地址</strong>：<a href="https://www.imgurl.org/">https://www.imgurl.org/</a></p><h3 id="3、imagehub"><a href="#3、imagehub" class="headerlink" title="3、imagehub"></a>3、imagehub</h3><p>可设置是否自动删除，多长时间自动删除，直接源图片链接, BBCode代码和HTML缩略图显示，支持单张最大10MB图片上传，没发现单次上传数量限制，全球CDN加速，多地数据实时备份；<br><img src="/images/72770bd2-86c4-4416-91c4-5bccb0aae88b.jpg"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://s1.imagehub.cc/images/2023/02/16/039eddbb3349c47e4d71c4c8744ebd77.jpeg" alt="039eddbb3349c47e4d71c4c8744ebd77.jpeg"><br><strong>地址</strong>：<a href="https://www.imagehub.cc/">https://www.imagehub.cc/</a></p><h3 id="4、路过图床"><a href="#4、路过图床" class="headerlink" title="4、路过图床"></a>4、路过图床</h3><p>非注册用户最大5M，注册用户支持单张最大10MB图片上传，没发现单次上传数量限制。整体页面和ImgURL相差无几。<br><img src="/images/f50679bd-7278-4387-bf48-f93a0fc25320.jpg"><br>下面是图床图片，看下效果，没图就是挂了。<br><a href="https://imgse.com/i/pSH25h6"><img src="https://s1.ax1x.com/2023/02/16/pSH25h6.jpg" alt="pSH25h6.jpg"></a><br><strong>地址</strong>：<a href="https://imgse.com/">https://imgse.com/</a></p><h3 id="5、z4a图床"><a href="#5、z4a图床" class="headerlink" title="5、z4a图床"></a>5、z4a图床</h3><p>需要注册，最大64MB图片大小，储存图片超过2000张（暂定）的用户，商业用户需进行赞助。<br><img src="/images/c18ffcdc-0a4c-453a-80ae-ac81fcc6c8af.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://z4a.net/images/2023/02/16/f7b1d5d27eec6526daf40273c709538f.jpg"><br><strong>地址</strong>：<a href="https://z4a.net/">https://z4a.net/</a></p><h3 id="6、helloimg"><a href="#6、helloimg" class="headerlink" title="6、helloimg"></a>6、helloimg</h3><p>需要注册，最大20MB图片大小，直接的源图片链接。<br><img src="/images/c18ffcdc-0a4c-453a-80ae-ac81fcc6c8af.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://www.helloimg.com/images/2023/02/16/oFH3Sb.jpg"><br><strong>地址</strong>：<a href="https://www.helloimg.com/">hhttps://www.helloimg.com/</a></p><h3 id="7、CDN加速图床"><a href="#7、CDN加速图床" class="headerlink" title="7、CDN加速图床"></a>7、CDN加速图床</h3><p>无需注册可上传，支持注册登录，最大 5 MB 图片大小. 直接的源图片链接。<br><img src="/images/dc54f2f3-0b48-46dc-9725-e2fb744dcff4.jpg"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://cdnjson.com/images/2023/02/16/f7b1d5d27eec6526daf40273c709538f.jpg"><br><strong>地址</strong>：<a href="https://cdnjson.com/">https://cdnjson.com/</a></p><h3 id="8、CFC图床"><a href="#8、CFC图床" class="headerlink" title="8、CFC图床"></a>8、CFC图床</h3><p>免登录上传，直至注册登录，单文件≤10M,单次上传≤30张，直链。<br><img src="/images/f12b78c4-74e5-4357-8156-40cdc335c611.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://image.fcweb.ml/i/2023/02/16/x6zsg8.jpg"><br><strong>地址</strong>：<a href="https://image.fcweb.ml/">https://image.fcweb.ml/</a></p><h3 id="9、简单图床"><a href="#9、简单图床" class="headerlink" title="9、简单图床"></a>9、简单图床</h3><p>免登录上传，直至注册登录，单文件≤10M,单次上传≤30张，直链。<br><img src="/images/fe746d96-2c51-4d39-a2fd-577d1d5e4c9a.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://i2.100024.xyz/2023/02/16/xb362i.webp"><br><strong>地址</strong>：<a href="https://png.cm/">https://png.cm/</a></p><h3 id="10、picgo"><a href="#10、picgo" class="headerlink" title="10、picgo"></a>10、picgo</h3><p>游客限制单张图片限制大小为5M，注册用户单张图片限制大小为25M，图片提供长期保存和取回服务。直接的源图片链接。<br><img src="/images/c2befe50-05fb-436c-ad79-12b4eabc11c5.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://img.picgo.net/2023/02/16/f7b1d5d27eec6526daf40273c709538f4bd34b585b5a08c7.jpeg"><br><strong>地址</strong>：<a href="https://www.picgo.net/">https://www.picgo.net/</a></p><h3 id="11、一图"><a href="#11、一图" class="headerlink" title="11、一图"></a>11、一图</h3><p>支持游客上传，支持注册登录管理，最大可上传 10.00 MB 的图片，上传队列最多 3 张。直接的源图片链接。<br><img src="/images/a3faf455-d7e4-4025-962a-be638f9607c1.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://star.sea.img.one/2023/02/16/63ee251d724f4.jpg"><br><strong>地址</strong>：<a href="https://www.img.one/">https://www.img.one/</a></p><h3 id="12、LOC专用免费图床"><a href="#12、LOC专用免费图床" class="headerlink" title="12、LOC专用免费图床"></a>12、LOC专用免费图床</h3><p>支持游客上传，支持注册登录管理，最大可上传 100.00 MB 的图片，单次同时可选择 100 张。直接的源图片链接。<br><img src="/images/a75b0c68-f980-497d-bc66-249022b9ea61.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://s1.locimg.com/2023/02/16/7978ca1554985.jpg"><br><strong>地址</strong>：<a href="https://www.img.one/">https://www.img.one/</a></p><h3 id="13、im-ge"><a href="#13、im-ge" class="headerlink" title="13、im.ge"></a>13、im.ge</h3><p>支持游客上传，支持注册登录。最大 50 MB 图片大小，直接的源图片链接。<br><img src="/images/ac3280859-4879-4da9-bc89-2d51218d8ea2.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://i.im.ge/2023/02/16/aHpp5c.f7b1d5d27eec6526daf40273c709538f.jpg"><br><strong>地址</strong>：<a href="https://im.ge/">https://im.ge/</a></p><h3 id="14、公共图床"><a href="#14、公共图床" class="headerlink" title="14、公共图床"></a>14、公共图床</h3><p>页面很原始，纯游客上传，无登录注册功能，只能单个上传，标注最大5M，实测超过也能上传。可提取直接的源图片链接。<br><img src="/images/ac3280859-4879-4da9-bc89-2d51218d8ea2.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://s1.locimg.com/2023/02/16/7978ca1554985.jpg"><br><strong>地址</strong>：<a href="https://www.img.one/">https://www.img.one/</a></p><h3 id="15、图仓"><a href="#15、图仓" class="headerlink" title="15、图仓"></a>15、图仓</h3><p>图仓是一款以图片上传、分发、管理为核心的聚合图床，能够满足「使用、收藏、整理、查找」的各种场景。<br><img src="/images/650022a9-d5cc-40d0-8cb6-925bbb90071e.png"><br>下面是图床图片，看下效果，没图就是挂了。<br><img src="https://img.tucang.cc/api/image/show/f6a6a6019269c9f76ed358ade208aa19"><br><strong>地址</strong>：<a href="https://tucang.cc/">https://tucang.cc/</a></p>]]></content>
     
     
     <categories>
