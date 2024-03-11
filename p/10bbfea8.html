@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/images/cover/e20c830d56548ce294aaf62f024560a8.jpg">
 <meta property="article:published_time" content="2024-02-06T09:25:00.000Z">
-<meta property="article:modified_time" content="2024-02-06T09:21:24.058Z">
+<meta property="article:modified_time" content="2024-02-07T02:03:12.801Z">
 <meta property="article:author" content="卡普">
 <meta property="article:tag" content="建站">
 <meta property="article:tag" content="flomo">
@@ -387,7 +387,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          531 字
+          535 字
         
       </span>
     
@@ -459,7 +459,7 @@
 <h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker run -d --name memos -p 5230:5230 -v ~/.memos/:/var/opt/memos neosmemo/memos:stable<br></code></pre></td></tr></table></figure>
 
 <blockquote>
-<p>该目录将用作本地计算机上的数据目录，而该目录是 Docker 中卷的目录，不应修改。<code>~/.memos//var/opt/memos</code></p>
+<p><code>~/.memos//var/opt/memos</code>目录是用作本地计算机上的数据目录。备份数据的话备份这个文件夹即可，恢复的话就是覆盖掉它。</p>
 </blockquote>
 <h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><blockquote>
 <p>1、和flomo记录的方式类似<br>2、部署简单<br>3、支持中文</p>
@@ -573,6 +573,12 @@
                 <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
+                    
+                      <a href="/p/cb3ef645.html" title="Halo-强大易用的开源建站工具">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Halo-强大易用的开源建站工具</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
                     
                   </article>
                   <article class="post-next col-6">

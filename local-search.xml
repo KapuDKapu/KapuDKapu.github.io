@@ -4,11 +4,90 @@
   
   
   <entry>
+    <title>C盘空间清理</title>
+    <link href="/p/333b0804.html"/>
+    <url>/p/333b0804.html</url>
+    
+    <content type="html"><![CDATA[<p class="note note-primary">😀 随着电脑的使用，占据的C盘空间会越来越大，过多的话会影响电脑的运行速度。这里记录了下如何清理下C盘空间。</p><span id="more"></span><h1 id="🤗-迁移文件夹"><a href="#🤗-迁移文件夹" class="headerlink" title="🤗 迁移文件夹"></a>🤗 迁移文件夹</h1><h2 id="1、迁移微信的文件夹"><a href="#1、迁移微信的文件夹" class="headerlink" title="1、迁移微信的文件夹"></a>1、迁移微信的文件夹</h2><blockquote><p>设置-文件管理-更改文件夹的位置到其他盘符。</p></blockquote><h2 id="2、迁移浏览器的下载文件夹"><a href="#2、迁移浏览器的下载文件夹" class="headerlink" title="2、迁移浏览器的下载文件夹"></a>2、迁移浏览器的下载文件夹</h2><blockquote><p>edge是默认下载到C盘的，在设置-下载-位置 里面更改文件夹</p></blockquote><h1 id="🤗-关闭或者修改虚拟内存到其他盘符"><a href="#🤗-关闭或者修改虚拟内存到其他盘符" class="headerlink" title="🤗 关闭或者修改虚拟内存到其他盘符"></a>🤗 关闭或者修改虚拟内存到其他盘符</h1><p>总结文章的内容</p><p>如果电脑开启的虚拟内存，可以关闭或者放到其他盘符。<br>设置-系统-高级系统设置-高级-性能-设置-高级-虚拟内存</p><h1 id="🤗-磁盘清理"><a href="#🤗-磁盘清理" class="headerlink" title="🤗 磁盘清理"></a>🤗 磁盘清理</h1><p>使用系统自带的磁盘清理功能清理垃圾<br>系统搜索【磁盘清理】后打开，选择C盘，点击清理系统文件，在选择C盘，然后勾选对应内容清理即可。</p><p><img src="/images/46d625a5a95e4667a0c7d5006eaea6a3.png"></p><h1 id="🤗-Temp"><a href="#🤗-Temp" class="headerlink" title="🤗 Temp"></a>🤗 Temp</h1><p>C:\Users\用户名\AppData\Local\Temp直接删！</p><h1 id="🤗-FileRepository"><a href="#🤗-FileRepository" class="headerlink" title="🤗 FileRepository"></a>🤗 FileRepository</h1><p>经过搜索查询可知道这个文件夹存储的是驱动文件。而驱动文件进行更新后，老的驱动文件没有删除，长久下来，就会造成很多老旧无效的驱动文件占据掉很大空间。<br>网上有很人说“FileRepository”，这个文件夹的内容可以删除；也有人说这个文件夹不能删除。<br>其实，准确点说，“FileRepository”文件夹中那些老旧不会使用到的文件是可以删除的，正在使用的文件就不能删除，以免会造成系统不稳定的影响。<br><a href="https://github.com/lostindark/DriverStoreExplorer/releases/">https://github.com/lostindark/DriverStoreExplorer/releases/</a><br>“Driver Store Explorer”下载、解压之后，选中“Rapr.exe”右键“管理员身份运行”，等待扫描一会。直接点击选择旧的驱动，简单确认下删除就行</p><p><img src="/images/fe37392cbbdd42e49d7984557c481ea5.png"></p><h1 id="🤗-WizTree"><a href="#🤗-WizTree" class="headerlink" title="🤗 WizTree"></a>🤗 WizTree</h1><p>在有就是通过wiztree来查到占用空间较大的文件夹或者文件，找到后不清楚是什么的可以百度下，没用的就删了。</p><p><img src="/images/db97580956c34d17b64843281465b307.png"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>C盘空间清理</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>卸载宝塔面板</title>
+    <link href="/p/879dcc06.html"/>
+    <url>/p/879dcc06.html</url>
+    
+    <content type="html"><![CDATA[<p class="note note-primary">😀 最近虚拟机的宝塔面板一直报错，并且总是提示让登录，登录也还提示，好烦，正好最近也发现了1panel，于是决定卸载宝塔面板换成1panel。</p><span id="more"></span><h2 id="1-进入ssh-输入以下命令下载脚本"><a href="#1-进入ssh-输入以下命令下载脚本" class="headerlink" title="1.进入ssh 输入以下命令下载脚本"></a>1.进入ssh 输入以下命令下载脚本</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">wget http://download.bt.cn/install/bt-uninstall.sh<br></code></pre></td></tr></table></figure><h2 id="2-执行脚本"><a href="#2-执行脚本" class="headerlink" title="2.执行脚本"></a>2.执行脚本</h2><p>若是ubutnu用户请在前面加sudo</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sh bt-uninstall.sh<br></code></pre></td></tr></table></figure><h2 id="3-根据提示输入1或2后按回车清理面板或环境"><a href="#3-根据提示输入1或2后按回车清理面板或环境" class="headerlink" title="3.根据提示输入1或2后按回车清理面板或环境"></a>3.根据提示输入1或2后按回车清理面板或环境</h2><p>若输入其他值或不输入直接回车则只卸载面板</p><p><img src="/images/bab4bde371184ac6a065c8f4c1638d69.png"><br><img src="/images/9a2d9db93b1941dcb775bc8fcf77e2c3.png"><br><img src="/images/f9bb72749be642fda8a0bc57197eeeee.png"><br><img src="/images/92f50a1796e643d9bc11c3fcf0f99ab4.png"></p><h1 id="📎-参考文章"><a href="#📎-参考文章" class="headerlink" title="📎 参考文章"></a>📎 参考文章</h1><ul><li><a href="https://www.bt.cn/bbs/thread-9043-1-1.html">https://www.bt.cn/bbs/thread-9043-1-1.html</a></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>宝塔面板</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Halo-强大易用的开源建站工具</title>
+    <link href="/p/cb3ef645.html"/>
+    <url>/p/cb3ef645.html</url>
+    
+    <content type="html"><![CDATA[<p class="note note-primary">💡 Halo 是一款强大易用的开源建站工具，配合上不同的模板与插件，可以很好地帮助你构建你心中的理想站点。</p><span id="more"></span><p>昨天部署体验了下halo，感觉不错，有备份恢复功能，有应用商店，里面插件和主题可以直接安装，数量也不算少。编辑器的写作体验也不错。</p><p><img src="/images/2d3c86d38f9d405b9eefc5b510a04a1f.png"></p><h1 id="📝-部署"><a href="#📝-部署" class="headerlink" title="📝 部署"></a>📝 部署</h1><blockquote><p>部署起来也超简单，支持Docker部署，也集成到了1Panel的应用商店。</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker run -it -d --name halo -p 8090:8090 -v ~/.halo2:/root/.halo2 halohub/halo:2.12<br></code></pre></td></tr></table></figure><h1 id="📎-在线体验"><a href="#📎-在线体验" class="headerlink" title="📎 在线体验"></a>📎 在线体验</h1><ul><li>环境地址：<a href="https://demo.halo.run/">https://demo.halo.run</a></li><li>后台地址：<a href="https://demo.halo.run/console">https://demo.halo.run/console</a></li><li>用户名：<code>demo</code></li><li>密码：<code>P@ssw0rd123..</code></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>建站资源</category>
+      
+      <category>网站系统</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>建站</tag>
+      
+      <tag>Halo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>memos，类flomo开源笔记</title>
     <link href="/p/10bbfea8.html"/>
     <url>/p/10bbfea8.html</url>
     
-    <content type="html"><![CDATA[<p class="note note-primary">之前发现flomo的时候觉得很惊艳，对于不想要社交功能又很喜欢微博那种方式记录方式的人来说实在是太棒了，而且还能导出。然后免费会员只有500M的图片容量就很缩手缩脚了，喜欢传图片的我估计用不了多久就满了，会员还是订阅制的不便宜，于是就开始找类似的开源的可自己部署的系统，于是就找到了memos。</p><span id="more"></span><p><img src="/images/14d225880edc4849a8896b394661eefc.png"></p><h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker run -d --name memos -p 5230:5230 -v ~/.memos/:/var/opt/memos neosmemo/memos:stable<br></code></pre></td></tr></table></figure><blockquote><p>该目录将用作本地计算机上的数据目录，而该目录是 Docker 中卷的目录，不应修改。<code>~/.memos//var/opt/memos</code></p></blockquote><h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><blockquote><p>1、和flomo记录的方式类似<br>2、部署简单<br>3、支持中文</p></blockquote><h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><blockquote><p>1、不支持导出、导入数据</p></blockquote><h1 id="🤗-总结归纳"><a href="#🤗-总结归纳" class="headerlink" title="🤗 总结归纳"></a>🤗 总结归纳</h1><p>因为我没有长期的服务器，而且懒得折腾如何通过技术去备份恢复，尝试了下就没再用过，不过体验还是不错的。<br>看来还是有很多人有这样需求的，而且也有人去做出来了。</p><h1 id="📎-参考文章"><a href="#📎-参考文章" class="headerlink" title="📎 参考文章"></a>📎 参考文章</h1><ul><li>官网：<a href="https://www.usememos.com/">https://www.usememos.com/</a></li><li>github：<a href="https://github.com/usememos/memos">https://github.com/usememos/memos</a></li><li>demmo：<a href="https://demo.usememos.com/explore">https://demo.usememos.com/explore</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<p class="note note-primary">之前发现flomo的时候觉得很惊艳，对于不想要社交功能又很喜欢微博那种方式记录方式的人来说实在是太棒了，而且还能导出。然后免费会员只有500M的图片容量就很缩手缩脚了，喜欢传图片的我估计用不了多久就满了，会员还是订阅制的不便宜，于是就开始找类似的开源的可自己部署的系统，于是就找到了memos。</p><span id="more"></span><p><img src="/images/14d225880edc4849a8896b394661eefc.png"></p><h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker run -d --name memos -p 5230:5230 -v ~/.memos/:/var/opt/memos neosmemo/memos:stable<br></code></pre></td></tr></table></figure><blockquote><p><code>~/.memos//var/opt/memos</code>目录是用作本地计算机上的数据目录。备份数据的话备份这个文件夹即可，恢复的话就是覆盖掉它。</p></blockquote><h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><blockquote><p>1、和flomo记录的方式类似<br>2、部署简单<br>3、支持中文</p></blockquote><h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><blockquote><p>1、不支持导出、导入数据</p></blockquote><h1 id="🤗-总结归纳"><a href="#🤗-总结归纳" class="headerlink" title="🤗 总结归纳"></a>🤗 总结归纳</h1><p>因为我没有长期的服务器，而且懒得折腾如何通过技术去备份恢复，尝试了下就没再用过，不过体验还是不错的。<br>看来还是有很多人有这样需求的，而且也有人去做出来了。</p><h1 id="📎-参考文章"><a href="#📎-参考文章" class="headerlink" title="📎 参考文章"></a>📎 参考文章</h1><ul><li>官网：<a href="https://www.usememos.com/">https://www.usememos.com/</a></li><li>github：<a href="https://github.com/usememos/memos">https://github.com/usememos/memos</a></li><li>demmo：<a href="https://demo.usememos.com/explore">https://demo.usememos.com/explore</a></li></ul>]]></content>
     
     
     <categories>
@@ -1062,7 +1141,7 @@
     <link href="/p/86844af2.html"/>
     <url>/p/86844af2.html</url>
     
-    <content type="html"><![CDATA[<p class="note note-primary">一个简单的个人主页的源码。</p><span id="more"></span><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>整合成的单页html文件，直接修改为自己的内容即可。</p><!--more--><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1675158205447.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1675158197987.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><a class="fancy" href="https://kapu.lanzoue.com/ibIsx0m91hej">  <span class="top-key"></span>  <span class="text">蓝奏云</span>  <span class="bottom-key-1"></span>  <span class="bottom-key-2"></span></a><p>&nbsp;&nbsp;</p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#120;&#105;&#x6e;&#x67;&#49;&#x32;&#x31;&#53;&#x30;&#x39;&#x34;&#49;&#x32;&#x31;&#64;&#49;&#54;&#51;&#46;&#99;&#x6f;&#x6d;">&#120;&#105;&#x6e;&#x67;&#49;&#x32;&#x31;&#53;&#x30;&#x39;&#x34;&#49;&#x32;&#x31;&#64;&#49;&#54;&#51;&#46;&#99;&#x6f;&#x6d;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<p class="note note-primary">一个简单的个人主页的源码。</p><span id="more"></span><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>整合成的单页html文件，直接修改为自己的内容即可。</p><!--more--><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1675158205447.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1675158197987.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><a class="fancy" href="https://kapu.lanzoue.com/ibIsx0m91hej">  <span class="top-key"></span>  <span class="text">蓝奏云</span>  <span class="bottom-key-1"></span>  <span class="bottom-key-2"></span></a><p>&nbsp;&nbsp;</p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#x78;&#105;&#x6e;&#x67;&#x31;&#50;&#49;&#53;&#x30;&#57;&#52;&#49;&#50;&#49;&#64;&#x31;&#x36;&#51;&#46;&#x63;&#111;&#x6d;">&#x78;&#105;&#x6e;&#x67;&#x31;&#50;&#49;&#53;&#x30;&#57;&#52;&#49;&#50;&#49;&#64;&#x31;&#x36;&#51;&#46;&#x63;&#111;&#x6d;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
     
     
     <categories>
@@ -1515,9 +1594,9 @@
     
     <tags>
       
-      <tag>kratos</tag>
-      
       <tag>WordPress主题</tag>
+      
+      <tag>kratos</tag>
       
     </tags>
     
@@ -1544,9 +1623,9 @@
     
     <tags>
       
-      <tag>WordPress主题</tag>
-      
       <tag>CorePress</tag>
+      
+      <tag>WordPress主题</tag>
       
     </tags>
     
@@ -1586,7 +1665,7 @@
     <link href="/p/bb3289ab.html"/>
     <url>/p/bb3289ab.html</url>
     
-    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>一款功能全面的主页html源码主页html源码。滚动页面，包含主页、简介、站点链接、友站等信息。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673271183945.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673271286518.png"><br><img src="/images/screely-1673271272745.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/ijveJ0kkqb0d">https://kapu.lanzoue.com/ijveJ0kkqb0d</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#120;&#x69;&#x6e;&#x67;&#49;&#x32;&#49;&#53;&#x30;&#57;&#52;&#x31;&#50;&#49;&#64;&#x31;&#54;&#x33;&#46;&#x63;&#x6f;&#109;">&#120;&#x69;&#x6e;&#x67;&#49;&#x32;&#49;&#53;&#x30;&#57;&#52;&#x31;&#50;&#49;&#64;&#x31;&#54;&#x33;&#46;&#x63;&#x6f;&#109;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>一款功能全面的主页html源码主页html源码。滚动页面，包含主页、简介、站点链接、友站等信息。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673271183945.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673271286518.png"><br><img src="/images/screely-1673271272745.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/ijveJ0kkqb0d">https://kapu.lanzoue.com/ijveJ0kkqb0d</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#x78;&#105;&#110;&#x67;&#x31;&#x32;&#49;&#53;&#x30;&#x39;&#52;&#49;&#x32;&#x31;&#x40;&#49;&#54;&#51;&#46;&#99;&#111;&#109;">&#x78;&#105;&#110;&#x67;&#x31;&#x32;&#49;&#53;&#x30;&#x39;&#52;&#49;&#x32;&#x31;&#x40;&#49;&#54;&#51;&#46;&#99;&#111;&#109;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
     
     
     <categories>
@@ -1615,7 +1694,7 @@
     <link href="/p/bb3289ab.html"/>
     <url>/p/bb3289ab.html</url>
     
-    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>無名の主页的html源码，集成了一言接口，中间的时钟会翻页，翻页后里面有内容。因为这个主页有一些素材，没有改成单页html文件，直接点开html也能正常使用，可改称自己的内容托管在静态服务站点。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673268676321.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673268664090.png"></p><h3 id="文件目录"><a href="#文件目录" class="headerlink" title="文件目录"></a>文件目录</h3><p><img src="/images/screely-1673268695754.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/iZPRI0kkloij">https://kapu.lanzoue.com/iZPRI0kkloij</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#x78;&#105;&#x6e;&#103;&#49;&#x32;&#49;&#x35;&#48;&#57;&#52;&#x31;&#x32;&#49;&#64;&#x31;&#54;&#51;&#x2e;&#x63;&#x6f;&#x6d;">&#x78;&#105;&#x6e;&#103;&#49;&#x32;&#49;&#x35;&#48;&#57;&#52;&#x31;&#x32;&#49;&#64;&#x31;&#54;&#51;&#x2e;&#x63;&#x6f;&#x6d;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>無名の主页的html源码，集成了一言接口，中间的时钟会翻页，翻页后里面有内容。因为这个主页有一些素材，没有改成单页html文件，直接点开html也能正常使用，可改称自己的内容托管在静态服务站点。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673268676321.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673268664090.png"></p><h3 id="文件目录"><a href="#文件目录" class="headerlink" title="文件目录"></a>文件目录</h3><p><img src="/images/screely-1673268695754.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/iZPRI0kkloij">https://kapu.lanzoue.com/iZPRI0kkloij</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#120;&#105;&#110;&#103;&#x31;&#x32;&#49;&#x35;&#48;&#57;&#52;&#49;&#x32;&#49;&#x40;&#x31;&#x36;&#x33;&#x2e;&#99;&#111;&#x6d;">&#120;&#105;&#110;&#103;&#x31;&#x32;&#49;&#x35;&#48;&#57;&#52;&#49;&#x32;&#49;&#x40;&#x31;&#x36;&#x33;&#x2e;&#99;&#111;&#x6d;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
     
     
     <categories>
@@ -1644,7 +1723,7 @@
     <link href="/p/bb4cf9f9.html"/>
     <url>/p/bb4cf9f9.html</url>
     
-    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>深色系的个人主页，单文件html文件，看下效果，看中的取走。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673255008619.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673255022965.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/ipPlR0kjvp5g">https://kapu.lanzoue.com/ipPlR0kjvp5g</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#x78;&#x69;&#110;&#x67;&#x31;&#50;&#x31;&#53;&#x30;&#57;&#x34;&#x31;&#x32;&#49;&#64;&#49;&#54;&#51;&#46;&#99;&#111;&#109;">&#x78;&#x69;&#110;&#x67;&#x31;&#50;&#x31;&#53;&#x30;&#57;&#x34;&#x31;&#x32;&#49;&#64;&#49;&#54;&#51;&#46;&#99;&#111;&#109;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>深色系的个人主页，单文件html文件，看下效果，看中的取走。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673255008619.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673255022965.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/ipPlR0kjvp5g">https://kapu.lanzoue.com/ipPlR0kjvp5g</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#x78;&#x69;&#x6e;&#103;&#49;&#x32;&#49;&#x35;&#x30;&#57;&#52;&#49;&#x32;&#49;&#x40;&#49;&#54;&#51;&#x2e;&#x63;&#x6f;&#x6d;">&#x78;&#x69;&#x6e;&#103;&#49;&#x32;&#49;&#x35;&#x30;&#57;&#52;&#49;&#x32;&#49;&#x40;&#49;&#54;&#51;&#x2e;&#x63;&#x6f;&#x6d;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
     
     
     <categories>
@@ -1675,7 +1754,7 @@
     <link href="/p/254247d4.html"/>
     <url>/p/254247d4.html</url>
     
-    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>非常简约的浅色系的个人主页，更换成自己的信息即可，单文件html文件。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673248013319.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673248025773.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/ieQ7h0kjencj">https://kapu.lanzoue.com/ieQ7h0kjencj</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#120;&#105;&#x6e;&#103;&#49;&#x32;&#49;&#53;&#x30;&#x39;&#52;&#x31;&#x32;&#x31;&#64;&#x31;&#54;&#x33;&#46;&#99;&#x6f;&#x6d;">&#120;&#105;&#x6e;&#103;&#49;&#x32;&#49;&#53;&#x30;&#x39;&#52;&#x31;&#x32;&#x31;&#64;&#x31;&#54;&#x33;&#46;&#99;&#x6f;&#x6d;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>非常简约的浅色系的个人主页，更换成自己的信息即可，单文件html文件。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673248013319.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673248025773.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/ieQ7h0kjencj">https://kapu.lanzoue.com/ieQ7h0kjencj</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#120;&#105;&#x6e;&#103;&#49;&#x32;&#x31;&#x35;&#x30;&#x39;&#52;&#49;&#x32;&#49;&#64;&#x31;&#54;&#51;&#x2e;&#99;&#111;&#109;">&#120;&#105;&#x6e;&#103;&#49;&#x32;&#x31;&#x35;&#x30;&#x39;&#52;&#49;&#x32;&#49;&#64;&#x31;&#54;&#51;&#x2e;&#99;&#111;&#109;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
     
     
     <categories>
@@ -1706,7 +1785,7 @@
     <link href="/p/6c7b0e3c.html"/>
     <url>/p/6c7b0e3c.html</url>
     
-    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>两款绿色自适应地址发布页，整体差不多，具体风格自选，都是单页html文件，直接修改为自己的内容即可。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673232166243.png"><br><img src="/images/screely-1673233587308.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673232153582.png"><br><img src="/images/screely-1673233576122.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/iFsHD0kilpyj">https://kapu.lanzoue.com/iFsHD0kilpyj</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#120;&#105;&#x6e;&#103;&#49;&#50;&#49;&#53;&#48;&#57;&#x34;&#49;&#50;&#x31;&#64;&#49;&#x36;&#51;&#x2e;&#99;&#x6f;&#x6d;">&#120;&#105;&#x6e;&#103;&#49;&#50;&#49;&#53;&#48;&#57;&#x34;&#49;&#50;&#x31;&#64;&#49;&#x36;&#51;&#x2e;&#99;&#x6f;&#x6d;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>两款绿色自适应地址发布页，整体差不多，具体风格自选，都是单页html文件，直接修改为自己的内容即可。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673232166243.png"><br><img src="/images/screely-1673233587308.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673232153582.png"><br><img src="/images/screely-1673233576122.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/iFsHD0kilpyj">https://kapu.lanzoue.com/iFsHD0kilpyj</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#120;&#x69;&#110;&#103;&#49;&#x32;&#x31;&#x35;&#x30;&#57;&#x34;&#49;&#50;&#x31;&#64;&#49;&#x36;&#51;&#x2e;&#99;&#111;&#109;">&#120;&#x69;&#110;&#103;&#49;&#x32;&#x31;&#x35;&#x30;&#57;&#x34;&#49;&#50;&#x31;&#64;&#49;&#x36;&#51;&#x2e;&#99;&#111;&#109;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
     
     
     <categories>
@@ -3585,9 +3664,9 @@
     
     <tags>
       
-      <tag>WPS</tag>
-      
       <tag>软件分享</tag>
+      
+      <tag>WPS</tag>
       
     </tags>
     
