@@ -33,6 +33,35 @@
   
   
   <entry>
+    <title>漫谈周刊-20260517</title>
+    <link href="/p/7504ab40.html"/>
+    <url>/p/7504ab40.html</url>
+    
+    <content type="html"><![CDATA[<p>一些可能不是最新的视频、文章、闲言碎语、网站、工具、软件。</p><span id="more"></span><h1 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h1><p><a href="https://colleges.chat/">大学生活质量指北</a><br>收集全世界各高校招生时不会写明但实实在在影响大学生活质量的详尽信息.<br><a href="https://www.quark.so/">夸克搜-最优雅的夸克网盘搜索引擎</a><br><a href="https://localfileencrypt.com/#encrypt">Local File Encrypt 在线加密</a><br>基于 AES-256-GCM 加密算法，随机生成密码，纯前端在浏览器本地加解密文本、文件或整个文件夹。<br><a href="https://beddystories.com/zh">BeddyStories</a><br>可在线阅读全球精选故事<br><a href="https://ai-headshot-generator.net/cn">免费AI头像生成器 - 创建AI生成的头像</a></p><h1 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h1><p><a href="https://www.bilibili.com/video/BV1LUQ3YhEtp?spm_id_from=333.1007.tianma.1-3-3.click">百年海权，一朝转折，绕行澳大利亚为什么重要？–B站</a><br><a href="https://m.weibo.cn/status/Pj5IWf7Vq?jumpfrom=weibocom">只有玩游戏的才懂这间房的含金量–微博</a></p><h1 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h1><h2 id="加班"><a href="#加班" class="headerlink" title="加班"></a>加班</h2><p>现在加班泛滥，主要是无偿，不用白不用。没有加班成本的情况下，有些领导就是看不惯员工闲着，感觉就是在浪费他的钱。<br>企业觉得反正没成本，哪怕你过来装模作样一会儿，过来就比不过来强。公司一部分人选择过来，剩下的不过来就会显得非常不合群，他们也得过来，最后就形成了一种磨洋工式的加班文化。<br>甚至很多公司其实已经形成了惯例，大家都知道下班走不了，太早把活干完加班时候没事干，领导就给安排别的。于是他们白天悠着点，晚上再把白天亏空的部分干了。<br>很多基层领导都知道这一点，但是他们自己也是受害者。有些基层主管想让大家早点撤，可是一想到上边领导发现只有他们组工位是空的，就虚了。<br>于是大家一起玩一个非常耗时耗精力的游戏。<br><strong>原文链接</strong>：[双休这事大概率用不了多久就会成常态](<a href="https://mp.weixin.qq.com/s/YZyVINqxbJOmUFAaZh4vTg">https://mp.weixin.qq.com/s/YZyVINqxbJOmUFAaZh4vTg</a></p><h2 id="警惕-LLM-懂哥"><a href="#警惕-LLM-懂哥" class="headerlink" title="警惕 LLM 懂哥"></a>警惕 LLM 懂哥</h2><p>想了好久，给这段这么个比较偏激的标题。我知道最近非常多博主创作 DeepSeek 相关的内容来蹭流量，效果也非常好；另外这个话题也非常出圈，在现实生活中也经常有人提起。目前我产生了一种生理反射，听到这个词就恶心。<br>我目前对它的理解是这样的：</p><ul><li>一家中国企业，在硬件条件受限的情况下，训练并开源了媲美闭源商业模型的大模型。这是值得称道的，确实很优秀。</li><li>至于开源只开了权重这件事，其实大模型的「开源」就是这样，训练数据其实跟算法本身同样值钱，加上开放出来你再训练一遍意义不大，纯浪费电。</li><li>其实模型功能并没有很大的创新，推理也是 OpenAI 先做出来的，如果想体验完全没必要都去挤那个 R1。另外推理也不适合全部的应用场景，慢加上成本高，并非银弹。<br>回到标题「警惕懂哥」，是因为很多人蹭着这个流量开始卖课、卖 API，但其实他们屁都不懂。什么叫懂呢，至少把上面推荐那本书说的知识点脉络串讲清楚吧，我相信大多数在卖课的人压根说不出来（甚至连「语言模型」到底是什么都不知道）。</li></ul><p><strong>原文链接</strong>：<a href="https://ameow.xyz/archives/weekly-055">猫鱼周刊 vol. 055 城市旅游就是打卡吗？ - 阿猫的博客</a></p><p><a href="https://www.louiscard.com/1020.html">除了退休，如何在无尽的工作中找到「救生圈」</a></p><p><a href="https://www.huxiu.com/article/3839125.html">现在的机票，怎么比厕纸还薄？-虎嗅网</a></p><p>平台资本主义（将平台公司之间的竞争类比为封建领主割据）、技术封建主义（大科技公司不再以创造新的价值，而是以垄断赛博土地要素为主要盈利方式）<br>因为实际上将平台公司之间的竞争类比为封建领主割据是早在 2018 年的《平台资本主义》中就被提出的观点<br>在资本主义中，土地也是资本要素之一，但封建主义中的地租完全是另一回事。<br>资本主义是关于价值生产的经济组织形式，不同社会角色分别在生产中投入资本、技术、劳动力等要素，最终产生出 1+1+1 &gt; 3 的效果。我们在批判资本主义时，是关于生产出来的大于 3 的价值，如何被不公平的切分走了，但前提仍是所有人共同努力创造了大于 3 的价值。<br>而封建主义是完全关于土地使用权的经济形态，封建领主（地主）给出土地，然后理所当然的拥有由土地上生长出的一切，它甚至并不在意 1+1+1 是否能 &gt;3，哪怕最后的结果是 2，地主也将分走其中的大部分。<br><strong>原文链接</strong>：<a href="https://1q43.blog/post/5901/">世界需要重回资本主义 | 虹线</a></p><p> UUID 的 8 个版本以及何时使用它们 - 原来 UUID 还有这么多版本。</p><ul><li><a href="https://www.rfc-editor.org/rfc/rfc9562.html#name-uuid-version-1">UUID 版本 1 （v1）</a> 由时间戳、单调计数器和 MAC 地址生成。</li><li><a href="https://datatracker.ietf.org/doc/html/rfc9562#name-uuid-version-2">UUID 版本 2 （v2）</a> 保留给没有已知详细信息的安全 ID。</li><li><a href="https://www.rfc-editor.org/rfc/rfc9562.html#name-uuid-version-3">UUID 版本 3 （v3）</a> 是根据你提供的某些数据的 MD5 哈希生成的。RFC 建议 DNS 和 URL 成为数据的候选者。</li><li><a href="https://www.rfc-editor.org/rfc/rfc9562.html#name-uuid-version-4">UUID 版本 4 （v4）</a> 是根据完全随机的数据生成的。这可能是大多数人对 UUID 的看法和遇到的情况。</li><li><a href="https://www.rfc-editor.org/rfc/rfc9562.html#name-uuid-version-5">UUID 版本 5 （v5）</a> 是根据你提供的某些数据的 SHA1 版本生成的。与 v3 一样，RFC 建议将 DNS 或 URL 作为候选项。</li><li><a href="https://www.rfc-editor.org/rfc/rfc9562.html#name-uuid-version-6">UUID 版本 6 （v6）</a> 由时间戳、单调计数器和 MAC 地址生成。这些数据与版本 1 相同，但它们会更改顺序，以便对它们进行排序时将按创建时间排序。</li><li><a href="https://www.rfc-editor.org/rfc/rfc9562.html#name-uuid-version-7">UUID 版本 7 （v7）</a> 是根据时间戳和随机数据生成的。</li><li><a href="https://www.rfc-editor.org/rfc/rfc9562.html#name-uuid-version-8">UUID 版本 8 （v8）</a> 是完全自定义的（除了所有版本都包含的必需版本/变体字段）。</li><li><strong>原文链接</strong>：<a href="https://ntietz.com/blog/til-uses-for-the-different-uuid-versions/">TIL：UUID 的 8 个版本以及何时使用它们 |nicole@web</a>、<a href="https://www.rfc-editor.org/rfc/rfc9562.html#name-example-of-a-uuidv1-value">RFC 9562：通用唯一标识符 （UUID）</a></li></ul><p>细节猎人：苹果门店为什么将MacBook摆放角度调整为76度<br><a href="https://www.uisdc.com/a/kylin/publish/all">龙爪槐守望者</a>: 你是不是第一反应觉得这是为了让屏幕显示效果更好？哈哈，真相其实大大出乎你的意料！ 76度反倒是屏幕显示效果不好，顾客为了看清楚屏幕，就会忍不住走上前去，亲手调整MacBook的角度。这样一来，就能直接感受到MacBook那高级的质感，瞬间印象深刻！更妙的是，这种触碰还会让人产生一种「心理所有权效应」，想象自己已经拥有了这台MacBook之后的美好生活，大大提高了购买意愿。<br><strong>原文链接</strong>：<a href="https://www.uisdc.com/hunter/0221606148.html">苹果门店为什么将MacBook摆放角度调整为76度？ - 优设网 - 学设计上优设</a></p><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p><strong>恐怖</strong><br>普通灭霸：消灭一半人口<br>邪恶灭霸：把人口加一倍<br><strong>办法</strong><br>我有三个建议：<br>1、让老年人去上班，他们起得早还不困，坐公交地铁还免费。<br>2、让中年人去上学，他们总是后悔学得少，大学没谈恋爱。<br>3、让年轻人去养老院，他们啥也不会干，给他们一部手机他们可以一天不用吃饭，完美闭环解决养老问题。<br><strong>真相</strong><br>蜜雪冰城被曝光柠檬片是隔夜的，消费者似乎并不太在意。<br>说明只要便宜到一定程度，就会被原谅。<br>这就是为什么公司还没有开除你。</p><h1 id="自媒体推荐"><a href="#自媒体推荐" class="headerlink" title="自媒体推荐"></a>自媒体推荐</h1><p>微信公众号：<strong>晓书童频道</strong><br>喜欢读书的人推荐关注，所有节目均免费收听，通过微信公众号、喜马拉雅、蜻蜓FM等多平台分发，内容质量很高。</p><p>微信公众号：<strong>渤海小吏</strong><br>让我喜欢上了历史，从没想到读历史可以这么有趣。专注于解读真实的人性和历史脉络。</p><h1 id="软件推荐"><a href="#软件推荐" class="headerlink" title="软件推荐"></a>软件推荐</h1><h2 id="TinyTask"><a href="#TinyTask" class="headerlink" title="TinyTask"></a>TinyTask</h2><p>TinyTask （ Windows）是一款自动化录制工具。只有 36k 的大小，可以直接运行。只需要点击录制就可以把你鼠标和键盘操作的过程录制下来即可回放，并设置次数。<br>官网：<a href="https://www.tinytask.net/">https://www.tinytask.net/</a><br>![[../../../8-附件/Pasted image 20250322212216.png]]</p><h2 id="Quicker"><a href="#Quicker" class="headerlink" title="Quicker"></a>Quicker</h2><p>Quicker，鼠标党的福音，有着丰富的组件库，让你鼠标点点点即可完成各种复杂的操作。<br>官网：<a href="https://getquicker.net/">https://getquicker.net/</a><br>![[../../../8-附件/Pasted image 20250322212248.png]]</p><h2 id="Okular"><a href="#Okular" class="headerlink" title="Okular"></a>Okular</h2><p>Okular（Windows，Mac，Linux） 是一款优秀的通用文档阅读器。支持直接查看 PDF、 CHM、Word、Epub等多种文档类型。省去了安装各种软件的麻烦。<br>官网：<a href="https://okular.kde.org/">https://okular.kde.org/</a><br>![[../../../8-附件/Pasted image 20250322212308.png]]</p><h1 id="GitHub项目"><a href="#GitHub项目" class="headerlink" title="GitHub项目"></a>GitHub项目</h1><h2 id="基于-Notion-笔记的网站构建工具-NotionNext"><a href="#基于-Notion-笔记的网站构建工具-NotionNext" class="headerlink" title="基于 Notion 笔记的网站构建工具 NotionNext"></a>基于 Notion 笔记的网站构建工具 NotionNext</h2><p>GitHub地址：<a href="https://github.com/tangly1024/NotionNext">https://github.com/tangly1024/NotionNext</a><br>假如你用 Notion，同时不太会折腾个人网站的同学，可以试试这个开源且免费的基于 Notion 笔记的网站构建工具 NotionNext，提供的教程很完整，搭配Vercel、netlify等平台可以免费创建自己的站点。官方教程：<a href="https://www.wenxiaobai.com/chat/200006#">NotionNext 帮助手册</a></p><p><strong>注：内容来源于网络，如有侵权，请联系删除。</strong></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>分享</category>
+      
+      <category>周刊</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>网站</tag>
+      
+      <tag>软件</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Django与Vue语法的冲突问题的解决方法</title>
     <link href="/p/9600b488.html"/>
     <url>/p/9600b488.html</url>
@@ -42,7 +71,7 @@
     
     <categories>
       
-      <category>Django</category>
+      <category>技术</category>
       
     </categories>
     
@@ -69,7 +98,9 @@
     
     <categories>
       
-      <category>GitHub</category>
+      <category>建站资源</category>
+      
+      <category>网站系统</category>
       
     </categories>
     
@@ -416,7 +447,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>软件</category>
+      
+      <category>浏览器</category>
       
     </categories>
     
@@ -470,7 +503,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>建站资源</category>
+      
+      <category>API</category>
       
     </categories>
     
@@ -497,7 +532,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -526,7 +563,7 @@
       
       <category>软件</category>
       
-      <category>APP</category>
+      <category>Windows</category>
       
     </categories>
     
@@ -555,7 +592,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -582,7 +621,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -609,7 +650,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -636,7 +679,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -692,9 +737,9 @@
     
     <categories>
       
-      <category>软件</category>
+      <category>分享</category>
       
-      <category>APP</category>
+      <category>软件</category>
       
     </categories>
     
@@ -752,7 +797,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -779,7 +826,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -835,7 +884,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -862,7 +913,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -918,7 +971,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -974,7 +1029,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -1146,7 +1203,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -1173,7 +1232,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -1224,7 +1285,7 @@
     <link href="/p/86844af2.html"/>
     <url>/p/86844af2.html</url>
     
-    <content type="html"><![CDATA[<p class="note note-primary">一个简单的个人主页的源码。</p><span id="more"></span><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>整合成的单页html文件，直接修改为自己的内容即可。</p><!--more--><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1675158205447.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1675158197987.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><a class="fancy" href="https://kapu.lanzoue.com/ibIsx0m91hej">  <span class="top-key"></span>  <span class="text">蓝奏云</span>  <span class="bottom-key-1"></span>  <span class="bottom-key-2"></span></a><p>&nbsp;&nbsp;</p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#120;&#105;&#x6e;&#103;&#x31;&#50;&#x31;&#53;&#48;&#x39;&#x34;&#49;&#50;&#x31;&#x40;&#49;&#54;&#x33;&#46;&#x63;&#x6f;&#x6d;">&#120;&#105;&#x6e;&#103;&#x31;&#50;&#x31;&#53;&#48;&#x39;&#x34;&#49;&#50;&#x31;&#x40;&#49;&#54;&#x33;&#46;&#x63;&#x6f;&#x6d;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<p class="note note-primary">一个简单的个人主页的源码。</p><span id="more"></span><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>整合成的单页html文件，直接修改为自己的内容即可。</p><!--more--><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1675158205447.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1675158197987.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><a class="fancy" href="https://kapu.lanzoue.com/ibIsx0m91hej">  <span class="top-key"></span>  <span class="text">蓝奏云</span>  <span class="bottom-key-1"></span>  <span class="bottom-key-2"></span></a><p>&nbsp;&nbsp;</p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#120;&#105;&#x6e;&#103;&#49;&#x32;&#x31;&#x35;&#x30;&#57;&#52;&#49;&#50;&#x31;&#x40;&#x31;&#54;&#51;&#x2e;&#x63;&#x6f;&#109;">&#120;&#105;&#x6e;&#103;&#49;&#x32;&#x31;&#x35;&#x30;&#57;&#52;&#49;&#50;&#x31;&#x40;&#x31;&#54;&#51;&#x2e;&#x63;&#x6f;&#109;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
     
     
     <categories>
@@ -1291,7 +1352,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -1349,7 +1412,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -1556,6 +1621,8 @@
     
     <categories>
       
+      <category>分享</category>
+      
       <category>网站</category>
       
     </categories>
@@ -1616,7 +1683,7 @@
       
       <category>建站资源</category>
       
-      <category>网站主题</category>
+      <category>Hexo</category>
       
     </categories>
     
@@ -1641,7 +1708,9 @@
     
     <categories>
       
-      <category>源码</category>
+      <category>建站资源</category>
+      
+      <category>网站系统</category>
       
     </categories>
     
@@ -1726,7 +1795,7 @@
     
     <categories>
       
-      <category>网站</category>
+      <category>其他</category>
       
     </categories>
     
@@ -1748,12 +1817,14 @@
     <link href="/p/bb3289ab.html"/>
     <url>/p/bb3289ab.html</url>
     
-    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>一款功能全面的主页html源码主页html源码。滚动页面，包含主页、简介、站点链接、友站等信息。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673271183945.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673271286518.png"><br><img src="/images/screely-1673271272745.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/ijveJ0kkqb0d">https://kapu.lanzoue.com/ijveJ0kkqb0d</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#x78;&#105;&#110;&#103;&#49;&#50;&#49;&#53;&#48;&#x39;&#x34;&#49;&#x32;&#x31;&#64;&#49;&#x36;&#51;&#46;&#x63;&#111;&#109;">&#x78;&#105;&#110;&#103;&#49;&#50;&#49;&#53;&#48;&#x39;&#x34;&#49;&#x32;&#x31;&#64;&#49;&#x36;&#51;&#46;&#x63;&#111;&#109;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>一款功能全面的主页html源码主页html源码。滚动页面，包含主页、简介、站点链接、友站等信息。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673271183945.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673271286518.png"><br><img src="/images/screely-1673271272745.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/ijveJ0kkqb0d">https://kapu.lanzoue.com/ijveJ0kkqb0d</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#x78;&#105;&#110;&#103;&#x31;&#x32;&#x31;&#x35;&#48;&#x39;&#52;&#49;&#x32;&#49;&#x40;&#49;&#x36;&#51;&#x2e;&#x63;&#x6f;&#109;">&#x78;&#105;&#110;&#103;&#x31;&#x32;&#x31;&#x35;&#48;&#x39;&#52;&#49;&#x32;&#49;&#x40;&#49;&#x36;&#51;&#x2e;&#x63;&#x6f;&#109;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
     
     
     <categories>
       
-      <category>源码</category>
+      <category>建站资源</category>
+      
+      <category>HTML源码</category>
       
     </categories>
     
@@ -1777,12 +1848,14 @@
     <link href="/p/bb3289ab.html"/>
     <url>/p/bb3289ab.html</url>
     
-    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>無名の主页的html源码，集成了一言接口，中间的时钟会翻页，翻页后里面有内容。因为这个主页有一些素材，没有改成单页html文件，直接点开html也能正常使用，可改称自己的内容托管在静态服务站点。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673268676321.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673268664090.png"></p><h3 id="文件目录"><a href="#文件目录" class="headerlink" title="文件目录"></a>文件目录</h3><p><img src="/images/screely-1673268695754.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/iZPRI0kkloij">https://kapu.lanzoue.com/iZPRI0kkloij</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#120;&#105;&#x6e;&#103;&#49;&#50;&#49;&#x35;&#x30;&#57;&#52;&#49;&#x32;&#49;&#64;&#49;&#54;&#x33;&#46;&#x63;&#111;&#x6d;">&#120;&#105;&#x6e;&#103;&#49;&#50;&#49;&#x35;&#x30;&#57;&#52;&#49;&#x32;&#49;&#64;&#49;&#54;&#x33;&#46;&#x63;&#111;&#x6d;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>無名の主页的html源码，集成了一言接口，中间的时钟会翻页，翻页后里面有内容。因为这个主页有一些素材，没有改成单页html文件，直接点开html也能正常使用，可改称自己的内容托管在静态服务站点。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673268676321.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673268664090.png"></p><h3 id="文件目录"><a href="#文件目录" class="headerlink" title="文件目录"></a>文件目录</h3><p><img src="/images/screely-1673268695754.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/iZPRI0kkloij">https://kapu.lanzoue.com/iZPRI0kkloij</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#120;&#105;&#110;&#x67;&#49;&#x32;&#x31;&#x35;&#48;&#x39;&#52;&#49;&#50;&#49;&#64;&#49;&#x36;&#51;&#46;&#99;&#x6f;&#109;">&#120;&#105;&#110;&#x67;&#49;&#x32;&#x31;&#x35;&#48;&#x39;&#52;&#49;&#50;&#49;&#64;&#49;&#x36;&#51;&#46;&#99;&#x6f;&#109;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
     
     
     <categories>
       
-      <category>源码</category>
+      <category>建站资源</category>
+      
+      <category>HTML源码</category>
       
     </categories>
     
@@ -1806,12 +1879,14 @@
     <link href="/p/bb4cf9f9.html"/>
     <url>/p/bb4cf9f9.html</url>
     
-    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>深色系的个人主页，单文件html文件，看下效果，看中的取走。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673255008619.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673255022965.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/ipPlR0kjvp5g">https://kapu.lanzoue.com/ipPlR0kjvp5g</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#x78;&#x69;&#x6e;&#103;&#49;&#50;&#49;&#53;&#x30;&#57;&#52;&#49;&#50;&#49;&#64;&#49;&#54;&#x33;&#46;&#x63;&#111;&#109;">&#x78;&#x69;&#x6e;&#103;&#49;&#50;&#49;&#53;&#x30;&#57;&#52;&#49;&#50;&#49;&#64;&#49;&#54;&#x33;&#46;&#x63;&#111;&#109;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>深色系的个人主页，单文件html文件，看下效果，看中的取走。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673255008619.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673255022965.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/ipPlR0kjvp5g">https://kapu.lanzoue.com/ipPlR0kjvp5g</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#x78;&#x69;&#110;&#x67;&#49;&#50;&#49;&#x35;&#x30;&#x39;&#52;&#x31;&#x32;&#x31;&#x40;&#49;&#x36;&#51;&#x2e;&#x63;&#111;&#109;">&#x78;&#x69;&#110;&#x67;&#49;&#50;&#49;&#x35;&#x30;&#x39;&#52;&#x31;&#x32;&#x31;&#x40;&#49;&#x36;&#51;&#x2e;&#x63;&#111;&#109;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
     
     
     <categories>
       
-      <category>源码</category>
+      <category>建站资源</category>
+      
+      <category>HTML源码</category>
       
     </categories>
     
@@ -1837,12 +1912,14 @@
     <link href="/p/254247d4.html"/>
     <url>/p/254247d4.html</url>
     
-    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>非常简约的浅色系的个人主页，更换成自己的信息即可，单文件html文件。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673248013319.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673248025773.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/ieQ7h0kjencj">https://kapu.lanzoue.com/ieQ7h0kjencj</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#120;&#x69;&#110;&#x67;&#x31;&#50;&#x31;&#53;&#x30;&#x39;&#52;&#49;&#50;&#x31;&#64;&#x31;&#x36;&#x33;&#x2e;&#x63;&#111;&#x6d;">&#120;&#x69;&#110;&#x67;&#x31;&#50;&#x31;&#53;&#x30;&#x39;&#52;&#49;&#50;&#x31;&#64;&#x31;&#x36;&#x33;&#x2e;&#x63;&#111;&#x6d;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>非常简约的浅色系的个人主页，更换成自己的信息即可，单文件html文件。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673248013319.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673248025773.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/ieQ7h0kjencj">https://kapu.lanzoue.com/ieQ7h0kjencj</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#x78;&#105;&#110;&#103;&#x31;&#x32;&#49;&#53;&#x30;&#57;&#x34;&#x31;&#50;&#x31;&#64;&#x31;&#x36;&#x33;&#46;&#x63;&#x6f;&#x6d;">&#x78;&#105;&#110;&#103;&#x31;&#x32;&#49;&#53;&#x30;&#57;&#x34;&#x31;&#50;&#x31;&#64;&#x31;&#x36;&#x33;&#46;&#x63;&#x6f;&#x6d;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
     
     
     <categories>
       
-      <category>源码</category>
+      <category>建站资源</category>
+      
+      <category>HTML源码</category>
       
     </categories>
     
@@ -1868,12 +1945,14 @@
     <link href="/p/6c7b0e3c.html"/>
     <url>/p/6c7b0e3c.html</url>
     
-    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>两款绿色自适应地址发布页，整体差不多，具体风格自选，都是单页html文件，直接修改为自己的内容即可。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673232166243.png"><br><img src="/images/screely-1673233587308.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673232153582.png"><br><img src="/images/screely-1673233576122.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/iFsHD0kilpyj">https://kapu.lanzoue.com/iFsHD0kilpyj</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#120;&#x69;&#x6e;&#103;&#49;&#x32;&#49;&#x35;&#x30;&#x39;&#x34;&#49;&#50;&#x31;&#x40;&#49;&#x36;&#x33;&#46;&#x63;&#x6f;&#x6d;">&#120;&#x69;&#x6e;&#103;&#49;&#x32;&#49;&#x35;&#x30;&#x39;&#x34;&#49;&#50;&#x31;&#x40;&#49;&#x36;&#x33;&#46;&#x63;&#x6f;&#x6d;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>两款绿色自适应地址发布页，整体差不多，具体风格自选，都是单页html文件，直接修改为自己的内容即可。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673232166243.png"><br><img src="/images/screely-1673233587308.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673232153582.png"><br><img src="/images/screely-1673233576122.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/iFsHD0kilpyj">https://kapu.lanzoue.com/iFsHD0kilpyj</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#120;&#x69;&#110;&#103;&#49;&#x32;&#49;&#x35;&#48;&#x39;&#52;&#49;&#50;&#49;&#64;&#x31;&#54;&#51;&#46;&#x63;&#x6f;&#x6d;">&#120;&#x69;&#110;&#103;&#49;&#x32;&#49;&#x35;&#48;&#x39;&#52;&#49;&#50;&#49;&#64;&#x31;&#54;&#51;&#46;&#x63;&#x6f;&#x6d;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
     
     
     <categories>
       
-      <category>源码</category>
+      <category>建站资源</category>
+      
+      <category>HTML源码</category>
       
     </categories>
     
@@ -1904,6 +1983,8 @@
     
     <categories>
       
+      <category>分享</category>
+      
       <category>网站</category>
       
     </categories>
@@ -1930,6 +2011,8 @@
     
     
     <categories>
+      
+      <category>分享</category>
       
       <category>网站</category>
       
@@ -1959,6 +2042,8 @@
     
     
     <categories>
+      
+      <category>分享</category>
       
       <category>网站</category>
       
@@ -2047,7 +2132,7 @@
     
     <categories>
       
-      <category>其他</category>
+      <category>技术</category>
       
     </categories>
     
@@ -2076,7 +2161,7 @@
     
     <categories>
       
-      <category>其他</category>
+      <category>技术</category>
       
     </categories>
     
@@ -2130,6 +2215,8 @@
     
     <categories>
       
+      <category>媒体</category>
+      
       <category>视频</category>
       
     </categories>
@@ -2157,7 +2244,9 @@
     
     <categories>
       
-      <category>其他</category>
+      <category>建站资源</category>
+      
+      <category>建站素材</category>
       
     </categories>
     
@@ -2183,6 +2272,8 @@
     
     
     <categories>
+      
+      <category>媒体</category>
       
       <category>视频</category>
       
@@ -2211,7 +2302,7 @@
     
     <categories>
       
-      <category>HEXO</category>
+      <category>技术</category>
       
     </categories>
     
@@ -2239,6 +2330,8 @@
     
     
     <categories>
+      
+      <category>媒体</category>
       
       <category>视频</category>
       
@@ -2269,7 +2362,7 @@
     
     <categories>
       
-      <category>图文</category>
+      <category>其他</category>
       
     </categories>
     
@@ -2300,7 +2393,7 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>其他</category>
       
     </categories>
     
@@ -2325,6 +2418,12 @@
     <content type="html"><![CDATA[<h2 id="1、黑匣子是什么"><a href="#1、黑匣子是什么" class="headerlink" title="1、黑匣子是什么"></a>1、黑匣子是什么</h2><p><img src="/images/pasted-58.png" alt="关于黑匣子的最强整理"><br>正式名称是“飞行信息记录系统”。目前民用航空业普遍使用的“黑匣子”有两种，包括飞行数据记录器（Flight Data Recorder,FDR）和驾驶舱话音记录器（Cockpit Voice Recorder，CVR）。</p><h2 id="2、由来"><a href="#2、由来" class="headerlink" title="2、由来"></a>2、由来</h2><p>世界上第一个黑匣子是由一位澳大利亚墨尔本市工程师在1958年发明的。早期的黑匣子只记录了几个简单的飞行数据，且稳定性差，易损坏，读取数据困难，一直没有收到重视。  </p><p>直到1977年，两架波音747型客机在西班牙特内里费岛机场的跑道上相撞，造成了583人丧生，数百人受伤，多亏了有黑匣子的记录才发现主要原因是飞行员之间的误会以及对塔台给出指令的错误理解。从这之后黑匣子才真正引起了全世界的关注。</p><p>黑匣子经过几代改良已经越来越先进，越来越坚固，现在飞机使用的是第四代黑匣子。</p><h2 id="3、外形"><a href="#3、外形" class="headerlink" title="3、外形"></a>3、外形</h2><p>黑匣子通常为橙红色，是两个长约40厘米，宽与高分别约20厘米的长方体，每个重约20-30千克。其实最开始黑匣子确实是黑色的，只是因为黑无色物体在事故现场很难被发现，增加了寻找难度，厚度才改成橙红色，更加醒目。 </p><h2 id="4、记录了什么"><a href="#4、记录了什么" class="headerlink" title="4、记录了什么"></a>4、记录了什么</h2><p>飞行数据记录器FDR记录了飞机高度、速度、航向、姿态，以及能反映飞机操纵、发动机等约1000个参数。<br>驾驶舱话音记录器CVR主要记录四个通道的声音，分别为机长通道、副驾驶通道、备用通道、环境声音通道，记录了驾驶舱内的各种声音，包括机组彼此间的对话，飞行员与地面指挥人员的通话，驾驶舱内的各种背景声音，如语音警告、发动机噪音、座舱噪音、操纵声音、襟翼和起落架手柄操作声音、航空器遭遇气象环境（雷电、大雨、冰雹）声音等。</p><h2 id="5、记录时长"><a href="#5、记录时长" class="headerlink" title="5、记录时长"></a>5、记录时长</h2><p>采用固态芯片为记录介质的 FDR 至少能记录事故前 25 小时的飞行数据 ；<br>而 CVR 分为磁带介质和固态介质，磁带能记录事故前约 30 分钟的数据，固态介质能记录事故前2个小时左右。</p><h2 id="6、如何读取数据"><a href="#6、如何读取数据" class="headerlink" title="6、如何读取数据"></a>6、如何读取数据</h2><p>中国民航局包括航空企业都有能力读取。数据完好的话两三天可以读取出来，但是由于每次事故原因及破坏程度都不尽相同，需要用特殊的技术将其物理恢复。读取后数据分析才是最重要的，一般一周左右会有一个初步的分析结果，如果数据缺失或者损坏可能就需要更长时间了。</p><h2 id="7、组成和坚固程度"><a href="#7、组成和坚固程度" class="headerlink" title="7、组成和坚固程度"></a>7、组成和坚固程度</h2><p>通常黑匣子由记忆体、水下定位器、绝缘层、外壳、电源组成，外壳具有很厚的钢板和很多层的防护冲击的隔热材料。黑匣子可承受1100°C的高温半小时至一小时，可承受飞机坠毁时的约100G重力撞击。可承受约4000多米深水水压，而且不怕海水长时间浸泡。<br>会发信号的黑匣子<br>如遇飞机失事，坠机后掉落的黑匣子会自动发射无线电信号，引导救援人员找到它。如果飞机发生意外坠入水中，记录器上的水下定位信标（ULB）遇水就会被自动激活，发射频率为 37.5KHz 的无线电信号。信标每秒钟发射一次信号，发射时长可达 30 天。</p><h2 id="8、还有什么会用黑匣子"><a href="#8、还有什么会用黑匣子" class="headerlink" title="8、还有什么会用黑匣子"></a>8、还有什么会用黑匣子</h2><ul><li>汽车黑匣子<br>又称“汽车行驶记录仪”或“汽车综合信息记录仪”，</li><li>火车黑匣子<br>火车黑匣子一般装配在车头部，又名“火车运行监控记录器”。除</li><li>船舶黑匣子<br>船舶黑匣子的学名叫“船载航行数据记录仪（简称VDR）”，主要功能是记录、处理、压缩、储存和回放事故船舶在发生灾难事故前16小时内，船舶上的各种重要信息参数，其功能与飞机上的黑匣子差不多。</li></ul>]]></content>
     
     
+    <categories>
+      
+      <category>其他</category>
+      
+    </categories>
+    
     
     <tags>
       
@@ -2345,6 +2444,14 @@
     
     <content type="html"><![CDATA[<p>最近找书翻到一个挺新奇的网站【小鱼速读】。主页面初看的话是一个拥有多种分类的图书网站，收集了每本图书的封面平铺到页面上。然而当你点开准备阅读的时候，它跳转的其实是各种视频网站对应图书的解读视频。  </p><!--more--><p><img src="/images/pasted-55.png" alt="一个披着图书网站外壳的视频网站"><br>没错，小鱼速读就是一个披着图书网站外壳的图书解说视频收集分类汇总网站。收集视频网站上经典的图书解说视频，分类汇总。  </p><p>小鱼速读分了三大类，一类是图书，一类是影视，另一个是实验室板块。  </p><p>图书类收集了豆瓣总榜、科幻小说、推理悬疑、科学普及、历史经典、政治经济、经营管理、奇幻网文、金融营销、职场社会等11各分类。<br>影视分类收集了内地剧、美剧、港剧、日剧、韩剧5类。<br>实验室板块是建设中的功能，目前提供内容检索及金庸武侠内容整理。<br>每个分类下展示了图书的本数，每本图书上都展示视频总长和视频集数。简单清晰一目了然。  </p><p><img src="/images/pasted-56.png" alt="一个披着图书网站外壳的视频网站"><br>网站完美适配手机端，手机端体验也很完美，手机上浏览的时候去掉实验室功能，取而代之的是最新板块，展示最新更新的图书速度内容。</p><p><img src="/images/pasted-57.png" alt="一个披着图书网站外壳的视频网站"><br>挺不错的一个网站，在快节奏的当下，如果你想读书却又没有时间，视频解读是个不错的选择。虽然内容全部来自于视频大站，但是大站内容大多繁杂，每个up主主打内容不一，小鱼速读收集整理分类汇总，则帮你省去了找资源的烦恼。  找资源的烦恼。</p><p>传送门：<a href="http://www.xysudu.com/">http://www.xysudu.com/</a></p>]]></content>
     
+    
+    <categories>
+      
+      <category>分享</category>
+      
+      <category>网站</category>
+      
+    </categories>
     
     
     <tags>
@@ -2371,7 +2478,7 @@
     
     <categories>
       
-      <category>Python</category>
+      <category>技术</category>
       
     </categories>
     
@@ -2400,7 +2507,7 @@
     
     <categories>
       
-      <category>技巧分享</category>
+      <category>技术</category>
       
     </categories>
     
@@ -2429,6 +2536,14 @@
     <content type="html"><![CDATA[<p>当年风靡一时的小霸王陪我们度过了快乐的同年时间，如今已经慢慢远离了我们的视野。然而魂斗罗，马里奥们带给童年的我们的快乐是现在任何游戏都不能比拟的。虽然现在已经没有小霸王游戏机了，但是各种安卓模拟器、PC模拟器也不少，想玩了装个模拟器也可以玩的。  </p><span id="more"></span><p>这里介绍的这个网站可以让我们不用安装模拟器，点开直玩。最重要的是适配移动端，手机玩耍体验很好。苹果手机用户可以在Safari中打开，然后添加到主屏幕，这样不会有浏览器的地址栏，防止误按。或者在微信中打开网址。</p><!--more--><p><img src="/images/pasted-48.png" alt="小霸王"><br><img src="/images/pasted-49.png" alt="小霸王"><br>游戏分了FC、街机、GBA、MD、Flash、H5和联机大厅，游戏很多，可以根据自己的喜好选择类型，总有一款你之前很喜欢的。网页会记录最大8个最近在玩的游戏，方便下次快速打开。这个记录是存储在浏览器本地的，清理缓存或者换浏览器就会消失。<br><img src="/images/pasted-51.png" alt="小霸王"><br>游戏支持存档，不过也是本地的。部分游戏支持金手指功能，无限生命、金身、隐身均可设置，如果需要加金手指的欢迎联系作者，关于里面可以找到作者。<br><img src="/images/pasted-47.png" alt="小霸王"><br>联机大厅还支持创建房间邀请好友一起玩，需要先用qq登录。不过作者在关于里面有讲过部分网络原因会没法连通。由于服务器限制，有时候会卡顿。<br>网站有广告，但是不会影响游戏体验，进入游戏后就没有广告了。<br>传送门：<a href="https://www.yikm.net/">https://www.yikm.net/</a></p>]]></content>
     
     
+    <categories>
+      
+      <category>分享</category>
+      
+      <category>网站</category>
+      
+    </categories>
+    
     
     <tags>
       
@@ -2454,7 +2569,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -2514,7 +2631,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -2547,7 +2666,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -2573,6 +2694,14 @@
     
     <content type="html"><![CDATA[<p>分享几在线小游戏，无聊的时候玩玩。  </p><span id="more"></span><h2 id="1、Nazo"><a href="#1、Nazo" class="headerlink" title="1、Nazo"></a>1、Nazo</h2><p>超级烧脑的一款游戏，挑战你的思维。有网友反馈有一关需要用到梯子，反正我没玩到那一关，第五关都过不去😂。网上已经有了超详细的攻略，找了一个最详细的，可以参看下，<a href="https://www.cnblogs.com/wlzhouzhuan/p/13173198.html">攻略传送门</a>。但是还是建议不看攻略自己去玩才能找到游戏的乐趣。</p><p><img src="/images/pasted-36.png" alt="game"></p><h2 id="2、俄罗斯方块"><a href="#2、俄罗斯方块" class="headerlink" title="2、俄罗斯方块"></a>2、俄罗斯方块</h2><p>专为手机端设计的在线螺丝方块游戏，玩起来的感觉和小时候的游戏机一样的感觉，不知不觉玩了好长时间。</p><p><img src="/images/pasted-38.png" alt="game"></p><h2 id="3、piko"><a href="#3、piko" class="headerlink" title="3、piko"></a>3、piko</h2><p>这是一个在线游戏集合，也是各种手机端的游戏，找自己喜欢的玩玩即可。浏览器访问，点开即玩，无聊时点开玩玩。</p><p><img src="/images/pasted-37.png" alt="game"></p><p>读者有什么其他有趣的小游戏欢迎评论分享。</p>]]></content>
     
+    
+    <categories>
+      
+      <category>分享</category>
+      
+      <category>网站</category>
+      
+    </categories>
     
     
     <tags>
@@ -2603,7 +2732,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -2630,7 +2761,9 @@
     
     <categories>
       
-      <category>扩展</category>
+      <category>软件</category>
+      
+      <category>浏览器</category>
       
     </categories>
     
@@ -2659,7 +2792,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -2692,7 +2827,7 @@
     
     <categories>
       
-      <category>python</category>
+      <category>技术</category>
       
     </categories>
     
@@ -2721,7 +2856,7 @@
     
     <categories>
       
-      <category>python</category>
+      <category>技术</category>
       
     </categories>
     
@@ -2750,7 +2885,7 @@
     
     <categories>
       
-      <category>python</category>
+      <category>技术</category>
       
     </categories>
     
@@ -2779,7 +2914,7 @@
     
     <categories>
       
-      <category>冷知识</category>
+      <category>其他</category>
       
     </categories>
     
@@ -2806,7 +2941,7 @@
     
     <categories>
       
-      <category>冷知识</category>
+      <category>其他</category>
       
     </categories>
     
@@ -2833,7 +2968,7 @@
     
     <categories>
       
-      <category>JMeter</category>
+      <category>技术</category>
       
     </categories>
     
@@ -2860,9 +2995,9 @@
     
     <categories>
       
-      <category>软件分享</category>
+      <category>软件</category>
       
-      <category>Linux</category>
+      <category>Windows</category>
       
     </categories>
     
@@ -2891,7 +3026,7 @@
     
     <categories>
       
-      <category>其他</category>
+      <category>技术</category>
       
     </categories>
     
@@ -2945,7 +3080,7 @@
     
     <categories>
       
-      <category>HEXO</category>
+      <category>技术</category>
       
     </categories>
     
@@ -2972,7 +3107,7 @@
     
     <categories>
       
-      <category>趣味</category>
+      <category>其他</category>
       
     </categories>
     
@@ -2999,7 +3134,7 @@
     
     <categories>
       
-      <category>JMeter</category>
+      <category>技术</category>
       
     </categories>
     
@@ -3028,7 +3163,7 @@
     
     <categories>
       
-      <category>Django</category>
+      <category>技术</category>
       
     </categories>
     
@@ -3055,7 +3190,9 @@
     
     <categories>
       
-      <category>软件分享</category>
+      <category>分享</category>
+      
+      <category>软件</category>
       
     </categories>
     
@@ -3084,7 +3221,7 @@
     
     <categories>
       
-      <category>markdown</category>
+      <category>技术</category>
       
     </categories>
     
@@ -3142,7 +3279,7 @@
     
     <categories>
       
-      <category>Linux</category>
+      <category>技术</category>
       
     </categories>
     
@@ -3169,7 +3306,9 @@
     
     <categories>
       
-      <category>Worepress</category>
+      <category>建站资源</category>
+      
+      <category>网站主题</category>
       
     </categories>
     
@@ -3196,7 +3335,7 @@
     
     <categories>
       
-      <category>Python</category>
+      <category>技术</category>
       
     </categories>
     
@@ -3223,7 +3362,7 @@
     
     <categories>
       
-      <category>Python</category>
+      <category>技术</category>
       
     </categories>
     
@@ -3250,7 +3389,7 @@
     
     <categories>
       
-      <category>Linux</category>
+      <category>技术</category>
       
     </categories>
     
@@ -3277,7 +3416,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -3304,7 +3445,7 @@
     
     <categories>
       
-      <category>JMeter</category>
+      <category>技术</category>
       
     </categories>
     
@@ -3331,7 +3472,7 @@
     
     <categories>
       
-      <category>JMeter</category>
+      <category>技术</category>
       
     </categories>
     
@@ -3360,7 +3501,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -3389,7 +3532,7 @@
     
     <categories>
       
-      <category>JMeter</category>
+      <category>技术</category>
       
     </categories>
     
@@ -3416,7 +3559,7 @@
     
     <categories>
       
-      <category>Linux</category>
+      <category>技术</category>
       
     </categories>
     
@@ -3445,6 +3588,8 @@
       
       <category>软件</category>
       
+      <category>Windows</category>
+      
     </categories>
     
     
@@ -3470,7 +3615,7 @@
     
     <categories>
       
-      <category>其他</category>
+      <category>技术</category>
       
     </categories>
     
@@ -3495,7 +3640,7 @@
     
     <categories>
       
-      <category>其他</category>
+      <category>技术</category>
       
     </categories>
     
@@ -3522,7 +3667,9 @@
     
     <categories>
       
-      <category>Python</category>
+      <category>建站资源</category>
+      
+      <category>网站系统</category>
       
     </categories>
     
@@ -3576,7 +3723,7 @@
     
     <categories>
       
-      <category>Python</category>
+      <category>技术</category>
       
     </categories>
     
@@ -3603,7 +3750,7 @@
     
     <categories>
       
-      <category>HEXO</category>
+      <category>技术</category>
       
     </categories>
     
@@ -3629,6 +3776,8 @@
     
     
     <categories>
+      
+      <category>分享</category>
       
       <category>网站</category>
       
@@ -3659,6 +3808,8 @@
     
     <categories>
       
+      <category>分享</category>
+      
       <category>网站</category>
       
     </categories>
@@ -3685,6 +3836,8 @@
     
     
     <categories>
+      
+      <category>分享</category>
       
       <category>网站</category>
       
@@ -3715,6 +3868,8 @@
       
       <category>软件</category>
       
+      <category>Windows</category>
+      
     </categories>
     
     
@@ -3739,6 +3894,8 @@
     
     
     <categories>
+      
+      <category>分享</category>
       
       <category>网站</category>
       
@@ -3769,7 +3926,9 @@
     
     <categories>
       
-      <category>网站分享</category>
+      <category>分享</category>
+      
+      <category>网站</category>
       
     </categories>
     
@@ -3798,6 +3957,8 @@
       
       <category>软件</category>
       
+      <category>Windows</category>
+      
     </categories>
     
     
@@ -3824,6 +3985,8 @@
     
     
     <categories>
+      
+      <category>分享</category>
       
       <category>网站</category>
       
@@ -3854,6 +4017,8 @@
     
     <categories>
       
+      <category>分享</category>
+      
       <category>网站</category>
       
     </categories>
@@ -3881,7 +4046,9 @@
     
     <categories>
       
-      <category>其他</category>
+      <category>软件</category>
+      
+      <category>浏览器</category>
       
     </categories>
     
@@ -3908,7 +4075,7 @@
     
     <categories>
       
-      <category>其他</category>
+      <category>技术</category>
       
     </categories>
     
@@ -3933,7 +4100,9 @@
     
     <categories>
       
-      <category>hexo</category>
+      <category>建站资源</category>
+      
+      <category>Hexo</category>
       
     </categories>
     
