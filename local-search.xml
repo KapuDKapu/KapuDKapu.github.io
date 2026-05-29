@@ -4,11 +4,92 @@
   
   
   <entry>
-    <title>Escrcpy：电脑秒变“巨屏手机”，延迟低至35ms！</title>
-    <link href="/p/10537f92.html"/>
-    <url>/p/10537f92.html</url>
+    <title>国内大厂的AI IDE浅评</title>
+    <link href="/p/ad3da23e.html"/>
+    <url>/p/ad3da23e.html</url>
     
-    <content type="html"><![CDATA[<p>Escrcpy是一款基于Electron开发的图形化安卓设备控制工具，为用户提供了更加友好且功能丰富的图形界面。通过Escrcpy，用户可以轻松地在电脑上显示并控制安卓设备，享受高清、低延迟的投屏体验。 </p><span id="more"></span><p>你是否也曾经历过这样的抓狂时刻？</p><blockquote><p>正在电脑前埋头苦干，微信突然在手机上疯狂震动。<br>一边盯着显示器写文档，一边低头解锁手机回消息；<br>代码写一半，需要在真机上调试，手忙脚乱地插拔数据线；<br>想给客户演示 App 操作流程，却只能把小小的手机屏幕递过去……</p></blockquote><p><strong>“能不能直接在电脑上操作手机？”</strong><br>这不仅是强迫症患者的福音，更是提升效率的关键。</p><p>今天，我要给大家安利一款 <strong>完全免费、开源、无广告</strong> 的宝藏工具 —— <strong>Escrcpy</strong>。<br>它不仅解决了上述所有痛点，甚至还能给你带来“丝般顺滑”的体验。</p><hr><h2 id="🤔-什么是-Escrcpy？"><a href="#🤔-什么是-Escrcpy？" class="headerlink" title="🤔 什么是 Escrcpy？"></a>🤔 什么是 Escrcpy？</h2><p>简单来说，<strong>Escrcpy 是命令行神器 Scrcpy 的“高颜值皮肤”</strong>。</p><p>Scrcpy 是安卓开发者圈子里公认最强的投屏工具，但因为它是命令行工具，对新手并不友好。<br>而 <strong>Escrcpy 基于 Electron 为其打造了一个现代化的图形界面</strong>，让你无需敲一行命令，就能轻松享受 Scrcpy 带来的极致性能。</p><hr><h2 id="⚡️-为什么它能被称为“效率神器”？"><a href="#⚡️-为什么它能被称为“效率神器”？" class="headerlink" title="⚡️ 为什么它能被称为“效率神器”？"></a>⚡️ 为什么它能被称为“效率神器”？</h2><h3 id="1-极致流畅，肉眼难辨延迟"><a href="#1-极致流畅，肉眼难辨延迟" class="headerlink" title="1. 极致流畅，肉眼难辨延迟"></a>1. 极致流畅，肉眼难辨延迟</h3><p>很多人担心投屏会卡顿，但 Escrcpy 完全打破了这一刻板印象。<br>得益于 Scrcpy 内核的强大，它能做到：</p><ul><li><strong>帧率高达 120fps</strong>（视设备性能而定）</li><li><strong>延迟仅 35~70ms</strong></li><li><strong>画质可达 1080P 甚至 2K</strong></li></ul><p><strong>实际体验如何？</strong><br>用它玩《王者荣耀》或《原神》，几乎感觉不到延迟；看高清视频，色彩还原度极高。<br>这不是“能用”，而是真正可用的 <strong>生产力工具</strong>。</p><hr><h2 id="🚀-核心亮点：不仅仅是投屏"><a href="#🚀-核心亮点：不仅仅是投屏" class="headerlink" title="🚀 核心亮点：不仅仅是投屏"></a>🚀 核心亮点：不仅仅是投屏</h2><h3 id="✅-告别线缆，扫码即连"><a href="#✅-告别线缆，扫码即连" class="headerlink" title="✅ 告别线缆，扫码即连"></a>✅ 告别线缆，扫码即连</h3><p>还在用 USB 线？Escrcpy 支持 <strong>无线连接</strong>。<br>开启手机的“无线调试”后，直接扫描二维码，瞬间完成连接。桌面从此告别杂乱线缆。</p><h3 id="✅-多设备“矩阵”管理"><a href="#✅-多设备“矩阵”管理" class="headerlink" title="✅ 多设备“矩阵”管理"></a>✅ 多设备“矩阵”管理</h3><p>如果你是搞机党或有多个测试机，Escrcpy 简直是救星。<br>它支持 <strong>多设备同时连接</strong>，并能通过 <strong>窗口编排</strong> 功能，像管理浏览器标签页一样，随意拖拽、调整大小。一屏掌控所有设备，爽感爆棚。</p><h3 id="✅-自动化与反向共享"><a href="#✅-自动化与反向共享" class="headerlink" title="✅ 自动化与反向共享"></a>✅ 自动化与反向共享</h3><ul><li><strong>自动连接</strong>：插上线自动识别，无需重复操作。</li><li><strong>反向网络共享</strong>：手机没网？通过 Gnirehtet 让手机直接用电脑的网络，无需 Wi-Fi 也能上网冲浪。</li></ul><h3 id="✅-纯净到极致"><a href="#✅-纯净到极致" class="headerlink" title="✅ 纯净到极致"></a>✅ 纯净到极致</h3><p>在这个遍地广告的时代，Escrcpy 显得尤为珍贵：</p><table><thead><tr><th align="left">特点</th><th align="left">说明</th></tr></thead><tbody><tr><td align="left">🚫 无广告</td><td align="left">没有任何商业广告</td></tr><tr><td align="left">🚫 无弹窗</td><td align="left">不打扰你的工作流</td></tr><tr><td align="left">🚫 无需注册</td><td align="left">不收集任何个人信息</td></tr><tr><td align="left">🚫 不留残留</td><td align="left">不在手机端安装任何 App</td></tr></tbody></table><p><strong>下载即用，用完即走。</strong></p><hr><h2 id="🛠️-谁最适合使用它？"><a href="#🛠️-谁最适合使用它？" class="headerlink" title="🛠️ 谁最适合使用它？"></a>🛠️ 谁最适合使用它？</h2><table><thead><tr><th align="left">人群</th><th align="left">使用场景</th></tr></thead><tbody><tr><td align="left"><strong>开发者 / 测试</strong></td><td align="left">电脑上直接调试 App，查看 Log，多机型兼容性测试</td></tr><tr><td align="left"><strong>手游玩家</strong></td><td align="left">键盘鼠标玩手游，大屏幕视觉体验，操作更精准</td></tr><tr><td align="left"><strong>自媒体 / 讲师</strong></td><td align="left">录制手机操作教程，或在会议中演示 App 功能</td></tr><tr><td align="left"><strong>办公族</strong></td><td align="left">电脑上回复微信/钉钉，文件互传，无需频繁切换设备</td></tr></tbody></table><hr><h2 id="🏁-写在最后"><a href="#🏁-写在最后" class="headerlink" title="🏁 写在最后"></a>🏁 写在最后</h2><p>如果你厌倦了在手机和电脑之间反复横跳，或者你需要一个稳定可靠的安卓设备管理方案，<strong>Escrcpy 绝对值得你拥有</strong>。</p><p>它完美继承了 Scrcpy 的“灵魂”，又补齐了易用性的“短板”。最重要的是，它是 <strong>100% 开源免费</strong> 的。</p><ul><li>👉 <strong>支持平台</strong>：Windows / macOS / Linux  </li><li>👉 <strong>获取方式</strong>：GitHub 搜索 <strong>Escrcpy</strong></li></ul><p>别再让你的手机孤单地躺在桌角了，把它“拽”到大屏幕上吧！🎉</p><hr><p><em>觉得这篇文章对你有帮助？欢迎点赞、收藏、转发，让更多人告别低效办公！</em></p>]]></content>
+    <content type="html"><![CDATA[<p>前段时间不是trae限流了吗，于是把<strong>字节跳动 Trae</strong> 、 <strong>腾讯 CodeBuddy</strong> 、 <strong>阿里通义灵码 Qoder</strong> 、 <strong>百度文心快码 Comate</strong> 这几家国内个人免费版都试用对比了下。</p><h2 id="一、共同点"><a href="#一、共同点" class="headerlink" title="一、共同点"></a>一、共同点</h2><ul><li>  都是<strong>大厂出品的 AI 编程辅助工具</strong>，都有独立 AI IDE，也都支持集成到vscode里面。</li><li>  核心功能都覆盖：<strong>代码行内补全、注释生成代码、智能问答/解释/单测/修复</strong>。</li><li>  均对<strong>中文注释和中文提示词</strong>有专项优化，国内网络直连无需代理。</li><li>  个人版均有<strong>免费使用档位</strong>（额度或功能限制各不同）。</li></ul><p>他们的IED应该都是来源于开源版的vscode，界面都基本和vscode一样，没啥学习成本。<br>都支持回退到某个最近的改动，都支持应用或者拒绝改动。这点都不错。  </p><h2 id="二、不同点"><a href="#二、不同点" class="headerlink" title="二、不同点"></a>二、不同点</h2><p>都有免费额度，免费额度和额度的周期不同。</p><table><thead><tr><th>工具</th><th>免费版额度</th><th>限制周期</th></tr></thead><tbody><tr><td>Trae</td><td>隐性每日限流，但不公布具体次数</td><td>按日</td></tr><tr><td>CodeBuddy</td><td>500 Credits</td><td>按月</td></tr><tr><td>Qoder</td><td>300 Credits</td><td>按月</td></tr><tr><td>Comate</td><td>无明确对话次数上限，基础功能免费；部分高级智能体每周约 300 次免费额度</td><td>按周</td></tr></tbody></table><p>Qoder有明确的用量提示，其他的IDE都没有，还能用多少听天由命。<br><img src="/images/1780022569875.png">  </p><h2 id="三、总结"><a href="#三、总结" class="headerlink" title="三、总结"></a>三、总结</h2><p>这些IDE长得都一样，没有操作习惯之别和学习成本。<br>之前切换到CodeBuddy感觉还不错，后来发现居然是按月的，而且那么少，触顶后这个月就报废了，差评，亏我之前还推荐了他。<br>最后看来Trae居然是最良心的，虽然即使是Auto模式也经常让排队（可恶），每天限额，但是至少明天还能用。使用起来的体验在这里面也最好。为Trae正名……  </p>]]></content>
+    
+    
+    <categories>
+      
+      <category>其他</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>IDE</tag>
+      
+      <tag>AI</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>命令行把代码推送到Cloudflare Pages</title>
+    <link href="/p/678fb61c.html"/>
+    <url>/p/678fb61c.html</url>
+    
+    <content type="html"><![CDATA[<p>今天想在Cloudflare Pages部署一个pages，怎么都找不到新建pages选项，还得是求助ai，发现可以命令行直接部署到Cloudflare，下面是用到的命令。  </p><span id="more"></span><h3 id="1、安装-Wrangler"><a href="#1、安装-Wrangler" class="headerlink" title="1、安装 Wrangler"></a>1、安装 Wrangler</h3><p>如果你电脑上还没有安装 Wrangler，则需要这一步。  </p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npm install -g wrangler<br></code></pre></td></tr></table></figure><h3 id="2、登录-Cloudflare"><a href="#2、登录-Cloudflare" class="headerlink" title="2、登录 Cloudflare"></a>2、登录 Cloudflare</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">wrangler login<br></code></pre></td></tr></table></figure><p>浏览器会弹出来让你授权，点允许。  </p><h3 id="3、部署"><a href="#3、部署" class="headerlink" title="3、部署"></a>3、部署</h3><p>进入你的项目目录，然后执行下面的命令  </p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npx wrangler pages deploy dist --project-name=weixinpublish<br></code></pre></td></tr></table></figure><p>注意：这里 dist是你的构建输出目录，weixinpublish是你想要的项目名字。<br><strong>解释</strong>：这条命令会绕过 Cloudflare 网页后台的复杂配置，直接把你的 dist文件夹上传到 Cloudflare Pages 服务上。只要网络没问题，几秒钟就部署好了，而且你会得到一个 *.pages.dev的域名。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Cloudflare Pages</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>一个主题丰富的微信公众号markdown在线排版工具</title>
+    <link href="/p/9c6f30ec.html"/>
+    <url>/p/9c6f30ec.html</url>
+    
+    <content type="html"><![CDATA[<p>一个在线的微信公众号排版工具，不用安装软件，使用markdown语法，专注内容即可。  </p><span id="more"></span><p>无需登录微信账号，不用担心账号信息泄密，用完即走。<br>十几种主题可以切换，编写完内容后点击右侧的微信公众号图标即可复制完成，然后粘贴到微信公众号的编辑器即可。<br><img src="/images/ScreenShot_2026-05-26_151249_698.png"><br>支持切换内嵌代码的主题。<br><img src="/images/ScreenShot_2026-05-26_151300_675.png"><br>支持切换导出markdown文件和word文件。<br><img src="/images/ScreenShot_2026-05-26_151308_608.png"></p><p>地址：<a href="https://markdown.com.cn/wechat/">https://markdown.com.cn/wechat/</a><br>去掉网址后面的wechat的话则是markdown教程网，有全面的速查表、基本语法、扩展语法、变通语法、编辑工具供用户翻阅查看。<br><img src="/images/ScreenShot_2026-05-26_151434_584.png"><br><img src="/images/ScreenShot_2026-05-26_151702_865.png"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>分享</category>
+      
+      <category>网站</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>markdown</tag>
+      
+      <tag>公众号</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>用过就回不去的「指尖工具箱」— Quicker</title>
+    <link href="/p/7dc2748e.html"/>
+    <url>/p/7dc2748e.html</url>
+    
+    <content type="html"><![CDATA[<p>Windows用户还有不知道Quicker的吗？今天就来介绍一下这款国产老牌效率工具，官方 slogan 说得很到位：您的指尖工具箱，操作更少，收获更多。</p><span id="more"></span><p><img src="/images/ScreenShot_2026-05-25_151546_156.png"></p><h2 id="Quicker-是什么？"><a href="#Quicker-是什么？" class="headerlink" title="Quicker 是什么？"></a>Quicker 是什么？</h2><p>简单说：它是 Windows 上的”快捷指令” + 自动化面板。<br>按下鼠标中键（或自定义快捷键/画圈手势），面板跟随鼠标弹出——软件、文件、网址、脚本、多步操作……全都能做成「动作」，一键触发。<br>全局面板：放随时要用的快捷（常用软件、常用文档、搜索等）<br>上下文面板：根据你当前用的软件（Word/Excel/浏览器/资源管理器…）自动切换对应工具，不同场景各有专属捷径  </p><h2 id="它能帮你做什么？"><a href="#它能帮你做什么？" class="headerlink" title="它能帮你做什么？"></a>它能帮你做什么？</h2><h3 id="1、基础捷径——把”打开”变简单"><a href="#1、基础捷径——把”打开”变简单" class="headerlink" title="1、基础捷径——把”打开”变简单"></a>1、基础捷径——把”打开”变简单</h3><ul><li>一键启动软件 / 打开深层文件夹 / 访问常用网址</li><li>一键发送预设文本（客服话术、常用回复模板）</li><li>把复杂快捷键可视化为鼠标点击，减少键鼠切换<br><img src="/images/%E4%B8%BA%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%88%9B%E5%BB%BA%E6%8D%B7%E5%BE%84.gif"><h3 id="2、组合动作——多步操作变一步"><a href="#2、组合动作——多步操作变一步" class="headerlink" title="2、组合动作——多步操作变一步"></a>2、组合动作——多步操作变一步</h3></li><li>复制文字→自动调浏览器搜索或翻译</li><li>上班一键启动「微信 + 工作簿 + 常用网页」</li><li>批量重命名、按扩展名自动归档文件</li><li>不懂编程也能用可视化模块像搭积木一样拼出来<br><img src="/images/%E5%AE%9E%E7%8E%B0%E5%A4%A7%E5%86%99%E8%8B%B1%E6%96%87.gif"><h3 id="3、现成动作库——拿来即用"><a href="#3、现成动作库——拿来即用" class="headerlink" title="3、现成动作库——拿来即用"></a>3、现成动作库——拿来即用</h3></li><li>丰富的动作库，涵盖 OCR 识别、聚合翻译、Everything 搜索、Office 增强、浏览器操作等。复制分享链接 → 面板右键粘贴 → 直接使用，无需自己写。</li><li>活跃的讨论区，你平时电脑上最烦的重复操作是什么？评论区聊聊，说不定能用 Quicker 一键解决～。</li><li>完善详细的文档，帮助用户上手、进阶使用和个性化定制。<br><img src="/images/ScreenShot_2026-05-25_153813_882.png"><br><img src="/images/ScreenShot_2026-05-25_153743_608.png"><br><img src="/images/ScreenShot_2026-05-25_153735_318.png"></li></ul><p>免费版已够日常使用，专业版可以解锁多动作页和云同步，其实免费版就够用了，动作太多了找起来也麻烦….<br>官网：<a href="https://geekuninstaller.com/">https://geekuninstaller.com/</a></p>]]></content>
     
     
     <categories>
@@ -22,11 +103,152 @@
     
     <tags>
       
-      <tag>投屏</tag>
+      <tag>Quicker</tag>
+      
+      <tag>快捷操作</tag>
+      
+      <tag>Windows</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Geek Uninstaller-将软件卸载做到极致</title>
+    <link href="/p/870d4da.html"/>
+    <url>/p/870d4da.html</url>
+    
+    <content type="html"><![CDATA[<p>电脑越用垃圾越多，卸载不干净，还不想用各种杀毒软件的话，Geek Uninstaller是你必备的一款软件。</p><span id="more"></span><p>几M的单文件直接运行，梳理已安装的软件列表、卸载软件、清理软件相关残留垃圾，一气呵成。<br>支持切换桌面软件和Microsoft Store Apps。<br>支持导出所有软件列表为hrml。<br>将软件卸载这个功能做到了极致。免安装，不用为了卸载干净软件再去安装一个软件。</p><p><img src="/images/ScreenShot_2026-05-25_151243_637.png"><br><img src="/images/ScreenShot_2026-05-25_151314_686.png"></p><p>官网：<a href="https://geekuninstaller.com/">https://geekuninstaller.com/</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>软件</category>
+      
+      <category>Windows</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>软件卸载</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Markra，一款支持AI的markdown本地编辑器</title>
+    <link href="/p/2e10779a.html"/>
+    <url>/p/2e10779a.html</url>
+    
+    <content type="html"><![CDATA[<p>推荐一款markdown编辑器，markra。整体UI的话挺简洁的，语法支持也挺全面。这个没啥可介绍的，看下下面的图片吧。虽然我是在用notepad++编辑markdown，但是看到还不错的编辑器还是喜欢体验下分享下。。。。。 </p><span id="more"></span><p>支持文件列表窗口和大纲导航。右键即可插入想要的格式，无需手搓。常用的倒是都有，不过貌似选项有些少，一些特殊的没有。但是应该够用了吧。<br><img src="/images/ScreenShot_2026-05-23_114728_892.png"><br>支持直接复制图片粘贴过去，图片文件默认存在本地同目录下的assets文件夹。<br><img src="/images/ScreenShot_2026-05-23_115052_231.png"><br>支持ai，需要在设置页面自定义api key。<br><img src="/images/ScreenShot_2026-05-23_115316_997.png"><br>不足：我从其他编辑器复制过来的markdown语法无法直接识别，得微调下。可能是为了方便右键直接插入格式而产生的一些兼容性问题。不错这里面写的文件其他编辑器还是可以正常识别的。<br>官网：<a href="https://markra.app/zh-CN/">https://markra.app/zh-CN/</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>软件</category>
+      
+      <category>Windows</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>markdown</tag>
+      
+      <tag>编辑器</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Escrcpy：Trae限流了？试试CodeBuddy也还不错</title>
+    <link href="/p/f7353666.html"/>
+    <url>/p/f7353666.html</url>
+    
+    <content type="html"><![CDATA[<p>从Trae出了之后一直也在用他，从Vscode换过来的，近乎一样的界面和操作逻辑也没啥学习成本，AI加持的也不错，虽然有时候回答的不太理想但是那也是模型的问题。</p><span id="more"></span><p>然而最近用着用着确出现了让我明天继续的提示，搜了下发现是限流了，感觉也没用多少啊，之前也没见过这个提示啊。也可能是我用的不够多吧，根本触发不到他这个提示，也可能就是看着用户数起来了开始收割了，总之给我的印象很不好。<br><img src="/images/ScreenShot_2026-05-21_210155_658.png"><br>于是我开始找其他的编辑器，用上了CodeBuddy，整体操作逻辑和功能是类似的，相比Trae少了【回退到本轮对话发起前】的功能有些遗憾，但是保留或者撤销修改的功能也能弥补一些吧。反正到现在为止没有触发过Trae的类似提示。搜了下目前主流的 AI 编程工具（包括 Trae 和CodeBuddy）在免费或基础版本下，通常都会对模型的调用频率和时长进行限制，以防止资源滥用。<br>没办法了，都留着吧，反正我是不会付费的。。。。<br><img src="/images/ScreenShot_2026-05-21_210148_329.png"><br>用了几天整体感受也不错，反正我开发的也是微信小程序，用鹅厂的ide也挺搭。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>其他</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>IDE</tag>
+      
+      <tag>AI</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Escrcpy：电脑秒变“巨屏手机”，延迟低至35ms！</title>
+    <link href="/p/10537f92.html"/>
+    <url>/p/10537f92.html</url>
+    
+    <content type="html"><![CDATA[<p>Escrcpy是一款基于Electron开发的图形化安卓设备控制工具，为用户提供了更加友好且功能丰富的图形界面。通过Escrcpy，用户可以轻松地在电脑上显示并控制安卓设备，享受高清、低延迟的投屏体验。 </p><span id="more"></span><p>你是否也曾经历过这样的抓狂时刻？</p><blockquote><p>正在电脑前埋头苦干，微信突然在手机上疯狂震动。<br>一边盯着显示器写文档，一边低头解锁手机回消息；<br>代码写一半，需要在真机上调试，手忙脚乱地插拔数据线；<br>想给客户演示 App 操作流程，却只能把小小的手机屏幕递过去……</p></blockquote><p><strong>“能不能直接在电脑上操作手机？”</strong><br>这不仅是强迫症患者的福音，更是提升效率的关键。</p><p>今天，我要给大家安利一款 <strong>完全免费、开源、无广告</strong> 的宝藏工具 —— <strong>Escrcpy</strong>。<br>它不仅解决了上述所有痛点，甚至还能给你带来“丝般顺滑”的体验。</p><hr><h2 id="🤔-什么是-Escrcpy？"><a href="#🤔-什么是-Escrcpy？" class="headerlink" title="🤔 什么是 Escrcpy？"></a>🤔 什么是 Escrcpy？</h2><p>简单来说，<strong>Escrcpy 是命令行神器 Scrcpy 的“高颜值皮肤”</strong>。</p><p>Scrcpy 是安卓开发者圈子里公认最强的投屏工具，但因为它是命令行工具，对新手并不友好。<br>而 <strong>Escrcpy 基于 Electron 为其打造了一个现代化的图形界面</strong>，让你无需敲一行命令，就能轻松享受 Scrcpy 带来的极致性能。</p><hr><p><img src="/images/overview1779350218.png"></p><h2 id="⚡️-为什么它能被称为“效率神器”？"><a href="#⚡️-为什么它能被称为“效率神器”？" class="headerlink" title="⚡️ 为什么它能被称为“效率神器”？"></a>⚡️ 为什么它能被称为“效率神器”？</h2><h3 id="1-极致流畅，肉眼难辨延迟"><a href="#1-极致流畅，肉眼难辨延迟" class="headerlink" title="1. 极致流畅，肉眼难辨延迟"></a>1. 极致流畅，肉眼难辨延迟</h3><p>很多人担心投屏会卡顿，但 Escrcpy 完全打破了这一刻板印象。<br>得益于 Scrcpy 内核的强大，它能做到：</p><ul><li><strong>帧率高达 120fps</strong>（视设备性能而定）</li><li><strong>延迟仅 35~70ms</strong></li><li><strong>画质可达 1080P 甚至 2K</strong></li></ul><p><strong>实际体验如何？</strong><br>用它玩《王者荣耀》或《原神》，几乎感觉不到延迟；看高清视频，色彩还原度极高。<br>这不是“能用”，而是真正可用的 <strong>生产力工具</strong>。</p><hr><h2 id="🚀-核心亮点：不仅仅是投屏"><a href="#🚀-核心亮点：不仅仅是投屏" class="headerlink" title="🚀 核心亮点：不仅仅是投屏"></a>🚀 核心亮点：不仅仅是投屏</h2><h3 id="✅-告别线缆，扫码即连"><a href="#✅-告别线缆，扫码即连" class="headerlink" title="✅ 告别线缆，扫码即连"></a>✅ 告别线缆，扫码即连</h3><p>还在用 USB 线？Escrcpy 支持 <strong>无线连接</strong>。<br>开启手机的“无线调试”后，直接扫描二维码，瞬间完成连接。桌面从此告别杂乱线缆。</p><h3 id="✅-多设备“矩阵”管理"><a href="#✅-多设备“矩阵”管理" class="headerlink" title="✅ 多设备“矩阵”管理"></a>✅ 多设备“矩阵”管理</h3><p>如果你是搞机党或有多个测试机，Escrcpy 简直是救星。<br>它支持 <strong>多设备同时连接</strong>，并能通过 <strong>窗口编排</strong> 功能，像管理浏览器标签页一样，随意拖拽、调整大小。一屏掌控所有设备，爽感爆棚。</p><h3 id="✅-自动化与反向共享"><a href="#✅-自动化与反向共享" class="headerlink" title="✅ 自动化与反向共享"></a>✅ 自动化与反向共享</h3><ul><li><strong>自动连接</strong>：插上线自动识别，无需重复操作。</li><li><strong>反向网络共享</strong>：手机没网？通过 Gnirehtet 让手机直接用电脑的网络，无需 Wi-Fi 也能上网冲浪。</li></ul><h3 id="✅-纯净到极致"><a href="#✅-纯净到极致" class="headerlink" title="✅ 纯净到极致"></a>✅ 纯净到极致</h3><p>在这个遍地广告的时代，Escrcpy 显得尤为珍贵：</p><table><thead><tr><th align="left">特点</th><th align="left">说明</th></tr></thead><tbody><tr><td align="left">🚫 无广告</td><td align="left">没有任何商业广告</td></tr><tr><td align="left">🚫 无弹窗</td><td align="left">不打扰你的工作流</td></tr><tr><td align="left">🚫 无需注册</td><td align="left">不收集任何个人信息</td></tr><tr><td align="left">🚫 不留残留</td><td align="left">不在手机端安装任何 App</td></tr></tbody></table><p><strong>下载即用，用完即走。</strong></p><hr><h2 id="🛠️-谁最适合使用它？"><a href="#🛠️-谁最适合使用它？" class="headerlink" title="🛠️ 谁最适合使用它？"></a>🛠️ 谁最适合使用它？</h2><table><thead><tr><th align="left">人群</th><th align="left">使用场景</th></tr></thead><tbody><tr><td align="left"><strong>开发者 / 测试</strong></td><td align="left">电脑上直接调试 App，查看 Log，多机型兼容性测试</td></tr><tr><td align="left"><strong>手游玩家</strong></td><td align="left">键盘鼠标玩手游，大屏幕视觉体验，操作更精准</td></tr><tr><td align="left"><strong>自媒体 / 讲师</strong></td><td align="left">录制手机操作教程，或在会议中演示 App 功能</td></tr><tr><td align="left"><strong>办公族</strong></td><td align="left">电脑上回复微信/钉钉，文件互传，无需频繁切换设备</td></tr></tbody></table><hr><h2 id="🏁-写在最后"><a href="#🏁-写在最后" class="headerlink" title="🏁 写在最后"></a>🏁 写在最后</h2><p>如果你厌倦了在手机和电脑之间反复横跳，或者你需要一个稳定可靠的安卓设备管理方案，<strong>Escrcpy 绝对值得你拥有</strong>。</p><p>它完美继承了 Scrcpy 的“灵魂”，又补齐了易用性的“短板”。最重要的是，它是 <strong>100% 开源免费</strong> 的。</p><ul><li>👉 <strong>支持平台</strong>：Windows / macOS / Linux  </li><li>👉 <strong>获取方式</strong>：GitHub 搜索 <strong>Escrcpy</strong></li></ul><p>别再让你的手机孤单地躺在桌角了，把它“拽”到大屏幕上吧！🎉</p><hr><p><em>觉得这篇文章对你有帮助？欢迎点赞、收藏、转发，让更多人告别低效办公！</em></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>软件</category>
+      
+      <category>Windows</category>
+      
+    </categories>
+    
+    
+    <tags>
       
       <tag>Escrcpy</tag>
       
+      <tag>投屏</tag>
+      
       <tag>安卓</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Django与Vue语法的冲突问题的解决方法</title>
+    <link href="/p/9600b488.html"/>
+    <url>/p/9600b488.html</url>
+    
+    <content type="html"><![CDATA[<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>django web框架中,使用vue的时候,会遇到语法冲突，因为vue使用<code>&#123;&#123;&#125;&#125;`    ,而django也使用 `&#123;&#123;&#125;&#125;</code> 。</p><!--more--><h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>在django1.5以后,加入了下面的标签，在这个标签里的内容不会被django模板引擎渲染。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">&#123;% verbatim myblock %&#125; &#123;% endverbatim myblock %&#125;<br></code></pre></td></tr></table></figure><p>我们可以把带有<code>&#123;&#123; &#125;&#125; </code>的Vue代码放在 <code>&#123;% verbatim myblock %&#125;</code>标签中间，例如下面：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><br>  &#123;% verbatim myblock %&#125;<br>    &#123;&#123; name &#125;&#125;<br>  &#123;% endverbatim myblock %&#125;<br><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Django</tag>
+      
+      <tag>技术</tag>
       
     </tags>
     
@@ -85,33 +307,6 @@
       <tag>网站</tag>
       
       <tag>软件</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Django与Vue语法的冲突问题的解决方法</title>
-    <link href="/p/9600b488.html"/>
-    <url>/p/9600b488.html</url>
-    
-    <content type="html"><![CDATA[<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>django web框架中,使用vue的时候,会遇到语法冲突，因为vue使用<code>&#123;&#123;&#125;&#125;`    ,而django也使用 `&#123;&#123;&#125;&#125;</code> 。</p><!--more--><h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>在django1.5以后,加入了下面的标签，在这个标签里的内容不会被django模板引擎渲染。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html">&#123;% verbatim myblock %&#125; &#123;% endverbatim myblock %&#125;<br></code></pre></td></tr></table></figure><p>我们可以把带有<code>&#123;&#123; &#125;&#125; </code>的Vue代码放在 <code>&#123;% verbatim myblock %&#125;</code>标签中间，例如下面：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><br>  &#123;% verbatim myblock %&#125;<br>    &#123;&#123; name &#125;&#125;<br>  &#123;% endverbatim myblock %&#125;<br><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br></code></pre></td></tr></table></figure>]]></content>
-    
-    
-    <categories>
-      
-      <category>技术</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Django</tag>
-      
-      <tag>技术</tag>
       
     </tags>
     
@@ -489,9 +684,9 @@
       
       <tag>浏览器</tag>
       
-      <tag>插件</tag>
-      
       <tag>markdown</tag>
+      
+      <tag>插件</tag>
       
     </tags>
     
@@ -601,9 +796,9 @@
     
     <tags>
       
-      <tag>AnLink</tag>
-      
       <tag>投屏</tag>
+      
+      <tag>AnLink</tag>
       
       <tag>电脑操控手机</tag>
       
@@ -808,9 +1003,9 @@
     
     <tags>
       
-      <tag>MDx</tag>
-      
       <tag>WordPress主题</tag>
+      
+      <tag>MDx</tag>
       
     </tags>
     
@@ -1127,9 +1322,9 @@
     
     <tags>
       
-      <tag>MDx</tag>
-      
       <tag>WordPress主题</tag>
+      
+      <tag>MDx</tag>
       
     </tags>
     
@@ -1316,7 +1511,7 @@
     <link href="/p/86844af2.html"/>
     <url>/p/86844af2.html</url>
     
-    <content type="html"><![CDATA[<p class="note note-primary">一个简单的个人主页的源码。</p><span id="more"></span><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>整合成的单页html文件，直接修改为自己的内容即可。</p><!--more--><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1675158205447.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1675158197987.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><a class="fancy" href="https://kapu.lanzoue.com/ibIsx0m91hej">  <span class="top-key"></span>  <span class="text">蓝奏云</span>  <span class="bottom-key-1"></span>  <span class="bottom-key-2"></span></a><p>&nbsp;&nbsp;</p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#120;&#105;&#x6e;&#103;&#49;&#x32;&#x31;&#x35;&#x30;&#57;&#52;&#49;&#50;&#x31;&#x40;&#x31;&#54;&#51;&#x2e;&#x63;&#x6f;&#109;">&#120;&#105;&#x6e;&#103;&#49;&#x32;&#x31;&#x35;&#x30;&#57;&#52;&#49;&#50;&#x31;&#x40;&#x31;&#54;&#51;&#x2e;&#x63;&#x6f;&#109;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<p class="note note-primary">一个简单的个人主页的源码。</p><span id="more"></span><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>整合成的单页html文件，直接修改为自己的内容即可。</p><!--more--><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1675158205447.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1675158197987.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><a class="fancy" href="https://kapu.lanzoue.com/ibIsx0m91hej">  <span class="top-key"></span>  <span class="text">蓝奏云</span>  <span class="bottom-key-1"></span>  <span class="bottom-key-2"></span></a><p>&nbsp;&nbsp;</p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#x78;&#x69;&#110;&#x67;&#49;&#x32;&#x31;&#53;&#x30;&#57;&#52;&#x31;&#50;&#49;&#x40;&#x31;&#54;&#x33;&#46;&#99;&#111;&#109;">&#x78;&#x69;&#110;&#x67;&#49;&#x32;&#x31;&#53;&#x30;&#57;&#52;&#x31;&#50;&#49;&#x40;&#x31;&#54;&#x33;&#46;&#99;&#111;&#109;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
     
     
     <categories>
@@ -1806,9 +2001,9 @@
     
     <tags>
       
-      <tag>WordPress主题</tag>
-      
       <tag>CorePress</tag>
+      
+      <tag>WordPress主题</tag>
       
     </tags>
     
@@ -1848,7 +2043,7 @@
     <link href="/p/bb3289ab.html"/>
     <url>/p/bb3289ab.html</url>
     
-    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>一款功能全面的主页html源码主页html源码。滚动页面，包含主页、简介、站点链接、友站等信息。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673271183945.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673271286518.png"><br><img src="/images/screely-1673271272745.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/ijveJ0kkqb0d">https://kapu.lanzoue.com/ijveJ0kkqb0d</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#x78;&#105;&#110;&#103;&#x31;&#x32;&#x31;&#x35;&#48;&#x39;&#52;&#49;&#x32;&#49;&#x40;&#49;&#x36;&#51;&#x2e;&#x63;&#x6f;&#109;">&#x78;&#105;&#110;&#103;&#x31;&#x32;&#x31;&#x35;&#48;&#x39;&#52;&#49;&#x32;&#49;&#x40;&#49;&#x36;&#51;&#x2e;&#x63;&#x6f;&#109;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>一款功能全面的主页html源码主页html源码。滚动页面，包含主页、简介、站点链接、友站等信息。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673271183945.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673271286518.png"><br><img src="/images/screely-1673271272745.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/ijveJ0kkqb0d">https://kapu.lanzoue.com/ijveJ0kkqb0d</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#x78;&#105;&#110;&#x67;&#x31;&#x32;&#49;&#53;&#48;&#x39;&#52;&#x31;&#50;&#49;&#64;&#x31;&#x36;&#x33;&#46;&#x63;&#111;&#109;">&#x78;&#105;&#110;&#x67;&#x31;&#x32;&#49;&#53;&#48;&#x39;&#52;&#x31;&#50;&#49;&#64;&#x31;&#x36;&#x33;&#46;&#x63;&#111;&#109;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
     
     
     <categories>
@@ -1879,7 +2074,7 @@
     <link href="/p/bb3289ab.html"/>
     <url>/p/bb3289ab.html</url>
     
-    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>無名の主页的html源码，集成了一言接口，中间的时钟会翻页，翻页后里面有内容。因为这个主页有一些素材，没有改成单页html文件，直接点开html也能正常使用，可改称自己的内容托管在静态服务站点。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673268676321.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673268664090.png"></p><h3 id="文件目录"><a href="#文件目录" class="headerlink" title="文件目录"></a>文件目录</h3><p><img src="/images/screely-1673268695754.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/iZPRI0kkloij">https://kapu.lanzoue.com/iZPRI0kkloij</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#120;&#105;&#110;&#x67;&#49;&#x32;&#x31;&#x35;&#48;&#x39;&#52;&#49;&#50;&#49;&#64;&#49;&#x36;&#51;&#46;&#99;&#x6f;&#109;">&#120;&#105;&#110;&#x67;&#49;&#x32;&#x31;&#x35;&#48;&#x39;&#52;&#49;&#50;&#49;&#64;&#49;&#x36;&#51;&#46;&#99;&#x6f;&#109;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>無名の主页的html源码，集成了一言接口，中间的时钟会翻页，翻页后里面有内容。因为这个主页有一些素材，没有改成单页html文件，直接点开html也能正常使用，可改称自己的内容托管在静态服务站点。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673268676321.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673268664090.png"></p><h3 id="文件目录"><a href="#文件目录" class="headerlink" title="文件目录"></a>文件目录</h3><p><img src="/images/screely-1673268695754.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/iZPRI0kkloij">https://kapu.lanzoue.com/iZPRI0kkloij</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#120;&#105;&#x6e;&#103;&#49;&#x32;&#x31;&#53;&#x30;&#57;&#x34;&#x31;&#50;&#x31;&#64;&#x31;&#x36;&#51;&#x2e;&#99;&#111;&#x6d;">&#120;&#105;&#x6e;&#103;&#49;&#x32;&#x31;&#53;&#x30;&#57;&#x34;&#x31;&#50;&#x31;&#64;&#x31;&#x36;&#51;&#x2e;&#99;&#111;&#x6d;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
     
     
     <categories>
@@ -1910,7 +2105,7 @@
     <link href="/p/bb4cf9f9.html"/>
     <url>/p/bb4cf9f9.html</url>
     
-    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>深色系的个人主页，单文件html文件，看下效果，看中的取走。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673255008619.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673255022965.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/ipPlR0kjvp5g">https://kapu.lanzoue.com/ipPlR0kjvp5g</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#x78;&#x69;&#110;&#x67;&#49;&#50;&#49;&#x35;&#x30;&#x39;&#52;&#x31;&#x32;&#x31;&#x40;&#49;&#x36;&#51;&#x2e;&#x63;&#111;&#109;">&#x78;&#x69;&#110;&#x67;&#49;&#50;&#49;&#x35;&#x30;&#x39;&#52;&#x31;&#x32;&#x31;&#x40;&#49;&#x36;&#51;&#x2e;&#x63;&#111;&#109;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>深色系的个人主页，单文件html文件，看下效果，看中的取走。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673255008619.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673255022965.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/ipPlR0kjvp5g">https://kapu.lanzoue.com/ipPlR0kjvp5g</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#x78;&#105;&#x6e;&#x67;&#49;&#x32;&#49;&#53;&#x30;&#x39;&#52;&#x31;&#x32;&#49;&#x40;&#x31;&#54;&#x33;&#46;&#x63;&#x6f;&#109;">&#x78;&#105;&#x6e;&#x67;&#49;&#x32;&#49;&#53;&#x30;&#x39;&#52;&#x31;&#x32;&#49;&#x40;&#x31;&#54;&#x33;&#46;&#x63;&#x6f;&#109;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
     
     
     <categories>
@@ -1943,7 +2138,7 @@
     <link href="/p/254247d4.html"/>
     <url>/p/254247d4.html</url>
     
-    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>非常简约的浅色系的个人主页，更换成自己的信息即可，单文件html文件。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673248013319.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673248025773.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/ieQ7h0kjencj">https://kapu.lanzoue.com/ieQ7h0kjencj</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#x78;&#105;&#110;&#103;&#x31;&#x32;&#49;&#53;&#x30;&#57;&#x34;&#x31;&#50;&#x31;&#64;&#x31;&#x36;&#x33;&#46;&#x63;&#x6f;&#x6d;">&#x78;&#105;&#110;&#103;&#x31;&#x32;&#49;&#53;&#x30;&#57;&#x34;&#x31;&#50;&#x31;&#64;&#x31;&#x36;&#x33;&#46;&#x63;&#x6f;&#x6d;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>非常简约的浅色系的个人主页，更换成自己的信息即可，单文件html文件。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673248013319.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673248025773.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/ieQ7h0kjencj">https://kapu.lanzoue.com/ieQ7h0kjencj</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#120;&#105;&#x6e;&#x67;&#49;&#x32;&#49;&#53;&#x30;&#57;&#x34;&#x31;&#50;&#49;&#64;&#x31;&#54;&#51;&#x2e;&#99;&#x6f;&#x6d;">&#120;&#105;&#x6e;&#x67;&#49;&#x32;&#49;&#53;&#x30;&#57;&#x34;&#x31;&#50;&#49;&#64;&#x31;&#54;&#51;&#x2e;&#99;&#x6f;&#x6d;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
     
     
     <categories>
@@ -1976,7 +2171,7 @@
     <link href="/p/6c7b0e3c.html"/>
     <url>/p/6c7b0e3c.html</url>
     
-    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>两款绿色自适应地址发布页，整体差不多，具体风格自选，都是单页html文件，直接修改为自己的内容即可。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673232166243.png"><br><img src="/images/screely-1673233587308.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673232153582.png"><br><img src="/images/screely-1673233576122.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/iFsHD0kilpyj">https://kapu.lanzoue.com/iFsHD0kilpyj</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#120;&#x69;&#110;&#103;&#49;&#x32;&#49;&#x35;&#48;&#x39;&#52;&#49;&#50;&#49;&#64;&#x31;&#54;&#51;&#46;&#x63;&#x6f;&#x6d;">&#120;&#x69;&#110;&#103;&#49;&#x32;&#49;&#x35;&#48;&#x39;&#52;&#49;&#50;&#49;&#64;&#x31;&#54;&#51;&#46;&#x63;&#x6f;&#x6d;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>两款绿色自适应地址发布页，整体差不多，具体风格自选，都是单页html文件，直接修改为自己的内容即可。</p><span id="more"></span><h2 id="页面展示"><a href="#页面展示" class="headerlink" title="页面展示"></a>页面展示</h2><h3 id="桌面端"><a href="#桌面端" class="headerlink" title="桌面端"></a>桌面端</h3><p><img src="/images/screely-1673232166243.png"><br><img src="/images/screely-1673233587308.png"></p><h3 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h3><p><img src="/images/screely-1673232153582.png"><br><img src="/images/screely-1673233576122.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://kapu.lanzoue.com/iFsHD0kilpyj">https://kapu.lanzoue.com/iFsHD0kilpyj</a></p><blockquote><ul><li>一、本站致力于为软件爱好者提供国内外软件开发技术和软件共享，着力为用户提供优资资源。</li><li>二、本站提供的所有下载文件均为网络共享资源，请于下载后的24小时内删除。如需体验更多乐趣，还请支持正版。</li><li>三、我站提供用户下载的所有内容均转自互联网。如有内容侵犯您的版权或其他利益的，请编辑邮件并加以说明发送到站长邮箱<a href="mailto:&#120;&#x69;&#x6e;&#103;&#x31;&#50;&#x31;&#53;&#48;&#57;&#52;&#49;&#x32;&#x31;&#64;&#x31;&#54;&#51;&#x2e;&#x63;&#x6f;&#x6d;">&#120;&#x69;&#x6e;&#103;&#x31;&#50;&#x31;&#53;&#48;&#57;&#52;&#49;&#x32;&#x31;&#64;&#x31;&#54;&#51;&#x2e;&#x63;&#x6f;&#x6d;</a>。站长会进行审查之后，情况属实的会在三个工作日内为您删除。</li></ul></blockquote>]]></content>
     
     
     <categories>
@@ -2340,9 +2535,9 @@
     
     <tags>
       
-      <tag>404</tag>
-      
       <tag>技术</tag>
+      
+      <tag>404</tag>
       
       <tag>HEXO</tag>
       
