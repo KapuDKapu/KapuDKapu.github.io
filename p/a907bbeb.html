@@ -1,0 +1,891 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="卡普">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="Hexo是什么就不用介绍了，不知道的也不会看进来了。好些人不愿意用Hexo的原因就是没有wordpress或者halo那样的一套完善的后台管理系统，虽然有hexo-admin但是太简陋了。现在AI大行天下的时代，这个问题也不是问题了。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我用AI生成了一套Hexo后台管理系统">
+<meta property="og:url" content="http://example.com/p/a907bbeb.html">
+<meta property="og:site_name" content="分享志">
+<meta property="og:description" content="Hexo是什么就不用介绍了，不知道的也不会看进来了。好些人不愿意用Hexo的原因就是没有wordpress或者halo那样的一套完善的后台管理系统，虽然有hexo-admin但是太简陋了。现在AI大行天下的时代，这个问题也不是问题了。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/cover/bing-2026-03-27-1024x768.jpg">
+<meta property="article:published_time" content="2026-06-01T12:17:00.000Z">
+<meta property="article:modified_time" content="2026-06-01T13:11:44.786Z">
+<meta property="article:author" content="卡普">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="后台管理">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/images/cover/bing-2026-03-27-1024x768.jpg">
+  
+  
+  
+  <title>我用AI生成了一套Hexo后台管理系统 - 分享志</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="/css/mycss.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":"0fed52a4bd4857d12460e0b91812af55","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+    <!-- Baidu Analytics -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?0fed52a4bd4857d12460e0b91812af55";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>分享志</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>分享</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/%E5%88%86%E4%BA%AB/%E7%BD%91%E7%AB%99/">
+                    
+                    <span>网站</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/%E5%88%86%E4%BA%AB/%E5%91%A8%E5%88%8A/">
+                    
+                    <span>周刊</span>
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>软件</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/%E8%BD%AF%E4%BB%B6/APP/">
+                    
+                    <span>APP</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/%E8%BD%AF%E4%BB%B6/Windows/">
+                    
+                    <span>Windows</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/%E8%BD%AF%E4%BB%B6/%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/">
+                    
+                    <span>在线工具</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/%E8%BD%AF%E4%BB%B6/%E6%B5%8F%E8%A7%88%E5%99%A8/">
+                    
+                    <span>浏览器</span>
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>建站资源</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/%E5%BB%BA%E7%AB%99%E8%B5%84%E6%BA%90/%E7%BD%91%E7%AB%99%E7%B3%BB%E7%BB%9F/">
+                    
+                    <span>网站系统</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/%E5%BB%BA%E7%AB%99%E8%B5%84%E6%BA%90/HTML%E6%BA%90%E7%A0%81/">
+                    
+                    <span>HTML源码</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/%E5%BB%BA%E7%AB%99%E8%B5%84%E6%BA%90/%E7%BD%91%E7%AB%99%E4%B8%BB%E9%A2%98/">
+                    
+                    <span>网站主题</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/%E5%BB%BA%E7%AB%99%E8%B5%84%E6%BA%90/%E5%BB%BA%E7%AB%99%E7%B4%A0%E6%9D%90/">
+                    
+                    <span>建站素材</span>
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>媒体</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/%E5%AA%92%E4%BD%93/%E8%A7%86%E9%A2%91/">
+                    
+                    <span>视频</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/%E5%AA%92%E4%BD%93/%E9%9F%B3%E9%A2%91/">
+                    
+                    <span>音频</span>
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/%E6%8A%80%E6%9C%AF/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>技术</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/%E5%85%B6%E4%BB%96/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>其他</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/images/cover/bing-2026-03-27-1024x768.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="我用AI生成了一套Hexo后台管理系统"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        卡普
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2026-06-01 20:17" pubdate>
+          2026年6月1日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.3k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          12 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">我用AI生成了一套Hexo后台管理系统</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p><strong>Hexo</strong>是什么就不用介绍了，不知道的也不会看进来了。好些人不愿意用<strong>Hexo</strong>的原因就是没有<strong>wordpress</strong>或者<strong>halo</strong>那样的一套完善的后台管理系统，虽然有<strong>hexo-admin</strong>但是太简陋了。现在<strong>AI</strong>大行天下的时代，这个问题也不是问题了。 </p>
+<span id="more"></span>
+<h2 id="0-概述"><a href="#0-概述" class="headerlink" title="0 概述"></a>0 概述</h2><p>我用<strong>AI IDE</strong>打开了<strong>Hexo</strong>博客文件夹，告诉他给我生成一套后台管理系统，然后他就开始干活了，生成了一个<strong>admin</strong>文件夹，完成简单的框架，然后再一步步进行优化，完成我现在在用的完善的后台系统。这种后台系统最大的优点就是完全符合自己的操作习惯，完全按照自己个性化定制。使用过程中发现什么想要优化的点儿，直接告诉AI立即优化即可。至于用什么<strong>IDE</strong>的话没啥要求，各个大厂的免费版都都可以，限流了换个就行。<br>介绍一下开发完成我在用的这个后台系统吧，仅供参考。</p>
+<h2 id="1-目录结构"><a href="#1-目录结构" class="headerlink" title="1 目录结构"></a>1 目录结构</h2><p>是直接在hexo博客文件夹里面直接给生成了一个<code>admin</code>文件夹，里面只有4个生成的主文件和一套开源的markdown编辑器<strong>editor.md</strong>。就这么简单。<br><img src="/images/11889cd0-5f25-4abe-b370-bea9feb43b1b.webp" srcset="/img/loading.gif" lazyload></p>
+<h2 id="2-功能介绍"><a href="#2-功能介绍" class="headerlink" title="2 功能介绍"></a>2 功能介绍</h2><p>我主要是做了两个功能，文章管理和媒体库，以及在后台界面执行<strong>hexo</strong>常用的<strong>hexo clean</strong>、<strong>hexo g</strong>、<strong>hexo d</strong>、<strong>hexo s</strong>命令。    </p>
+<h3 id="2-1-文章管理"><a href="#2-1-文章管理" class="headerlink" title="2.1 文章管理"></a>2.1 文章管理</h3><ul>
+<li><strong>新建文章</strong>   </li>
+</ul>
+<p>用来设置文章的基本信息，比如标题、标签、分类、头图和时间信息。<br>头图我是放在预选文件夹里面，程序自动化或，选择保存文章后头图就会移动到<code>\source\cover</code>文件夹里面。<br>分类的话我是支持了二级分类，我的博客的导航栏也是设置了二级分类。<br><img src="/images/b224eabc-3261-4c0a-8282-122f7aa3199f.webp" srcset="/img/loading.gif" lazyload></p>
+<ul>
+<li><strong>编辑文章</strong>  </li>
+</ul>
+<p>新建的文章会展示在左侧的文章列表，按照发布时间倒叙排序的，点击文章进入文章编辑页面。支持修改文章头信息、删除、保存文章内容。<br><strong>markdown</strong>编辑器我用的<strong>editor.md</strong>，完全本地的，没网也可以用，左侧编辑右侧预览。编辑器也让<strong>AI</strong>支持了<strong>ctrl+s</strong>保存文章的功能。<br>编辑器支持直接粘贴复制的图片（原生的<strong>editor.md</strong>是不支持的，AI加的功能），并且同步进行压缩、uuid重命令和webp格式转换，这里就需要安装额外的<strong>sharp</strong>扩展了，也是<strong>AI</strong>自动安装的，安装到了外面的<strong>node_modules</strong>里面。<br>文章里面删除图片链接后会同步把图片文件挪到回收站（博客系统的回收站，后面会讲到）。<br>图片文件我直接放到本地的<code>\source\images</code>文件夹里。不用图床，文件永远和我的文章在一起。<br><img src="/images/9628745e-fcf0-491a-a5b2-e8d3cbe1d032.webp" srcset="/img/loading.gif" lazyload></p>
+<h3 id="2-2-媒体库"><a href="#2-2-媒体库" class="headerlink" title="2.2 媒体库"></a>2.2 媒体库</h3><p><img src="/images/7487dd12-3ebf-476b-924d-77c5248eb7d0.webp" srcset="/img/loading.gif" lazyload><br>媒体库分了3个板块：<strong>文章图</strong>、<strong>封面图</strong>、<strong>回收站</strong>。<br><strong>文章图</strong>是文章里面引用的图片。<br><strong>封面图</strong>是头信息里面的引用的<code>\source\cover</code>文件夹里的图片。<br>文章图和封面图都加了【冗余筛查】功能，筛查文件夹里面没有被文章引用的图片，可以进行单个删除或者批量删除。<br><strong>回收站</strong>是用来存在删除的图片的，文章和封面图删除后首先移动到回收站，防止误删，回收站里面确实没用的图片再删除就是直接删除图片文件无法恢复了。  </p>
+<h3 id="2-3-hexo命令"><a href="#2-3-hexo命令" class="headerlink" title="2.3 hexo命令"></a>2.3 hexo命令</h3><p>后台主页也加了前台直接执行<strong>hexo</strong>命令的功能，就是下面截图的<strong>清</strong>理(<strong>hexo clean</strong>)、<strong>生成</strong>(<strong>hexo g</strong>)、<strong>发布</strong>(<strong>hexo d</strong>)、<strong>启动服务</strong>(<strong>hexo s</strong>)。<br><strong>预览</strong>按钮是直接跳转<code>localhost:4000</code> 预览网站效果。<br><img src="/images/405bcd59-0093-4605-8286-57355f43a883.webp" srcset="/img/loading.gif" lazyload><br>有观看评论需求的用户也可以加上评论系统，希望大家都能拥有最符合自己的<strong>Hexo</strong>后台系统。</p>
+
+                
+              </div>
+            
+            <hr/>
+            
+            
+              <!-- Custom content after post -->
+              <div class="custom post-custom">
+                <div style="text-align: center; margin-top: 40px; padding: 20px; border-top: 1px solid #eaecef;"><p style="font-size: 16px; color: #718096; margin-bottom: 15px;">欢迎关注微信公众号，有任务问题均可以联系我。</p><img src="/img/wechat-qrcode.jpg" srcset="/img/loading.gif" lazyload alt="微信公众号二维码" style="max-width: 200px; height: auto;"/></div>
+              </div>
+            
+            
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Hexo/">#Hexo</a>
+      
+        <a href="/tags/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86/">#后台管理</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>我用AI生成了一套Hexo后台管理系统</div>
+      <div>http://example.com/p/a907bbeb.html</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>卡普</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2026年6月1日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/p/bbfee662.html" title="测试">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">测试</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/p/7ec0007f.html" title="Raphael Publish - 开源的公众号排版大师">
+                        <span class="hidden-mobile">Raphael Publish - 开源的公众号排版大师</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
