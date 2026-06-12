@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <meta name="description" content="清明上河图" />
+    <meta name="hexo-theme-A4" content="v2.0.1" />
+    <link rel="alternate icon" type="image/webp" href="/img/1780807465903.png">
+    <title>分享志</title>
+
+    
+        
+<link rel="stylesheet" href="/css/highlight/style1.css">
+
+        
+<link rel="stylesheet" href="/css/reset.css">
+
+        
+<link rel="stylesheet" href="/css/markdown.css">
+
+        
+<link rel="stylesheet" href="/css/fonts.css">
+
+         <!--注意：首页既不是post也不是page-->
+        
+
+        
+<link rel="stylesheet" href="/css/ui.css">
+
+        
+<link rel="stylesheet" href="/css/style.css">
+
+
+        
+            <!--返回顶部css-->
+            
+<link rel="stylesheet" href="/css/returnToTop.css">
+
+            
+<link rel="stylesheet" href="/css/unicons.css">
+
+        
+        
+            <!--目录-->
+            
+<link rel="stylesheet" href="/css/toc.css">
+
+        
+    
+
+    
+        
+<link rel="stylesheet" href="/css/returnToLastPage.css">
+
+    
+
+    
+<link rel="stylesheet" href="/css/lightgallery-bundle.min.css">
+
+
+    
+        
+<link rel="stylesheet" href="/css/custom.css">
+
+    
+
+    
+
+    <link rel='stylesheet' href='/css/fonts.css' /> 
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+    
+    
+
+    
+    
+
+
+
+    
+
+    
+    
+
+
+
+
+    
+    
+
+
+    <body>
+        
+        <script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.80/darkreader.min.js"></script>
+        <script>
+            const drOptions = {
+                brightness: 100,
+                contrast: 95,
+                sepia: 10,
+                darkSchemeTextColor: '#e0e0e0',  // 粉笔白文字
+                darkSchemeBackgroundColor: '#1e1e1e', // 黑板灰背景
+                scrollbarStyle: 'native'
+            };
+
+            const savedTheme = localStorage.getItem('theme');
+            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
+                DarkReader.enable(drOptions);
+            }
+
+            window.addEventListener('DOMContentLoaded', () => {
+                const btn = document.createElement('button');
+                btn.innerText = '🌓';
+                // 按钮样式：仿照你之前的布局，放在右下角
+                btn.style.cssText = `
+                    position: fixed; 
+                    bottom: 40px; 
+                    left: 42px; 
+                    z-index: 9999;
+                    width: 44px; 
+                    height: 44px; 
+                    border-radius: 50%; 
+                    border: 1px solid #ccc;
+                    background: #f7f5ed; 
+                    color: #000;
+                    font-size: 22px; 
+                    cursor: pointer;
+                    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+                    transition: transform 0.2s, background-color 0.3s;
+                `;
+                // 根据当前状态初始化按钮颜色
+                if (DarkReader.isEnabled()) {
+                    btn.style.backgroundColor = '#1e1e1e';
+                    btn.style.color = '#fff';
+                }
+                btn.onmouseover = () => btn.style.transform = 'scale(1.1)';
+                btn.onmouseout = () => btn.style.transform = 'scale(1)';
+                document.body.appendChild(btn);
+                // 点击切换逻辑
+                btn.addEventListener('click', () => {
+                    if (DarkReader.isEnabled()) {
+                        DarkReader.disable();
+                        localStorage.setItem('theme', 'light');
+                        btn.style.backgroundColor = '#f7f5ed';
+                        btn.style.color = '#000';
+                    } else {
+                        DarkReader.enable(drOptions);
+                        localStorage.setItem('theme', 'dark');
+                        btn.style.backgroundColor = '#1e1e1e';
+                        btn.style.color = '#fff';
+                    }
+                });
+            });
+        </script>
+        
+        
+            
+                <div class="left-toc-container">
+                    <nav id="toc" class="bs-docs-sidebar"></nav>
+                </div>
+            
+        
+        <div class="paper">
+
+            
+
+            
+                <div class="shadow-drop-2-bottom paper-main">
+                    
+
+
+<div class="header">
+    <div class="header-container">
+        <style>
+            .header-img {
+                width: 56px;
+                height: auto;
+                object-fit: cover; /* 保持图片比例 */
+                transition: transform 0.3s ease-in-out; 
+                border-radius: 0; 
+            }
+            
+        </style>
+        <img 
+            alt="^-^" 
+            cache-control="max-age=86400" 
+            class="header-img" 
+            src="/img/1780807465903.png" 
+        />
+        <div class="header-content">
+            <a class="logo" href="/">分享志</a> 
+            <span class="description">腾出空，去生活，拥抱世界的精彩。</span> 
+        </div>
+    </div>
+    
+   
+    <ul class="nav">
+        
+            
+                <li><a href="/">首页</a></li>
+            
+        
+            
+                <li><a href="/list/">文章</a></li>
+            
+        
+            
+                <li><a href="/tags/">标签</a></li>
+            
+        
+            
+                <li><a href="/categories/">分类</a></li>
+            
+        
+    </ul>
+</div>
+
+                    
+                    
+
+                    
+                    
+
+                    <!--说明是文章post页面-->
+                    
+                        <div class="post-main">
+    
+
+    
+        
+            
+                <div class="post-main-title" style="text-align: center;">
+                    清明上河图
+                </div>
+            
+        
+      
+    
+
+    
+
+        
+            <div class="post-head-meta-center">
+        
+                
+                    <span>最近更新：2026-06-04</span> 
+                
+                
+                    
+                        &nbsp; | &nbsp;
+                    
+                     <span>字数总计：797</span>
+                
+                
+                    
+                        &nbsp; | &nbsp;
+                    
+                    <span>阅读估时：2分钟</span>
+                
+                
+            </div>
+    
+
+    <div class="post-md">
+        
+            
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="post-toc-text">简介</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%BC%A0%E6%8B%A9%E7%AB%AF%E7%89%88%E6%9C%AC"><span class="post-toc-text">张择端版本</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E6%98%8E%E4%BB%A3%E4%BB%87%E8%8B%B1%E7%89%88"><span class="post-toc-text">明代仇英版</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E6%B8%85%E9%99%A2%E6%9C%AC%E7%89%88"><span class="post-toc-text">清院本版</span></a></li></ol>
+            
+        
+        <div class=".article-gallery"><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>《清明上河图》本是进献给宋徽宗的贡品，流传至今已有800多年的历史。其主题主要是描写北宋都城东京市民的生活状况和汴河上店铺林立、市民熙来攘往的热闹场面，描绘了运载东南粮米财货的漕船通过汴河桥涵紧张繁忙的景象。<br>作品长528.7厘米、宽24.8厘米。画有587个不同身份的人物，个个形神兼备，并画有13种动物、9种植物，其态无不惟妙惟肖，各种牲畜共56匹，不同车轿二十余辆，大小船只二十余艘。目前收藏在故宫博物院。<br>据统计，曾藏于清内府的《清明上河图》多达数十件，它们于近代流散，后被世界各大博物馆收藏。最有名的三个版本，北宋张择端版、明仇英版、清院本版。二在为数众多的《清明上河图》里，北京故宫博物院所藏的张择端的宋本乃藏界公认的原版。</p>
+<h3 id="张择端版本"><a href="#张择端版本" class="headerlink" title="张择端版本"></a>张择端版本</h3><p><img src="/images/%E5%BC%A0%E6%8B%A9%E7%AB%AF1652361553.png"><br>对于作者张择端的身世，史书上没有任何记载，从《清明上河图》的跋文中可知：张择端字正道，琅琊东武（今山东诸城）人，曾任翰林待诏。长卷完成后，张择端将它呈献给宋徽宗，后者则亲笔在图上题写“清明上河图”，并钤上双龙小印。<br>张择端的《清明上河图》起初收藏于北宋宫廷，后随徽钦二帝被金兵掳走。元灭金后，此画被元内府收藏，后又流落民间，经严嵩、毕沅等名人传序，于清嘉庆年间再度入宫。据统计，《清明上河图》原作曾五次进入宫廷，又有四次被盗出宫，真是历经劫难，极富传奇色彩。</p>
+<h3 id="明代仇英版"><a href="#明代仇英版" class="headerlink" title="明代仇英版"></a>明代仇英版</h3><p><img src="/images/%E6%98%8E%E4%BB%87%E8%8B%B11652361618.png"><br>明代画家仇英曾在收藏家项元汴处看到过一幅宋本《清明上河图》，随后他根据这一题材，重新创作了一幅画卷，风格与宋本迥异，被称为“仇本”。明清时期，由于宋本《清明上河图》难得一见，加之“仇本”广受藏界追捧，所以当时的仿作多以“仇本”为基础，画界还尊其为“鼻祖”。<br>“仇本”《清明上河图》纵30.5厘米，横987厘米，青州博物馆与辽宁省博物馆各自藏有一幅，二者在内容与风格上极其相似，前者为清内府藏本，而后者则被学界认定为仇英真迹。</p>
+<h3 id="清院本版"><a href="#清院本版" class="headerlink" title="清院本版"></a>清院本版</h3><p><img src="/images/%E6%B8%85%E6%9C%AC%E9%99%A21652361649.png"><br>清代初年，各种版本的《清明上河图》先后进入清内府，这些题材相同但风格迥异的画作引起了帝王之家的极大兴趣。时至清乾隆元年，清宫特意组织画师重绘了《清明上河图》，该作后存于养心殿，是为“清院本”。<br>“清院本”《清明上河图》纸本浅设色，纵35.6厘米，横1152.8厘米，由清宫画院画家陈枚、孙祜、金昆、戴洪、程志道合作绘制，现藏于台北故宫博物院。</p>
+</div>
+    </div>
+
+    <div class="post-meta">
+        <i>
+        
+            <span>2022-05-18</span>
+            
+                <span>该篇文章被 卡普</span>
+            
+            
+                <span>打上标签:
+                    
+                    
+                        <a href='/tags/%E5%85%B6%E4%BB%96/'>
+                            其他
+                        </a>
+                    
+                        <a href='/tags/%E5%86%B7%E7%9F%A5%E8%AF%86/'>
+                            冷知识
+                        </a>
+                    
+                        <a href='/tags/%E8%AE%A4%E7%9F%A5/'>
+                            认知
+                        </a>
+                    
+                        <a href='/tags/%E6%B8%85%E6%98%8E%E4%B8%8A%E6%B2%B3%E5%9B%BE/'>
+                            清明上河图
+                        </a>
+                    
+                </span>
+             
+             
+                <span>归为分类:
+                    
+                    
+                        <a href='/categories/%E5%85%B6%E4%BB%96/'>
+                            其他
+                        </a>
+                    
+                </span>
+            
+        
+        </i>
+    </div>
+    <br>
+    
+    
+        
+            
+    
+            <div class="post-footer-pre-next">
+                
+                    <span>上一篇：<a href='/p/5b53afb5.html'>主流折叠屏手机</a></span>
+                
+
+                
+                    <span class="post-footer-pre-next-last-span-right">下一篇：<a href="/p/b8baef8.html">生病了？看看专家怎么说！</a>
+                    </span>
+                
+            </div>
+    
+        
+    
+
+    
+        
+
+     
+</div>
+
+
+
+
+                    
+
+                    <div class="footer">
+    
+        <span> 
+            © 2024-2025 China 
+
+            
+                
+
+            
+        </span>
+       
+    
+</div>
+
+
+
+<!--这是指一条线往下的内容-->
+<div class="footer-last">
+    
+            <span>🌊腾出空，去生活，拥抱世界的精彩🌊</span>
+            
+                <span class="footer-last-span-right"><i>本站由<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">Hexo</a>驱动｜使用<a target="_blank" rel="noopener" href="https://github.com/HiNinoJay/hexo-theme-A4">Hexo-theme-A4</a>主题</i></span>
+            
+    
+</div>
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!--目录-->
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js" type="text/javascript" ></script>
+        
+<script src="/js/toc.js"></script>
+
+    
+
+    
+<script src="/js/randomHeaderContent.js"></script>
+
+    <!--回到顶部按钮-->
+    
+        
+<script src="/js/returnToTop.js"></script>
+
+    
+
+    
+        
+<script src="/js/returnToLastPage.js"></script>
+
+    
+
+
+
+
+
+<script src="/js/lightgallery/lightgallery.umd.min.js"></script>
+
+
+
+<script src="/js/lightgallery/plugins/lg-thumbnail.umd.min.js"></script>
+
+
+
+<script src="/js/lightgallery/plugins/lg-fullscreen.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-autoplay.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-zoom.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-rotate.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-paper.umd.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+     
+    if (typeof lightGallery !== "undefined") {
+        var options1 = {
+            selector: '.gallery-item',
+            plugins: [lgThumbnail, lgFullscreen, lgAutoplay, lgZoom, lgRotate, lgPager], // 启用插件
+            thumbnail: true,          // 显示缩略图
+            zoom: true,               // 启用缩放功
+            rotate: true,             // 启用旋转功能能
+            autoplay: true,        // 启用自动播放功能
+            fullScreen: true,      // 启用全屏功能
+            pager: false, //页码,
+            zoomFromOrigin: true,   // 从原始位置缩放
+            actualSize: true,       // 启用查看实际大小的功能
+            enableZoomAfter: 300,    // 延迟缩放，确保图片加载完成后可缩放
+        };
+        // 对所有文章中的画廊容器进行初始化
+        var articleGalleries = document.querySelectorAll('.article-gallery, .gi-gallery');
+        articleGalleries.forEach(function(gallery) {
+            lightGallery(gallery, options1);
+        });
+    }
+    
+</script>
+
+
+                </div>
+            
+            
+                <!-- 回到顶部的按钮-->
+                <div class="progress-wrap shadow-drop-2-bottom">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            
+            
+                <!-- 返回的按钮-->
+                <div class="return-to-last-progress-wrap shadow-drop-2-bottom">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            
+    </body>
+</html>
+<script src="/js/emojiHandler.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        wrapEmojis('.paper');
+    });
+</script>

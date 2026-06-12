@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <meta name="description" content="Escrcpy：电脑秒变“巨屏手机”，延迟低至35ms！" />
+    <meta name="hexo-theme-A4" content="v2.0.1" />
+    <link rel="alternate icon" type="image/webp" href="/img/1780807465903.png">
+    <title>分享志</title>
+
+    
+        
+<link rel="stylesheet" href="/css/highlight/style1.css">
+
+        
+<link rel="stylesheet" href="/css/reset.css">
+
+        
+<link rel="stylesheet" href="/css/markdown.css">
+
+        
+<link rel="stylesheet" href="/css/fonts.css">
+
+         <!--注意：首页既不是post也不是page-->
+        
+
+        
+<link rel="stylesheet" href="/css/ui.css">
+
+        
+<link rel="stylesheet" href="/css/style.css">
+
+
+        
+            <!--返回顶部css-->
+            
+<link rel="stylesheet" href="/css/returnToTop.css">
+
+            
+<link rel="stylesheet" href="/css/unicons.css">
+
+        
+        
+            <!--目录-->
+            
+<link rel="stylesheet" href="/css/toc.css">
+
+        
+    
+
+    
+        
+<link rel="stylesheet" href="/css/returnToLastPage.css">
+
+    
+
+    
+<link rel="stylesheet" href="/css/lightgallery-bundle.min.css">
+
+
+    
+        
+<link rel="stylesheet" href="/css/custom.css">
+
+    
+
+    
+
+    <link rel='stylesheet' href='/css/fonts.css' /> 
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+    
+    
+
+    
+    
+
+
+
+    
+
+    
+    
+
+
+
+
+    
+    
+
+
+    <body>
+        
+        <script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.80/darkreader.min.js"></script>
+        <script>
+            const drOptions = {
+                brightness: 100,
+                contrast: 95,
+                sepia: 10,
+                darkSchemeTextColor: '#e0e0e0',  // 粉笔白文字
+                darkSchemeBackgroundColor: '#1e1e1e', // 黑板灰背景
+                scrollbarStyle: 'native'
+            };
+
+            const savedTheme = localStorage.getItem('theme');
+            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
+                DarkReader.enable(drOptions);
+            }
+
+            window.addEventListener('DOMContentLoaded', () => {
+                const btn = document.createElement('button');
+                btn.innerText = '🌓';
+                // 按钮样式：仿照你之前的布局，放在右下角
+                btn.style.cssText = `
+                    position: fixed; 
+                    bottom: 40px; 
+                    left: 42px; 
+                    z-index: 9999;
+                    width: 44px; 
+                    height: 44px; 
+                    border-radius: 50%; 
+                    border: 1px solid #ccc;
+                    background: #f7f5ed; 
+                    color: #000;
+                    font-size: 22px; 
+                    cursor: pointer;
+                    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+                    transition: transform 0.2s, background-color 0.3s;
+                `;
+                // 根据当前状态初始化按钮颜色
+                if (DarkReader.isEnabled()) {
+                    btn.style.backgroundColor = '#1e1e1e';
+                    btn.style.color = '#fff';
+                }
+                btn.onmouseover = () => btn.style.transform = 'scale(1.1)';
+                btn.onmouseout = () => btn.style.transform = 'scale(1)';
+                document.body.appendChild(btn);
+                // 点击切换逻辑
+                btn.addEventListener('click', () => {
+                    if (DarkReader.isEnabled()) {
+                        DarkReader.disable();
+                        localStorage.setItem('theme', 'light');
+                        btn.style.backgroundColor = '#f7f5ed';
+                        btn.style.color = '#000';
+                    } else {
+                        DarkReader.enable(drOptions);
+                        localStorage.setItem('theme', 'dark');
+                        btn.style.backgroundColor = '#1e1e1e';
+                        btn.style.color = '#fff';
+                    }
+                });
+            });
+        </script>
+        
+        
+            
+                <div class="left-toc-container">
+                    <nav id="toc" class="bs-docs-sidebar"></nav>
+                </div>
+            
+        
+        <div class="paper">
+
+            
+
+            
+                <div class="shadow-drop-2-bottom paper-main">
+                    
+
+
+<div class="header">
+    <div class="header-container">
+        <style>
+            .header-img {
+                width: 56px;
+                height: auto;
+                object-fit: cover; /* 保持图片比例 */
+                transition: transform 0.3s ease-in-out; 
+                border-radius: 0; 
+            }
+            
+        </style>
+        <img 
+            alt="^-^" 
+            cache-control="max-age=86400" 
+            class="header-img" 
+            src="/img/1780807465903.png" 
+        />
+        <div class="header-content">
+            <a class="logo" href="/">分享志</a> 
+            <span class="description">腾出空，去生活，拥抱世界的精彩。</span> 
+        </div>
+    </div>
+    
+   
+    <ul class="nav">
+        
+            
+                <li><a href="/">首页</a></li>
+            
+        
+            
+                <li><a href="/list/">文章</a></li>
+            
+        
+            
+                <li><a href="/tags/">标签</a></li>
+            
+        
+            
+                <li><a href="/categories/">分类</a></li>
+            
+        
+    </ul>
+</div>
+
+                    
+                    
+
+                    
+                    
+
+                    <!--说明是文章post页面-->
+                    
+                        <div class="post-main">
+    
+
+    
+        
+            
+                <div class="post-main-title" style="text-align: center;">
+                    Escrcpy：电脑秒变“巨屏手机”，延迟低至35ms！
+                </div>
+            
+        
+      
+    
+
+    
+
+        
+            <div class="post-head-meta-center">
+        
+                
+                    <span>最近更新：2026-05-23</span> 
+                
+                
+                    
+                        &nbsp; | &nbsp;
+                    
+                     <span>字数总计：1k</span>
+                
+                
+                    
+                        &nbsp; | &nbsp;
+                    
+                    <span>阅读估时：3分钟</span>
+                
+                
+            </div>
+    
+
+    <div class="post-md">
+        
+            
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%F0%9F%A4%94-%E4%BB%80%E4%B9%88%E6%98%AF-Escrcpy%EF%BC%9F"><span class="post-toc-text">🤔 什么是 Escrcpy？</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E2%9A%A1%EF%B8%8F-%E4%B8%BA%E4%BB%80%E4%B9%88%E5%AE%83%E8%83%BD%E8%A2%AB%E7%A7%B0%E4%B8%BA%E2%80%9C%E6%95%88%E7%8E%87%E7%A5%9E%E5%99%A8%E2%80%9D%EF%BC%9F"><span class="post-toc-text">⚡️ 为什么它能被称为“效率神器”？</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-%E6%9E%81%E8%87%B4%E6%B5%81%E7%95%85%EF%BC%8C%E8%82%89%E7%9C%BC%E9%9A%BE%E8%BE%A8%E5%BB%B6%E8%BF%9F"><span class="post-toc-text">1. 极致流畅，肉眼难辨延迟</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%F0%9F%9A%80-%E6%A0%B8%E5%BF%83%E4%BA%AE%E7%82%B9%EF%BC%9A%E4%B8%8D%E4%BB%85%E4%BB%85%E6%98%AF%E6%8A%95%E5%B1%8F"><span class="post-toc-text">🚀 核心亮点：不仅仅是投屏</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E2%9C%85-%E5%91%8A%E5%88%AB%E7%BA%BF%E7%BC%86%EF%BC%8C%E6%89%AB%E7%A0%81%E5%8D%B3%E8%BF%9E"><span class="post-toc-text">✅ 告别线缆，扫码即连</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E2%9C%85-%E5%A4%9A%E8%AE%BE%E5%A4%87%E2%80%9C%E7%9F%A9%E9%98%B5%E2%80%9D%E7%AE%A1%E7%90%86"><span class="post-toc-text">✅ 多设备“矩阵”管理</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E2%9C%85-%E8%87%AA%E5%8A%A8%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%90%91%E5%85%B1%E4%BA%AB"><span class="post-toc-text">✅ 自动化与反向共享</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E2%9C%85-%E7%BA%AF%E5%87%80%E5%88%B0%E6%9E%81%E8%87%B4"><span class="post-toc-text">✅ 纯净到极致</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%F0%9F%9B%A0%EF%B8%8F-%E8%B0%81%E6%9C%80%E9%80%82%E5%90%88%E4%BD%BF%E7%94%A8%E5%AE%83%EF%BC%9F"><span class="post-toc-text">🛠️ 谁最适合使用它？</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%F0%9F%8F%81-%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E"><span class="post-toc-text">🏁 写在最后</span></a></li></ol>
+            
+        
+        <div class=".article-gallery"><p>Escrcpy是一款基于Electron开发的图形化安卓设备控制工具，为用户提供了更加友好且功能丰富的图形界面。通过Escrcpy，用户可以轻松地在电脑上显示并控制安卓设备，享受高清、低延迟的投屏体验。 </p>
+<span id="more"></span>
+
+<p>你是否也曾经历过这样的抓狂时刻？</p>
+<blockquote>
+<p>正在电脑前埋头苦干，微信突然在手机上疯狂震动。<br>一边盯着显示器写文档，一边低头解锁手机回消息；<br>代码写一半，需要在真机上调试，手忙脚乱地插拔数据线；<br>想给客户演示 App 操作流程，却只能把小小的手机屏幕递过去……</p>
+</blockquote>
+<p><strong>“能不能直接在电脑上操作手机？”</strong><br>这不仅是强迫症患者的福音，更是提升效率的关键。</p>
+<p>今天，我要给大家安利一款 <strong>完全免费、开源、无广告</strong> 的宝藏工具 —— <strong>Escrcpy</strong>。<br>它不仅解决了上述所有痛点，甚至还能给你带来“丝般顺滑”的体验。</p>
+<hr>
+<h2 id="🤔-什么是-Escrcpy？"><a href="#🤔-什么是-Escrcpy？" class="headerlink" title="🤔 什么是 Escrcpy？"></a>🤔 什么是 Escrcpy？</h2><p>简单来说，<strong>Escrcpy 是命令行神器 Scrcpy 的“高颜值皮肤”</strong>。</p>
+<p>Scrcpy 是安卓开发者圈子里公认最强的投屏工具，但因为它是命令行工具，对新手并不友好。<br>而 <strong>Escrcpy 基于 Electron 为其打造了一个现代化的图形界面</strong>，让你无需敲一行命令，就能轻松享受 Scrcpy 带来的极致性能。</p>
+<hr>
+<p><img src="/images/overview1779350218.png"></p>
+<h2 id="⚡️-为什么它能被称为“效率神器”？"><a href="#⚡️-为什么它能被称为“效率神器”？" class="headerlink" title="⚡️ 为什么它能被称为“效率神器”？"></a>⚡️ 为什么它能被称为“效率神器”？</h2><h3 id="1-极致流畅，肉眼难辨延迟"><a href="#1-极致流畅，肉眼难辨延迟" class="headerlink" title="1. 极致流畅，肉眼难辨延迟"></a>1. 极致流畅，肉眼难辨延迟</h3><p>很多人担心投屏会卡顿，但 Escrcpy 完全打破了这一刻板印象。<br>得益于 Scrcpy 内核的强大，它能做到：</p>
+<ul>
+<li><strong>帧率高达 120fps</strong>（视设备性能而定）</li>
+<li><strong>延迟仅 35~70ms</strong></li>
+<li><strong>画质可达 1080P 甚至 2K</strong></li>
+</ul>
+<p><strong>实际体验如何？</strong><br>用它玩《王者荣耀》或《原神》，几乎感觉不到延迟；看高清视频，色彩还原度极高。<br>这不是“能用”，而是真正可用的 <strong>生产力工具</strong>。</p>
+<hr>
+<h2 id="🚀-核心亮点：不仅仅是投屏"><a href="#🚀-核心亮点：不仅仅是投屏" class="headerlink" title="🚀 核心亮点：不仅仅是投屏"></a>🚀 核心亮点：不仅仅是投屏</h2><h3 id="✅-告别线缆，扫码即连"><a href="#✅-告别线缆，扫码即连" class="headerlink" title="✅ 告别线缆，扫码即连"></a>✅ 告别线缆，扫码即连</h3><p>还在用 USB 线？Escrcpy 支持 <strong>无线连接</strong>。<br>开启手机的“无线调试”后，直接扫描二维码，瞬间完成连接。桌面从此告别杂乱线缆。</p>
+<h3 id="✅-多设备“矩阵”管理"><a href="#✅-多设备“矩阵”管理" class="headerlink" title="✅ 多设备“矩阵”管理"></a>✅ 多设备“矩阵”管理</h3><p>如果你是搞机党或有多个测试机，Escrcpy 简直是救星。<br>它支持 <strong>多设备同时连接</strong>，并能通过 <strong>窗口编排</strong> 功能，像管理浏览器标签页一样，随意拖拽、调整大小。一屏掌控所有设备，爽感爆棚。</p>
+<h3 id="✅-自动化与反向共享"><a href="#✅-自动化与反向共享" class="headerlink" title="✅ 自动化与反向共享"></a>✅ 自动化与反向共享</h3><ul>
+<li><strong>自动连接</strong>：插上线自动识别，无需重复操作。</li>
+<li><strong>反向网络共享</strong>：手机没网？通过 Gnirehtet 让手机直接用电脑的网络，无需 Wi-Fi 也能上网冲浪。</li>
+</ul>
+<h3 id="✅-纯净到极致"><a href="#✅-纯净到极致" class="headerlink" title="✅ 纯净到极致"></a>✅ 纯净到极致</h3><p>在这个遍地广告的时代，Escrcpy 显得尤为珍贵：</p>
+<table>
+<thead>
+<tr>
+<th align="left">特点</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">🚫 无广告</td>
+<td align="left">没有任何商业广告</td>
+</tr>
+<tr>
+<td align="left">🚫 无弹窗</td>
+<td align="left">不打扰你的工作流</td>
+</tr>
+<tr>
+<td align="left">🚫 无需注册</td>
+<td align="left">不收集任何个人信息</td>
+</tr>
+<tr>
+<td align="left">🚫 不留残留</td>
+<td align="left">不在手机端安装任何 App</td>
+</tr>
+</tbody></table>
+<p><strong>下载即用，用完即走。</strong></p>
+<hr>
+<h2 id="🛠️-谁最适合使用它？"><a href="#🛠️-谁最适合使用它？" class="headerlink" title="🛠️ 谁最适合使用它？"></a>🛠️ 谁最适合使用它？</h2><table>
+<thead>
+<tr>
+<th align="left">人群</th>
+<th align="left">使用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>开发者 / 测试</strong></td>
+<td align="left">电脑上直接调试 App，查看 Log，多机型兼容性测试</td>
+</tr>
+<tr>
+<td align="left"><strong>手游玩家</strong></td>
+<td align="left">键盘鼠标玩手游，大屏幕视觉体验，操作更精准</td>
+</tr>
+<tr>
+<td align="left"><strong>自媒体 / 讲师</strong></td>
+<td align="left">录制手机操作教程，或在会议中演示 App 功能</td>
+</tr>
+<tr>
+<td align="left"><strong>办公族</strong></td>
+<td align="left">电脑上回复微信/钉钉，文件互传，无需频繁切换设备</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="🏁-写在最后"><a href="#🏁-写在最后" class="headerlink" title="🏁 写在最后"></a>🏁 写在最后</h2><p>如果你厌倦了在手机和电脑之间反复横跳，或者你需要一个稳定可靠的安卓设备管理方案，<strong>Escrcpy 绝对值得你拥有</strong>。</p>
+<p>它完美继承了 Scrcpy 的“灵魂”，又补齐了易用性的“短板”。最重要的是，它是 <strong>100% 开源免费</strong> 的。</p>
+<ul>
+<li>👉 <strong>支持平台</strong>：Windows / macOS / Linux  </li>
+<li>👉 <strong>获取方式</strong>：GitHub 搜索 <strong>Escrcpy</strong></li>
+</ul>
+<p>别再让你的手机孤单地躺在桌角了，把它“拽”到大屏幕上吧！🎉</p>
+<hr>
+<p><em>觉得这篇文章对你有帮助？欢迎点赞、收藏、转发，让更多人告别低效办公！</em></p>
+</div>
+    </div>
+
+    <div class="post-meta">
+        <i>
+        
+            <span>2026-05-21</span>
+            
+                <span>该篇文章被 卡普</span>
+            
+            
+                <span>打上标签:
+                    
+                    
+                        <a href='/tags/Escrcpy/'>
+                            Escrcpy
+                        </a>
+                    
+                        <a href='/tags/%E6%8A%95%E5%B1%8F/'>
+                            投屏
+                        </a>
+                    
+                        <a href='/tags/%E5%AE%89%E5%8D%93/'>
+                            安卓
+                        </a>
+                    
+                </span>
+             
+             
+                <span>归为分类:
+                    
+                    
+                        <a href='/categories/%E8%BD%AF%E4%BB%B6/'>
+                            软件
+                        </a>
+                    
+                </span>
+            
+        
+        </i>
+    </div>
+    <br>
+    
+    
+        
+            
+    
+            <div class="post-footer-pre-next">
+                
+                    <span>上一篇：<a href='/p/f7353666.html'>Escrcpy：Trae限流了？试试CodeBuddy也还不错</a></span>
+                
+
+                
+                    <span class="post-footer-pre-next-last-span-right">下一篇：<a href="/p/3db44522.html">三百K的小软件解决电脑内存爆满卡顿问题</a>
+                    </span>
+                
+            </div>
+    
+        
+    
+
+    
+        
+
+     
+</div>
+
+
+
+
+                    
+
+                    <div class="footer">
+    
+        <span> 
+            © 2024-2025 China 
+
+            
+                
+
+            
+        </span>
+       
+    
+</div>
+
+
+
+<!--这是指一条线往下的内容-->
+<div class="footer-last">
+    
+            <span>🌊腾出空，去生活，拥抱世界的精彩🌊</span>
+            
+                <span class="footer-last-span-right"><i>本站由<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">Hexo</a>驱动｜使用<a target="_blank" rel="noopener" href="https://github.com/HiNinoJay/hexo-theme-A4">Hexo-theme-A4</a>主题</i></span>
+            
+    
+</div>
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!--目录-->
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js" type="text/javascript" ></script>
+        
+<script src="/js/toc.js"></script>
+
+    
+
+    
+<script src="/js/randomHeaderContent.js"></script>
+
+    <!--回到顶部按钮-->
+    
+        
+<script src="/js/returnToTop.js"></script>
+
+    
+
+    
+        
+<script src="/js/returnToLastPage.js"></script>
+
+    
+
+
+
+
+
+<script src="/js/lightgallery/lightgallery.umd.min.js"></script>
+
+
+
+<script src="/js/lightgallery/plugins/lg-thumbnail.umd.min.js"></script>
+
+
+
+<script src="/js/lightgallery/plugins/lg-fullscreen.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-autoplay.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-zoom.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-rotate.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-paper.umd.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+     
+    if (typeof lightGallery !== "undefined") {
+        var options1 = {
+            selector: '.gallery-item',
+            plugins: [lgThumbnail, lgFullscreen, lgAutoplay, lgZoom, lgRotate, lgPager], // 启用插件
+            thumbnail: true,          // 显示缩略图
+            zoom: true,               // 启用缩放功
+            rotate: true,             // 启用旋转功能能
+            autoplay: true,        // 启用自动播放功能
+            fullScreen: true,      // 启用全屏功能
+            pager: false, //页码,
+            zoomFromOrigin: true,   // 从原始位置缩放
+            actualSize: true,       // 启用查看实际大小的功能
+            enableZoomAfter: 300,    // 延迟缩放，确保图片加载完成后可缩放
+        };
+        // 对所有文章中的画廊容器进行初始化
+        var articleGalleries = document.querySelectorAll('.article-gallery, .gi-gallery');
+        articleGalleries.forEach(function(gallery) {
+            lightGallery(gallery, options1);
+        });
+    }
+    
+</script>
+
+
+                </div>
+            
+            
+                <!-- 回到顶部的按钮-->
+                <div class="progress-wrap shadow-drop-2-bottom">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            
+            
+                <!-- 返回的按钮-->
+                <div class="return-to-last-progress-wrap shadow-drop-2-bottom">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            
+    </body>
+</html>
+<script src="/js/emojiHandler.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        wrapEmojis('.paper');
+    });
+</script>

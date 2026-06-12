@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <meta name="description" content="无需软件实现每天自动更换bing壁纸" />
+    <meta name="hexo-theme-A4" content="v2.0.1" />
+    <link rel="alternate icon" type="image/webp" href="/img/1780807465903.png">
+    <title>分享志</title>
+
+    
+        
+<link rel="stylesheet" href="/css/highlight/style1.css">
+
+        
+<link rel="stylesheet" href="/css/reset.css">
+
+        
+<link rel="stylesheet" href="/css/markdown.css">
+
+        
+<link rel="stylesheet" href="/css/fonts.css">
+
+         <!--注意：首页既不是post也不是page-->
+        
+
+        
+<link rel="stylesheet" href="/css/ui.css">
+
+        
+<link rel="stylesheet" href="/css/style.css">
+
+
+        
+            <!--返回顶部css-->
+            
+<link rel="stylesheet" href="/css/returnToTop.css">
+
+            
+<link rel="stylesheet" href="/css/unicons.css">
+
+        
+        
+            <!--目录-->
+            
+<link rel="stylesheet" href="/css/toc.css">
+
+        
+    
+
+    
+        
+<link rel="stylesheet" href="/css/returnToLastPage.css">
+
+    
+
+    
+<link rel="stylesheet" href="/css/lightgallery-bundle.min.css">
+
+
+    
+        
+<link rel="stylesheet" href="/css/custom.css">
+
+    
+
+    
+
+    <link rel='stylesheet' href='/css/fonts.css' /> 
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+    
+    
+
+    
+    
+
+
+
+    
+
+    
+    
+
+
+
+
+    
+    
+
+
+    <body>
+        
+        <script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.80/darkreader.min.js"></script>
+        <script>
+            const drOptions = {
+                brightness: 100,
+                contrast: 95,
+                sepia: 10,
+                darkSchemeTextColor: '#e0e0e0',  // 粉笔白文字
+                darkSchemeBackgroundColor: '#1e1e1e', // 黑板灰背景
+                scrollbarStyle: 'native'
+            };
+
+            const savedTheme = localStorage.getItem('theme');
+            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
+                DarkReader.enable(drOptions);
+            }
+
+            window.addEventListener('DOMContentLoaded', () => {
+                const btn = document.createElement('button');
+                btn.innerText = '🌓';
+                // 按钮样式：仿照你之前的布局，放在右下角
+                btn.style.cssText = `
+                    position: fixed; 
+                    bottom: 40px; 
+                    left: 42px; 
+                    z-index: 9999;
+                    width: 44px; 
+                    height: 44px; 
+                    border-radius: 50%; 
+                    border: 1px solid #ccc;
+                    background: #f7f5ed; 
+                    color: #000;
+                    font-size: 22px; 
+                    cursor: pointer;
+                    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+                    transition: transform 0.2s, background-color 0.3s;
+                `;
+                // 根据当前状态初始化按钮颜色
+                if (DarkReader.isEnabled()) {
+                    btn.style.backgroundColor = '#1e1e1e';
+                    btn.style.color = '#fff';
+                }
+                btn.onmouseover = () => btn.style.transform = 'scale(1.1)';
+                btn.onmouseout = () => btn.style.transform = 'scale(1)';
+                document.body.appendChild(btn);
+                // 点击切换逻辑
+                btn.addEventListener('click', () => {
+                    if (DarkReader.isEnabled()) {
+                        DarkReader.disable();
+                        localStorage.setItem('theme', 'light');
+                        btn.style.backgroundColor = '#f7f5ed';
+                        btn.style.color = '#000';
+                    } else {
+                        DarkReader.enable(drOptions);
+                        localStorage.setItem('theme', 'dark');
+                        btn.style.backgroundColor = '#1e1e1e';
+                        btn.style.color = '#fff';
+                    }
+                });
+            });
+        </script>
+        
+        
+            
+                <div class="left-toc-container">
+                    <nav id="toc" class="bs-docs-sidebar"></nav>
+                </div>
+            
+        
+        <div class="paper">
+
+            
+
+            
+                <div class="shadow-drop-2-bottom paper-main">
+                    
+
+
+<div class="header">
+    <div class="header-container">
+        <style>
+            .header-img {
+                width: 56px;
+                height: auto;
+                object-fit: cover; /* 保持图片比例 */
+                transition: transform 0.3s ease-in-out; 
+                border-radius: 0; 
+            }
+            
+        </style>
+        <img 
+            alt="^-^" 
+            cache-control="max-age=86400" 
+            class="header-img" 
+            src="/img/1780807465903.png" 
+        />
+        <div class="header-content">
+            <a class="logo" href="/">分享志</a> 
+            <span class="description">腾出空，去生活，拥抱世界的精彩。</span> 
+        </div>
+    </div>
+    
+   
+    <ul class="nav">
+        
+            
+                <li><a href="/">首页</a></li>
+            
+        
+            
+                <li><a href="/list/">文章</a></li>
+            
+        
+            
+                <li><a href="/tags/">标签</a></li>
+            
+        
+            
+                <li><a href="/categories/">分类</a></li>
+            
+        
+    </ul>
+</div>
+
+                    
+                    
+
+                    
+                    
+
+                    <!--说明是文章post页面-->
+                    
+                        <div class="post-main">
+    
+
+    
+        
+            
+                <div class="post-main-title" style="text-align: center;">
+                    无需软件实现每天自动更换bing壁纸
+                </div>
+            
+        
+      
+    
+
+    
+
+        
+            <div class="post-head-meta-center">
+        
+                
+                    <span>最近更新：2026-06-10</span> 
+                
+                
+                    
+                        &nbsp; | &nbsp;
+                    
+                     <span>字数总计：831</span>
+                
+                
+                    
+                        &nbsp; | &nbsp;
+                    
+                    <span>阅读估时：3分钟</span>
+                
+                
+            </div>
+    
+
+    <div class="post-md">
+        
+            
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%B8%80%E3%80%81PowerShell-%E8%84%9A%E6%9C%AC"><span class="post-toc-text">一、PowerShell 脚本</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%BA%8C%E3%80%81%E5%85%81%E8%AE%B8%E8%84%9A%E6%9C%AC%E6%89%A7%E8%A1%8C"><span class="post-toc-text">二、允许脚本执行</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%B8%89%E3%80%81%E4%BB%BB%E5%8A%A1%E8%AE%A1%E5%88%92%E7%A8%8B%E5%BA%8F"><span class="post-toc-text">三、任务计划程序</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%9B%9B%E3%80%81%E4%BB%BB%E5%8A%A1%E8%AE%A1%E5%88%92%E7%A8%8B%E5%BA%8F%E3%80%8C%E7%99%BB%E5%BD%95%E6%97%B6%E3%80%8D%E8%A7%A6%E5%8F%91"><span class="post-toc-text">四、任务计划程序「登录时」触发</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%BA%94%E3%80%81%E6%B3%A8%E6%84%8F%E7%82%B9"><span class="post-toc-text">五、注意点</span></a></li></ol>
+            
+        
+        <div class=".article-gallery"><blockquote>
+<p>可以用 <code>PowerShell 脚本</code> + <code>Windows 任务计划程序</code> 搞定，不用装第三方软件。思路是：写一个 .ps1脚本，从 Bing 接口拉当天 UHD 图 → 存到图片目录 → 调用 user32.dll设桌面；再用<code>任务计划程序</code>每天定时触发执行。</p>
+</blockquote>
+<h2 id="一、PowerShell-脚本"><a href="#一、PowerShell-脚本" class="headerlink" title="一、PowerShell 脚本"></a>一、PowerShell 脚本</h2><p>建议放到如下目录：<code>C:\Scripts\BingWallpaper.ps1</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Bing 每日壁纸 → 桌面（UHD）</span></span><br><span class="line"><span class="meta prompt_">$</span><span class="language-bash">SaveDir = Join-Path <span class="variable">$env</span>:USERPROFILE <span class="string">&quot;Pictures\BingWallpapers&quot;</span></span></span><br><span class="line"><span class="meta prompt_">$</span><span class="language-bash">ApiUrl  = <span class="string">&quot;https://www.bing.com/HPImageArchive.aspx?format=js&amp;idx=0&amp;n=1&amp;mkt=zh-CN&quot;</span></span></span><br><span class="line"></span><br><span class="line">if (-not (Test-Path $SaveDir)) &#123;</span><br><span class="line">    New-Item -ItemType Directory -Path $SaveDir | Out-Null</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">$</span><span class="language-bash">json  = Invoke-RestMethod -Uri <span class="variable">$ApiUrl</span></span></span><br><span class="line"><span class="meta prompt_">$</span><span class="language-bash">img   = <span class="variable">$json</span>.images[0]</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">UHD 原图</span></span><br><span class="line"><span class="meta prompt_">$</span><span class="language-bash">imgUrl  = <span class="string">&quot;https://www.bing.com&quot;</span> + <span class="variable">$img</span>.urlbase + <span class="string">&quot;_UHD.jpg&quot;</span></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">防重名：日期+title</span></span><br><span class="line"><span class="meta prompt_">$</span><span class="language-bash"><span class="built_in">date</span>    = <span class="variable">$img</span>.startdate</span></span><br><span class="line"><span class="meta prompt_">$</span><span class="language-bash">title   = (<span class="variable">$img</span>.title -replace <span class="string">&#x27;[\/:*?&quot;&lt;&gt;|]&#x27;</span>,<span class="string">&#x27;_&#x27;</span>)</span></span><br><span class="line"><span class="meta prompt_">$</span><span class="language-bash">outFile = Join-Path <span class="variable">$SaveDir</span> <span class="string">&quot;<span class="variable">$date</span>`_<span class="variable">$title</span>.jpg&quot;</span></span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">若当天已下载则跳过</span></span><br><span class="line">if (-not (Test-Path $outFile)) &#123;</span><br><span class="line">    Invoke-WebRequest -Uri $imgUrl -OutFile $outFile -UseBasicParsing</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">设置桌面壁纸（SPI_SETDESKWALLPAPER = 20）</span></span><br><span class="line">Add-Type @&quot;</span><br><span class="line">using System;</span><br><span class="line">using System.Runtime.InteropServices;</span><br><span class="line">public class Wallpaper &#123;</span><br><span class="line"> [DllImport(&quot;user32.dll&quot;,CharSet=CharSet.Auto)]</span><br><span class="line"> public static extern int SystemParametersInfo(int uAction,int uParam,string lpvParam,int fuWinIni);</span><br><span class="line">&#125;</span><br><span class="line">&quot;@</span><br><span class="line">[Wallpaper]::SystemParametersInfo(20,0,$outFile,3)</span><br></pre></td></tr></table></figure>
+<p><strong>逻辑</strong>：调 Bing HPImageArchive接口拿当天图 → 下 UHD 原图 → 写 Pictures\BingWallpapers\YYYYMMDD_标题.jpg→ 用 SystemParametersInfo设桌面。  </p>
+<blockquote>
+<p>若 Bing 国内偶尔不通，可把 mkt=zh-CN换成 mkt=en-US，并把 _UHD.jpg改成 $img.url（默认 1920×1080）。</p>
+</blockquote>
+<h2 id="二、允许脚本执行"><a href="#二、允许脚本执行" class="headerlink" title="二、允许脚本执行"></a>二、允许脚本执行</h2><p>用<strong>管理员</strong>PowerShell​ 执行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser</span><br></pre></td></tr></table></figure>
+<p>作用：允许当前用户运行本地 PowerShell 脚本（.ps1）<br>先手动测一把，确保壁纸能换：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">powershell -ExecutionPolicy Bypass -File &quot;C:\Scripts\BingWallpaper.ps1&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="三、任务计划程序"><a href="#三、任务计划程序" class="headerlink" title="三、任务计划程序"></a>三、任务计划程序</h2><p>1、<code>Win + R</code>→ <code>taskschd.msc</code>回车<br>2、右侧【创建基本任务​】</p>
+<ul>
+<li>名称：Daily Bing Wallpaper</li>
+<li>触发器：每天​ → 时间 07:00:00</li>
+<li>操作：启动程序​<br> 程序/脚本：<ul>
+<li>程序/脚本：<code>powershell.exe</code></li>
+<li>添加参数：<code>-WindowStyle Hidden -ExecutionPolicy Bypass -File &quot;C:\Scripts\BingWallpaper.ps1&quot;</code>  </li>
+</ul>
+</li>
+</ul>
+<p>3、完成 → 在“任务计划程序库”双击该任务</p>
+<ul>
+<li>常规​ → 勾选 “使用最高权限运行”​</li>
+<li>条件 → 取消 “只有在计算机使用交流电供电时才启动”（若用笔记本）</li>
+</ul>
+<p>4、右键 → 运行​ 测试一次，看桌面是否切换。<br><img src="/images/1e10b148-3410-49e4-8105-f3e55d54189f.webp"><br><img src="/images/820a12f7-7554-4fe7-8e69-fcb07b9216ce.webp"><br><img src="/images/5dce1dcc-d4f8-4b7f-9d37-9c523e48fa9e.webp"></p>
+<h2 id="四、任务计划程序「登录时」触发"><a href="#四、任务计划程序「登录时」触发" class="headerlink" title="四、任务计划程序「登录时」触发"></a>四、任务计划程序「登录时」触发</h2><p>1、脚本不用改，还是<code>C:\Scripts\BingWallpaper.ps1</code><br>2、新建「登录时」任务</p>
+<ul>
+<li>Win + R→ taskschd.msc</li>
+<li>右侧 创建基本任务</li>
+<li>名称：<code>BingWallpaper-OnLogon</code></li>
+<li>触发器：当用户登录时</li>
+<li>程序/脚本：powershell.exe</li>
+<li>添加参数：<code>-WindowStyle Hidden -ExecutionPolicy Bypass -File &quot;C:\Scripts\BingWallpaper.ps1&quot;</code></li>
+<li>完成</li>
+</ul>
+<p>3、关键设置（一定要做）<br>在<strong>任务计划程序库</strong>中找到刚建的任务 → 右键 → 属性：</p>
+<table>
+<thead>
+<tr>
+<th align="left">选项卡</th>
+<th align="left">设置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>常规</strong></td>
+<td align="left">✅ 使用最高权限运行</td>
+</tr>
+<tr>
+<td align="left"><strong>常规</strong></td>
+<td align="left">配置为：<strong>Windows 10 / 11</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>触发器</strong></td>
+<td align="left">编辑 → ✅ 延迟任务 <strong>30 秒</strong>（建议）</td>
+</tr>
+<tr>
+<td align="left"><strong>条件</strong></td>
+<td align="left">❌ 取消“只有在交流电源下才启动”</td>
+</tr>
+<tr>
+<td align="left"><strong>设置</strong></td>
+<td align="left">✅ 如果任务已在运行，则不启动新实例</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><em>💡 为什么延迟 30 秒？</em><br><em>登录瞬间桌面还没完全加载，稍等一下设壁纸成功率更高。</em></p>
+</blockquote>
+<p>4、测试</p>
+<ul>
+<li>右键任务 → 运行</li>
+<li>或 注销 → 重新登录</li>
+</ul>
+<h2 id="五、注意点"><a href="#五、注意点" class="headerlink" title="五、注意点"></a>五、注意点</h2><ul>
+<li>必须 用户已登录 + 有桌面会话（壁纸 API 对当前 session 生效）；不选“不管是否登录都运行”更稳。</li>
+<li>若公司有代理，需在脚本里加 -Proxy或给 WinHTTP 配代理。</li>
+<li>想留历史壁纸：脚本已按日期存文件；想单张覆盖可固定文件名如<code>bing_today.jpg</code>。</li>
+</ul>
+</div>
+    </div>
+
+    <div class="post-meta">
+        <i>
+        
+            <span>2026-06-08</span>
+            
+                <span>该篇文章被 卡普</span>
+            
+            
+                <span>打上标签:
+                    
+                    
+                        <a href='/tags/windows/'>
+                            windows
+                        </a>
+                    
+                        <a href='/tags/bing%E5%A3%81%E7%BA%B8/'>
+                            bing壁纸
+                        </a>
+                    
+                </span>
+             
+             
+                <span>归为分类:
+                    
+                    
+                        <a href='/categories/%E6%8A%80%E6%9C%AF/'>
+                            技术
+                        </a>
+                    
+                </span>
+            
+        
+        </i>
+    </div>
+    <br>
+    
+    
+        
+            
+    
+            <div class="post-footer-pre-next">
+                
+
+                
+                    <span class="post-footer-pre-next-last-span-right">下一篇：<a href="/p/d322008e.html">各类免费markdown编辑器汇总（含公众号排版工具）</a>
+                    </span>
+                
+            </div>
+    
+        
+    
+
+    
+        
+
+     
+</div>
+
+
+
+
+                    
+
+                    <div class="footer">
+    
+        <span> 
+            © 2024-2025 China 
+
+            
+                
+
+            
+        </span>
+       
+    
+</div>
+
+
+
+<!--这是指一条线往下的内容-->
+<div class="footer-last">
+    
+            <span>🌊腾出空，去生活，拥抱世界的精彩🌊</span>
+            
+                <span class="footer-last-span-right"><i>本站由<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">Hexo</a>驱动｜使用<a target="_blank" rel="noopener" href="https://github.com/HiNinoJay/hexo-theme-A4">Hexo-theme-A4</a>主题</i></span>
+            
+    
+</div>
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!--目录-->
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js" type="text/javascript" ></script>
+        
+<script src="/js/toc.js"></script>
+
+    
+
+    
+<script src="/js/randomHeaderContent.js"></script>
+
+    <!--回到顶部按钮-->
+    
+        
+<script src="/js/returnToTop.js"></script>
+
+    
+
+    
+        
+<script src="/js/returnToLastPage.js"></script>
+
+    
+
+
+
+
+
+<script src="/js/lightgallery/lightgallery.umd.min.js"></script>
+
+
+
+<script src="/js/lightgallery/plugins/lg-thumbnail.umd.min.js"></script>
+
+
+
+<script src="/js/lightgallery/plugins/lg-fullscreen.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-autoplay.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-zoom.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-rotate.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-paper.umd.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+     
+    if (typeof lightGallery !== "undefined") {
+        var options1 = {
+            selector: '.gallery-item',
+            plugins: [lgThumbnail, lgFullscreen, lgAutoplay, lgZoom, lgRotate, lgPager], // 启用插件
+            thumbnail: true,          // 显示缩略图
+            zoom: true,               // 启用缩放功
+            rotate: true,             // 启用旋转功能能
+            autoplay: true,        // 启用自动播放功能
+            fullScreen: true,      // 启用全屏功能
+            pager: false, //页码,
+            zoomFromOrigin: true,   // 从原始位置缩放
+            actualSize: true,       // 启用查看实际大小的功能
+            enableZoomAfter: 300,    // 延迟缩放，确保图片加载完成后可缩放
+        };
+        // 对所有文章中的画廊容器进行初始化
+        var articleGalleries = document.querySelectorAll('.article-gallery, .gi-gallery');
+        articleGalleries.forEach(function(gallery) {
+            lightGallery(gallery, options1);
+        });
+    }
+    
+</script>
+
+
+                </div>
+            
+            
+                <!-- 回到顶部的按钮-->
+                <div class="progress-wrap shadow-drop-2-bottom">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            
+            
+                <!-- 返回的按钮-->
+                <div class="return-to-last-progress-wrap shadow-drop-2-bottom">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            
+    </body>
+</html>
+<script src="/js/emojiHandler.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        wrapEmojis('.paper');
+    });
+</script>

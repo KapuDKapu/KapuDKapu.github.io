@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <meta name="description" content="" />
+    <meta name="hexo-theme-A4" content="v2.0.1" />
+    <link rel="alternate icon" type="image/webp" href="/img/1780807465903.png">
+    <title>分享志</title>
+
+    
+        
+<link rel="stylesheet" href="/css/highlight/style1.css">
+
+        
+<link rel="stylesheet" href="/css/reset.css">
+
+        
+<link rel="stylesheet" href="/css/markdown.css">
+
+        
+<link rel="stylesheet" href="/css/fonts.css">
+
+         <!--注意：首页既不是post也不是page-->
+        
+
+        
+<link rel="stylesheet" href="/css/ui.css">
+
+        
+<link rel="stylesheet" href="/css/style.css">
+
+
+        
+            <!--返回顶部css-->
+            
+<link rel="stylesheet" href="/css/returnToTop.css">
+
+            
+<link rel="stylesheet" href="/css/unicons.css">
+
+        
+        
+            <!--目录-->
+            
+<link rel="stylesheet" href="/css/toc.css">
+
+        
+    
+
+    
+        
+<link rel="stylesheet" href="/css/returnToLastPage.css">
+
+    
+
+    
+<link rel="stylesheet" href="/css/lightgallery-bundle.min.css">
+
+
+    
+        
+<link rel="stylesheet" href="/css/custom.css">
+
+    
+
+    
+
+    <link rel='stylesheet' href='/css/fonts.css' /> 
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+    
+    
+
+    
+    
+
+
+
+    
+
+    
+    
+
+
+
+
+    
+    
+
+
+    <body>
+        
+        <script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.80/darkreader.min.js"></script>
+        <script>
+            const drOptions = {
+                brightness: 100,
+                contrast: 95,
+                sepia: 10,
+                darkSchemeTextColor: '#e0e0e0',  // 粉笔白文字
+                darkSchemeBackgroundColor: '#1e1e1e', // 黑板灰背景
+                scrollbarStyle: 'native'
+            };
+
+            const savedTheme = localStorage.getItem('theme');
+            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
+                DarkReader.enable(drOptions);
+            }
+
+            window.addEventListener('DOMContentLoaded', () => {
+                const btn = document.createElement('button');
+                btn.innerText = '🌓';
+                // 按钮样式：仿照你之前的布局，放在右下角
+                btn.style.cssText = `
+                    position: fixed; 
+                    bottom: 40px; 
+                    left: 42px; 
+                    z-index: 9999;
+                    width: 44px; 
+                    height: 44px; 
+                    border-radius: 50%; 
+                    border: 1px solid #ccc;
+                    background: #f7f5ed; 
+                    color: #000;
+                    font-size: 22px; 
+                    cursor: pointer;
+                    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+                    transition: transform 0.2s, background-color 0.3s;
+                `;
+                // 根据当前状态初始化按钮颜色
+                if (DarkReader.isEnabled()) {
+                    btn.style.backgroundColor = '#1e1e1e';
+                    btn.style.color = '#fff';
+                }
+                btn.onmouseover = () => btn.style.transform = 'scale(1.1)';
+                btn.onmouseout = () => btn.style.transform = 'scale(1)';
+                document.body.appendChild(btn);
+                // 点击切换逻辑
+                btn.addEventListener('click', () => {
+                    if (DarkReader.isEnabled()) {
+                        DarkReader.disable();
+                        localStorage.setItem('theme', 'light');
+                        btn.style.backgroundColor = '#f7f5ed';
+                        btn.style.color = '#000';
+                    } else {
+                        DarkReader.enable(drOptions);
+                        localStorage.setItem('theme', 'dark');
+                        btn.style.backgroundColor = '#1e1e1e';
+                        btn.style.color = '#fff';
+                    }
+                });
+            });
+        </script>
+        
+        
+            
+        
+        <div class="paper">
+
+            
+
+            
+                <div class="shadow-drop-2-bottom paper-main">
+                    
+
+
+<div class="header">
+    <div class="header-container">
+        <style>
+            .header-img {
+                width: 56px;
+                height: auto;
+                object-fit: cover; /* 保持图片比例 */
+                transition: transform 0.3s ease-in-out; 
+                border-radius: 0; 
+            }
+            
+        </style>
+        <img 
+            alt="^-^" 
+            cache-control="max-age=86400" 
+            class="header-img" 
+            src="/img/1780807465903.png" 
+        />
+        <div class="header-content">
+            <a class="logo" href="/">分享志</a> 
+            <span class="description">腾出空，去生活，拥抱世界的精彩。</span> 
+        </div>
+    </div>
+    
+   
+    <ul class="nav">
+        
+            
+                <li><a href="/">首页</a></li>
+            
+        
+            
+                <li><a href="/list/">文章</a></li>
+            
+        
+            
+                <li><a href="/tags/">标签</a></li>
+            
+        
+            
+                <li><i>
+                    
+                        <a style="color: #4e7dde;" href="/categories/">分类</a>
+                    
+                </i></li>
+            
+        
+    </ul>
+</div>
+
+                    
+                    
+
+                    
+                    
+                        
+
+<div class="archive-list">
+  <ul class="archive">
+
+    
+    <span><span class="darkmode-ignore">🔖</span><i>技术</i></span>
+          
+    
+
+    
+    
+
+    
+    
+
+  
+    
+        <li>
+          <span class="archive-date">2026/06/08</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/58ff8054.html">无需软件实现每天自动更换bing壁纸</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2026/06/01</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/a907bbeb.html">我用AI生成了一套Hexo后台管理系统</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2026/05/28</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/678fb61c.html">命令行把代码推送到Cloudflare Pages</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2024/02/23</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/333b0804.html">C盘空间清理</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2024/02/07</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/879dcc06.html">卸载宝塔面板</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2024/02/06</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/23e3bb44.html">windows鼠标右击单击菜单添加打开方式</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2024/01/30</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/40f457af.html">windows11家庭中文版开启Hyper-V</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2024/01/30</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/4cee54f.html">在 Windows 11 上安装 Windows Subsystem for Android 并安装运行 APK 文件</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2024/01/29</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/b44d4c2e.html">利用NotionNext+Notion免费建站</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2024/01/23</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/414644d0.html">hexo后台管理插件：hexo-admin</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2024/01/23</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/f88fef03.html">Edge浏览器的IE模式</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2023/01/16</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/85ced0f8.html">动手创建自己的个人站点</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2023/01/06</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/f10c43e9.html">freehost免费主机-体验免费搭建网站</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2022/12/31</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/d46009b7.html">使用docker安装halo博客系统</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2022/12/28</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/9ed5c15d.html">记一次笔记本安装CentOS 8</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2022/12/24</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/fb864b22.html">mysql数据库重置密码并开启外部访问</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2022/05/20</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/dd56da31.html">hexo站点自定义404页面</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2022/04/10</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/aff3921f.html">Python一行代码创建文件共享服务器</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2022/03/24</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/25a9da97.html">简单快速去掉快捷方式小箭头</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2022/02/25</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/8a8f3f3a.html">parseIdCard：python中身份证规则解析模块用法详解</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2022/02/25</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/a6abba55.html">python根据两个坐标的经纬度计算直线据路</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2022/02/25</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/51d3a713.html">python获取当前运行操作系统的信息</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2022/01/18</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/5ca257f3.html">jmeter响应结果乱码</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2022/01/18</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/85036d73.html">mongodb开启外部访问</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2022/01/13</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/44be556e.html">HEXO : 无法加载文件hexo.ps1</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2022/01/06</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/381f58c9.html">JMeter生成随机数（Random、UUID）</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2021/12/17</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/9600b488.html">Django与Vue语法的冲突问题的解决方法</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2021/12/17</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/3c993fb8.html">Django DEBUG=True静态文件404问题</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2021/11/26</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/8fb13524.html">嫌图床不稳定？markdown嵌入图片base64编码，告别图床！</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2021/11/22</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/57c54e0.html">查询宝塔面板默认入口和账号密码</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2021/11/22</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/38fb0192.html">you-get下载视频</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2021/11/22</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/85be970b.html">SSH到云服务器的连接超时自动断开的解决方法</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2021/11/22</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/3875034b.html">Pip国内源</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2021/11/18</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/92943f4e.html">JMeter之bzm - Concurrency Thread Group</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2021/11/18</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/d22c88e1.html">JMeter_循环控制器和仅一次控制器</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2021/11/10</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/5440c34f.html">JMeter_事务控制器</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2021/11/10</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/c357b778.html">Linux安装jdk</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2021/10/09</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/a57d9736.html">更改本地文件夹的SVN地址</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2021/09/23</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/f5417429.html">使用Burp Suite进行简单的APP抓包</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2021/03/01</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/3788265159.html">Jupyter Notebook的安装和使用</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2021/03/01</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/1814739561.html">Hexo生成文章永久链接</a>
+          </div>
+        </li>
+    
+  
+    
+        <li>
+          <span class="archive-date">2021/02/16</span>
+          <div class="archive-main">
+              <a class="archive-title" href="/p/2109575971.html">npm配置国内源&amp;cnpm</a>
+          </div>
+        </li>
+    
+  
+  </ul>
+</div>
+
+                    
+
+                    <!--说明是文章post页面-->
+                    
+
+                    <div class="footer">
+    
+        <span> 
+            © 2024-2025 China 
+
+            
+                
+
+            
+        </span>
+       
+    
+</div>
+
+
+
+<!--这是指一条线往下的内容-->
+<div class="footer-last">
+    
+            <span>🌊腾出空，去生活，拥抱世界的精彩🌊</span>
+            
+                <span class="footer-last-span-right"><i>本站由<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">Hexo</a>驱动｜使用<a target="_blank" rel="noopener" href="https://github.com/HiNinoJay/hexo-theme-A4">Hexo-theme-A4</a>主题</i></span>
+            
+    
+</div>
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!--目录-->
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js" type="text/javascript" ></script>
+        
+<script src="/js/toc.js"></script>
+
+    
+
+    
+<script src="/js/randomHeaderContent.js"></script>
+
+    <!--回到顶部按钮-->
+    
+        
+<script src="/js/returnToTop.js"></script>
+
+    
+
+    
+        
+<script src="/js/returnToLastPage.js"></script>
+
+    
+
+
+
+
+
+<script src="/js/lightgallery/lightgallery.umd.min.js"></script>
+
+
+
+<script src="/js/lightgallery/plugins/lg-thumbnail.umd.min.js"></script>
+
+
+
+<script src="/js/lightgallery/plugins/lg-fullscreen.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-autoplay.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-zoom.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-rotate.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-paper.umd.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+     
+    if (typeof lightGallery !== "undefined") {
+        var options1 = {
+            selector: '.gallery-item',
+            plugins: [lgThumbnail, lgFullscreen, lgAutoplay, lgZoom, lgRotate, lgPager], // 启用插件
+            thumbnail: true,          // 显示缩略图
+            zoom: true,               // 启用缩放功
+            rotate: true,             // 启用旋转功能能
+            autoplay: true,        // 启用自动播放功能
+            fullScreen: true,      // 启用全屏功能
+            pager: false, //页码,
+            zoomFromOrigin: true,   // 从原始位置缩放
+            actualSize: true,       // 启用查看实际大小的功能
+            enableZoomAfter: 300,    // 延迟缩放，确保图片加载完成后可缩放
+        };
+        // 对所有文章中的画廊容器进行初始化
+        var articleGalleries = document.querySelectorAll('.article-gallery, .gi-gallery');
+        articleGalleries.forEach(function(gallery) {
+            lightGallery(gallery, options1);
+        });
+    }
+    
+</script>
+
+
+                </div>
+            
+            
+                <!-- 回到顶部的按钮-->
+                <div class="progress-wrap shadow-drop-2-bottom">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            
+            
+                <!-- 返回的按钮-->
+                <div class="return-to-last-progress-wrap shadow-drop-2-bottom">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            
+    </body>
+</html>
+<script src="/js/emojiHandler.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        wrapEmojis('.paper');
+    });
+</script>

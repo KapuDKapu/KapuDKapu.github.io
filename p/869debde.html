@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <meta name="description" content="icity优秀应用鉴赏：iBetter、iNote、iDaily" />
+    <meta name="hexo-theme-A4" content="v2.0.1" />
+    <link rel="alternate icon" type="image/webp" href="/img/1780807465903.png">
+    <title>分享志</title>
+
+    
+        
+<link rel="stylesheet" href="/css/highlight/style1.css">
+
+        
+<link rel="stylesheet" href="/css/reset.css">
+
+        
+<link rel="stylesheet" href="/css/markdown.css">
+
+        
+<link rel="stylesheet" href="/css/fonts.css">
+
+         <!--注意：首页既不是post也不是page-->
+        
+
+        
+<link rel="stylesheet" href="/css/ui.css">
+
+        
+<link rel="stylesheet" href="/css/style.css">
+
+
+        
+            <!--返回顶部css-->
+            
+<link rel="stylesheet" href="/css/returnToTop.css">
+
+            
+<link rel="stylesheet" href="/css/unicons.css">
+
+        
+        
+            <!--目录-->
+            
+<link rel="stylesheet" href="/css/toc.css">
+
+        
+    
+
+    
+        
+<link rel="stylesheet" href="/css/returnToLastPage.css">
+
+    
+
+    
+<link rel="stylesheet" href="/css/lightgallery-bundle.min.css">
+
+
+    
+        
+<link rel="stylesheet" href="/css/custom.css">
+
+    
+
+    
+
+    <link rel='stylesheet' href='/css/fonts.css' /> 
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+    
+    
+
+    
+    
+
+
+
+    
+
+    
+    
+
+
+
+
+    
+    
+
+
+    <body>
+        
+        <script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.80/darkreader.min.js"></script>
+        <script>
+            const drOptions = {
+                brightness: 100,
+                contrast: 95,
+                sepia: 10,
+                darkSchemeTextColor: '#e0e0e0',  // 粉笔白文字
+                darkSchemeBackgroundColor: '#1e1e1e', // 黑板灰背景
+                scrollbarStyle: 'native'
+            };
+
+            const savedTheme = localStorage.getItem('theme');
+            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
+                DarkReader.enable(drOptions);
+            }
+
+            window.addEventListener('DOMContentLoaded', () => {
+                const btn = document.createElement('button');
+                btn.innerText = '🌓';
+                // 按钮样式：仿照你之前的布局，放在右下角
+                btn.style.cssText = `
+                    position: fixed; 
+                    bottom: 40px; 
+                    left: 42px; 
+                    z-index: 9999;
+                    width: 44px; 
+                    height: 44px; 
+                    border-radius: 50%; 
+                    border: 1px solid #ccc;
+                    background: #f7f5ed; 
+                    color: #000;
+                    font-size: 22px; 
+                    cursor: pointer;
+                    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+                    transition: transform 0.2s, background-color 0.3s;
+                `;
+                // 根据当前状态初始化按钮颜色
+                if (DarkReader.isEnabled()) {
+                    btn.style.backgroundColor = '#1e1e1e';
+                    btn.style.color = '#fff';
+                }
+                btn.onmouseover = () => btn.style.transform = 'scale(1.1)';
+                btn.onmouseout = () => btn.style.transform = 'scale(1)';
+                document.body.appendChild(btn);
+                // 点击切换逻辑
+                btn.addEventListener('click', () => {
+                    if (DarkReader.isEnabled()) {
+                        DarkReader.disable();
+                        localStorage.setItem('theme', 'light');
+                        btn.style.backgroundColor = '#f7f5ed';
+                        btn.style.color = '#000';
+                    } else {
+                        DarkReader.enable(drOptions);
+                        localStorage.setItem('theme', 'dark');
+                        btn.style.backgroundColor = '#1e1e1e';
+                        btn.style.color = '#fff';
+                    }
+                });
+            });
+        </script>
+        
+        
+            
+                <div class="left-toc-container">
+                    <nav id="toc" class="bs-docs-sidebar"></nav>
+                </div>
+            
+        
+        <div class="paper">
+
+            
+
+            
+                <div class="shadow-drop-2-bottom paper-main">
+                    
+
+
+<div class="header">
+    <div class="header-container">
+        <style>
+            .header-img {
+                width: 56px;
+                height: auto;
+                object-fit: cover; /* 保持图片比例 */
+                transition: transform 0.3s ease-in-out; 
+                border-radius: 0; 
+            }
+            
+        </style>
+        <img 
+            alt="^-^" 
+            cache-control="max-age=86400" 
+            class="header-img" 
+            src="/img/1780807465903.png" 
+        />
+        <div class="header-content">
+            <a class="logo" href="/">分享志</a> 
+            <span class="description">腾出空，去生活，拥抱世界的精彩。</span> 
+        </div>
+    </div>
+    
+   
+    <ul class="nav">
+        
+            
+                <li><a href="/">首页</a></li>
+            
+        
+            
+                <li><a href="/list/">文章</a></li>
+            
+        
+            
+                <li><a href="/tags/">标签</a></li>
+            
+        
+            
+                <li><a href="/categories/">分类</a></li>
+            
+        
+    </ul>
+</div>
+
+                    
+                    
+
+                    
+                    
+
+                    <!--说明是文章post页面-->
+                    
+                        <div class="post-main">
+    
+
+    
+        
+            
+                <div class="post-main-title" style="text-align: center;">
+                    icity优秀应用鉴赏：iBetter、iNote、iDaily
+                </div>
+            
+        
+      
+    
+
+    
+
+        
+            <div class="post-head-meta-center">
+        
+                
+                    <span>最近更新：2026-05-21</span> 
+                
+                
+                    
+                        &nbsp; | &nbsp;
+                    
+                     <span>字数总计：807</span>
+                
+                
+                    
+                        &nbsp; | &nbsp;
+                    
+                    <span>阅读估时：2分钟</span>
+                
+                
+            </div>
+    
+
+    <div class="post-md">
+        
+            
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#iBetter-%E4%B9%A0%E6%83%AF%E8%B7%9F%E8%B8%AA%E5%BA%94%E7%94%A8"><span class="post-toc-text">iBetter-习惯跟踪应用</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E7%89%B9%E7%82%B9"><span class="post-toc-text">特点</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E7%95%8C%E9%9D%A2"><span class="post-toc-text">界面</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%85%B3%E4%BA%8E%E8%AE%A2%E9%98%85"><span class="post-toc-text">关于订阅</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#iNote-%E4%BD%A0%E7%9A%84%E4%B8%93%E5%B1%9E%E7%AC%94%E8%AE%B0%C2%B7%E6%97%A5%E8%AE%B0%C2%B7%E4%BE%BF%E7%AD%BE%C2%B7%E8%AE%B0%E4%BA%8B%E6%9C%AC%C2%B7%E5%A4%87%E5%BF%98%E5%BD%95"><span class="post-toc-text">iNote-你的专属笔记·日记·便签·记事本·备忘录</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E7%89%B9%E7%82%B9-1"><span class="post-toc-text">特点</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E7%95%8C%E9%9D%A2-1"><span class="post-toc-text">界面</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#iDaily-%E6%AF%8F%E6%97%A5%E7%8E%AF%E7%90%83%E8%A7%86%E9%87%8E"><span class="post-toc-text">iDaily-每日环球视野</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E7%89%B9%E7%82%B9-2"><span class="post-toc-text">特点</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E7%95%8C%E9%9D%A2-2"><span class="post-toc-text">界面</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80"><span class="post-toc-text">下载地址</span></a></li></ol>
+            
+        
+        <div class=".article-gallery"><p>我首先是找习惯管理应用找到了iBetter，然后在它的应用推荐里面发现一大堆icity旗下的应用，并下载并长期使用了iNote和iDaily。icity旗下还有好多应用，有符合自己需求的可以下载体验。  </p>
+<span id="more"></span>
+<p><img src="/images/1673946399.jpg"></p>
+<h2 id="iBetter-习惯跟踪应用"><a href="#iBetter-习惯跟踪应用" class="headerlink" title="iBetter-习惯跟踪应用"></a>iBetter-习惯跟踪应用</h2><div class="note note-success">
+    <div class="note-icon">✅</div>
+    <div class="note-content"><p>「iBetter·人生养成计划」，这是一个帮助你「养成好习惯」、「戒掉坏习惯」的 App，每天提醒和鼓励你，记录你的进步，还有超酷的勋章可以收集。</p>
+</div>
+  </div> 
+
+<p>iBetter算是目前我发现的IOS平台目前最好的兼具颜值和功能丰富符合我习惯的习惯管理应用，这么抠的我也付费入手了。</p>
+<h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><ul>
+<li>丰富的统计功能，可查看本月完成天数、连续天数，还有每月统计，每年统计，左右滑动可以看到具体的日期；</li>
+<li>丰富的图标</li>
+<li>支持补签</li>
+<li>支持密码锁钉和人脸解锁</li>
+<li>每日提醒：早上和晚上提醒你要坚持的习惯，绝不忘记；</li>
+<li>成就记录：让你看到每一天自己的成就，更加鼓舞；</li>
+<li>超酷勋章：超过100个超酷勋章等待你去赢得；</li>
+</ul>
+<h3 id="界面"><a href="#界面" class="headerlink" title="界面"></a>界面</h3><div class="gi-gallery"><a href="/images/300x0w1_jpg.jpg" class="gi-gallery-item gallery-item" data-sub-html=""><img src="/images/300x0w1_jpg.jpg" alt=""></a><a href="/images/300x0w2_jpg.jpg" class="gi-gallery-item gallery-item" data-sub-html=""><img src="/images/300x0w2_jpg.jpg" alt=""></a><a href="/images/300x0w3_jpg.jpg" class="gi-gallery-item gallery-item" data-sub-html=""><img src="/images/300x0w3_jpg.jpg" alt=""></a></div>
+
+<h3 id="关于订阅"><a href="#关于订阅" class="headerlink" title="关于订阅"></a>关于订阅</h3><p>付费的话支持30元买断，或者3元每月连续付费。订阅用户支持密码保护以及更多习惯数量。</p>
+<h2 id="iNote-你的专属笔记·日记·便签·记事本·备忘录"><a href="#iNote-你的专属笔记·日记·便签·记事本·备忘录" class="headerlink" title="iNote-你的专属笔记·日记·便签·记事本·备忘录"></a>iNote-你的专属笔记·日记·便签·记事本·备忘录</h2><div class="note note-success">
+    <div class="note-icon">✅</div>
+    <div class="note-content"><p>「iNote·灵感笔记」是一个功能强大、体验优异的笔记应用，让你随时记录下灵感妙想，并无限扩展补充。「多平台云同步」让你在不同设备间随时记录灵感，既有专为整理控设计的「笔记本系统」，又有充满细节的「图片版式」，「加密」与「备份」让你牢牢掌握自己的笔记档案。</p>
+</div>
+  </div> 
+
+<h3 id="特点-1"><a href="#特点-1" class="headerlink" title="特点"></a>特点</h3><ul>
+<li>无限扩展：每一条笔记都可以不断扩展，随时补充完善</li>
+<li>强大清单：便捷创建各种待办事项、计划规划</li>
+<li>超富文本：高亮、加粗、划重点，笔记更有条理</li>
+<li>笔记本系统：超强管理与归纳，让强迫症的你无比舒爽</li>
+<li>多平台云同步：在你的不同设备间随时记录灵感</li>
+<li>图片版式：最美的图片模板，分享至微博、微信和好友</li>
+<li>护眼模式：让眼睛更舒服！</li>
+<li>加密+备份：手势密码，iCloud 备份</li>
+</ul>
+<h3 id="界面-1"><a href="#界面-1" class="headerlink" title="界面"></a>界面</h3><div class="gi-gallery"><a href="/images/inote-1.jpg" class="gi-gallery-item gallery-item" data-sub-html=""><img src="/images/inote-1.jpg" alt=""></a><a href="/images/inote-32.jpg" class="gi-gallery-item gallery-item" data-sub-html=""><img src="/images/inote-32.jpg" alt=""></a><a href="/images/inote-3.jpg" class="gi-gallery-item gallery-item" data-sub-html=""><img src="/images/inote-3.jpg" alt=""></a></div>
+
+<h2 id="iDaily-每日环球视野"><a href="#iDaily-每日环球视野" class="headerlink" title="iDaily-每日环球视野"></a>iDaily-每日环球视野</h2><div class="note note-success">
+    <div class="note-icon">✅</div>
+    <div class="note-content"><p>「iDaily · 每日环球视野」是第一个提供超越 3000px 超高清分辨率图片的中文媒体应用，每天由中国最出色的图片编辑独家挑选，为读者奉上最高清晰度的全球视野体验。</p>
+</div>
+  </div> 
+
+<h3 id="特点-2"><a href="#特点-2" class="headerlink" title="特点"></a>特点</h3><ul>
+<li>超越视觉的震撼体验:3000px 超高清模式，前所未有的细节</li>
+<li>距离我:展示当前事件发生地点据自己的距离</li>
+<li>背景阅读:展示事件相关的维基百科解读、权威媒体报到，最人性化的文字阅读体验</li>
+<li>分享是美德:以排版优美的图文形式通过微博、微信与朋友们分享当天所有新闻事件</li>
+</ul>
+<h3 id="界面-2"><a href="#界面-2" class="headerlink" title="界面"></a>界面</h3><div class="gi-gallery"><a href="/images/2020201176.jpg" class="gi-gallery-item gallery-item" data-sub-html=""><img src="/images/2020201176.jpg" alt=""></a><a href="/images/2020201177.jpg" class="gi-gallery-item gallery-item" data-sub-html=""><img src="/images/2020201177.jpg" alt=""></a><a href="/images/2020201178.jpg" class="gi-gallery-item gallery-item" data-sub-html=""><img src="/images/2020201178.jpg" alt=""></a></div>
+
+<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><div class="centered">
+<button class="blue button" onclick= "{location.href='https://icity.ly/'}">icity官网</button>
+<button class="blue button" onclick= "{location.href='https://apps.apple.com/cn/app/id1262378864'}">iBetter</button>
+<button class="blue button" onclick= "{location.href='https://apps.apple.com/cn/app/id1479356575'}">iNote</button>
+<button class="blue button" onclick= "{location.href='https://apps.apple.com/cn/app/id506081667'}">iDaily</button>
+<div>
+
+</div>
+    </div>
+
+    <div class="post-meta">
+        <i>
+        
+            <span>2023-01-14</span>
+            
+                <span>该篇文章被 卡普</span>
+            
+            
+                <span>打上标签:
+                    
+                    
+                        <a href='/tags/%E4%B9%A0%E6%83%AF%E5%85%BB%E6%88%90/'>
+                            习惯养成
+                        </a>
+                    
+                        <a href='/tags/iBetter/'>
+                            iBetter
+                        </a>
+                    
+                        <a href='/tags/iNote/'>
+                            iNote
+                        </a>
+                    
+                        <a href='/tags/iDaily/'>
+                            iDaily
+                        </a>
+                    
+                </span>
+             
+             
+                <span>归为分类:
+                    
+                    
+                        <a href='/categories/%E8%BD%AF%E4%BB%B6/'>
+                            软件
+                        </a>
+                    
+                </span>
+            
+        
+        </i>
+    </div>
+    <br>
+    
+    
+        
+            
+    
+            <div class="post-footer-pre-next">
+                
+                    <span>上一篇：<a href='/p/e0e0d423.html'>内容快速分享服务站点</a></span>
+                
+
+                
+                    <span class="post-footer-pre-next-last-span-right">下一篇：<a href="/p/c8672b57.html">优秀的hexo主题推荐</a>
+                    </span>
+                
+            </div>
+    
+        
+    
+
+    
+        
+
+     
+</div>
+
+
+
+
+                    
+
+                    <div class="footer">
+    
+        <span> 
+            © 2024-2025 China 
+
+            
+                
+
+            
+        </span>
+       
+    
+</div>
+
+
+
+<!--这是指一条线往下的内容-->
+<div class="footer-last">
+    
+            <span>🌊腾出空，去生活，拥抱世界的精彩🌊</span>
+            
+                <span class="footer-last-span-right"><i>本站由<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">Hexo</a>驱动｜使用<a target="_blank" rel="noopener" href="https://github.com/HiNinoJay/hexo-theme-A4">Hexo-theme-A4</a>主题</i></span>
+            
+    
+</div>
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!--目录-->
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js" type="text/javascript" ></script>
+        
+<script src="/js/toc.js"></script>
+
+    
+
+    
+<script src="/js/randomHeaderContent.js"></script>
+
+    <!--回到顶部按钮-->
+    
+        
+<script src="/js/returnToTop.js"></script>
+
+    
+
+    
+        
+<script src="/js/returnToLastPage.js"></script>
+
+    
+
+
+
+
+
+<script src="/js/lightgallery/lightgallery.umd.min.js"></script>
+
+
+
+<script src="/js/lightgallery/plugins/lg-thumbnail.umd.min.js"></script>
+
+
+
+<script src="/js/lightgallery/plugins/lg-fullscreen.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-autoplay.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-zoom.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-rotate.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-paper.umd.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+     
+    if (typeof lightGallery !== "undefined") {
+        var options1 = {
+            selector: '.gallery-item',
+            plugins: [lgThumbnail, lgFullscreen, lgAutoplay, lgZoom, lgRotate, lgPager], // 启用插件
+            thumbnail: true,          // 显示缩略图
+            zoom: true,               // 启用缩放功
+            rotate: true,             // 启用旋转功能能
+            autoplay: true,        // 启用自动播放功能
+            fullScreen: true,      // 启用全屏功能
+            pager: false, //页码,
+            zoomFromOrigin: true,   // 从原始位置缩放
+            actualSize: true,       // 启用查看实际大小的功能
+            enableZoomAfter: 300,    // 延迟缩放，确保图片加载完成后可缩放
+        };
+        // 对所有文章中的画廊容器进行初始化
+        var articleGalleries = document.querySelectorAll('.article-gallery, .gi-gallery');
+        articleGalleries.forEach(function(gallery) {
+            lightGallery(gallery, options1);
+        });
+    }
+    
+</script>
+
+
+                </div>
+            
+            
+                <!-- 回到顶部的按钮-->
+                <div class="progress-wrap shadow-drop-2-bottom">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            
+            
+                <!-- 返回的按钮-->
+                <div class="return-to-last-progress-wrap shadow-drop-2-bottom">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            
+    </body>
+</html>
+<script src="/js/emojiHandler.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        wrapEmojis('.paper');
+    });
+</script>

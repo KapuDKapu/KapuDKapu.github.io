@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <meta name="description" content="Jupyter Notebook的安装和使用" />
+    <meta name="hexo-theme-A4" content="v2.0.1" />
+    <link rel="alternate icon" type="image/webp" href="/img/1780807465903.png">
+    <title>分享志</title>
+
+    
+        
+<link rel="stylesheet" href="/css/highlight/style1.css">
+
+        
+<link rel="stylesheet" href="/css/reset.css">
+
+        
+<link rel="stylesheet" href="/css/markdown.css">
+
+        
+<link rel="stylesheet" href="/css/fonts.css">
+
+         <!--注意：首页既不是post也不是page-->
+        
+
+        
+<link rel="stylesheet" href="/css/ui.css">
+
+        
+<link rel="stylesheet" href="/css/style.css">
+
+
+        
+            <!--返回顶部css-->
+            
+<link rel="stylesheet" href="/css/returnToTop.css">
+
+            
+<link rel="stylesheet" href="/css/unicons.css">
+
+        
+        
+            <!--目录-->
+            
+<link rel="stylesheet" href="/css/toc.css">
+
+        
+    
+
+    
+        
+<link rel="stylesheet" href="/css/returnToLastPage.css">
+
+    
+
+    
+<link rel="stylesheet" href="/css/lightgallery-bundle.min.css">
+
+
+    
+        
+<link rel="stylesheet" href="/css/custom.css">
+
+    
+
+    
+
+    <link rel='stylesheet' href='/css/fonts.css' /> 
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+    
+    
+
+    
+    
+
+
+
+    
+
+    
+    
+
+
+
+
+    
+    
+
+
+    <body>
+        
+        <script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.80/darkreader.min.js"></script>
+        <script>
+            const drOptions = {
+                brightness: 100,
+                contrast: 95,
+                sepia: 10,
+                darkSchemeTextColor: '#e0e0e0',  // 粉笔白文字
+                darkSchemeBackgroundColor: '#1e1e1e', // 黑板灰背景
+                scrollbarStyle: 'native'
+            };
+
+            const savedTheme = localStorage.getItem('theme');
+            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
+                DarkReader.enable(drOptions);
+            }
+
+            window.addEventListener('DOMContentLoaded', () => {
+                const btn = document.createElement('button');
+                btn.innerText = '🌓';
+                // 按钮样式：仿照你之前的布局，放在右下角
+                btn.style.cssText = `
+                    position: fixed; 
+                    bottom: 40px; 
+                    left: 42px; 
+                    z-index: 9999;
+                    width: 44px; 
+                    height: 44px; 
+                    border-radius: 50%; 
+                    border: 1px solid #ccc;
+                    background: #f7f5ed; 
+                    color: #000;
+                    font-size: 22px; 
+                    cursor: pointer;
+                    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+                    transition: transform 0.2s, background-color 0.3s;
+                `;
+                // 根据当前状态初始化按钮颜色
+                if (DarkReader.isEnabled()) {
+                    btn.style.backgroundColor = '#1e1e1e';
+                    btn.style.color = '#fff';
+                }
+                btn.onmouseover = () => btn.style.transform = 'scale(1.1)';
+                btn.onmouseout = () => btn.style.transform = 'scale(1)';
+                document.body.appendChild(btn);
+                // 点击切换逻辑
+                btn.addEventListener('click', () => {
+                    if (DarkReader.isEnabled()) {
+                        DarkReader.disable();
+                        localStorage.setItem('theme', 'light');
+                        btn.style.backgroundColor = '#f7f5ed';
+                        btn.style.color = '#000';
+                    } else {
+                        DarkReader.enable(drOptions);
+                        localStorage.setItem('theme', 'dark');
+                        btn.style.backgroundColor = '#1e1e1e';
+                        btn.style.color = '#fff';
+                    }
+                });
+            });
+        </script>
+        
+        
+            
+                <div class="left-toc-container">
+                    <nav id="toc" class="bs-docs-sidebar"></nav>
+                </div>
+            
+        
+        <div class="paper">
+
+            
+
+            
+                <div class="shadow-drop-2-bottom paper-main">
+                    
+
+
+<div class="header">
+    <div class="header-container">
+        <style>
+            .header-img {
+                width: 56px;
+                height: auto;
+                object-fit: cover; /* 保持图片比例 */
+                transition: transform 0.3s ease-in-out; 
+                border-radius: 0; 
+            }
+            
+        </style>
+        <img 
+            alt="^-^" 
+            cache-control="max-age=86400" 
+            class="header-img" 
+            src="/img/1780807465903.png" 
+        />
+        <div class="header-content">
+            <a class="logo" href="/">分享志</a> 
+            <span class="description">腾出空，去生活，拥抱世界的精彩。</span> 
+        </div>
+    </div>
+    
+   
+    <ul class="nav">
+        
+            
+                <li><a href="/">首页</a></li>
+            
+        
+            
+                <li><a href="/list/">文章</a></li>
+            
+        
+            
+                <li><a href="/tags/">标签</a></li>
+            
+        
+            
+                <li><a href="/categories/">分类</a></li>
+            
+        
+    </ul>
+</div>
+
+                    
+                    
+
+                    
+                    
+
+                    <!--说明是文章post页面-->
+                    
+                        <div class="post-main">
+    
+
+    
+        
+            
+                <div class="post-main-title" style="text-align: center;">
+                    Jupyter Notebook的安装和使用
+                </div>
+            
+        
+      
+    
+
+    
+
+        
+            <div class="post-head-meta-center">
+        
+                
+                    <span>最近更新：2026-05-21</span> 
+                
+                
+                    
+                        &nbsp; | &nbsp;
+                    
+                     <span>字数总计：799</span>
+                
+                
+                    
+                        &nbsp; | &nbsp;
+                    
+                    <span>阅读估时：2分钟</span>
+                
+                
+            </div>
+    
+
+    <div class="post-md">
+        
+            
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1%E3%80%81%E7%AE%80%E4%BB%8B"><span class="post-toc-text">1、简介</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2%E3%80%81%E5%AE%89%E8%A3%85"><span class="post-toc-text">2、安装</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3%E3%80%81%E8%BF%90%E8%A1%8C%E5%92%8C%E5%85%B3%E9%97%AD"><span class="post-toc-text">3、运行和关闭</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-1%E3%80%81%E8%BF%90%E8%A1%8C"><span class="post-toc-text">3.1、运行</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-2%E3%80%81%E5%85%B3%E9%97%AD"><span class="post-toc-text">3.2、关闭</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#4%E3%80%81%E4%BD%BF%E7%94%A8"><span class="post-toc-text">4、使用</span></a></li></ol>
+            
+        
+        <div class=".article-gallery"><h2 id="1、简介"><a href="#1、简介" class="headerlink" title="1、简介"></a>1、简介</h2><p>Jupyter Notebook 的本质是一个 Web 应用程序，便于创建和共享文学化程序文档。支持运行 40 多种编程语言，支持实时代码，代码高亮，，数学方程，可视化和 markdown。<br>你可以把它理解成一个网页版的代码编辑器。</p>
+<span id="more"></span>
+<h2 id="2、安装"><a href="#2、安装" class="headerlink" title="2、安装"></a>2、安装</h2><p>安装Jupyter Notebook前需要先安装python，因为它依赖用python。<br>官网给出两种安装方式：</p>
+<ul>
+<li>1、Anaconda<br>安装最新的Anaconda即可，因为Anaconda集成了Python，Jupyter Notebook以及其他常用的科学计算和数据科学包。</li>
+<li>2、pip<br>需要先安装python和pip，然后使用pip命令进行安装，安装命令如下    <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install --upgrade pip</span><br><span class="line">pip install jupyter</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>这里可以使用<a href="">国内源</a>来加速安装  </p>
+<h2 id="3、运行和关闭"><a href="#3、运行和关闭" class="headerlink" title="3、运行和关闭"></a>3、运行和关闭</h2><h3 id="3-1、运行"><a href="#3-1、运行" class="headerlink" title="3.1、运行"></a>3.1、运行</h3><p>运行的话只需要在cmd窗口执行如下命令即可  </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jupyter notebook</span><br></pre></td></tr></table></figure>
+
+<p>出现下面信息后说明启动成功了  </p>
+<p><img src="https://img.imgdb.cn/item/6030dc195f4313ce25871e32.jpg"><br>默认的端口是8888，如这个端口被占用了或者想使用别的端口启动的话，可以指定端口  </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jupyter notebook --port 9999</span><br></pre></td></tr></table></figure>
+<p>默认运行成功后会自动打开默认浏览器运行url，如果不想立即启动默认浏览器，可以运行如下命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jupyter notebook --no-browser</span><br></pre></td></tr></table></figure>
+
+<p>以后想要运行的话，直接在浏览器URL地址栏输入cmd窗口下面的URLs地址即可<br><img src="https://img.imgdb.cn/item/6030dc625f4313ce25874747.jpg"></p>
+<h3 id="3-2、关闭"><a href="#3-2、关闭" class="headerlink" title="3.2、关闭"></a>3.2、关闭</h3><p>windows的话，关闭cmd窗口或者在cmd窗口使用快捷键’ctrl+c’停止运行<br>linux的话，关闭运行的端口即可  </p>
+<h2 id="4、使用"><a href="#4、使用" class="headerlink" title="4、使用"></a>4、使用</h2><p>浏览器默认进入的页面显示的是下面的样子  </p>
+<p><img src="https://img.imgdb.cn/item/6030dc945f4313ce2587611c.jpg"><br>这里其实相当于一个文件浏览器，显示的是你执行’jupyter notebook’命令的文件夹路径下的文件，如果想要更改这个文件夹的话，只需要去对应的文件夹下执行运行令命即可 </p>
+<p><img src="https://img.imgdb.cn/item/6030dcbe5f4313ce258776d4.jpg"></p>
+<ul>
+<li>文件操作  </li>
+</ul>
+<p>选中文件后可以对选中的文件进行查看、关闭运行、删除等操作  </p>
+<p><img src="https://img.imgdb.cn/item/6030dced5f4313ce25878e2d.jpg"></p>
+<ul>
+<li>上传文件<br>通过右上角的upload按钮，可以将本地文件上传到运行Jupyter Notebook工作空间，然后进行编辑。  </li>
+</ul>
+<p><img src="https://img.imgdb.cn/item/6030dd265f4313ce2587a8d8.jpg"></p>
+<ul>
+<li>新建文件  </li>
+</ul>
+<p>新建的话，支持四种格式，python3（可运行）、Text File、Folder、Terminal。 </p>
+<p><img src="https://img.imgdb.cn/item/6030dd485f4313ce2587b7d0.jpg"></p>
+<p><strong>python3</strong>  </p>
+<p>新建的python文件初始页面如下。 </p>
+<p><img src="https://img.imgdb.cn/item/6030dd6e5f4313ce2587ca1d.jpg"></p>
+<p>在代码块内写的python语句是可以通过工具栏的运行来执行的。</p>
+<p><img src="https://img.imgdb.cn/item/6030dd945f4313ce2587daa9.jpg"></p>
+<p>直接保存的话，是使用默认的文件名保存，文件的后缀是’ipynb’，也可以通过’save as’来自定义文件名保存。</p>
+<p><img src="https://img.imgdb.cn/item/6030ddb45f4313ce2587eea1.jpg"></p>
+<p>工具栏其他的工具看下就明白了，不复杂。</p>
+<p><strong>Text File</strong>  </p>
+<p>txt文件的话，后缀默认就是txt，可以通过选择’Language’或者通过Rename File修改文件后缀来实现对应的代码高亮。</p>
+<p><img src="https://img.imgdb.cn/item/6030ddf15f4313ce25881b16.jpg"></p>
+<p><strong>Folder</strong>   </p>
+<p>文件夹的话就是在Jupyter工作空间的文件夹下新建一个文件夹，步骤是先使用默认名字建好文件夹然后再重命名。  </p>
+<p><img src="https://img.imgdb.cn/item/6030de175f4313ce25883627.jpg"></p>
+<p><strong>Terminal</strong> </p>
+<p>新建Terminal是在网页打开一个命令窗口，你是在windows下运行的Jupyter Notebook的话，打开的就是cmd窗口，在linux上运行Jupyter Notebook的话打开的就是shell窗口。</p>
+<p><img src="https://img.imgdb.cn/item/6030de395f4313ce25884f9e.jpg"></p>
+</div>
+    </div>
+
+    <div class="post-meta">
+        <i>
+        
+            <span>2021-03-01</span>
+            
+                <span>该篇文章被 卡普</span>
+            
+            
+                <span>打上标签:
+                    
+                    
+                        <a href='/tags/Python/'>
+                            Python
+                        </a>
+                    
+                        <a href='/tags/Jupyter-Notebook/'>
+                            Jupyter Notebook
+                        </a>
+                    
+                </span>
+             
+             
+                <span>归为分类:
+                    
+                    
+                        <a href='/categories/%E6%8A%80%E6%9C%AF/'>
+                            技术
+                        </a>
+                    
+                </span>
+            
+        
+        </i>
+    </div>
+    <br>
+    
+    
+        
+            
+    
+            <div class="post-footer-pre-next">
+                
+                    <span>上一篇：<a href='/p/427d288e.html'>第七次人口普查结果</a></span>
+                
+
+                
+                    <span class="post-footer-pre-next-last-span-right">下一篇：<a href="/p/1814739561.html">Hexo生成文章永久链接</a>
+                    </span>
+                
+            </div>
+    
+        
+    
+
+    
+        
+
+     
+</div>
+
+
+
+
+                    
+
+                    <div class="footer">
+    
+        <span> 
+            © 2024-2025 China 
+
+            
+                
+
+            
+        </span>
+       
+    
+</div>
+
+
+
+<!--这是指一条线往下的内容-->
+<div class="footer-last">
+    
+            <span>🌊腾出空，去生活，拥抱世界的精彩🌊</span>
+            
+                <span class="footer-last-span-right"><i>本站由<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">Hexo</a>驱动｜使用<a target="_blank" rel="noopener" href="https://github.com/HiNinoJay/hexo-theme-A4">Hexo-theme-A4</a>主题</i></span>
+            
+    
+</div>
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!--目录-->
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js" type="text/javascript" ></script>
+        
+<script src="/js/toc.js"></script>
+
+    
+
+    
+<script src="/js/randomHeaderContent.js"></script>
+
+    <!--回到顶部按钮-->
+    
+        
+<script src="/js/returnToTop.js"></script>
+
+    
+
+    
+        
+<script src="/js/returnToLastPage.js"></script>
+
+    
+
+
+
+
+
+<script src="/js/lightgallery/lightgallery.umd.min.js"></script>
+
+
+
+<script src="/js/lightgallery/plugins/lg-thumbnail.umd.min.js"></script>
+
+
+
+<script src="/js/lightgallery/plugins/lg-fullscreen.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-autoplay.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-zoom.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-rotate.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-paper.umd.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+     
+    if (typeof lightGallery !== "undefined") {
+        var options1 = {
+            selector: '.gallery-item',
+            plugins: [lgThumbnail, lgFullscreen, lgAutoplay, lgZoom, lgRotate, lgPager], // 启用插件
+            thumbnail: true,          // 显示缩略图
+            zoom: true,               // 启用缩放功
+            rotate: true,             // 启用旋转功能能
+            autoplay: true,        // 启用自动播放功能
+            fullScreen: true,      // 启用全屏功能
+            pager: false, //页码,
+            zoomFromOrigin: true,   // 从原始位置缩放
+            actualSize: true,       // 启用查看实际大小的功能
+            enableZoomAfter: 300,    // 延迟缩放，确保图片加载完成后可缩放
+        };
+        // 对所有文章中的画廊容器进行初始化
+        var articleGalleries = document.querySelectorAll('.article-gallery, .gi-gallery');
+        articleGalleries.forEach(function(gallery) {
+            lightGallery(gallery, options1);
+        });
+    }
+    
+</script>
+
+
+                </div>
+            
+            
+                <!-- 回到顶部的按钮-->
+                <div class="progress-wrap shadow-drop-2-bottom">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            
+            
+                <!-- 返回的按钮-->
+                <div class="return-to-last-progress-wrap shadow-drop-2-bottom">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            
+    </body>
+</html>
+<script src="/js/emojiHandler.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        wrapEmojis('.paper');
+    });
+</script>

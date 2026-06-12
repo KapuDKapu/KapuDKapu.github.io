@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <meta name="description" content="【网站分享】windows系统下载站--吻妻" />
+    <meta name="hexo-theme-A4" content="v2.0.1" />
+    <link rel="alternate icon" type="image/webp" href="/img/1780807465903.png">
+    <title>分享志</title>
+
+    
+        
+<link rel="stylesheet" href="/css/highlight/style1.css">
+
+        
+<link rel="stylesheet" href="/css/reset.css">
+
+        
+<link rel="stylesheet" href="/css/markdown.css">
+
+        
+<link rel="stylesheet" href="/css/fonts.css">
+
+         <!--注意：首页既不是post也不是page-->
+        
+
+        
+<link rel="stylesheet" href="/css/ui.css">
+
+        
+<link rel="stylesheet" href="/css/style.css">
+
+
+        
+            <!--返回顶部css-->
+            
+<link rel="stylesheet" href="/css/returnToTop.css">
+
+            
+<link rel="stylesheet" href="/css/unicons.css">
+
+        
+        
+            <!--目录-->
+            
+<link rel="stylesheet" href="/css/toc.css">
+
+        
+    
+
+    
+        
+<link rel="stylesheet" href="/css/returnToLastPage.css">
+
+    
+
+    
+<link rel="stylesheet" href="/css/lightgallery-bundle.min.css">
+
+
+    
+        
+<link rel="stylesheet" href="/css/custom.css">
+
+    
+
+    
+
+    <link rel='stylesheet' href='/css/fonts.css' /> 
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+    
+    
+
+    
+    
+
+
+
+    
+
+    
+    
+
+
+
+
+    
+    
+
+
+    <body>
+        
+        <script src="https://cdn.jsdelivr.net/npm/darkreader@4.9.80/darkreader.min.js"></script>
+        <script>
+            const drOptions = {
+                brightness: 100,
+                contrast: 95,
+                sepia: 10,
+                darkSchemeTextColor: '#e0e0e0',  // 粉笔白文字
+                darkSchemeBackgroundColor: '#1e1e1e', // 黑板灰背景
+                scrollbarStyle: 'native'
+            };
+
+            const savedTheme = localStorage.getItem('theme');
+            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
+                DarkReader.enable(drOptions);
+            }
+
+            window.addEventListener('DOMContentLoaded', () => {
+                const btn = document.createElement('button');
+                btn.innerText = '🌓';
+                // 按钮样式：仿照你之前的布局，放在右下角
+                btn.style.cssText = `
+                    position: fixed; 
+                    bottom: 40px; 
+                    left: 42px; 
+                    z-index: 9999;
+                    width: 44px; 
+                    height: 44px; 
+                    border-radius: 50%; 
+                    border: 1px solid #ccc;
+                    background: #f7f5ed; 
+                    color: #000;
+                    font-size: 22px; 
+                    cursor: pointer;
+                    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+                    transition: transform 0.2s, background-color 0.3s;
+                `;
+                // 根据当前状态初始化按钮颜色
+                if (DarkReader.isEnabled()) {
+                    btn.style.backgroundColor = '#1e1e1e';
+                    btn.style.color = '#fff';
+                }
+                btn.onmouseover = () => btn.style.transform = 'scale(1.1)';
+                btn.onmouseout = () => btn.style.transform = 'scale(1)';
+                document.body.appendChild(btn);
+                // 点击切换逻辑
+                btn.addEventListener('click', () => {
+                    if (DarkReader.isEnabled()) {
+                        DarkReader.disable();
+                        localStorage.setItem('theme', 'light');
+                        btn.style.backgroundColor = '#f7f5ed';
+                        btn.style.color = '#000';
+                    } else {
+                        DarkReader.enable(drOptions);
+                        localStorage.setItem('theme', 'dark');
+                        btn.style.backgroundColor = '#1e1e1e';
+                        btn.style.color = '#fff';
+                    }
+                });
+            });
+        </script>
+        
+        
+            
+                <div class="left-toc-container">
+                    <nav id="toc" class="bs-docs-sidebar"></nav>
+                </div>
+            
+        
+        <div class="paper">
+
+            
+
+            
+                <div class="shadow-drop-2-bottom paper-main">
+                    
+
+
+<div class="header">
+    <div class="header-container">
+        <style>
+            .header-img {
+                width: 56px;
+                height: auto;
+                object-fit: cover; /* 保持图片比例 */
+                transition: transform 0.3s ease-in-out; 
+                border-radius: 0; 
+            }
+            
+        </style>
+        <img 
+            alt="^-^" 
+            cache-control="max-age=86400" 
+            class="header-img" 
+            src="/img/1780807465903.png" 
+        />
+        <div class="header-content">
+            <a class="logo" href="/">分享志</a> 
+            <span class="description">腾出空，去生活，拥抱世界的精彩。</span> 
+        </div>
+    </div>
+    
+   
+    <ul class="nav">
+        
+            
+                <li><a href="/">首页</a></li>
+            
+        
+            
+                <li><a href="/list/">文章</a></li>
+            
+        
+            
+                <li><a href="/tags/">标签</a></li>
+            
+        
+            
+                <li><a href="/categories/">分类</a></li>
+            
+        
+    </ul>
+</div>
+
+                    
+                    
+
+                    
+                    
+
+                    <!--说明是文章post页面-->
+                    
+                        <div class="post-main">
+    
+
+    
+        
+            
+                <div class="post-main-title" style="text-align: center;">
+                    【网站分享】windows系统下载站--吻妻
+                </div>
+            
+        
+      
+    
+
+    
+
+        
+            <div class="post-head-meta-center">
+        
+                
+                    <span>最近更新：2026-05-20</span> 
+                
+                
+                    
+                        &nbsp; | &nbsp;
+                    
+                     <span>字数总计：540</span>
+                
+                
+                    
+                        &nbsp; | &nbsp;
+                    
+                    <span>阅读估时：2分钟</span>
+                
+                
+            </div>
+    
+
+    <div class="post-md">
+        
+            
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E7%89%88%E6%9C%AC%E7%89%B9%E8%89%B2"><span class="post-toc-text">版本特色</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E8%BF%90%E8%A1%8C%E5%BA%93%E6%94%AF%E6%8C%81"><span class="post-toc-text">运行库支持</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95"><span class="post-toc-text">安装方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1%E3%80%81%E7%A1%AC%E7%9B%98%E4%B8%8B%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%9A%EF%BC%88%E9%80%82%E7%94%A8%E4%BA%8EMBR%E5%88%86%E5%8C%BA%EF%BC%89"><span class="post-toc-text">1、硬盘下安装方法：（适用于MBR分区）</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2%E3%80%81-PE%E4%B8%8B%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="post-toc-text">2、 PE下安装方法：</span></a></li></ol></li></ol>
+            
+        
+        <div class=".article-gallery"><p>今天发现个网站，完全是被网站UI所吸引，然后才关注的内容。<br>一个系统分享网站，原先是专注于win7的系统优化的，谐音梗<code>“win7”=“吻妻”</code>。<a target="_blank" rel="noopener" href="https://www.newxitong.com/">win7</a>的站点还在运行，这里主要介绍的还是<a target="_blank" rel="noopener" href="http://iwin10.net/">win10</a>的，毕竟现在基本都习惯用win10了。  </p>
+<span id="more"></span>
+<p><img src="https://p.pstatp.com/origin/ff8900026795c1778749" alt="主界面"></p>
+<p>主要是提供两个版本：专业版<code>window10 pro</code>和企业版<code>windows10 ltsc</code>。专业版只有64位，企业版有32位和64位下载。镜像类型的话是WIN和GHO。下载方式支持迅雷、百度网盘、微云盘、360云盘、迅雷云盘、天翼云盘。</p>
+<p><img src="https://p.pstatp.com/origin/138450001dba71da9b84a" alt="专业版"><br><img src="https://p.pstatp.com/origin/138e20000d58d7bba432f" alt="企业版"><br><img src="https://p.pstatp.com/origin/137840001e1f7273c6d9a" alt="下载方式"></p>
+<h3 id="版本特色"><a href="#版本特色" class="headerlink" title="版本特色"></a>版本特色</h3><ul>
+<li>基于原版Win10 企业版LTSC优化制作</li>
+<li>原生Internet Explorer 11</li>
+<li>原生无捆绑微软UWP全家桶</li>
+<li>原生无应用商店、小娜、OneDrive、Edge浏览器</li>
+<li>移除SmartScreen 筛选器、Windows 安全中心</li>
+<li>移除Xbox及其相关组件</li>
+<li>移除零售演示内容和绝大部分可选功能</li>
+<li>增加仿宋GB2312、楷体GB2312、方正小标宋3种字体</li>
+<li>支持在线更新（自行开启更新服务）</li>
+<li>支持固态硬盘4K对齐、支持NVMe M.2固态</li>
+<li>支持锐龙、八代、九代、十代等新平台完美安装</li>
+<li>支持全自动无人值守安装与自建帐户安装（WIM镜像）</li>
+<li>集成全智能万能驱动助理（仅GHO镜像集成）</li>
+<li>提供WIM和GHO两种镜像下载</li>
+</ul>
+<h3 id="运行库支持"><a href="#运行库支持" class="headerlink" title="运行库支持"></a>运行库支持</h3><ul>
+<li>DirectX 9.0C+DirectX 11</li>
+<li>Microsoft .NET Framework 3.5</li>
+<li>Microsoft .NET Framework 4.7（自带）</li>
+<li>VB VC++ 2005/2008/2010/2012/2013/2019</li>
+</ul>
+<h3 id="安装方法"><a href="#安装方法" class="headerlink" title="安装方法"></a>安装方法</h3><h4 id="1、硬盘下安装方法：（适用于MBR分区）"><a href="#1、硬盘下安装方法：（适用于MBR分区）" class="headerlink" title="1、硬盘下安装方法：（适用于MBR分区）"></a>1、硬盘下安装方法：（适用于MBR分区）</h4><p>调用系统安装器选中GHO系统镜像即可安装系统。将本GHO镜像文件与”硬盘安装器.exe”工具 一起复制到D盘根目录（非安装盘均可），运行”硬盘安装器.exe “，点击”确定”进入系统自动重 启安装过程，直到完成。</p>
+<h4 id="2、-PE下安装方法："><a href="#2、-PE下安装方法：" class="headerlink" title="2、 PE下安装方法："></a>2、 PE下安装方法：</h4><p>用光盘或U盘引导进PE系统，运行安装器调用GHO/WIM系统镜像即可安装系统。<br>甚至还贴心的提供了定制好的启动盘根据<a target="_blank" rel="noopener" href="https://item.taobao.com/item.htm?ft=t&id=622030677997" title="购买链接">连接</a>购买即可。</p>
+</div>
+    </div>
+
+    <div class="post-meta">
+        <i>
+        
+            <span>2021-02-23</span>
+            
+                <span>该篇文章被 卡普</span>
+            
+            
+                <span>打上标签:
+                    
+                    
+                        <a href='/tags/windows/'>
+                            windows
+                        </a>
+                    
+                        <a href='/tags/%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB/'>
+                            网站分享
+                        </a>
+                    
+                        <a href='/tags/%E7%B3%BB%E7%BB%9F%E4%B8%8B%E8%BD%BD/'>
+                            系统下载
+                        </a>
+                    
+                </span>
+             
+             
+                <span>归为分类:
+                    
+                    
+                        <a href='/categories/%E5%88%86%E4%BA%AB/'>
+                            分享
+                        </a>
+                    
+                </span>
+            
+        
+        </i>
+    </div>
+    <br>
+    
+    
+        
+            
+    
+            <div class="post-footer-pre-next">
+                
+                    <span>上一篇：<a href='/p/3208472285.html'>凤凰系统-桌面版的Anndriod</a></span>
+                
+
+                
+                    <span class="post-footer-pre-next-last-span-right">下一篇：<a href="/p/4052024328.html">实时展示最新票房统计数据</a>
+                    </span>
+                
+            </div>
+    
+        
+    
+
+    
+        
+
+     
+</div>
+
+
+
+
+                    
+
+                    <div class="footer">
+    
+        <span> 
+            © 2024-2025 China 
+
+            
+                
+
+            
+        </span>
+       
+    
+</div>
+
+
+
+<!--这是指一条线往下的内容-->
+<div class="footer-last">
+    
+            <span>🌊腾出空，去生活，拥抱世界的精彩🌊</span>
+            
+                <span class="footer-last-span-right"><i>本站由<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">Hexo</a>驱动｜使用<a target="_blank" rel="noopener" href="https://github.com/HiNinoJay/hexo-theme-A4">Hexo-theme-A4</a>主题</i></span>
+            
+    
+</div>
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!--目录-->
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js" type="text/javascript" ></script>
+        
+<script src="/js/toc.js"></script>
+
+    
+
+    
+<script src="/js/randomHeaderContent.js"></script>
+
+    <!--回到顶部按钮-->
+    
+        
+<script src="/js/returnToTop.js"></script>
+
+    
+
+    
+        
+<script src="/js/returnToLastPage.js"></script>
+
+    
+
+
+
+
+
+<script src="/js/lightgallery/lightgallery.umd.min.js"></script>
+
+
+
+<script src="/js/lightgallery/plugins/lg-thumbnail.umd.min.js"></script>
+
+
+
+<script src="/js/lightgallery/plugins/lg-fullscreen.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-autoplay.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-zoom.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-rotate.umd.min.js"></script>
+
+
+<script src="/js/lightgallery/plugins/lg-paper.umd.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+     
+    if (typeof lightGallery !== "undefined") {
+        var options1 = {
+            selector: '.gallery-item',
+            plugins: [lgThumbnail, lgFullscreen, lgAutoplay, lgZoom, lgRotate, lgPager], // 启用插件
+            thumbnail: true,          // 显示缩略图
+            zoom: true,               // 启用缩放功
+            rotate: true,             // 启用旋转功能能
+            autoplay: true,        // 启用自动播放功能
+            fullScreen: true,      // 启用全屏功能
+            pager: false, //页码,
+            zoomFromOrigin: true,   // 从原始位置缩放
+            actualSize: true,       // 启用查看实际大小的功能
+            enableZoomAfter: 300,    // 延迟缩放，确保图片加载完成后可缩放
+        };
+        // 对所有文章中的画廊容器进行初始化
+        var articleGalleries = document.querySelectorAll('.article-gallery, .gi-gallery');
+        articleGalleries.forEach(function(gallery) {
+            lightGallery(gallery, options1);
+        });
+    }
+    
+</script>
+
+
+                </div>
+            
+            
+                <!-- 回到顶部的按钮-->
+                <div class="progress-wrap shadow-drop-2-bottom">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            
+            
+                <!-- 返回的按钮-->
+                <div class="return-to-last-progress-wrap shadow-drop-2-bottom">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            
+    </body>
+</html>
+<script src="/js/emojiHandler.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        wrapEmojis('.paper');
+    });
+</script>
